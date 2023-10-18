@@ -1,0 +1,216 @@
+[
+  {
+    "bookSourceComment": "20230613 制作该源-尐哖\n注意：如果搜索变动，在\nhttp://m.0794r.com/js/common.js里\nhttp://m.51menu.com/js/common.js\n同模板网站：\n虫虫书屋：http://www.0794r.com\n我要书单：http://www.51menu.com\n永久导航：https://simishuwu.github.io\n搜书吧:http://m.lhh360.com/",
+    "bookSourceGroup": "修正,🌸/🔞,天天的鸟蛋蛋,天天,虫虫书屋",
+    "bookSourceName": "搜书吧🍊虫虫书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.lhh360.com/##修正",
+    "customOrder": 118,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修真\",\"url\":\"/xiuzhen/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/dushi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/lishi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/wangyou/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/kehuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"言情\",\"url\":\"/yanqing/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他\",\"url\":\"/qita/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"经典\",\"url\":\"/jingdian/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"高辣\",\"url\":\"/gaola/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"耽美\",\"url\":\"/danmei/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"同人\",\"url\":\"/tongren/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本\",\"url\":\"/quanben/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"待待\",\"url\":\"/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"说明\",\"url\":\"/shuoming.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1693663617186,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": ".book_about dd@html##【微信公众号.*】|最新章节推荐地.*",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "[property$=og:url]@content##//m##//www"
+    },
+    "ruleContent": {
+      "content": "#content@html"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".bd ul li",
+      "bookUrl": ".s2@a@href",
+      "coverUrl": "a.0@href##\\D(\\d+)(\\/|\\.html?)?$##$1###\n<js>\ni=parseInt(result);\nii=parseInt(i/1000)\nsource.getKey().match(/([^\\#]+)\\#/)[1]+\"/files/article/image/\"+ii+\"/\"+i+\"/\"+i+\"s.jpg\"\n</js>",
+      "kind": "{{@@.s1@text##\\[|\\]}}\n{{@@.s5@text}}",
+      "lastChapter": ".s3@text",
+      "name": ".s2 a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author a@text",
+      "bookList": ".so_list .bookbox",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": ".bookimg img@src",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update a@text",
+      "name": ".bookname a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".listmain dl dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{String(source.getKey().match(/([^\\#]+)\\#/)[1]).replace(/\\/\\/www/,'//m')}}/sdfgsdyugfsdugf.html?ie=gbk&s=5256649918672294880&q={{JSON.parse(java.post(u=source.getKey().match(/([^\\#]+)\\#/)[1]+\"/pinyin.html\",\"s=\"+key+\"&act=hztopy\",{}).body()).data}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "20230613 制作该源-尐哖\n注意：如果搜索变动，在\nhttp://m.0794r.com/js/common.js里\nhttp://m.51menu.com/js/common.js\n同模板网站：\n虫虫书屋：http://www.0794r.com\n我要书单：http://www.51menu.com\n永久导航：https://simishuwu.github.io\n搜书吧:http://m.lhh360.com/",
+    "bookSourceGroup": "修正,🌸/🔞,天天的鸟蛋蛋,天天,虫虫书屋",
+    "bookSourceName": "🍊虫虫书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.51menu.com##@尐哖",
+    "customOrder": 118,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修真\",\"url\":\"/xiuzhen/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/dushi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/lishi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/wangyou/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/kehuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"言情\",\"url\":\"/yanqing/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他\",\"url\":\"/qita/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"经典\",\"url\":\"/jingdian/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"高辣\",\"url\":\"/gaola/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"耽美\",\"url\":\"/danmei/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"同人\",\"url\":\"/tongren/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本\",\"url\":\"/quanben/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"待待\",\"url\":\"/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"说明\",\"url\":\"/shuoming.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1693663622468,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": ".book_about dd@html##【微信公众号.*】|最新章节推荐地.*",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "[property$=og:url]@content##//m##//www"
+    },
+    "ruleContent": {
+      "content": "#content@html"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".bd ul li",
+      "bookUrl": ".s2@a@href",
+      "coverUrl": "a.0@href##\\D(\\d+)(\\/|\\.html?)?$##$1###\n<js>\ni=parseInt(result);\nii=parseInt(i/1000)\nsource.getKey().match(/([^\\#]+)\\#/)[1]+\"/files/article/image/\"+ii+\"/\"+i+\"/\"+i+\"s.jpg\"\n</js>",
+      "kind": "{{@@.s1@text##\\[|\\]}}\n{{@@.s5@text}}",
+      "lastChapter": ".s3@text",
+      "name": ".s2 a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author a@text",
+      "bookList": ".so_list .bookbox",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": ".bookimg img@src",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update a@text",
+      "name": ".bookname a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".listmain dl dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{String(source.getKey().match(/([^\\#]+)\\#/)[1]).replace(/\\/\\/www/,'//m')}}/sdfgsdyugfsdugf.html?ie=gbk&s=5256649918672294880&q={{JSON.parse(java.post(u=source.getKey().match(/([^\\#]+)\\#/)[1]+\"/pinyin.html\",\"s=\"+key+\"&act=hztopy\",{}).body()).data}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "20230613 制作该源-尐哖\n二次修复者：搜索链接经常变动,坏了自己找人修哈\n注意：如果搜索变动，在\nhttp://m.0794r.com/js/common.js里\nhttp://m.51menu.com/js/common.js\n同模板网站：\n虫虫书屋：http://www.0794r.com\n我要书单：http://www.51menu.com\n永久导航：https://simishuwu.github.io\n搜书吧:http://m.lhh360.com/",
+    "bookSourceGroup": "修正,🌸/🔞,天天的鸟蛋蛋,天天,虫虫书屋",
+    "bookSourceName": "🍊虫虫书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.0794r.com##修正",
+    "bookUrlPattern": "http://www.51menu.com/book/\\d+/",
+    "customOrder": 118,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修真\",\"url\":\"/xiuzhen/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/dushi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/lishi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/wangyou/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/kehuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"言情\",\"url\":\"/yanqing/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他\",\"url\":\"/qita/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"经典\",\"url\":\"/jingdian/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"高辣\",\"url\":\"/gaola/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"耽美\",\"url\":\"/danmei/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"同人\",\"url\":\"/tongren/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本\",\"url\":\"/quanben/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"待待\",\"url\":\"/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"说明\",\"url\":\"/shuoming.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1693663628289,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": ".book_about dd@html##【微信公众号.*】|最新章节推荐地.*",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "[property$=og:url]@content##//m##//www"
+    },
+    "ruleContent": {
+      "content": "#content@html"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".bd ul li",
+      "bookUrl": ".s2@a@href",
+      "coverUrl": "a.0@href##\\D(\\d+)(\\/|\\.html?)?$##$1###\n<js>\ni=parseInt(result);\nii=parseInt(i/1000)\nsource.getKey().match(/([^\\#]+)\\#/)[1]+\"/files/article/image/\"+ii+\"/\"+i+\"/\"+i+\"s.jpg\"\n</js>",
+      "kind": "{{@@.s1@text##\\[|\\]}}\n{{@@.s5@text}}",
+      "lastChapter": ".s3@text",
+      "name": ".s2 a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author a@text",
+      "bookList": ".so_list .bookbox",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": ".bookimg img@src",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update a@text",
+      "name": ".bookname a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".listmain dl dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{String(source.getKey().match(/([^\\#]+)\\#/)[1])}}/dshifisdhgujdu.html?ie=utf-8&s=5256649918672294880&q={{JSON.parse(java.post(u=source.getKey().match(/([^\\#]+)\\#/)[1]+\"/pinyin.html\",\"s=\"+key+\"&act=hztopy\",{}).body()).data}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "20230613 制作该源-尐哖\n二次修复者：搜索链接经常变动,坏了自己找人修哈\n注意：如果搜索变动，在\nhttp://m.0794r.com/js/common.js里\nhttp://m.51menu.com/js/common.js\n同模板网站：\n虫虫书屋：http://www.0794r.com\n我要书单：http://www.51menu.com\n永久导航：https://simishuwu.github.io\n搜书吧:http://m.lhh360.com/",
+    "bookSourceGroup": "修正,🌸/🔞,天天的鸟蛋蛋,天天,虫虫书屋",
+    "bookSourceName": "我要书单🍊虫虫书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.emoshuwu.com##修正",
+    "bookUrlPattern": "",
+    "customOrder": 118,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修真\",\"url\":\"/xiuzhen/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/dushi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/lishi/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/wangyou/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/kehuan/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"言情\",\"url\":\"/yanqing/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他\",\"url\":\"/qita/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"经典\",\"url\":\"/jingdian/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"高辣\",\"url\":\"/gaola/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"耽美\",\"url\":\"/danmei/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"同人\",\"url\":\"/tongren/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本\",\"url\":\"/quanben/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"待待\",\"url\":\"/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"说明\",\"url\":\"/shuoming.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1693663633649,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": ".book_about dd@html##【微信公众号.*】|最新章节推荐地.*",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "[property$=og:url]@content##//m##//www"
+    },
+    "ruleContent": {
+      "content": "#content@html"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".bd ul li",
+      "bookUrl": ".s2@a@href",
+      "coverUrl": "a.0@href##\\D(\\d+)(\\/|\\.html?)?$##$1###\n<js>\ni=parseInt(result);\nii=parseInt(i/1000)\nsource.getKey().match(/([^\\#]+)\\#/)[1]+\"/files/article/image/\"+ii+\"/\"+i+\"/\"+i+\"s.jpg\"\n</js>",
+      "kind": "{{@@.s1@text##\\[|\\]}}\n{{@@.s5@text}}",
+      "lastChapter": ".s3@text",
+      "name": ".s2 a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author a@text",
+      "bookList": ".so_list .bookbox",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": ".bookimg img@src",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update a@text",
+      "name": ".bookname a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".listmain dl dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{String(source.getKey().match(/([^\\#]+)\\#/)[1])}}/dshifisdhgujdu.html?ie=utf-8&s=5256649918672294880&q={{JSON.parse(java.post(u=source.getKey().match(/([^\\#]+)\\#/)[1]+\"/pinyin.html\",\"s=\"+key+\"&act=hztopy\",{}).body()).data}}",
+    "weight": 0
+  }
+]
