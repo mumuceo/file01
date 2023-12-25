@@ -1,0 +1,39 @@
+[
+  {
+    "articleStyle": 0,
+    "customOrder": 0,
+    "enableJs": true,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; MI 8 Lite Build/OPM1.171019.019) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.2.0.1100 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": 0,
+    "loadWithBaseUrl": true,
+    "ruleArticles": "<js>\n  json=[];\n  if(baseUrl.match(/★/)){\n  list=baseUrl.replace(/http.*?wd=\\s*/,'').split('★');\n  for(i in list){\n  href=list[i].match(/【(.*?)】/)[1];\n  text=list[i].match(/《(.*?)》/)[1];\n  intro=list[i].match(/◎(.*?)◎/)[1];\n  indexUrl=list[i].match(/^(\\d+、\\d+、)/)?list[i].match(/^(\\d+、\\d+、)/)[1]:list[i].match(/^(.*?)【/)[1]\n  if(indexUrl.indexOf('https://xiang-shiwang.gitee.io')!=-1 || indexUrl.indexOf('http://xiang-shiwang.gitee.io')!=-1){\n     if(indexUrl.indexOf('?')==-1){\n      indexUrl+='?vTime='+new Date().getTime()\n      }else{\n          indexUrl+='&vTime='+new Date().getTime()\n      } \n  }\n  json.push({text:text,src:href,intro:intro,index:indexUrl})\n  }\n  }\n  JSON.stringify(json)</js>\n  $.[*]",
+    "ruleImage": " $.src",
+    "ruleLink": "$.index",
+    "ruleNextPage": "  ",
+    "rulePubDate": " $.intro",
+    "ruleTitle": " $.text",
+    "singleUrl": false,
+    "sortUrl": "⚙ 工具::https://xiang-shiwang.gitee.io/document/index.html【http://sy.legado1.top/sy.php/0039eb4cea8628f772566210dd15ddf6.png】《自用源》◎统计的源◎★https://www.yikm.net/【https://www.yikm.net/f.png】《小游戏》◎小霸王小游戏◎★https://www.jiongciyuan.net/jocy/【https://www.jiongciyuan.net/jocy/zb_users/theme/zblog5_nav/image/favicon.ico】《囧次元网页版》◎在线查看◎★https://www.moooyu.com/sites/1091.html【https://www.moooyu.com/wp-content/uploads/2023/06/moyu11.png】《墨鱼导航》◎在线工具◎ ★ https://ant.c-6.app/【https://ant.c-6.app/templates/default/new/assets/images/logo.png】《蚂蚁加速器》◎vpn,蚂蚁加速器◎★ https://viayoo.com/zh-cn【https://viayoo.com/zh-cn/images/logo.png】《Via浏览器下载地址》◎简洁浏览器◎★https://www.xbext.com/【https://www.xbext.com/images/x-web-icon@0.5x.png】《X浏览器下载地址》◎简洁浏览器◎★https://xiang-shiwang.gitee.io/document/uploading.html【http://sy.legado1.top/sy.php/9654232af59e52b645b3348859b1c888.png】《上传文件》◎进入页面后，点击右上角浏览器中打开◎\r\n\n📰 看视频:: http://www.age.tv/【https://www.agedm.org/favicon.ico】《age动漫》◎看动漫哦◎★https://www.mayiyingshi.org/【https://cdn.aiqingyu1314.com/mayi/statics/img/favicon.ico】《蚂蚁影视》◎看电影◎★https://www.wandou.la/【https://www.wandou.la/favicon.ico】《豌豆PRO》◎看电影◎★https://90hd.top?from=VIP【https://v.app.90hd.top/template/conch/asset/img/favicon.png】《VIP影视》◎看电影◎★https://dm530.org【https://dm530.org/static/img/loading.png】《风车动漫》◎看电影◎★http://m.yhdm.io【http://m.iyinghua.io/js/20180601/favicon.ico】《樱花动漫》◎看电影◎★https://2imh.com【https://2imh.com/zuoz/img/favicon.png】《麻花影视》◎看电影◎★https://www.shenma4480.com【https://www.shenma4480.com/statics/img/favicon.ico】《神马影院》◎看电影◎",
+    "sourceIcon": "http://sy.legado1.top/sy.php/0039eb4cea8628f772566210dd15ddf6.png",
+    "sourceName": "常用工具",
+    "sourceUrl": "工具"
+  },
+  {
+    "articleStyle": 0,
+    "customOrder": 0,
+    "enableJs": true,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "lastUpdateTime": 0,
+    "loadWithBaseUrl": true,
+    "singleUrl": true,
+    "sourceComment": "1阅读书源交流群:1015950952。\n2该订阅源由源仓库用户ID:15839搜集整理\n3订阅源所有链接均经过测试可以正常使用，如载入失败请自行挂梯。如依然无法正常使用请自行删除。\n3由于只是搜集整理 所有内容取自网络 本人不承担任何责任及后果 如有侵害 请第一时间联系阅读书源交流群:1015950952的群主要求删除并致歉。\n4订阅源内容取自网络，仅供学习参考 请在获取后24小时内删除。",
+    "sourceGroup": "工具",
+    "sourceIcon": "http://sy.legado1.top/sy.php/6534343597144e08a931b95f437e3be0.png",
+    "sourceName": "特殊订阅源（源注释必看）",
+    "sourceUrl": "yuedu://rsssource/importonline?src=http://sy.legado1.top/sy.php/223e2fb8dfac4dd5c3b6859cdc798305.txt",
+    "sourceUrl1": "yuedu://rsssource/importonline?src=http://sy.legado1.top/sy.php/223e2fb8dfac4dd5c3b6859cdc798305.txt"
+  }
+]
