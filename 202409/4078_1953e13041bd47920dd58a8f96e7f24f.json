@@ -1,0 +1,30 @@
+[
+  {
+    "bookSourceGroup": "搜索链接规则为空",
+    "bookSourceName": "SF轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.sfacg.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 0,
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "搜索链接规则为空",
+    "bookSourceName": "飞卢小说⭐",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://wap.faloo.com",
+    "customOrder": 218,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "loginUrl": "https://u.faloo.com/wap/login.aspx",
+    "respondTime": 0,
+    "weight": 0
+  }
+]
