@@ -1,0 +1,154 @@
+[
+  {
+    "bookSourceComment": "发现——by阿鬼\n电信浏览可能会慢一些！",
+    "bookSourceGroup": "★网页源,[24.12.05已修]",
+    "bookSourceName": "🔞御书屋po18xs",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.po18xs.com",
+    "bookUrlPattern": "https://m.po18xs.com/book/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "✧✧✧✧✧✧常规分类✧✧✧✧✧✧\n玄幻奇幻::/sort/1_{{page}}/\n武侠仙侠::/sort/2_{{page}}/\n都市言情::/sort/3_{{page}}/\n科幻网游::/sort/4_{{page}}/\n惊悚悬疑::/sort/5_{{page}}/\n耽美同人::/sort/6_{{page}}/\n穿越架空::/sort/7_{{page}}/\n高辣浓情::/sort/8_{{page}}/\n禁忌百合::/sort/9_{{page}}/\n精品文学::/sort/10_{{page}}/\n✧✧✧✧✧✧✧✧排行榜✧✧✧✧✧✧✧✧\n日点击榜::/top/dayvisit_{{page}}/\n周点击榜::/top/weekvisit_{{page}}/\n月点击榜::/top/monthvisit_{{page}}/\n总点击榜::/top/allvisit_{{page}}/\n总收藏榜::/top/goodnum_{{page}}/\n字数排行::/top/size_{{page}}/\n日推荐榜::/top/dayvote_{{page}}/\n周推荐榜::/top/weekvote_{{page}}/\n月推荐榜::/top/monthvote_{{page}}/\n总推荐榜::/top/allvote_{{page}}/\n最新入库::/top/postdate_{{page}}/\n最近更新::/top/lastupdate_{{page}}/\n✧✧✧✧✧✧完本✧✧✧✧✧✧\n完本::/full/{{page}}/",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13; V2148A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36\"\n\t}",
+    "lastUpdateTime": 1733478489352,
+    "loginUrl": "https://m.po18xs.com/login.php",
+    "respondTime": 181374,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\".cataloginfo h3@text\",\na:\".infotype p[0]@a@text\",\nc:\".infotype p[1]@text&&.infotype p[2]@text\",\nl:\".infotype p[3]@a@text\",\nd:\".intro p@text\",\ni:\".pic img@src\",\nt:\"text.章节目录@href||text.查看全部章节@href\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}##类型：|更新时间：",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@html",
+      "replaceRegex": "##\\s.*\\》作者：*\\n*|\\s上一章\\n*|\\s下一章\\n*|\\s返回目录\\n*|\\s加入书签\\n*"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author@text||a[1]@text",
+      "bookList": ".sone||.article",
+      "bookUrl": "a@href",
+      "intro": ".simple@text##小说.*",
+      "kind": ".p1@text##\\[|\\]",
+      "name": "a[0]@text||h6@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapters li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "24.12.05已修——by 阿鬼",
+    "bookSourceGroup": "★笔趣阁,★网页源,[24.12.05已修]",
+    "bookSourceName": "🔞笔趣阁xsbqg.org",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xxbqg.org",
+    "bookUrlPattern": "http://www.xsbqg.net/\\d+_\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "—————————常规分类—————————\n玄幻::/class/xuanhuan/{{page}}/\n武侠::/class/wuxia/{{page}}/\n都市::/class/dushi/{{page}}/\n历史::/class/lishi/{{page}}/\n科幻::/class/kehuan/{{page}}/\n游戏::/class/youxi/{{page}}/\n女生::/class/nvsheng/{{page}}/\n其他::/class/qita/{{page}}/\n—————————排行榜—————————\n总排行榜::/rank/allvisit/\n月排行榜::/rank/monthvisit/\n周排行榜::/rank/weekvisit/\n总收藏榜::/rank/goodnum/\n—————————连载&完本—————————\n连载::/class/<,{{page}}/>\n完本::/quanben/class/<,{{page}}/>",
+    "header": "{\"referer\": \"{{source.getKey()}}/\",\n\"x-requested-with\": \"mark.via\",\n\"accept-language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\",\n\"user-agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1733478517832,
+    "loginUrl": "http://www.xxbqg.net/login/",
+    "respondTime": 181145,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nc:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content\",\nd:\"[property$=description]@content\",\ni:\"[property$=image]@content\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": ".chapter-content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##最近转码严重.*"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".book-author@text",
+      "bookList": ".book-li",
+      "bookUrl": "a@href",
+      "coverUrl": ".book-cover@img@src",
+      "intro": ".book-desc@text",
+      "kind": ".tag-small.gray@text&&.tag-small.red@text##\\s+",
+      "name": ".book-title@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list a[9:]",
+      "chapterName": "dd@text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/sosoed948.html,{\n  \"body\": \"searchtype=all&searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by 阿鬼",
+    "bookSourceGroup": "★网页源,[24.12.05已修]",
+    "bookSourceName": "荷花居",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.hehuaju123.com/",
+    "bookUrlPattern": "",
+    "customOrder": 294,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::https://m.hehuaju123.com/xuanhuan/<,page_{{page}}.html>\n武侠修真::https://m.hehuaju123.com/xiuzhen/<,page_{{page}}.html>\n历史穿越::https://m.hehuaju123.com/lishi/<,page_{{page}}.html>\n游戏竞技::https://m.hehuaju123.com/wangyou/<,page_{{page}}.html>\n都市言情::https://m.hehuaju123.com/dushi/<,page_{{page}}.html>\n科幻小说::https://m.hehuaju123.com/kehuan/<,page_{{page}}.html>\n女频小说::https://m.hehuaju123.com/nvpin/<,page_{{page}}.html>",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13; V2148A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36\"\n\t}",
+    "lastUpdateTime": 1733551384754,
+    "loginUrl": "",
+    "respondTime": 188961,
+    "ruleBookInfo": {
+      "author": ".pt-info[1]@text##作者：",
+      "coverUrl": ".baseinfo@img@src",
+      "intro": ".intro@text",
+      "kind": ".pt-info[2]@a@text&&.pt-info[3]@text##更新：",
+      "lastChapter": "#newchaperlist@li[0]@text",
+      "name": ".pt-name@text"
+    },
+    "ruleContent": {
+      "content": ".chaptercontent@p@html||#BookText@p@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".s712[1]@text##作者:",
+      "bookList": ".pt-card.pt-card-7[!0]@.book-li",
+      "bookUrl": "a@href",
+      "coverUrl": ".pt-cover@img@src",
+      "intro": ".pt-desc.ptm-text-cut@text##简介:",
+      "kind": ".s712[0]@text&&.s713[0]@text##分类:",
+      "name": ".pt-name@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": ".ptm-list-view-cell.ptm-img.ptm-col-xs-4",
+      "bookUrl": "a@href",
+      "coverUrl": ".imgarea@img@src",
+      "name": "a@text##《|》"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterlist li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "<js>\nd=java.getElements(\".list div\");\nvar li=\"\";\nfor(i in d){\n\tli+=d.select(`[data-cpage=${i}] li`);\n\tli+=\"\\n\";\n\t}\n\tli;\n</js>\nli a"
+    },
+    "searchUrl": "/home/search,{\n  \"body\": \"action=search&q={{key}}\",\n  \"method\": \"POST\",\n  \"charset\": \"UTF-8\"\n}",
+    "weight": 0
+  }
+]
