@@ -1,0 +1,119 @@
+[
+  {
+    "bookSourceComment": "by阿鬼",
+    "bookSourceGroup": "★POST请求,★肉肉屋,★专搜耽美,★自制,[24.12.07已修]",
+    "bookSourceName": "🔞肉肉屋3",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.rourouwu3.com",
+    "customOrder": 23,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "✧✧✧✧✧✧常规分类✧✧✧✧✧✧\n玄幻 ::/sort/1_{{page}}/\n修真 ::/sort/2_{{page}}/\n言情 ::/sort/3_{{page}}/\n武侠 ::/sort/4_{{page}}/\n都市 ::/sort/5_{{page}}/\n科幻 ::/sort/6_{{page}}/\n网游 ::/sort/7_{{page}}/\n恐怖 ::/sort/8_{{page}}/\n耽美 ::/sort/9_{{page}}/\n历史 ::/sort/10_{{page}}/\n高辣文 ::/sort/11_{{page}}/\n同人 ::/sort/12_{{page}}/\n腹黑 ::/sort/13_{{page}}/\n种田文 ::/sort/14_{{page}}/\n高干文 ::/sort/15_{{page}}/\n其他 ::/sort/16_{{page}}/\n百合 ::/sort/17_{{page}}/\n\t✧✧✧✧✧✧✧✧排行榜✧✧✧✧✧✧✧✧\n月点击::/top/monthvisit_{{page}}/\n周点击::/top/weekvisit_{{page}}/\n总点击::/top/allvisit_{{page}}/\n\t✧✧✧✧✧✧完本✧✧✧✧✧✧\n完本::/full/{{page}}/",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13; V2148A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36\"\n\t}",
+    "lastUpdateTime": 1733564303370,
+    "loginUrl": "https://m.rourouwu3.com/login.php?url=https://m.rourouwu3.com/user.php",
+    "respondTime": 194918,
+    "ruleBookInfo": {
+      "author": ".xx@li[2]@a@text",
+      "coverUrl": ".xsfm@img@src",
+      "intro": ".jianjie.bk@text",
+      "kind": ".xx@li[1]@a@text",
+      "lastChapter": ".xx@li[3]@a@text",
+      "name": ".xx@li[0]@text",
+      "tocUrl": "text.查看更多章节@href"
+    },
+    "ruleContent": {
+      "content": ".zj@#nr@html",
+      "nextContentUrl": "text.下一章@href",
+      "replaceRegex": "##\\s\\(本章.*\\)\\n*"
+    },
+    "ruleExplore": {
+      "author": "span[1]@text",
+      "bookList": ".xbk[!0]",
+      "bookUrl": "a@href",
+      "coverUrl": ".tjimg@img@src",
+      "intro": "span[2]@text",
+      "name": ".xsm@a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "a[2]@text",
+      "bookList": ".fk li",
+      "bookUrl": "a[1]@href",
+      "kind": "a[0]@text##\\[|\\]",
+      "name": "a[1]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".lb.fk@.xbk",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".fenye@.fy@.showpage.r3@a[!0]@href",
+      "preUpdateJs": "Java.refreshTocUrl()"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"submit=&type=articlename&s={{key}}\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by阿鬼\n\n原网站排行榜排版恶心！个人处理不来！勉强食用吧！\n\n原搜索链接：\nhttp://www.junhuichina.com/modules/article/search.php",
+    "bookSourceGroup": "★POST请求,★海棠书屋,[24.12.07已修]",
+    "bookSourceName": "🔞海棠书屋haitangxswang[慎用！]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.haitangxswang.com/",
+    "bookUrlPattern": "http://m.junhuichina.com/book/\\d+/\\d+/",
+    "customOrder": 31,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "✧✧✧✧✧✧常规分类✧✧✧✧✧✧\n玄幻魔法::/list/1-{{page}}.html\n武侠修真::/list/2-{{page}}.html\n都市言情::/list/3-{{page}}.html\n历史军事::/list/4-{{page}}.html\n穿越架空::/list/5-{{page}}.html\n游戏动漫::/list/6-{{page}}.html\n科幻灵异::/list/7-{{page}}.html\n文学名著::/list/8-{{page}}.html\n综合其他::/list/9-{{page}}.html\n✧✧✧✧✧✧✧✧排行榜✧✧✧✧✧✧✧✧\n总排行榜::/book/allvisit-{{page}}.html\n本周排行榜::/book/weekvisit-{{page}}.html\n当月排行榜::/book/monthvisit-{{page}}.html\n总推荐榜::/book/allvote-{{page}}.html\n本周推荐榜::/book/weekvote-{{page}}.html\n当月推荐榜::/book/monthvote-{{page}}.html\n✧✧✧✧✧✧完本✧✧✧✧✧✧\n完本::/wanben-{{page}}.html",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 13; V2148A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36\"\n\t}",
+    "lastUpdateTime": 1733558488438,
+    "loginCheckJs": "",
+    "loginUrl": "http://www.junhuichina.com/login.php",
+    "respondTime": 182373,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "downloadUrls": "class.btn btn-down@a@href",
+      "intro": "[property$=description]@content",
+      "kind": "[property$=category]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "wordCount": "[property$=status]@content&&[property$=update_time]@content"
+    },
+    "ruleContent": {
+      "content": "#TextContent@html##{{title}}",
+      "nextContentUrl": "",
+      "replaceRegex": "##更多.*|\\s\\-\\-\\n*"
+    },
+    "ruleExplore": {
+      "author": ".book_author@a@text||.author@a@text",
+      "bookList": ".col-lg-6.col-sm-6.col-md-6.col-sm-index||.article@li",
+      "bookUrl": "a@href",
+      "coverUrl": ".media-left.media-heading@img@src",
+      "intro": ".book-intro-index@textNodes",
+      "kind": ".fullflag@text&&.lastupdate@text",
+      "lastChapter": ".lastchapter@text",
+      "name": ".media-heading.book-title@text||.articlename@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "p[1]@text",
+      "bookList": "#bookcon@tr[!0]",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "p[3]@text&&p[4]@text",
+      "name": "p[0]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".list-group.list-charts[!0]@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".pagelist@a@href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/modules/article/search.php,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
