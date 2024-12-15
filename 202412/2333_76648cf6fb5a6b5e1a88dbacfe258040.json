@@ -1,0 +1,98 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n搜索规则\n感谢@柚屿. \n搜索规则是随机搜索\n本来是想当page写的 结果不能一下子请求太多\n所以采用随机搜索\n精准搜索\n发现可以找到精准内容\n或者通过导入网站链接的形式\n请导入电脑链接\nhttp://m.3y3.org/new/19102/\n修改成\nhttp://www.3y3.org/new/19102/",
+    "bookSourceGroup": "笔趣阁",
+    "bookSourceName": "新笔趣阁（绿）3y3",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.3y3.org",
+    "bookUrlPattern": "",
+    "customOrder": 915,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻奇幻\",\"url\":\"/class/1_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/class/2_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"女频言情\",\"url\":\"/class/3_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"现代都市\",\"url\":\"/class/4_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/class/5_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"游戏竞技\",\"url\":\"/class/6_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"科幻灵异\",\"url\":\"/class/7_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"美文同人\",\"url\":\"/class/8_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"其他类型\",\"url\":\"/class/9_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}}]",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"\n}",
+    "lastUpdateTime": 1734260117987,
+    "loginCheckJs": "",
+    "respondTime": 0,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#content@html",
+      "nextContentUrl": "text.下一@href"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": "ul:nth-child(2) > li:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "kind": ".s1@text&&.s5@text##\\[(.*)\\]##$1",
+      "lastChapter": ".s3 > a@text",
+      "name": ".s2 > a@text"
+    },
+    "ruleSearch": {
+      "bookList": "",
+      "bookUrl": "url",
+      "checkKeyWord": "",
+      "name": ""
+    },
+    "ruleToc": {
+      "chapterList": "dd:nth-child(n+1)>a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "<js>\nfunction generateUrl() {\n    var i;\n    do {\n        i = Math.floor(Math.random() * 99999);\n    } while (i === 0);\n    var key = java.key\n    return \"/class/\" + i + \"_1/?p=\" + key;\n}\n\nfinalUrl = generateUrl();\n\n</js>",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "阅读云（sososhu）搜索系列又增加一个\nby天天的鸟蛋蛋：矫正测试\n我不是这书源 原作\n只是修复搜索和目录页,正文页",
+    "bookSourceGroup": "A级",
+    "bookSourceName": "三叶屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sanyewu.com",
+    "bookUrlPattern": "",
+    "customOrder": 7939,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1734258842649,
+    "loginUrl": "",
+    "respondTime": 5426,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "#nr@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "<js>\nif (result.match(/阅读云/)) {\nu = baseUrl.split(',')[0]\ncookie.removeCookie(u)\n// java.startBrowserAwait(u, \"验证\")\njava.webView(null, u, \"document.cookie\")\nck = cookie.getCookie(u)\nhead = JSON.stringify({ headers: { 'Cookie': ck } })\nurl = u + \",\" + head\nresult = java.ajax(url)\n}\nresult\n</js>\n.block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#ul_all_chapters > li:nth-child(n+1) > a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href||text.下一@href"
+    },
+    "searchUrl": "https://www.sososhu.com/?site=wapsywbook&q={{key}},{headers:{ \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\" }}",
+    "weight": 0
+  }
+]
