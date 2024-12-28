@@ -1,0 +1,137 @@
+[
+  {
+    "bookSourceComment": "//by:ZeroWorld",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "ESJ Zone",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.esjzone.one/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1735137917268,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "tocUrl": "class.sp-buttons mt-2 mb-2@tag.a@href"
+    },
+    "ruleContent": {
+      "content": "class.forum-content mt-3@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.card mb-30@class.card-body@class.card-author@tag.a@text",
+      "bookList": "class.col-lg-3 col-md-4 col-sm-3 col-xs-6",
+      "bookUrl": "class.card mb-30@class.card-body@tag.h5@tag.a@href",
+      "coverUrl": "class.card mb-30@class.card-img-tiles@class.inner@class.main-img@tag.div@data-src",
+      "name": "class.card mb-30@class.card-body@tag.h5@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.dataTable@tag.tbody@tag.tr",
+      "chapterName": "tag.td.0@tag.a@text",
+      "chapterUrl": "tag.td.0@tag.a@href",
+      "updateTime": "tag.td.1@class.forum-desc@text"
+    },
+    "searchUrl": "https://www.esjzone.one/tags-21/{{key}}/{{page}}.html",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "//by:ZeroWorld",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "三七轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.37yq.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1735139788459,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "id.bookSummary@tag.content@html",
+      "tocUrl": "class.module module-merge@tag.a.0@href"
+    },
+    "ruleContent": {
+      "content": "id.acontent@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.book-cell@class.book-meta@class.book-meta-l@text##^作者",
+      "bookList": "class.module@tag.ol@tag.li",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "img@data-src",
+      "intro": "class.book-cell@class.book-desc@text",
+      "kind": "class.book-cell@class.book-meta@class.book-meta-r@tag.span@tag.em@text##\\s##,",
+      "name": "class.book-cell@class.book-title-x@class.book-title@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.catelogX@tag.ol@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/so.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=all\",\n  \"headers\": {\"origin\": \"https://m.37yq.com\",\"referer\": \"https://m.37yq.com/so.html\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "//by:ZeroWorld",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "神凑轻小说文库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.shencou.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1735141205114,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "id.novelcontent@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.search_box@class.search_list",
+      "bookUrl": "tag.a.0@href",
+      "kind": "tag.a.1@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.info_chapters@tag.ul.-1@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.middle@tag.select@tag.option@value"
+    },
+    "searchUrl": "/pserchs.php,{\n\t\"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"s={{key}}&q=0&type=articlename\",\n  \"headers\": {\"origin\": \"http://m.shencou.com\",\"referer\": \"http://m.shencou.com/\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "非常爱漫",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://wap.veryim.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1735142537615,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "id.cp_img@img@src"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": "tag.li",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "img@src",
+      "name": "class.txtA@text"
+    },
+    "ruleToc": {
+      "chapterList": "-id.list@tag.ul@tag.li",
+      "chapterName": "tag.a@text##更多章节.{2}",
+      "chapterUrl": "tag.a@href##$##,{\"webView\": true}"
+    },
+    "searchUrl": "/statics/qingtiancms.ashx,{\n  \"method\": \"POST\",\n  \"body\": \"page={{page}}&action=GetWapList&_id=listbody&pagesize=12&order=1&classid1=0&url=%2Fstatics%2Fqingtiancms.ashx&key={{key}}\",\n  \"headers\": {\"origin\": \"http://wap.veryim.com\",\"referer\": \"http://wap.veryim.com/statics/search.aspx\"}\n}",
+    "weight": 0
+  }
+]
