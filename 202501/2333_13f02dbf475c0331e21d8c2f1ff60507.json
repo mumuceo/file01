@@ -1,0 +1,98 @@
+[
+  {
+    "bookSourceComment": "//2025.1.14by.◎辞晨◎\n//2025/1/14 by天天的鸟蛋蛋 目录页 正文解密 https://ysqbbs.com/thread-16169-1-1.html\n/*\n\t<js>\nvar JsDom = Packages.org.jsoup.Jsoup;\nvar Document = Packages.org.jsoup.nodes.Document;\nvar Element = Packages.org.jsoup.nodes.Element;\n            \nvar document = JsDom.parse(src);\n            \n// 获取包含<li>元素的<div>元素\nvar divs = document.select('ul.list > div');\n\n// 将divs转换为数组以便排序\nvar divArray = [];\nfor (var i = 0; i < divs.size(); i++) {\n    divArray.push(divs.get(i));\n}\n\n// 按照data-id属性对divArray进行排序\ndivArray.sort(function(a, b) {\n    var pageA = parseInt(a.attr('data-id'), 10);\n    var pageB = parseInt(b.attr('data-id'), 10);\n    return pageA - pageB;\n});\n\nvar list = [];\n// 遍历排序后的divArray\nfor (var i = 0; i < divArray.length; i++) {\n    var div = divArray[i];\n    var dataId = div.attr('data-id');\n    // 获取当前div下的所有<li>元素\n    var lis = div.select('li');\n    for (var j = 0; j < lis.size(); j++) {\n        var li = lis.get(j);\n        var a = li.select('a').first();\n        if (a != null) {\n            list.push({\n                text: a.text(),\n                id: dataId, // 使用data-id属性\n                url: a.attr('href')\n            });\n        }\n    }\n}\n\njava.log(JSON.stringify(list));\nlist;\n</js>\n\n\t*/\n\n//2025/1/14 by= = 的方法如下\n/*\n\t<js>\nvar lis=\"\";\n//获取所有dd标签，依次存入数组arr\nvar aDiv = java.getElements(\"@@.list@div\");\n    var arr = [];\n    for(var i=0;i<aDiv.length;i++){\n    \t        arr.push(aDiv[i]);\n    }\n//按data-id属性值升序排列arr中的元素\n    arr.sort(function(a,b){return a.attr('data-id') - b.attr('data-id')});\n//依次拼接排序后arr中的元素\n    for(var i=0;i<arr.length;i++){\n    \tlis=lis+arr[i];\n    }\n    lis\n    java.log(lis)\n</js>li@a\n*/",
+    "bookSourceGroup": "写源",
+    "bookSourceName": "星空小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://wap.aixswx.com ",
+    "customOrder": -98870,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n  'User-Agent': \"Mozilla/5.0 (Linux; Android 15; V2304A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36\",\n  'sec-ch-ua-platform': \"\\\"Android\\\"\",\n  'origin': \"http://wap.aixswx.com\",\n  'x-requested-with': \"cn.mujiankeji.mbrowser\",\n  'referer': \"http://wap.aixswx.com\",\n  'accept-language': \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\",\n  'cookie':\"wsii=c6dd6741eff413b0b3fa34454297a6bb; wsii.sig=typqduZ5V0UckybAUZaTc4FDIo_WCyagwQ_gLqClIjM; Hm_lvt_53ebc424a3875367158e16f535e5fb60=1736855620; HMACCOUNT=BAE980A89729A2EC; Hm_lpvt_53ebc424a3875367158e16f535e5fb60=1736855665\"\n}",
+    "lastUpdateTime": 1736869650153,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.目录列表@href",
+      "wordCount": "[property$=status]@content"
+    },
+    "ruleContent": {
+      "content": "<js>\nvar JsDom = Packages.org.jsoup.Jsoup;\nvar Document = Packages.org.jsoup.nodes.Document;\nvar Element = Packages.org.jsoup.nodes.Element;\n            \nvar document = JsDom.parse(src);\n            \n// 获取包含<p>元素的<dd>元素\nvar dds = document.select('div.content > dd');\n\n// 将dds转换为数组以便排序\nvar ddArray = [];\nfor (var i = 0; i < dds.size(); i++) {\n    ddArray.push(dds.get(i));\n}\n\n// 按照data-id属性对ddArray进行排序\nddArray.sort(function(a, b) {\n    var pageA = parseInt(a.attr('data-id'), 10);\n    var pageB = parseInt(b.attr('data-id'), 10);\n    return pageA - pageB;\n});\n\nvar list = [];\nvar data = {\n    mergedText: \"\"\n};\n\n// 遍历排序后的ddArray\nfor (var i = 0; i < ddArray.length; i++) {\n    var dd = ddArray[i];\n    var dataId = dd.attr('data-id');\n    // 获取当前dd下的所有<p>元素的文本内容\n    var paragraphs = dd.select('p').text();\n    list.push({\n        id: dataId, // 使用data-id属性\n        text: paragraphs // 获取所有<p>元素的文本内容\n    });\n    // 合并文本内容\n    data.mergedText += paragraphs + \"\\n\"; // 添加换行符以便分隔每个dd的内容\n}\n\n// 输出结果\n//java.log(JSON.stringify(list));\n//java.log(data.mergedText);\n\n// 返回data对象\nresult = data.mergedText;\n</js>\n",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##.*星空小说网.*|\\(第.*页\\)|{{chapter.title}}"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "a.0@text##\\((.*?)\\)##$1###",
+      "bookList": "ul@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href##\\/(\\d+)\\.##$1###\n@js:\nbid = parseInt(result);\naid = parseInt(bid / 1000);\nresult = `/image/${aid}/${bid}/${bid}s.jpg`;",
+      "intro": "",
+      "kind": "a.0@text##\\[|\\].*",
+      "name": "a.0@text##.*\\]|\\(.*"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nvar JsDom = Packages.org.jsoup.Jsoup;\nvar Document = Packages.org.jsoup.nodes.Document;\nvar Element = Packages.org.jsoup.nodes.Element;\n            \nvar document = JsDom.parse(src);\n            \n// 获取包含<li>元素的<div>元素\nvar divs = document.select('ul.list > div');\n\n// 将divs转换为数组以便排序\nvar divArray = [];\nfor (var i = 0; i < divs.size(); i++) {\n    divArray.push(divs.get(i));\n}\n\n// 按照data-id属性对divArray进行排序\ndivArray.sort(function(a, b) {\n    var pageA = parseInt(a.attr('data-id'), 10);\n    var pageB = parseInt(b.attr('data-id'), 10);\n    return pageA - pageB;\n});\n\nvar list = [];\n// 遍历排序后的divArray\nfor (var i = 0; i < divArray.length; i++) {\n    var div = divArray[i];\n    var dataId = div.attr('data-id');\n    // 获取当前div下的所有<li>元素\n    var lis = div.select('li');\n    for (var j = 0; j < lis.size(); j++) {\n        var li = lis.get(j);\n        var a = li.select('a').first();\n        if (a != null) {\n            list.push({\n                text: a.text(),\n                id: dataId, // 使用data-id属性\n                url: a.attr('href')\n            });\n        }\n    }\n}\n\n//java.log(JSON.stringify(list));\nlist;\n</js>\n",
+      "chapterName": "text",
+      "chapterUrl": "url",
+      "isPay": ""
+    },
+    "searchUrl": "http://wap.aixswx.org/s.php,{\n \"body\": \"s={{key}}\",\n \"charset\": \"utf-8\", \n \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "//打不开挂梯\n//检验不通过\n//字体编码\n//by天天的鸟蛋蛋 字体解密 2025/1/14\n//目前已知问题不能搜索\ni=[\"%uAD16\",\"%uAD17\",\"%uAD5B\",\"%uAD5C\",\"%uAD9D\",\"%uADF7\",\"%uADF8\",\"%uADF9\",\"%uAE47\",\"%uAE4A\",\"%uAE85\",\"%uAE86\",\"%uAE97\",\"%uAE98\",\"%uAE9B\",\"%uAEB1\",\"%uAEB2\",\"%uAEB3\",\"%uAEB4\",\"%uAEB5\",\"%uAEB6\",\"%uAED7\",\"%uAED8\",\"%uAED9\",\"%uAEDA\",\"%uAEDB\",\"%uAEDC\",\"%uAEE1\",\"%uAEE3\",\"%uAEE5\",\"%uAEE6\",\"%uAEE7\",\"%uAEE9\",\"%uAF06\",\"%uAF07\",\"%uAF0A\",\"%uAF0B\",\"%uAF0C\",\"%uAF0D\",\"%uAF0E\",\"%uAF10\",\"%uAF57\",\"%uAF6C\",\"%uAF6D\",\"%uAF6E\",\"%uAF71\",\"%uAF89\",\"%uAF8A\",\"%uAFA6\",\"%uAFA8\",\"%uAFA9\",\"%uAFAB\",\"%uAFAC\",\"%uAFAD\",\"%uAFAE\",\"%uAFBF\",\"%uAFC0\",\"%uAFC1\",\"%uAFC2\",\"%uAFD7\",\"%uAFDB\",\"%uAFE2\",\"%uAFE4\",\"%uAFE6\",\"%uAFE7\",\"%uAFE8\",\"%uAFE9\",\"%uAFEB\",\"%uAFED\",\"%uAFEE\",\"%uAFEF\",\"%uAFF0\",\"%uAFF5\",\"%uAFF7\",\"%uAFF8\",\"%uAFF9\",\"%uAFFB\",\"%uB010\",\"%uB011\",\"%uB014\",\"%uB016\",\"%uB017\",\"%uB018\",\"%uB019\",\"%uB01E\",\"%uB01F\",\"%uB027\",\"%uB02A\",\"%uB02B\",\"%uB02C\",\"%uB0EA\",\"%uB0EB\",\"%uB0EC\",\"%uB0ED\",\"%uB148\",\"%uB149\",\"%uB14A\",\"%uB14C\",\"%uB14D\",\"%uB160\",\"%uB161\",\"%uB162\",\"%uB164\",\"%uB166\",\"%uB167\",\"%uB168\",\"%uB16A\",\"%uB17F\",\"%uB180\",\"%uB182\",\"%uB185\",\"%uB186\",\"%uB187\",\"%uB18A\",\"%uB18B\",\"%uB18C\",\"%uB196\",\"%uB198\",\"%uB199\",\"%uB19A\",\"%uB19B\",\"%uB1FD\",\"%uB1FE\",\"%uB201\",\"%uB202\",\"%uB203\",\"%uB204\",\"%uB211\",\"%uB212\",\"%uB213\",\"%uB215\",\"%uB280\",\"%uB281\",\"%uB282\",\"%uB284\",\"%uB285\",\"%uB289\",\"%uB28C\",\"%uB2B3\",\"%uB2B5\",\"%uB37F\",\"%uB380\",\"%uB383\",\"%uB3D7\",\"%uB561\",\"%uB562\",\"%uB563\",\"%uB564\",\"%uB598\",\"%uB59A\"];\n//字体文本\nz=\"一二十丁七八人入九了刀力又三干土工才寸丈大上小口山巾千亡之已弓己也乞川么久勺丸凡及叉夫天元扎五支犬尤匹巨牙屯互切止少日中手午升仁片化仇仍斤爪反介父今凶乏氏欠丹勾六文方火心尺巴以允予幻玉末未打巧正功扔甘世古本可丙左石右布平的是在不有和我由只要他叫用四失生到代作地出就分平令成句外冬包主市年它百同能而下子\";\n\t\n\t//变成unicode编码\nhtml = escape(result);\n//替换\nfunction ti(html,i,z){\n\treg = new RegExp(i,'g');\n\treturn html.replace(reg,z);\n\t}\nfor(x in i){\n\thtml = ti(html,i[x],z[x])\n\t}\n//解unicode编码（变成文字）\nunescape(html)",
+    "bookSourceGroup": "",
+    "bookSourceName": "提莫書屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.timotxt.com",
+    "bookUrlPattern": "https://www.timotxt.com/\\d+/",
+    "customOrder": 7384,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "\n言情::/bookstack/?cid=1&page={{page}}\n歷史::/bookstack/?cid=2&page={{page}}\n其他::/bookstack/?cid=3&page={{page}}\n都市::/bookstack/?cid=4&page={{page}}\n玄幻::/bookstack/?cid=5&page={{page}}\n體育::/bookstack/?cid=6&page={{page}}\n穿越::/bookstack/?cid=8&page={{page}}\n科幻::/bookstack/?cid=10&page={{page}}\n校園::/bookstack/?cid=13&page={{page}}\n軍事::/bookstack/?cid=18&page={{page}}\n懸疑::/bookstack/?cid=19&page={{page}}\n遊戲::/bookstack/?cid=25&page={{page}}\n女頻::/bookstack/?cid=42&page={{page}}\n同人::/bookstack/?cid=43&page={{page}}",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 14; zh-cn; M2102K1AC Build/UKQ1.231207.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/18.2.200429\"}",
+    "lastUpdateTime": 1736860959632,
+    "respondTime": 3886,
+    "ruleBookInfo": {
+      "author": "[name$=author]@content<js>java.t2s(result)</js>",
+      "coverUrl": "[name$=image]@content",
+      "init": "",
+      "intro": "[name$=description]@content<js>java.t2s(result)</js>",
+      "kind": "[name~=category|status|update_time]@content<js>java.t2s(result)</js>",
+      "lastChapter": "[name$=latest_chapter_name]@content<js>java.t2s(result)</js>",
+      "name": "[name$=book_name]@content<js>java.t2s(result)</js>",
+      "tocUrl": "{{$.}}dir"
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "nextContentUrl": ".foot-nav@a.-1@href\n@js:\nif(result){\nresult=result[0].indexOf(\"_\")>-1?result:\"\";\n}",
+      "replaceRegex": "##chaptererror.*|請記住本書首發域名：.*|https.*|，最快更新.*最新章节！<js>eval(String(source.bookSourceComment));</js>\n<js>java.t2s(result)</js>",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "span@text<js>java.t2s(result)</js>",
+      "bookList": "<js>\nif (result.match(/Just a moment/)) { java.startBrowserAwait(baseUrl, \"验证\");\nresult=java.ajax(baseUrl);\n}\nresult;\n</js>\n.list@li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "p@text<js>java.t2s(result)</js>",
+      "kind": "0",
+      "name": "h3@text<js>java.t2s(result)</js>"
+    },
+    "ruleToc": {
+      "chapterList": "ul.2@li",
+      "chapterName": "a@text<js>java.t2s(result)</js>",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://www.timotxt.com/search/{{key}}",
+    "weight": 0
+  }
+]
