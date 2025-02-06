@@ -1,0 +1,99 @@
+[
+  {
+    "bookSourceName": "88小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.88xiaoshuo.net",
+    "customOrder": 0,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "lastUpdateTime": 0,
+    "respondTime": 1521,
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.0@tag.a@text",
+      "coverUrl": "id.fmimg@tag.img@src",
+      "intro": "class.introtxt@text",
+      "kind": "id.info@tag.p.1@text##\\(\\)",
+      "lastChapter": "id.info@tag.p.4@tag.a@text",
+      "name": "id.info@tag.a@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "coverUrl": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "class.title@tag.span@text",
+      "bookList": "id.alist@id.alistbox",
+      "bookUrl": "class.title@tag.a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "class.pic@tag.img.0@src",
+      "intro": "class.intro@tag,div.0@text",
+      "kind": "",
+      "lastChapter": "class.sys@tag.a@text",
+      "name": "class.title@tag.a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search.html,{\nmethod: \"post\",\nbody: \"searchkey={{key}}&searchtype=all\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceName": "爱爱中文网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.i25zw.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "lastUpdateTime": 1738813029635,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "p:nth-child(2) > a@text",
+      "coverUrl": "img@src",
+      "init": "",
+      "intro": ".introtxt@text##简介:",
+      "kind": "#info > p:nth-child(3)@text##\\(\\)",
+      "lastChapter": "p:nth-child(6) > a@text",
+      "name": "h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.content@html##投推荐票|上一章|章节目录|下一章|加入书签|返回书架",
+      "replaceRegex": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "tag.span@text##作者：",
+      "bookList": "id.alist@id.alistbox",
+      "bookUrl": "class.title@tag.h2@tag.a.0@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "tag.img@src",
+      "intro": "class.intro@text",
+      "kind": "tag.p.2@text##分类：",
+      "lastChapter": "class.sys@tag.li@text##最新更新：",
+      "name": "class.title@tag.h2@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search.html,{\nmethod: \"post\",\nbody: \"searchkey={{key}}&searchtype=all&Submit=\"\n}",
+    "weight": 0
+  }
+]
