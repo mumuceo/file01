@@ -1,0 +1,114 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "西瓜小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.pdske.com",
+    "customOrder": -92819,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "[{\"title\":\"职业商战\",\"url\":\"/class/1/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"军旅生涯\",\"url\":\"/class/2/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"恐怖悬疑\",\"url\":\"/class/3/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"探险异闻\",\"url\":\"/class/4/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"变身情缘\",\"url\":\"/class/5/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"国术武技\",\"url\":\"/class/6/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"菁菁校园\",\"url\":\"/class/7/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"人文社科\",\"url\":\"/class/8/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本完结\",\"url\":\"/wanjie/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "header": "{\"User-Agent\",\"Mozilla/5.0 (Linux; Android 12; GIA-AN00 Build/HONORGIA-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.105 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1736152719295,
+    "respondTime": 17244,
+    "ruleBookInfo": {
+      "author": ".xas645@text",
+      "coverUrl": ".fxjais@img@src",
+      "intro": ".sc7f1w@text##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": ".8dxgao@a.1@text&&.wqo02t,.kmqi6u,.cp5dfn@text##.*：|\\s..:.*",
+      "lastChapter": ".6kcp8h@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": ".h4a0bo@text",
+      "tocUrl": "{{book.bookUrl}}"
+    },
+    "ruleContent": {
+      "content": "id.TextContent@p@html",
+      "replaceRegex": "##想要看最新章节.*"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.1@href##$##,{'webView': true}",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-original",
+      "intro": ".update@textNodes",
+      "kind": ".author!0@text##.*：|\\s..:.*",
+      "lastChapter": "a.3@text",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "id.chapter@a",
+      "chapterName": "text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "href##$##,{'webView': true}"
+    },
+    "searchUrl": "/search.php?searchkey={{key}}&action=login&submit=,{\n  \"method\": \"get\",\n  \"webView\": true\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "<js>\nurl=\"https:\"+result.match(/initTxt\\(\"([^\"]+)\",\"[^\"]+\"\\)/)[1];\nr=String(java.ajax(url).match(/_txt_call\\(([\\s\\S]+\\})\\)/)[1]);\nvar r = eval('(' + r + ')');\n\t\t\t\tif(r.content!=null){\t\t\t\t\n      var e = r.replace;\n\t\t\t\tfor (var n in e) {\n\t\t\t\t\tvar i = new RegExp(e[n], \"ig\");\n\t\t\t\t\tr.content = r.content.replace(i, n)\n\t\t\t\t}\n\t\t\t\tresult=r.content\n\t\t\t\t\t}else{result=\"章节加载失败，或者容正在手打中，请【收藏本站】稍访问或者联系管理员更新~\"}\n</js>\n\n\n\n<js>\nresult=java.ajax(\"http://\"+result.match(/\\(\"\\/\\/(.*\\/data\\/.*?)\"/)[1])\n</js>\n@js:\nif(result.match(/replace/)){\ns=result.match(/replace.*?\\{(.*?)\\}/)[1].replace(/\\\\/g,'\\\\\\\\')\nnum=s.split(',').length\nfor(var i=0;i<num;i++){\n\tm=s.match(/\"(.*?)\":\"(.*?)\"/)\n\ts=s.replace(/.*?,/,'')\n\tresult=result.replace(new RegExp(m[2],'g'),m[1])\n\t}\n\t}else{\nresult\nif(result.match(/txt_call/)){\n\tresult=\"因网站问题没有正文\"\n\t}\n\t\t}\nresult.replace(/(\\\\)+n/g,'<\\/br>').replace(/.*?:\"/,'').replace(/\",\".*/,'').replace(/\"\\}.*/,'').replace(/\\\\/g,'')\n",
+    "bookSourceGroup": "",
+    "bookSourceName": "金刚小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.jgxs.org/",
+    "concurrentRate": "1000",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/shuku/{{page}}_0_0_0_0_0_0.html\n古代::/shuku/{{page}}_1_0_0_0_0_0.html\n现代::/shuku/{{page}}_2_0_0_0_0_0.html\n全部::/shuku/{{page}}_0_0_0_0_0_0.html\n武侠仙侠::/shuku/{{page}}_0_0_0_0_1732_0.html\n玄幻奇幻::/shuku/{{page}}_0_0_0_0_285_0.html\n科幻灵异::/shuku/{{page}}_0_0_0_0_3364_0.html\n都市青春::/shuku/{{page}}_0_0_0_0_5019_0.html\n百合GL::/shuku/{{page}}_0_0_0_0_6983_0.html\n纯爱耽美::/shuku/{{page}}_0_0_0_0_5481_0.html\n游戏竞技::/shuku/{{page}}_0_0_0_0_6606_0.html\n同人衍生::/shuku/{{page}}_0_0_0_0_1872_0.html\n",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1744195529967,
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content##的小说",
+      "coverUrl": "[property$=image]@content@js:'https:'+result",
+      "init": "",
+      "intro": "💠   {{@@.channel@text}}\n{{@@.sectionTwo-content@ownText}}##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content##小说|\\s.*",
+      "lastChapter": ".chapter-table a.0@text##正文.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": "[property$=book_name]@content##\\-.*|\\_.*|\\s.*",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\nresult=java.ajax(\"http://\"+result.match(/\\(\"\\/\\/(.*\\/data\\/.*?)\"/)[1])\n</js>\n@js:\nif(result.match(/replace/)){\ns=result.match(/replace.*?\\{(.*?)\\}/)[1].replace(/\\\\/g,'\\\\\\\\')\nnum=s.split(',').length\nfor(var i=0;i<num;i++){\n\tm=s.match(/\"(.*?)\":\"(.*?)\"/)\n\ts=s.replace(/.*?,/,'')\n\tresult=result.replace(new RegExp(m[2],'g'),m[1])\n\t}\n\t}else{\nresult\nif(result.match(/txt_call/)){\n\tresult=\"因网站问题没有正文\"\n\t}\n\t\t}\nresult.replace(/(\\\\)+n/g,'<\\/br>').replace(/.*?:\"/,'').replace(/\",\".*/,'').replace(/\"\\}.*/,'').replace(/\\\\/g,'')",
+      "nextContentUrl": ".next@href",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "p.1@text##作者：",
+      "bookList": ".list-item",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-lazy",
+      "intro": "",
+      "kind": "p.2@text",
+      "lastChapter": "",
+      "name": "p.0@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "a.1@text##的小说",
+      "bookList": "<js>\nif(String(result).match(/输入验证码|加载页面中/)){\n\tvar x=baseUrl;\n cookie.removeCookie(x);\n\tjava.startBrowserAwait(x,\"验证\");\n result=java.ajax(x);\n }\nresult\n</js>\n.search-card",
+      "bookUrl": "a.0@href",
+      "coverUrl": "",
+      "intro": ".sc-content@text",
+      "kind": ".gray@text&&.sc-time span.1@text##\\[|\\]|\\(|\\s..:.*",
+      "lastChapter": ".sc-time span.0@text##正文.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": "a.0@text##\\-.*|\\_.*|\\s.*"
+    },
+    "ruleToc": {
+      "chapterList": ".BGsectionThree-content li a",
+      "chapterName": "text##正文.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下页@href"
+    },
+    "searchUrl": "/search/,{\n  'method': 'POST',\n  'body': 'keyword={{key}}'\n}",
+    "weight": 0
+  }
+]
