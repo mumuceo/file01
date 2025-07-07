@@ -1,0 +1,97 @@
+[
+    {
+        "bookSourceComment": "",
+        "bookSourceName": "QQ浏览器免费小说",
+        "bookSourceType": 0,
+        "bookSourceUrl": "novel.html5.qq.com",
+        "customOrder": -88903113,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "enabledExplore": true,
+        "enabledReview": false,
+        "header": "{\n    \"User-Agent\": \"Mozilla\/5.0 (Linux; U; Android 13; zh-cn; V2183A Build\/TP1A.220624.014) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/89.0.4389.72 MQQBrowser\/13.4 Mobile Safari\/537.36 COVC\/046223\",\n    \"Referer\":\"https:\/\/novel.html5.qq.com\/\",\n\t\"Q-GUID\":\"0ee63838b72eb075f63e93ae0bc288cb\",\n\t\"QIMEI36\":\"8ff310843a87a71101958f5610001e316a11\"\n}",
+        "lastUpdateTime": 1670464547046,
+        "respondTime": 180000,
+        "ruleBookInfo": {
+            "author": "$..author",
+            "coverUrl": "$..picurl",
+            "intro": "$..summary",
+            "kind": "$..resourceID",
+            "lastChapter": "$..lastSerialname",
+            "name": "$..resourceName",
+            "tocUrl": "https:\/\/novel.html5.qq.com\/qbread\/api\/book\/all-chapter?bookId={{book.kind}}",
+            "wordCount": "$..contentsize"
+        },
+        "ruleContent": {
+            "content": "$.data.Content[0].Content"
+        },
+        "ruleExplore": [],
+        "ruleReview": [],
+        "ruleSearch": {
+            "author": "$..author",
+            "bookList": "$.data.state[*]",
+            "bookUrl": "https:\/\/novel.html5.qq.com\/qbread\/api\/novel\/bookInfo?resourceId={{book.kind}}",
+            "checkKeyWord": "和空姐荒岛求生的日子",
+            "coverUrl": "$..cover_url",
+            "intro": "$..abstract",
+            "kind": "$.groupID##.*_##",
+            "name": "$..title"
+        },
+        "ruleToc": {
+            "chapterList": "$..rows[*]",
+            "chapterName": "$.serialName",
+            "chapterUrl": "$.serialID\n@js:\nlet data = JSON.stringify({\n  ContentAnchorBatch: [{\n    BookID: book.kind,\n    ChapterSeqNo: [\n      result\n    ]\n  }],\n  Scene: \"chapter\"\n})\nlet option = {\"method\":\"POST\",\"body\":data}\n\"https:\/\/novel.html5.qq.com\/be-api\/content\/ads-read,\"+JSON.stringify(option)"
+        },
+        "searchUrl": "https:\/\/so.html5.qq.com\/ajax\/real\/search_result?tabId=360&q={{key}}",
+        "weight": 0
+    },
+    {
+        "bookSourceComment": "",
+        "bookSourceGroup": "QQ",
+        "bookSourceName": "🍺 QQ小说",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.qqapp.org",
+        "bookUrlPattern": "",
+        "customOrder": 11428,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "enabledExplore": true,
+        "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/99.0 Safari/537.36\"\n}",
+        "lastUpdateTime": 1612889278722,
+        "loginUrl": "",
+        "respondTime": 180000,
+        "ruleBookInfo": {
+            "author": "class.author@tag.a@text",
+            "coverUrl": "class.detail@tag.img@src##https##http",
+            "intro": "class.intro.0@tag.p.0@textNodes",
+            "kind": "",
+            "lastChapter": "class.new@tag.a@text",
+            "name": "class.name@text",
+            "tocUrl": "class.now@tag.a@href",
+            "wordCount": "class.layui-bg-red@text"
+        },
+        "ruleContent": {
+            "content": "<js>result.replace(/<([^\\w\\/]+)>/g,'< $1 >')</js>class.content@tag.p!-1@text",
+            "imageStyle": "0"
+        },
+        "ruleExplore": {},
+        "ruleSearch": {
+            "author": "class.data.0@tag.a@text",
+            "bookList": "class.list@tag.li",
+            "bookUrl": "tag.a.0@href",
+            "coverUrl": "tag.img@src",
+            "intro": "class.intro@text",
+            "kind": "tag.span@text",
+            "lastChapter": "class.data.1@tag.a@text",
+            "name": "class.bookname@tag.a@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.read@tag.li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href",
+            "nextTocUrl": "text.下一页@href"
+        },
+        "searchUrl": "/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "weight": 0
+    }
+]
