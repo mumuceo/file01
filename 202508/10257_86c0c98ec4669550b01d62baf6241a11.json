@@ -1,0 +1,390 @@
+[
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "自拍🤳求该",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://xn--ziz-zptkdz-at-gmail-com-ms70b9z1czvjwn82b.www-zipaipic-com.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "分类::https://xn--ziz-zptkdz-at-gmail-com-ms70b9z1czvjwn82b.www-zipaipic-com.com/tag/粉嫩/",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\",\n  \"Referer\": \"https://xn--ziz-zptkdz-at-gmail-com-ms70b9z1czvjwn82b.www-zipaipic-com.com\" \n}",
+    "lastUpdateTime": 1754954057676,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": ""
+    },
+    "ruleContent": {
+      "content": "class.artical-content@div@img@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.post-basic-info",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "name": "h3@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h3",
+      "chapterName": "h3@text"
+    },
+    "searchUrl": "https://xn--ziz-zptkdz-at-gmail-com-ms70b9z1czvjwn82b.www-zipaipic-com.com/tag/{{key}}/",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "千度🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://112re.qdtu1.cfd/search/?k=%E5%85%A8%E9%83%A8&p=2",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "64::https://112re.qdtu1.cfd/search/?k=木耳\n全部::https://112re.qdtu1.cfd/search/?k=%E5%85%A8%E9%83%A8&p={{page}}\n可爱::/search/?k=可爱&p={{page}}\n萝莉::/search/?k=萝莉&p={{page}}\n性感::/search/?k=性感&p={{page}}\n杂志::/search/?k=杂志&p={{page}}\n制服::/search/?k=制服&p={{page}}\n角色扮演::/search/?k=角色扮演&p={{page}}\n美足::/search/?k=美足&p={{page}}\n唯美写真::/search/?k=唯美写真&p={{page}}\n日本::/search/?k=日本&p={{page}}\n少女映画::/search/?k=少女映画&p={{page}}\n柚木::/search/?k=柚木&p={{page}}\n年年::/search/?k=年年&p={{page}}\n黑丝::/search/?k=黑丝&p={{page}}\n秀人::/search/?k=XR&p={{page}}\nPure Media::/search/?k=Pure&p={{page}}\nJVID::/search/?k=JVID&p={{page}}\nEGG::/search/?k=EGG&p={{page}}\nHYG::/search/?k=HYG&p={{page}}\nMoon Night::/search/?k=Moon&p={{page}}\nCosplay::/search/?k=cosplay&p={{page}}\nFushii_海堂::/search/?k=Fushii&p={{page}}\n其他::/search/?k=其他&p={{page}}",
+    "lastUpdateTime": 1754960502253,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": ""
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "nextContentUrl": "//ul[@class=\"pagination\"]//a[text()=\">\"]/@href"
+    },
+    "ruleExplore": {
+      "bookList": "class.thumb-block",
+      "bookUrl": "a@href",
+      "coverUrl": ".pos-rlt img@src",
+      "name": "class.text-ellipsis@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": "",
+      "bookUrl": "",
+      "checkKeyWord": "木耳",
+      "name": ""
+    },
+    "ruleToc": {
+      "chapterList": "h3",
+      "chapterName": "h3@text"
+    },
+    "searchUrl": "https://112re.qdtu1.cfd/search/?k={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "妹子啊🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://xuejievip.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "cos::https://xuejievip.com/page/{{page}}?s=cos&type=post\n妹子图::/tag/meizitu/page/{{page}}\n图包::/tag/tubao/page/{{page}}\n电影::/tag/dianying/page/{{page}}\n女老师::/tag/nvlaoshi/page/{{page}}\n网站推荐::/tag/wangzhantuijian/page/{{page}}\nB站::/tag/bilibili/page/{{page}}\n剧集::/tag/juji/page/{{page}}\n写真偶像::/tag/xiezhenouxiang/page/{{page}}\n福利姬::/tag/fuliji/page/{{page}}\n大事件::/tag/dashijian/page/{{page}}\n写真杂志::/tag/xiezhenzazhi/page/{{page}}\n工具::/tag/gongju/page/{{page}}\n科幻::/tag/kehuan/page/{{page}}\n动画::/tag/donghua/page/{{page}}\n油管::/tag/youtube/page/{{page}}\n游戏::/tag/youxi/page/{{page}}\n情趣::/tag/qingqu/page/{{page}}\n推特::/tag/twitter/page/{{page}}\nCosplay::/tag/cosplay/page/{{page}}\nFriday::/tag/friday/page/{{page}}\n摸鱼::/tag/moyu/page/{{page}}\n漫画::/tag/manhua/page/{{page}}\nNTR::/tag/ntr/page/{{page}}\nWeekly Playboy::/tag/weekly-playboy/page/{{page}}\n美剧::/tag/meiju/page/{{page}}\n女主播::/tag/nvzhubo/page/{{page}}\n故事::/tag/gushi/page/{{page}}\n知乎::/tag/zhihu/page/{{page}}\n微博::/tag/weibo/page/{{page}}\n抖音::/tag/douyin/page/{{page}}\n榜单::/tag/bangdan/page/{{page}}\n街拍::/tag/jiepai/page/{{page}}\n港片::/tag/gangpian/page/{{page}}\n漫威::/tag/marvel/page/{{page}}\n音乐::/tag/yinyue/page/{{page}}\nNetflix::/tag/netflix/page/{{page}}\n大数据::/tag/dashuju/page/{{page}}\nLookbook::/tag/lookbook/page/{{page}}\n小说::/tag/xiaoshuo/page/{{page}}\n2021::/tag/2021/page/{{page}}\n三上悠亚::/tag/mikami-yua/page/{{page}}\n阿里云盘::/tag/aliyundrive/page/{{page}}\n秀人::/tag/xiuren/page/{{page}}\n探花::/tag/tanhua/page/{{page}}\nGithub::/tag/github/page/{{page}}\n综艺::/tag/zongyi/page/{{page}}\nAI绘画::/tag/aihuihua/page/{{page}}\n插画::/tag/chahua/page/{{page}}\nInstagram::/tag/instagram/page/{{page}}\n黑神话：悟空::/tag/heishenhua-wukong/page/{{page}}\n电影解说::/tag/dianyingjieshuo/page/{{page}}\n鱿鱼游戏::/tag/squid-game/page/{{page}}\n写真集::/tag/xiezhenji/page/{{page}}\n短剧::/tag/duanju/page/{{page}}\n麻豆传媒::/tag/madouchuanmei/page/{{page}}\n淘宝::/tag/taobao/page/{{page}}\n吉他妹妹::/tag/jitameimei/page/{{page}}\n爽文::/tag/shuangwen/page/{{page}}\n豆瓣::/tag/douban/page/{{page}}\n壁纸::/tag/bizhi/page/{{page}}\nP站::/tag/p-zhan/page/{{page}}\n玩偶姐姐::/tag/wanoujiejie/page/{{page}}\n深田咏美::/tag/eimi-fukada/page/{{page}}\n筿崎爱::/tag/ai-shinozaki/page/{{page}}\n纪录片::/tag/jilupian/page/{{page}}\n健身::/tag/jianshen/page/{{page}}\n上海::/tag/shanghai/page/{{page}}\n图书馆::/tag/javlibrary/page/{{page}}\nChrome插件::/tag/chrome-chajian/page/{{page}}\n体位::/tag/tiwei/page/{{page}}\nDC::/tag/dc/page/{{page}}\n预告::/tag/yugao/page/{{page}}\n贴吧::/tag/tieba/page/{{page}}\n历史::/tag/lishi/page/{{page}}\n干货::/tag/ganhuo/page/{{page}}\nhitomio拾六::/tag/hitomio16/page/{{page}}\n漫改::/tag/mangai/page/{{page}}\n英雄联盟::/tag/lol/page/{{page}}\nARTGRAVIA::/tag/artgravia/page/{{page}}\nWindows::/tag/windows/page/{{page}}\n网易::/tag/netease/page/{{page}}\n瑜伽::/tag/yoga/page/{{page}}\n小师妹::/tag/xiaoshimei/page/{{page}}\n原创::/tag/yuanchuang/page/{{page}}\n奥斯卡::/tag/oscars/page/{{page}}\nFC2::/tag/fc2/page/{{page}}\nChatGPT::/tag/chatgpt/page/{{page}}\n微密圈::/tag/weimiquan/page/{{page}}\n基努·里维斯::/tag/keanu-reeves/page/{{page}}\n阿里巴巴::/tag/alibaba/page/{{page}}\nASMR::/tag/asmr/page/{{page}}\n糯美子::/tag/nuomeizi/page/{{page}}\n百度网盘::/tag/baiduwangpan/page/{{page}}\n动漫::/tag/dongman/page/{{page}}\n鬼吹灯::/tag/guichuideng/page/{{page}}\n套路::/tag/taolu/page/{{page}}\n丝袜::/tag/siwa/page/{{page}}\nTikTok::/tag/tiktok/page/{{page}}\n韩剧::/tag/hanju/page/{{page}}\n阿朱::/tag/azhu/page/{{page}}\n龙之家族::/tag/house-of-the-dragon/page/{{page}}\n权力的游戏::/tag/game-of-thrones/page/{{page}}\n红包::/tag/hongbao/page/{{page}}\n虎牙::/tag/huya/page/{{page}}\n女子格斗::/tag/nvzigedou/page/{{page}}\n微信::/tag/wechat/page/{{page}}\n毛骗::/tag/maopian/page/{{page}}\nNGA::/tag/nga/page/{{page}}\nPixiv::/tag/pixiv/page/{{page}}\n破解版::/tag/pojieban/page/{{page}}\n医美::/tag/yimei/page/{{page}}\n蒂法::/tag/tifa/page/{{page}}\n电子书::/tag/dianzishu/page/{{page}}\n黑男丘比特::/tag/heinanqiubite/page/{{page}}\n汤姆·赫兰德::/tag/tom-holland/page/{{page}}\n河北彩花::/tag/saika-kawakita/page/{{page}}\n装机::/tag/zhuangji/page/{{page}}\n日剧::/tag/riju/page/{{page}}\n三体::/tag/three-body/page/{{page}}\n人工智能::/tag/ai/page/{{page}}\n家教::/tag/jiajiao/page/{{page}}\nLeehee Express::/tag/leehee-express/page/{{page}}\n姜文::/tag/jiangwen/page/{{page}}\nCG::/tag/cg/page/{{page}}\n篮球::/tag/lanqiu/page/{{page}}\n孙红雷::/tag/sunhonglei/page/{{page}}\n五百::/tag/wubai/page/{{page}}\n扫黑风暴::/tag/saoheifengbao/page/{{page}}\n助眠音乐::/tag/zhumianyinyue/page/{{page}}\n黄明志::/tag/huangmingzhi/page/{{page}}\n鬼灭之刃::/tag/demon-slayer/page/{{page}}\n灌篮高手::/tag/slam-dunk/page/{{page}}\n天木纯::/tag/jun-amaki/page/{{page}}\nFLASH::/tag/flash/page/{{page}}\n韩国女团::/tag/hanguonvtuan/page/{{page}}\n小蓝蓝::/tag/xiaolanlan/page/{{page}}\n酒店::/tag/jiudian/page/{{page}}\nOnlyFans::/tag/onlyfans/page/{{page}}\n系统::/tag/xitong/page/{{page}}\n黑客帝国::/tag/the-matrix/page/{{page}}\n美谷朱里::/tag/mitani-akari/page/{{page}}\nJKF::/tag/jkf/page/{{page}}\n潘甜甜::/tag/pantiantian/page/{{page}}\n狂赌之渊::/tag/kakegurui-the-movie/page/{{page}}\n007::/tag/007/page/{{page}}\n甄子丹::/tag/zhenzidan/page/{{page}}\n王动::/tag/wangdong/page/{{page}}\nWANIMAL::/tag/wanimal/page/{{page}}\n鲍鱼游戏::/tag/baoyuyouxi/page/{{page}}\n长津湖::/tag/changjinhu/page/{{page}}\n青山知可子::/tag/chikako-aoyama/page/{{page}}\n世界冠军::/tag/shijieguanjun/page/{{page}}\n奥运会::/tag/olympic-games/page/{{page}}\n成人版::/tag/chengrenban/page/{{page}}\n沙丘::/tag/dune/page/{{page}}\n猫眼三姐妹::/tag/cats-eye/page/{{page}}\n双城之战::/tag/arcane/page/{{page}}\n接码平台::/tag/jiemapingtai/page/{{page}}\n姜仁卿::/tag/kang-in-kyung/page/{{page}}\nOffice::/tag/office/page/{{page}}\nPhotoshop::/tag/photoshop/page/{{page}}\n马伯庸::/tag/maboyong/page/{{page}}\n内衣::/tag/neiyi/page/{{page}}\nSwitch::/tag/switch/page/{{page}}\n最终幻想7::/tag/ff7/page/{{page}}\n机车::/tag/jiche/page/{{page}}\n比基尼::/tag/bikini/page/{{page}}\nFanza::/tag/fanza/page/{{page}}\n蜘蛛侠::/tag/spider-man/page/{{page}}\n孙乐乐::/tag/son-ye-eun/page/{{page}}\n求出处::/tag/qiuchuchu/page/{{page}}\n女友::/tag/girlfriend/page/{{page}}\nAfreecaTV::/tag/afreecatv/page/{{page}}\n公告::/tag/gonggao/page/{{page}}\nQQ飞车::/tag/qqfeiche/page/{{page}}\n论文::/tag/lunwen/page/{{page}}\n桜井宁宁::/tag/yingjingningning/page/{{page}}\n阿凡达::/tag/avatar/page/{{page}}\n买家秀::/tag/maijiaxiu/page/{{page}}\n洛丽塔大哥::/tag/luolitadage/page/{{page}}\n虎扑::/tag/hupu/page/{{page}}\n犯罪都市::/tag/crime-city/page/{{page}}\n马东锡::/tag/tong-seok-ma/page/{{page}}\n指环王：力量之戒::/tag/the-lord-of-the-rings/page/{{page}}\n毒液::/tag/venom/page/{{page}}\n范冰冰::/tag/fanbingbing/page/{{page}}\n神木丽::/tag/kamiki-rei/page/{{page}}\n脸红Dearie::/tag/dearie/page/{{page}}\nOpenAI::/tag/openai/page/{{page}}\n抖娘利世::/tag/dounianglishi/page/{{page}}\n科普::/tag/kepu/page/{{page}}\n疾速追杀::/tag/john-wick/page/{{page}}\n谢苗::/tag/xiemiao/page/{{page}}\n陈妮妮::/tag/chennini/page/{{page}}\n枫花恋::/tag/kaede-karen/page/{{page}}\n国漫::/tag/guoman/page/{{page}}\n豆包::/tag/doubao/page/{{page}}\n周处除三害::/tag/zhouchuchusanhai/page/{{page}}",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\",\n  \"Referer\": \"https://xuejievip.com\" \n}",
+    "lastUpdateTime": 1754962214760,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "p@img@html",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "bookList": "class.post-list-item item-post-style-1",
+      "bookUrl": "a@href",
+      "coverUrl": ".post-module-thumb .post-thumb@data-src||.post-module-thumb .post-thumb@src",
+      "name": "h2@a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "https://xuejievip.com/page/{{page}}?s={{key}}&type=post",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "世界b🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://xn--nrv-vaginaintheworld-com-dp02bt87kul1aw470a.b-dfriend.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "00-20::/?type=0&sort=1&age=1&page={{page}}\n20-30::/?type=0&sort=1&age=2&page={{page}}\n30-40::/?type=0&sort=1&age=3&page={{page}}\n40-99::/?type=0&sort=1&age=2&page={{page}}",
+    "lastUpdateTime": 1754963295222,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.plist.!0@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.drow forth-position",
+      "bookUrl": "a@href",
+      "coverUrl": ".img .img-wrap1 img@data-original||.img .img-wrap1 img@src",
+      "name": "a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.mtitle",
+      "chapterName": "class.mtitle@text"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "秀人🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.xiurentur.com/page/2?s=%E4%B9%B3",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "乳::https://www.xiurentur.com/page/{{page}}?s=乳\n美::https://www.xiurentur.com/page/{{page}}?s=美\n女儿::https://www.xiurentur.com/page/{{page}}?s=女儿\n尺度::https://www.xiurentur.com/page/{{page}}?s=尺度\n免费套图::/xiuren/page/{{page}}\nCosplay::/cosplay-2/page/{{page}}\n高清图::/tbgx/page/{{page}}\n微密圈::/weeme/page/{{page}}\n其他名站::/qtmzsy/page/{{page}}\n写真视频::/video/page/{{page}}\n高清原图::/gaoqingyuantu/page/{{page}}\n在线视频::/videoonline/page/{{page}}\n福利视频::/vipsource/page/{{page}}\n稀有资源::/xiyou/page/{{page}}\n网红摄影::/wanghongjiepai/page/{{page}}\n丝袜美腿::/swmt/page/{{page}}\n套图合集::/twxz/page/{{page}}\n精品散图::/jpst/page/{{page}}\n单购资源::/dangou/page/{{page}}\n永久会员::/vippic/page/{{page}}\n周边商品::/%e5%91%a8%e8%be%b9%e5%95%86%e5%93%81/page/{{page}}\n名站套图::/mztt/page/{{page}}\nAPP推荐::/app/page/{{page}}\n众筹专区::/zczq/page/{{page}}",
+    "lastUpdateTime": 1754963962840,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry-content u-text-format u-clearfix@p@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.col-lg-1-5 col-6 col-sm-6 col-md-4 col-lg-3",
+      "bookUrl": "a@href",
+      "coverUrl": ".placeholder img@data-src||.placeholder img@src",
+      "name": "h2@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "魏婴图库🌇有更多图，只能显示一点",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://sytu.top/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "写真::https://sytu.top/?s=写\n欲::https://sytu.top/?s=乳\n全部::https://sytu.top/\n水::https://sytu.top/?s=水\n1::https://sytu.top/?cat=1\n2::https://sytu.top/?cat=2\n3::https://sytu.top/?cat=3\n4::https://sytu.top/?cat=4\n5::https://sytu.top/?cat=5\n6::https://sytu.top/?cat=6\n",
+    "lastUpdateTime": 1754965071501,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.gallery-item@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.col-lg-1-5 col-6 col-sm-6 col-md-4 col-lg-3",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-src||img@src",
+      "kind": "class.meta-category@text",
+      "name": "h2@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "https://sytu.top/?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "色图🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "http://slspaq8t23.www.seshusetu.cfd/index.php",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": ">唯美写真::/index.php/art/type/id/29/page/{{page}}.html\n>网友自拍::/index.php/art/type/id/30/page/{{page}}.html\n>露出激情::/index.php/art/type/id/31/page/{{page}}.html\n>街拍偷拍::/index.php/art/type/id/32/page/{{page}}.html\n>丝袜美腿::/index.php/art/type/id/33/page/{{page}}.html\n>卡通漫画::/index.php/art/type/id/34/page/{{page}}.html\n>欧美风情::/index.php/art/type/id/35/page/{{page}}.html\n</nav>",
+    "lastUpdateTime": 1754965557811,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.media-detail@html",
+      "title": ""
+    },
+    "ruleExplore": {
+      "bookList": "class.image-grid@a",
+      "bookUrl": "a@href",
+      "coverUrl": ".image-cover .real-image@data-src||.image-cover .real-image@src",
+      "name": "class.image-name@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": "class.search-results@a",
+      "bookUrl": "a@href",
+      "checkKeyWord": "处女",
+      "name": "class.result-name@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "色色🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://baidu.sstuku73.xyz",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "辣妹::/arttype/39-{{page}}.html\n洛丽塔::/arttype/40-{{page}}.html\n角色扮演::/arttype/42-{{page}}.html\n性感::/arttype/41-{{page}}.html\n无圣光::/arttype/43-{{page}}.html\n凸凹图::/arttype/44-{{page}}.html\n重口::/arttype/17-{{page}}.html\n精选::/arttype/18-{{page}}.html\n\n cos::/artsearch/cos------{{page}}-.html\n角色::/artsearch/角色------{{page}}-.html\n性感::/artsearch/性感------{{page}}-.html\n圣光::/artsearch/圣光------{{page}}-.html\n凸凹::/artsearch/凹凸------{{page}}-.html\n重口::/artsearch/重口------{{page}}-.html\n精选::/artsearch/精选------{{page}}-.html\n高清::/artsearch/高清------{{page}}-.html\n美女::/artsearch/美女------{{page}}-.html\n尺度::/artsearch/尺度------{{page}}-.html\n情趣::/artsearch/情趣------{{page}}-.html\n  衣::/artsearch/衣------{{page}}-.html\n  乳::/artsearch/乳------{{page}}-.html\n  女::/artsearch/女------{{page}}-.html\n  服::/artsearch/服------{{page}}-.html\n  精::/artsearch/精------{{page}}-.html\n  开::/artsearch/开------{{page}}-.html\n  花::/artsearch/花------{{page}}-.html\n  内::/artsearch/内------{{page}}-.html\n  裸::/artsearch/裸------{{page}}-.html\n  丝::/artsearch/丝------{{page}}-.html\n  写::/artsearch/写------{{page}}-.html\n  ai::/artsearch/ai------{{page}}-.html\n  AI::/artsearch/AI------{{page}}-.html\n  脱::/artsearch/脱------{{page}}-.html\n  娘::/artsearch/娘------{{page}}-.html",
+    "lastUpdateTime": 1754968627796,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry-content u-text-format u-clearfix@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "bookList": "class.col-lg-1-5 col-6 col-sm-6 col-md-4 col-lg-3",
+      "bookUrl": "a@href",
+      "coverUrl": ".placeholder img@data-src||.placeholder img@src",
+      "name": "h2@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h2",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://baidu.sstuku73.xyz/artsearch/{{key}}------{{page}}-.html",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "摸摸图裤🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://mo8.org/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "cos::https://mo8.org/index.php/page/{{page}}/?s=cos\n角色::/index.php/page/{{page}}/?s=角色\n性感::/index.php/page/{{page}}/?s=性感\n圣光::/index.php/page/{{page}}/?s=圣光\n凸凹::/index.php/page/{{page}}/?s=凹凸\n重口::/index.php/page/{{page}}/?s=重口\n精选::/index.php/page/{{page}}/?s=精选\n高清::/index.php/page/{{page}}/?s=高清\n美女::/index.php/page/{{page}}/?s=美女\n尺度::/index.php/page/{{page}}/?s=尺度\n情趣::/index.php/page/{{page}}/?s=情趣\n  衣::/index.php/page/{{page}}/?s=衣\n  乳::/index.php/page/{{page}}/?s=乳\n  女::/index.php/page/{{page}}/?s=女\n  服::/index.php/page/{{page}}/?s=服\n  精::/index.php/page/{{page}}/?s=精\n  开::/index.php/page/{{page}}/?s=开\n  花::/index.php/page/{{page}}/?s=花\n  内::/index.php/page/{{page}}/?s=内\n  裸::/index.php/page/{{page}}/?s=裸\n  丝::/index.php/page/{{page}}/?s=丝\n  写::/index.php/page/{{page}}/?s=写\n  ai::/index.php/page/{{page}}/?s=ai\n  脱::/index.php/page/{{page}}/?s=脱\n  娘::/index.php/page/{{page}}/?s=娘",
+    "lastUpdateTime": 1754968937702,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry-content@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.featured-img-box",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "name": "h2@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "https://mo8.org/index.php/category/{{key}}/page/{{page}}/",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "xo图片🌇",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://song-hard-gold.xofulitu-102.com/xoxo",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "\n　/arttype/2000-{{page}}/<b>美图一区</b></font></a></dt>\n　热姐::/arttype/2001-{{page}}/\n　杂志::/arttype/2004-{{page}}/\n　美足::/arttype/5029-{{page}}/\n　日本::/arttype/5032-{{page}}/\n　东盟::/arttype/5033-{{page}}/\n　韩国::/t/5034-{{page}}/\n　柚木::/arttype/5035-{{page}}/\n　年年::/arttype/5039-{{page}}/\n　/arttype/2000-{{page}}/<b>美图二区</b></font></a></dt>\n　罗莉塔 ::/arttype/2002-{{page}}/\n　性感的::/arttype/2003-{{page}}/\n　角色扮演::/arttype/5001-{{page}}/\n　唯美写真::/arttype/5030-{{page}}/\n　模特儿::/arttype/5031-{{page}}/\n　少女映画::/arttype/5036-{{page}}/\n　沫沫真爱::/arttype/5037-{{page}}/\n　Fushii_海堂::/arttype/5038-{{page}}/\n\t\n cos::/artsearch/page/{{page}}/wd/cos/\n角色::/artsearch/page/{{page}}/wd/角色/\n性感::/artsearch/page/{{page}}/wd/性感/\n圣光::/artsearch/page/{{page}}/wd/圣光/\n凸凹::/artsearch/page/{{page}}/wd/凹凸/\n重口::/artsearch/page/{{page}}/wd/重口/\n精选::/artsearch/page/{{page}}/wd/精选/\n高清::/artsearch/page/{{page}}/wd/高清/\n美女::/artsearch/page/{{page}}/wd/美女/\n尺度::/artsearch/page/{{page}}/wd/尺度/\n情趣::/artsearch/page/{{page}}/wd/情趣/\n  衣::/artsearch/page/{{page}}/wd/衣/\n  乳::/artsearch/page/{{page}}/wd/乳/\n  女::/artsearch/page/{{page}}/wd/女/\n  服::/artsearch/page/{{page}}/wd/服/\n  精::/artsearch/page/{{page}}/wd/精/\n  开::/artsearch/page/{{page}}/wd/开/\n  花::/artsearch/page/{{page}}/wd/花/\n  内::/artsearch/page/{{page}}/wd/内/\n  裸::/artsearch/page/{{page}}/wd/裸/\n  丝::/artsearch/page/{{page}}/wd/丝/\n  写::/artsearch/page/{{page}}/wd/写/\n  ai::/artsearch/page/{{page}}/wd/ai/\n  脱::/artsearch/page/{{page}}/wd/脱/\n  娘::/artsearch/page/{{page}}/wd/娘/\n　",
+    "lastUpdateTime": 1754969427245,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.picture-image@img@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.picture-list@a",
+      "bookUrl": "a@href",
+      "coverUrl": ".album-img img@data-src||.album-img img@src",
+      "name": "class.album-name@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": "",
+      "bookUrl": "",
+      "name": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.picture-item",
+      "chapterName": "class.title@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "🌇柳树",
+    "bookSourceName": "起点中文网📚书荒一个月内更新完本",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qidian.com#柳树",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "💎💎💎💎💎💎💎=3天============\n全部::/finish/update4-orderId3/\n玄幻::/finish/chanId21-update1-orderId3-page{{page}}/\n奇幻::/finish/chanId1-update1-orderId3-page{{page}}/\n武侠::/finish/chanId2-update1-orderId3-page{{page}}/\n仙侠::/finish/chanId22-update1-orderId3-page{{page}}/\n东方玄幻::/finish/chanId22-subCateId8-update1-orderId3-page{{page}}/\n异世大陆::/finish/chanId22-subCateId73-update1-orderId3-page{{page}}/\n王朝争霸::/finish/chanId22-subCateId58-update1-orderId3-page{{page}}/\n高武世界::/finish/chanId22-subCateId78-update1-orderId3-page{{page}}/\n现代魔法::/finish/chanId22-subCateId38-update1-orderId3-page{{page}}/\n剑与魔法::/finish/chanId22-subCateId62-update1-orderId3-page{{page}}/\n史诗奇幻::/finish/chanId22-subCateId201-update1-orderId3-page{{page}}/\n神秘幻想::/finish/chanId22-subCateId202-update1-orderId3-page{{page}}/\n历史神话::/finish/chanId22-subCateId20092-update1-orderId3-page{{page}}/\n另类幻想::/finish/chanId22-subCateId20093-update1-orderId3-page{{page}}/\n传统武侠::/finish/chanId22-subCateId5-update1-orderId3-page{{page}}/\n武侠幻想::/finish/chanId22-subCateId30-update1-orderId3-page{{page}}/\n国术无双::/finish/chanId22-subCateId206-update1-orderId3-page{{page}}/\n古武未来::/finish/chanId22-subCateId20099-update1-orderId3-page{{page}}/\n武侠同人::/finish/chanId22-subCateId20100-update1-orderId3-page{{page}}/\n修真文明::/finish/chanId22-subCateId18-update1-orderId3-page{{page}}/\n幻想修仙::/finish/chanId22-subCateId44-update1-orderId3-page{{page}}/\n现代修真::/finish/chanId22-subCateId64-update1-orderId3-page{{page}}/\n神话修真::/finish/chanId22-subCateId207-update1-orderId3-page{{page}}/\n古典仙侠::/finish/chanId22-subCateId20101-update1-orderId3-page{{page}}/\n都市::/finish/chanId4-update1-orderId3-page{{page}}/\n现实::/finish/chanId15-update1-orderId3-page{{page}}/\n军事::/finish/chanId6-update1-orderId3-page{{page}}/\n历史::/finish/chanId5-update1-orderId3-page{{page}}/\n游戏::/finish/chanId7-update1-orderId3-page{{page}}/\n体育::/finish/chanId8-update1-orderId3-page{{page}}/\n科幻::/finish/chanId9-update1-orderId3-page{{page}}/\n诸天无限::/finish/chanId20109-update1-orderId3-page{{page}}/\n悬疑::/finish/chanId10-update1-orderId3-page{{page}}/\n轻小说::/finish/chanId12-update1-orderId3-page{{page}}/\n短篇::/finish/chanId20076-update1-orderId3-page{{page}\n💎💎💎💎💎💎💎=7天=============\n全部::/finish/update4-orderId3/\n玄幻::/finish/chanId21-update2-orderId3-page{{page}}/\n奇幻::/finish/chanId1-update2-orderId3-page{{page}}/\n武侠::/finish/chanId2-update2-orderId3-page{{page}}/\n仙侠::/finish/chanId22-update2-orderId3-page{{page}}/\n东方玄幻::/finish/chanId22-subCateId8-update2-orderId3-page{{page}}/\n异世大陆::/finish/chanId22-subCateId73-update2-orderId3-page{{page}}/\n王朝争霸::/finish/chanId22-subCateId58-update2-orderId3-page{{page}}/\n高武世界::/finish/chanId22-subCateId78-update2-orderId3-page{{page}}/\n现代魔法::/finish/chanId22-subCateId38-update2-orderId3-page{{page}}/\n剑与魔法::/finish/chanId22-subCateId62-update2-orderId3-page{{page}}/\n史诗奇幻::/finish/chanId22-subCateId201-update2-orderId3-page{{page}}/\n神秘幻想::/finish/chanId22-subCateId202-update2-orderId3-page{{page}}/\n历史神话::/finish/chanId22-subCateId20092-update2-orderId3-page{{page}}/\n另类幻想::/finish/chanId22-subCateId20093-update2-orderId3-page{{page}}/\n传统武侠::/finish/chanId22-subCateId5-update2-orderId3-page{{page}}/\n武侠幻想::/finish/chanId22-subCateId30-update2-orderId3-page{{page}}/\n国术无双::/finish/chanId22-subCateId206-update2-orderId3-page{{page}}/\n古武未来::/finish/chanId22-subCateId20099-update2-orderId3-page{{page}}/\n武侠同人::/finish/chanId22-subCateId20100-update2-orderId3-page{{page}}/\n修真文明::/finish/chanId22-subCateId18-update2-orderId3-page{{page}}/\n幻想修仙::/finish/chanId22-subCateId44-update2-orderId3-page{{page}}/\n现代修真::/finish/chanId22-subCateId64-update2-orderId3-page{{page}}/\n神话修真::/finish/chanId22-subCateId207-update2-orderId3-page{{page}}/\n古典仙侠::/finish/chanId22-subCateId20101-update2-orderId3-page{{page}}/\n都市::/finish/chanId4-update2-orderId3-page{{page}}/\n现实::/finish/chanId15-update2-orderId3-page{{page}}/\n军事::/finish/chanId6-update2-orderId3-page{{page}}/\n历史::/finish/chanId5-update2-orderId3-page{{page}}/\n游戏::/finish/chanId7-update2-orderId3-page{{page}}/\n体育::/finish/chanId8-update2-orderId3-page{{page}}/\n科幻::/finish/chanId9-update2-orderId3-page{{page}}/\n诸天无限::/finish/chanId20109-update2-orderId3-page{{page}}/\n悬疑::/finish/chanId10-update2-orderId3-page{{page}}/\n轻小说::/finish/chanId12-update2-orderId3-page{{page}}/\n短篇::/finish/chanId20076-update2-orderId3-page{{page}}/\n💎💎💎💎💎💎💎=15天============\n全部::/finish/update4-orderId3/\n玄幻::/finish/chanId21-update3-orderId3-page{{page}}/\n奇幻::/finish/chanId1-update3-orderId3-page{{page}}/\n武侠::/finish/chanId2-update3-orderId3-page{{page}}/\n仙侠::/finish/chanId22-update3-orderId3-page{{page}}/\n东方玄幻::/finish/chanId22-subCateId8-update3-orderId3-page{{page}}/\n异世大陆::/finish/chanId22-subCateId73-update3-orderId3-page{{page}}/\n王朝争霸::/finish/chanId22-subCateId58-update3-orderId3-page{{page}}/\n高武世界::/finish/chanId22-subCateId78-update3-orderId3-page{{page}}/\n现代魔法::/finish/chanId22-subCateId38-update3-orderId3-page{{page}}/\n剑与魔法::/finish/chanId22-subCateId62-update3-orderId3-page{{page}}/\n史诗奇幻::/finish/chanId22-subCateId201-update3-orderId3-page{{page}}/\n神秘幻想::/finish/chanId22-subCateId202-update3-orderId3-page{{page}}/\n历史神话::/finish/chanId22-subCateId20092-update3-orderId3-page{{page}}/\n另类幻想::/finish/chanId22-subCateId20093-update3-orderId3-page{{page}}/\n传统武侠::/finish/chanId22-subCateId5-update3-orderId3-page{{page}}/\n武侠幻想::/finish/chanId22-subCateId30-update3-orderId3-page{{page}}/\n国术无双::/finish/chanId22-subCateId206-update3-orderId3-page{{page}}/\n古武未来::/finish/chanId22-subCateId20099-update3-orderId3-page{{page}}/\n武侠同人::/finish/chanId22-subCateId20100-update3-orderId3-page{{page}}/\n修真文明::/finish/chanId22-subCateId18-update3-orderId3-page{{page}}/\n幻想修仙::/finish/chanId22-subCateId44-update3-orderId3-page{{page}}/\n现代修真::/finish/chanId22-subCateId64-update3-orderId3-page{{page}}/\n神话修真::/finish/chanId22-subCateId207-update3-orderId3-page{{page}}/\n古典仙侠::/finish/chanId22-subCateId20101-update3-orderId3-page{{page}}/\n都市::/finish/chanId4-update3-orderId3-page{{page}}/\n现实::/finish/chanId15-update3-orderId3-page{{page}}/\n军事::/finish/chanId6-update3-orderId3-page{{page}}/\n历史::/finish/chanId5-update3-orderId3-page{{page}}/\n游戏::/finish/chanId7-update3-orderId3-page{{page}}/\n体育::/finish/chanId8-update3-orderId3-page{{page}}/\n科幻::/finish/chanId9-update3-orderId3-page{{page}}/\n诸天无限::/finish/chanId20109-update3-orderId3-page{{page}}/\n悬疑::/finish/chanId10-update3-orderId3-page{{page}}/\n轻小说::/finish/chanId12-update3-orderId3-page{{page}}/\n短篇::/finish/chanId20076-update3-orderId3-page{{page}\n💎💎💎💎💎💎💎=30天===========-\n全部::/finish/update4-orderId3/\n玄幻::/finish/chanId21-update4-orderId3-page{{page}}/\n奇幻::/finish/chanId1-update4-orderId3-page{{page}}/\n武侠::/finish/chanId2-update4-orderId3-page{{page}}/\n仙侠::/finish/chanId22-update4-orderId3-page{{page}}/\n东方玄幻::/finish/chanId22-subCateId8-update4-orderId3-page{{page}}/\n异世大陆::/finish/chanId22-subCateId73-update4-orderId3-page{{page}}/\n王朝争霸::/finish/chanId22-subCateId58-update4-orderId3-page{{page}}/\n高武世界::/finish/chanId22-subCateId78-update4-orderId3-page{{page}}/\n现代魔法::/finish/chanId22-subCateId38-update4-orderId3-page{{page}}/\n剑与魔法::/finish/chanId22-subCateId62-update4-orderId3-page{{page}}/\n史诗奇幻::/finish/chanId22-subCateId201-update4-orderId3-page{{page}}/\n神秘幻想::/finish/chanId22-subCateId202-update4-orderId3-page{{page}}/\n历史神话::/finish/chanId22-subCateId20092-update4-orderId3-page{{page}}/\n另类幻想::/finish/chanId22-subCateId20093-update4-orderId3-page{{page}}/\n传统武侠::/finish/chanId22-subCateId5-update4-orderId3-page{{page}}/\n武侠幻想::/finish/chanId22-subCateId30-update4-orderId3-page{{page}}/\n国术无双::/finish/chanId22-subCateId206-update4-orderId3-page{{page}}/\n古武未来::/finish/chanId22-subCateId20099-update4-orderId3-page{{page}}/\n武侠同人::/finish/chanId22-subCateId20100-update4-orderId3-page{{page}}/\n修真文明::/finish/chanId22-subCateId18-update4-orderId3-page{{page}}/\n幻想修仙::/finish/chanId22-subCateId44-update4-orderId3-page{{page}}/\n现代修真::/finish/chanId22-subCateId64-update4-orderId3-page{{page}}/\n神话修真::/finish/chanId22-subCateId207-update4-orderId3-page{{page}}/\n古典仙侠::/finish/chanId22-subCateId20101-update4-orderId3-page{{page}}/\n都市::/finish/chanId4-update4-orderId3-page{{page}}/\n现实::/finish/chanId15-update4-orderId3-page{{page}}/\n军事::/finish/chanId6-update4-orderId3-page{{page}}/\n历史::/finish/chanId5-update4-orderId3-page{{page}}/\n游戏::/finish/chanId7-update4-orderId3-page{{page}}/\n体育::/finish/chanId8-update4-orderId3-page{{page}}/\n科幻::/finish/chanId9-update4-orderId3-page{{page}}/\n诸天无限::/finish/chanId20109-update4-orderId3-page{{page}}/\n悬疑::/finish/chanId10-update4-orderId3-page{{page}}/\n轻小说::/finish/chanId12-update4-orderId3-page{{page}}/\n短篇::/finish/chanId20076-update4-orderId3-page{{page",
+    "lastUpdateTime": 1754970250932,
+    "loginUrl": "https://www.qidian.com/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "🏷相关标签：{{@@class.book-attribute@text}}\n📜简      介：\n{{@@class.intro@text}}{{'\\n'+'​'}}\n{{@@id.book-intro-detail@html}}",
+      "kind": ".book-attribute@text&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "wordCount": "{{@@.count@em.0@text}}字"
+    },
+    "ruleContent": {
+      "content": ".content@p@text"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author@.name.0@text",
+      "bookList": ".book-img-text@ul@li",
+      "bookUrl": ".book-info-title@a@href||.book-mid-info@a.0@href",
+      "checkKeyWord": "大唐",
+      "coverUrl": "img.0@src",
+      "intro": ".intro@text",
+      "kind": ".author@a.1@text&&.author@span@text",
+      "lastChapter": ".update@a@text",
+      "name": ".book-info-title@a@text||.book-mid-info@a.0@text",
+      "wordCount": "class._tags_otrkq_700@p.-1@text"
+    },
+    "ruleToc": {
+      "chapterList": "@css:\n#allCatalog>.catalog-volume>label,\n#allCatalog>.catalog-volume>ul\n@js:\nlist = [];\n$ = result;\nfor (i in $) {\n    if (/volume-name/.test(String($[i]))) {\n        text = \"🏮〖\" + String($[i].text()).replace(/订阅本卷.*/g, \"\").replace(/免费.*/g, \"免费\").trim() + \"〗🏮\";\n        list.push({\n            text: text,\n            volume: true\n        });\n    } else {  \n        $[i].select(\"li\").forEach(a => {     \n            info = String(a.select(\"a\").attr(\"title\")).replace(/.*时间：|章节/g, \"\");\n            vip = /chapter-locked/.test(a.select(\"em\"));\n            text = a.select(\"a\").text();\n            href = a.select(\"a\").attr(\"href\");\n            \n            // 根据VIP状态选择符号\n            if (vip) {\n                symbol = \"💎\";\n            } else {\n                symbol = \"💮\";\n            }\n            \n            // 计算填充空格数量，使符号与章节名称对齐\n            padding = \"  \".repeat(Math.max(0, text.length - symbol.length));\n            \n            // 组合符号和章节名称\n            formattedText = symbol + \"〖\" + text + padding + \"〗\" + symbol;\n            \n            // 添加到列表\n            list.push({   \n                text: formattedText,\n                href: href,\n                info: info,\n                vip: vip\n            });\n        });\n    }\n}\nlist",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVolume": "volume",
+      "updateTime": "info"
+    },
+    "searchUrl": "https://www.qidian.com/so/{{key}}.html?sort=4&chanId=&action=1&page={{page}},{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]
