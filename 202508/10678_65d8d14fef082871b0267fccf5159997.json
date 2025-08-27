@@ -1,0 +1,403 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "笔仙阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.bixiange.me/trxs/",
+    "bookUrlPattern": "",
+    "customOrder": -2086012632,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "都市言情::/dsyq/<,index_{{page}}.html>\n武侠修真::/wxxz/<,index_{{page}}.html>\n玄幻奇幻::/xhqh/<,index_{{page}}.html>\n穿越架空::/cyjk/<,index_{{page}}.html>\n科幻竞技::/khjj/<,index_{{page}}.html>\n鬼话悬疑::/ghxy/<,index_{{page}}.html>\n军事历史::/jsls/<,index_{{page}}.html>\n耽美小说::/dmtr/<,index_{{page}}.html>\n同人小说::/trxs/<,index_{{page}}.html>\n官场商战::/guanchang/<,index_{{page}}.html>\n乡土风情::/xtfq/<,index_{{page}}.html>\n精品小说::/jqxs/<,index_{{page}}.html>",
+    "lastUpdateTime": 1748211143329,
+    "loginUrl": "",
+    "respondTime": 2017,
+    "ruleBookInfo": {
+      "author": "class.descTip@tag.p.1@text##作者：",
+      "coverUrl": "class.cover@tag.img@src",
+      "intro": "class.descInfo@tag.p@textNodes",
+      "kind": "class.sNav@tag.a.1@text",
+      "lastChapter": "class.catalog@class.clearfix@tag.li.-1@tag.a@text",
+      "name": "class.desc@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "id.mycontent@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": "class.list@tag.li",
+      "bookUrl": "class.title@tag.a@href",
+      "coverUrl": "tag.a.0@tag.img@src",
+      "intro": "class.descript@tag.a@textNodes",
+      "kind": "",
+      "lastChapter": "tag.span.2@text",
+      "name": "tag.a.1@text",
+      "wordCount": "class.tips@tag.span.0@text##大小："
+    },
+    "ruleToc": {
+      "chapterList": "class.catalog@tag.ul@tag.li",
+      "chapterName": "tag.a@text<js>result.replace(/节/,\"章\")</js>",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "http://www.bixiange.top/e/search/indexpage.php,{\n  \"charset\": \"gbk\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "sjks88",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sjks88.com/erciyuan/",
+    "customOrder": -2085957778,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "鬼话::https://www.sjks88.com/Direct1/<,index_{{page}}.html>\n情感::https://www.sjks88.com/Direct2/<,index_{{page}}.html>\n玄幻::https://www.sjks88.com/xuanhuan/<,index_{{page}}.html>\n奇幻::https://www.sjks88.com/Direct3/<,index_{{page}}.html>\n商道::https://www.sjks88.com/Direct4/<,index_{{page}}.html>\n军事::https://www.sjks88.com/Direct5/<,index_{{page}}.html>\n历史::https://www.sjks88.com/Direct6/<,index_{{page}}.html>\n传记::https://www.sjks88.com/zhuanji/<,index_{{page}}.html>\n言情::https://www.sjks88.com/Direct7/<,index_{{page}}.html>\n都市::https://www.sjks88.com/ds/<,index_{{page}}.html>\n耽美::https://www.sjks88.com/danmei/<,index_{{page}}.html>\n同人::https://www.sjks88.com/erciyuan/<,index_{{page}}.html>\n武侠::https://www.sjks88.com/wuxia/<,index_{{page}}.html>\n修真::https://www.sjks88.com/xiuzhen/<,index_{{page}}.html>\n官场::https://www.sjks88.com/guanchang/<,index_{{page}}.html>\n网游::https://www.sjks88.com/wangyou/<,index_{{page}}.html>\n科幻::https://www.sjks88.com/kehuan/<,index_{{page}}.html>\n穿越::https://www.sjks88.com/chuanyue/<,index_{{page}}.html>\n悬疑::https://www.sjks88.com/Suspense/<,index_{{page}}.html>\n纪实::https://www.sjks88.com/jishi/<,index_{{page}}.html>\n精品::https://www.sjks88.com/xiaoshuo/<,index_{{page}}.html>\n乡土::https://www.sjks88.com/xt/<,index_{{page}}.html>\n排行::https://www.sjks88.com/ranking/<,index_{{page}}.html>",
+    "lastUpdateTime": 1748211319546,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".autor2.0@text",
+      "intro": "class.desc@text",
+      "kind": ".autor2.2@text",
+      "lastChapter": ".autor2.1@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": ".content@html"
+    },
+    "ruleExplore": {
+      "author": ".bookWriter@text",
+      "bookList": ".list@li",
+      "bookUrl": "a@href",
+      "intro": ".desc@text",
+      "lastChapter": ".pubdate@text",
+      "name": ".title@text"
+    },
+    "ruleSearch": {
+      "author": "",
+      "bookList": "tr@td@ul@li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "intro": ".intro@text",
+      "kind": "a.1@text",
+      "lastChapter": ".info@textNodes",
+      "name": "a.-2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.sjks88.com/e/search/index.php,{\n\t\"charset\":\"gb2312\",\n\t\"method\":\"post\",\n\t\"body\":\"keyboard={{key}}&show=title\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "饭饭小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ffxs8.com/trxs/",
+    "bookUrlPattern": "",
+    "customOrder": -159481,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "同人小说::http://www.ffxs8.com/trxs/<index,index_2,index_3,index_{{page+1}}>.html\n都市言情::/dsyq/<index,index_2,index_3,index_{{page+1}}>.html\n玄幻魔法::/xhmf/<index,index_2,index_3,index_{{page+1}}>.html\n武侠修真::/wxxz/<index,index_2,index_3,index_{{page+1}}>.html\n穿越架空::/cyjk/<index,index_2,index_3,index_{{page+1}}>.html\n科幻竞技::/khjj/<index,index_2,index_3,index_{{page+1}}>.html\n军事历史::/jsls/<index,index_2,index_3,index_{{page+1}}>.html\n鬼话悬疑::/ghxy/<index,index_2,index_3,index_{{page+1}}>.html\n耽美小说::/smtr/<index,index_2,index_3,index_{{page+1}}>.html\n官场商战::/gcsz/<index,index_2,index_3,index_{{page+1}}>.html\n乡土风情::/xtfq/<index,index_2,index_3,index_{{page+1}}>.html\n总排行榜::/sort/<index,index_2,index_3,index_{{page+1}}>.html",
+    "lastUpdateTime": 1748211104956,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".descTip@tag.span.2@text##作者：",
+      "coverUrl": ".cover@img@src",
+      "intro": ".descInfo@text##\\...$",
+      "lastChapter": ".catalog@tag.li.-1@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "//*[@class=\"content\"]"
+    },
+    "ruleExplore": {
+      "author": "span!0:2@text##作者：|时间：.*",
+      "bookList": "ul!2@li",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "a!0:1@text",
+      "kind": "span@text##(大小|时间)|：|[\\u4e00-\\u9fa5]",
+      "name": "strong@text"
+    },
+    "ruleSearch": {
+      "bookList": ".clearfix@li",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": ".cover@img@src",
+      "intro": ".descript@text",
+      "kind": ".tips@span@text##大小：|时间：",
+      "name": "strong@text##\\(全本\\)|推荐小说\\s"
+    },
+    "ruleToc": {
+      "chapterList": "+.catalog@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://www.ffxs8.com/e/search/index.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "txt520同人小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.txt520.com/erciyuan/index_2.html",
+    "customOrder": -43357,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"修真\",\"url\":\"/xiuzhen/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"都市\",\"url\":\"/ds/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"言情\",\"url\":\"/yq/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"网游\",\"url\":\"/wangyou/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"科幻\",\"url\":\"/kehuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"穿越\",\"url\":\"/chuanyue/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"武侠\",\"url\":\"/wuxia/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"历史\",\"url\":\"/lishi/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"军事\",\"url\":\"/junshi/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"乡土\",\"url\":\"/xt/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"官场\",\"url\":\"/guanchang/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"奇幻\",\"url\":\"/qihuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"鬼话\",\"url\":\"/guihua/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"耽美\",\"url\":\"/danmei/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"同人\",\"url\":\"/erciyuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"精品\",\"url\":\"/xiaoshuo/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"传记\",\"url\":\"/zhuanji/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"名著\",\"url\":\"/mingzhu/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"精品\",\"url\":\"/ranking/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"最新\",\"url\":\"/latest/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},]",
+    "lastUpdateTime": 1748211120864,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".nav_autor@text",
+      "intro": "class.desc@text",
+      "kind": ".newsnav@a.1@text&&class.nav_time@text##更新时间：",
+      "name": ".nav_name@h1@text",
+      "tocUrl": "class.nav_op@tag.a.1@href"
+    },
+    "ruleContent": {
+      "content": "class.content@html"
+    },
+    "ruleExplore": {
+      "author": ".bookWriter@span.0@text",
+      "bookList": "class.list@li",
+      "bookUrl": "a.0@href",
+      "intro": "class.desc@text",
+      "kind": ".bookWriter@span.1@text",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "class.bookWriter@span.0@text",
+      "bookList": "class.list@li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "女人发",
+      "intro": "class.desc@text",
+      "kind": "class.bookWriter@span.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"post\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "全本同人",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qbtr.cc#",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"同人小说\",\"url\":\"/tongren/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"全本同人\",\"url\":\"/tags-%C8%AB%B1%BE-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"连载同人\",\"url\":\"/tags-%C1%AC%D4%D8-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"同人榜单\",\"url\":\"/hot/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "lastUpdateTime": 1748209279159,
+    "respondTime": 3770,
+    "ruleBookInfo": {
+      "coverUrl": "class.pic@img@src",
+      "intro": "class.desc@textNodes||class.infos@p@textNodes",
+      "kind": "class.nav_time@textNodes"
+    },
+    "ruleContent": {
+      "content": "class.read_chapterDetail@p@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.booknews@textNodes",
+      "bookList": "class.bk",
+      "bookUrl": "a@href",
+      "intro": "p@textNodes##简介：",
+      "lastChapter": "class.date@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.clearfix@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "同人小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://trxs.cc/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"同人小说\",\"url\":\"/tongren/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"全本同人\",\"url\":\"/tags-%C8%AB%B1%BE-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"连载同人\",\"url\":\"/tags-%C1%AC%D4%D8-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"同人榜单\",\"url\":\"/hot/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "lastUpdateTime": 1748209238962,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.pic@img@src",
+      "intro": "class.desc@textNodes||class.infos@p@textNodes",
+      "kind": "class.nav_time@textNodes"
+    },
+    "ruleContent": {
+      "content": "class.read_chapterDetail@p@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.booknews@textNodes",
+      "bookList": "class.bk",
+      "bookUrl": "a@href",
+      "intro": "p@textNodes##简介：",
+      "lastChapter": "class.date@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.clearfix@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "同人社",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.trxs.me/tags-150-0.html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"同人小说\",\"url\":\"/tongren/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"全本同人\",\"url\":\"/tags-%C8%AB%B1%BE-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"连载同人\",\"url\":\"/tags-%C1%AC%D4%D8-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"同人榜单\",\"url\":\"/hot/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "lastUpdateTime": 1748209263180,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.pic@img@src",
+      "intro": "class.desc@textNodes||class.infos@p@textNodes",
+      "kind": "class.nav_time@textNodes"
+    },
+    "ruleContent": {
+      "content": "class.read_chapterDetail@p@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.booknews@textNodes",
+      "bookList": "class.bk",
+      "bookUrl": "a@href",
+      "intro": "p@textNodes##简介：",
+      "lastChapter": "class.date@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.clearfix@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "破万卷",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://powanjuan.cc/tongren/",
+    "bookUrlPattern": "",
+    "customOrder": 30,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "都市言情::/dsyq/<,index_{{page}}.html>\n青春言情::/qcyq/<,index_{{page}}.html>\n耽美小说::/dmtr/<,index_{{page}}.html>\n同人小说::/tongren/<,index_{{page}}.html>\n玄幻奇幻::/wxxz/<,index_{{page}}.html>\n武侠修真::/wxxz2/<,index_{{page}}.html>\n穿越架空::/cyjk/<,index_{{page}}.html>\n科幻魔法::/khjj/<,index_{{page}}.html>\n游戏竞技::/yxjj/<,index_{{page}}.html>\n鬼话悬疑::/ghxy/<,index_{{page}}.html>\n军事历史::/jsls/<,index_{{page}}.html>\n乡土风情::/xtfq/<,index_{{page}}.html>",
+    "lastUpdateTime": 1748211410663,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".descTip@tag.span.0@text##.*：",
+      "coverUrl": "",
+      "init": "",
+      "intro": ".descInfo@tag.p@html",
+      "kind": "",
+      "lastChapter": "",
+      "name": ".desc@tag.h1@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#mycontent@tag.p@text",
+      "imageStyle": "0"
+    },
+    "ruleExplore": {
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "span.0@text##作者：",
+      "bookList": ".clearfix li",
+      "bookUrl": "tag.a.1@href",
+      "coverUrl": "",
+      "intro": ".descript@text",
+      "kind": "tag.span.2@text",
+      "name": ".title@tag.a.0@text##\\(.*\\)",
+      "wordCount": "span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".clearfix li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/e/search/index.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"show=title&classid=0&keyboard={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "同人圈",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://tongrenquan.org/",
+    "customOrder": 1557,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"同人小说\",\"url\":\"/tongren/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"全本同人\",\"url\":\"/tags-%C8%AB%B1%BE-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"连载同人\",\"url\":\"/tags-%C1%AC%D4%D8-{{page-1}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"同人榜单\",\"url\":\"/hot/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "lastUpdateTime": 1748209300370,
+    "respondTime": 2687,
+    "ruleBookInfo": {
+      "coverUrl": "class.pic@img@src",
+      "intro": "class.desc@textNodes||class.infos@p@textNodes",
+      "kind": "class.nav_time@textNodes"
+    },
+    "ruleContent": {
+      "content": "class.read_chapterDetail@p@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.booknews@textNodes",
+      "bookList": "class.bk",
+      "bookUrl": "a@href",
+      "intro": "p@textNodes##简介：",
+      "lastChapter": "class.date@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.clearfix@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  }
+]
