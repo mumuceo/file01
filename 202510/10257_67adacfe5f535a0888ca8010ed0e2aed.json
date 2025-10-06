@@ -1,0 +1,762 @@
+[
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️樱花㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://yinghuaz.yingxx102.cc/label/index.html#贪心",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://yinghuaz.yingxx102.cc/label/index.html",
+    "lastUpdateTime": 1757510340672,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.panel-body@p@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav.navbar-nav.navbar-right@li",
+      "bookUrl": "a@href",
+      "name": "a@text##首页"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.list-group-item",
+      "chapterName": "a@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*|\\d{2}-\\d{2}|删除日期",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "<js>\n// 1. 获取当前页码：从“page_current1”类（当前页标识）提取文本（如“2”）\nconst currentPageText = java.getString(\"@css:.page_current1@text\");\nconst currentPage = parseInt(currentPageText) || 0;\n\n// 2. 获取下一页链接：从“title='下一页'”的a标签提取href（如“/arttype/23-3.html”）\nconst nextUrl = java.getString(\"@css:.page_link1[title='下一页']@href\");\n\n// 3. 逻辑判断：页码≤10返回链接，否则返回空（空值触发Legado停止加载）\ncurrentPage <= 10 ? nextUrl : \"\";\n</js>"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️xhs016㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://o1p2q3r4.xhs016.cc/arttype/24.html#贪心",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://o1p2q3r4.xhs016.cc/arttype/24.html",
+    "lastUpdateTime": 1757566905872,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.panel-body@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav.navbar-nav.navbar-right@li",
+      "bookUrl": "a@href",
+      "name": "a@text##首页"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.list-group@a",
+      "chapterName": "a@text##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（遵循Legado Jsoup调用规范，兼容执行环境）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位当前页码：从.page_info1内.page_current1标签提取（标识当前页）\n        var currentPageElem = doc.select(\"div.page_info1 a.page_current1\").first();\n        var currentPage = 0;\n        \n        if (currentPageElem) {\n            // 3. 提取并转换当前页码（容错非数字文本，避免解析异常）\n            var currentPageText = currentPageElem.text().trim() || \"0\";\n            currentPage = /^\\d+$/.test(currentPageText) ? parseInt(currentPageText, 10) : 0;\n        }\n\n        // 4. 定位下一页链接：匹配.page_info1内title为“下一页”的.page_link1标签\n        var nextLinkElem = doc.select(\"div.page_info1 a.page_link1[title='下一页']\").first();\n        var nextUrl = \"\";\n\n        // 5. 按需求判断：页码≤10返回链接，否则返回空（空值触发Legado停止加载）\n        if (nextLinkElem && currentPage <= 10) {\n            nextUrl = nextLinkElem.attr(\"href\").trim() || \"\";\n        }\n\n        // 6. 返回结果：符合规则则返回链接，否则空值兜底\n        return nextUrl;\n    } catch (e) {\n        // 7. 异常处理：避免脚本报错导致目录加载中断，统一返回空值\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️夜猫㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://wzrm6yzyxt.yemao1.top/index.php/art/type/id/17.html",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://wzrm6yzyxt.yemao1.top/index.php/art/type/id/17.html",
+    "lastUpdateTime": 1757567460985,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.text-content@html"
+    },
+    "ruleExplore": {
+      "bookList": "ul@li",
+      "bookUrl": "a@href",
+      "name": "a@text##首页"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.novel-info",
+      "chapterName": "h3@text##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码，遵循Legado Jsoup调用规范\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位当前页码：从ul.pagination内a.active标签提取（标识当前页）\n        var currentPageElem = doc.select(\"ul.pagination a.active\").first();\n        var currentPage = 0;\n        \n        if (currentPageElem) {\n            // 3. 提取并转换当前页码，容错非数字格式\n            var currentPageText = currentPageElem.text().trim() || \"0\";\n            currentPage = /^\\d+$/.test(currentPageText) ? parseInt(currentPageText, 10) : 0;\n        }\n\n        // 4. 定位下一页链接：匹配ul.pagination内id为next-page的a标签\n        var nextLinkElem = doc.select(\"ul.pagination a#next-page\").first();\n        var nextUrl = \"\";\n\n        // 5. 按需求判断：页码≤10返回链接，否则返回空（空值触发Legado停止加载）\n        if (nextLinkElem && currentPage <= 10) {\n            nextUrl = nextLinkElem.attr(\"href\").trim() || \"\";\n        }\n\n        // 6. 返回结果：符合规则返回链接，否则空值\n        return nextUrl;\n    } catch (e) {\n        // 7. 异常兜底：避免报错中断加载，返回空值\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️欲火崽㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ntnsvre.yuhuozhai1.top/index.php/art/type/id/21.html#贪心",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://ntnsvre.yuhuozhai1.top/index.php/art/type/id/21.html",
+    "lastUpdateTime": 1757567478782,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.chapter-content@html"
+    },
+    "ruleExplore": {
+      "bookList": "tag.ul.!1@tag.li@tag.a",
+      "bookUrl": "a@href",
+      "name": "a@text##首页"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.book-content",
+      "chapterName": "h3@text##『[^』]+』|\\d{2}-\\d{2}|[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*|.*[\\\\u3040-\\\\u309F\\\\u30A0-\\\\u30FF].*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（遵循Legado Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位当前页码：从.pagination内active类标签提取文本（如“1”）\n        var currentPageElem = doc.select(\"div.pagination a.active\").first();\n        var currentPage = 0;\n        \n        if (currentPageElem) {\n            // 3. 提取并转换当前页码（容错非数字格式）\n            var currentPageText = currentPageElem.text().trim() || \"0\";\n            currentPage = /^\\d+$/.test(currentPageText) ? parseInt(currentPageText, 10) : 0;\n        }\n\n        // 4. 定位下一页按钮：匹配.pagination内title为“下一页”的链接\n        var nextLinkElem = doc.select(\"div.pagination a[title='下一页']\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem && currentPage <= 10) {\n            // 5. 页码≤10时提取下一页链接，否则返回空\n            nextUrl = nextLinkElem.attr(\"href\").trim() || \"\";\n        }\n\n        // 6. 返回结果：≤10返回链接，否则空值（Legado空值停止加载）\n        return nextUrl;\n    } catch (e) {\n        // 7. 异常兜底：避免脚本报错导致加载中断\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️痴汉㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://c1d2e3f4.chih1023.cc/label/index.html#贪心",
+    "customOrder": 4,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://c1d2e3f4.chih1023.cc/label/index.html",
+    "lastUpdateTime": 1757509638475,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.articlebody@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav@a",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.row",
+      "chapterName": "h3@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "<js>\n// 1. 获取当前页码（从页面元素 \".cur_page\" 提取，如“1 / 78”中的“1”）\nconst pageText = java.getString(\"@css:.cur_page@text\");\nconst currentPage = parseInt(pageText.split(\" / \")[0]);\n\n// 2. 获取下一页链接（从 \".page_next a\" 提取 href）\nconst nextUrl = java.getString(\"@css:.page_next a@href\");\n\n// 3. 逻辑判断：页码≤10返回链接，否则返回空（空值触发停止加载）\ncurrentPage <= 10 ? nextUrl : \"\";\n</js>"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️狼友㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://c1d2e3f4.langyou894.cc/arttype/23.html#贪心",
+    "customOrder": 5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://c1d2e3f4.langyou894.cc/arttype/23.html",
+    "lastUpdateTime": 1757488798393,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.artcontent@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav@dd",
+      "bookUrl": "a@href",
+      "name": "a@text##首页|名称"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "a[href^=\"/artdetail-\"]",
+      "chapterName": "a@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*|\\d{2}-\\d{2}",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\ntry {\n// 1. 解析页面源码\nvar doc = org.jsoup.Jsoup.parse(result);\nvar nextUrl = \"\";\n \n// 2. 定位“下一页”链接（直接匹配title为“下一页”的.page_link1）\nvar nextLink = doc.select(\"a.page_link1[title='下一页']\").first();\nif (!nextLink) return \"\";\n \n// 3. 提取下一页链接，空值兜底\nnextUrl = nextLink.attr(\"href\") || \"\";\nif (nextUrl === \"\") return \"\";\n \n// 4. 提取页码（支持URL中“任意数字-目标页码.html”格式，如/arttype/23-2.html、/arttype/5-10.html）\n// 用正则匹配“-”后的数字（忽略前面的任意数字）\nvar pageMatch = nextUrl.match(/-(\\d+).html/);\nif (!pageMatch || !pageMatch[1]) return \"\"; // 未匹配到页码，返回空\n \n// 5. 校验页码为纯数字并转换\nvar nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n \n// 6. 核心控制：下一页页码≤10返回链接，否则返回空\nreturn nextPage <= 10 ? nextUrl : \"\";\n} catch (e) {\nreturn \"\";\n}\n})(result)"
+    },
+    "searchUrl": "https://c1d2e3f4.langyou894.cc/artsearch/{{key}}------{{page}}-.html",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️妙笔生花㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://69uzi.top#贪心",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://69uzi.top",
+    "lastUpdateTime": 1757475229245,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.details-content text-justify@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.item",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.col-md-14 col-sm-16 col-xs-12 clearfix news-box",
+      "chapterName": "a@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*|\\d{4}-\\d{2}-\\d{2}",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:\n// 从页面链接规律提取当前页码（假设URL格式固定为page/X）\nvar doc = org.jsoup.Jsoup.parse(result);\n// 尝试从下一页链接反推当前页码（如下一页是page/3，则当前是2）\nvar nextLinkElem = doc.select(\"div.mac_pages a[title='下一页']\").first();\nif (!nextLinkElem) {\n    \"\"; // 无下一页，停止\n}\nvar nextUrl = nextLinkElem.attr(\"href\");\nvar pageMatch = nextUrl.match(/page\\/(\\d+)/);\nif (!pageMatch) {\n    \"\"; // 未找到页码格式，停止\n}\nvar nextPage = parseInt(pageMatch[1], 10);\nvar currentPage = nextPage - 1; // 反推当前页码\n\n// 控制翻到page/10后停止（即下一页是page/11时停止）\nif (nextPage <= 10) {\n    nextUrl; // 下一页≤10，继续\n} else {\n    \"\"; // 下一页>10，停止\n}"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️色色㊗️贪心㊗️10🏷️多标签🏷️",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://k7l8m9n0.ssxxs013.cc/label/index.html#17",
+    "customOrder": 7,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://k7l8m9n0.ssxxs013.cc/label/index.html",
+    "lastUpdateTime": 1757512874155,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.artcontent@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav@dd&&class.btn-sort-wrapper@a",
+      "bookUrl": "a@href",
+      "name": "a@text##首页"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "@css:.page-content > a:not(.title a)",
+      "chapterName": "a@text##『[^』]+』|\\d{2}-\\d{2}|[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（遵循Legado Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位当前页码：从.page_current1标签提取文本（如“3”）\n        var currentPageElem = doc.select(\"div.page_info1 a.page_current1\").first();\n        var currentPage = 0;\n        \n        if (currentPageElem) {\n            // 3. 提取并转换当前页码（容错非数字格式）\n            var currentPageText = currentPageElem.text().trim() || \"0\";\n            currentPage = /^\\d+$/.test(currentPageText) ? parseInt(currentPageText, 10) : 0;\n        }\n\n        // 4. 定位下一页按钮：匹配.page_info1内title为“下一页”的.page_link1\n        var nextLinkElem = doc.select(\"div.page_info1 a.page_link1[title='下一页']\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem && currentPage <= 10) {\n            // 5. 页码≤10时提取下一页链接，否则返回空\n            nextUrl = nextLinkElem.attr(\"href\").trim() || \"\";\n        }\n\n        // 6. 返回结果：≤10返回链接，否则空值（Legado空值停止加载）\n        return nextUrl;\n    } catch (e) {\n        // 7. 异常兜底：避免脚本报错导致加载中断\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️午夜言情㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://gaoqingcn.cfd#贪心",
+    "customOrder": 8,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://gaoqingcn.cfd",
+    "lastUpdateTime": 1757474903204,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.main@html||class.articlebody@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav@a",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h3",
+      "chapterName": "h3@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*|玄幻|武侠|古典|都市",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（符合Legado Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配.nlist_page内、class为page_next的p标签下的a标签\n        var nextLinkElem = doc.select(\"div.nlist_page p.page_next a\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免Legado因null报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式“/index.php/art/type/id/4/page/数字.html”，提取“page/”后的页码\n            var pageMatch = nextUrl.match(/index\\.php\\/art\\/type\\/id\\/\\d+\\/page\\/(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字并转换为数值类型\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10时返回空（Legado空值触发停止加载下一页）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配（非目标分页链接），设为空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（单个URL/空值，符合Legado nextTocUrl格式要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：避免脚本报错中断书源加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️lfav24㊗️贪心㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://20250710.lfav24.cc#贪心",
+    "customOrder": 9,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "〖〖〖〖〖〖〖〖〖小说〗〗〗〗〗〗〗〗〗\n科学幻想::/index.php/art/type/id/73.html\n经验故事::/index.php/art/type/id/72.html\n不伦恋情::/index.php/art/type/id/71.html\n生活都市::/index.php/art/type/id/70.html\n明星偶像::/index.php/art/type/id/69.html\n玄幻仙侠::/index.php/art/type/id/68.html\n学生校园::/index.php/art/type/id/67.html\n暴力虐待::/index.php/art/type/id/66.html\n〖〖〖〖〖〖〖〖〖图片〗〗〗〗〗〗〗〗〗\n欧美激情::/index.php/art/type/id/77.html\n亚洲性爱::/index.php/art/type/id/76.html\n网友自拍::/index.php/art/type/id/75.html\n唯美清纯::/index.php/art/type/id/74.html\n露出偷窥::/index.php/art/type/id/78.html\n高跟丝袜::/index.php/art/type/id/79.html\n卡通漫画::/index.php/art/type/id/80.html\nGif动图::/index.php/art/type/id/81.html",
+    "lastUpdateTime": 1757337040908,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.m1938ing@html"
+    },
+    "ruleExplore": {
+      "bookList": "a",
+      "bookUrl": "attr(href)",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "ul@li@a",
+      "chapterName": "a@text##..-..",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 1. 获取当前页码（从span.curwrpage的文本提取）\nvar currentPageElem = doc.select(\"span.curwrpage.wrpage.wrpage_number\").first();\nif (!currentPageElem) {\n    // 未找到当前页码，返回空\n    \"\";\n} else { // 补全else，确保currentPageElem存在时才执行后续逻辑\n    var currentPage = parseInt(currentPageElem.text().trim(), 10);\n    var nextLinkElem = null;\n    var nextPageNum = currentPage + 1;\n\n    // 方式1：精准查找文本为“下一页数字”的a标签\n    nextLinkElem = doc.select(\"a.wrpage.wrpage_number:contains(\" + nextPageNum + \")\").first();\n\n    // 方式2：兜底查找当前页的下一个同级a标签\n    if (!nextLinkElem) {\n        nextLinkElem = currentPageElem.nextElementSibling();\n        // 验证是否为有效下一页链接\n        if (nextLinkElem && !nextLinkElem.attr(\"href\").contains(\"/page/\" + nextPageNum + \".html\")) {\n            nextLinkElem = null;\n        }\n    }\n\n    if (!nextLinkElem) {\n        // 没找到下一页，返回空\n        \"\";\n    } else {\n        var nextUrl = nextLinkElem.attr(\"href\");\n        var pageMatch = nextUrl.match(/\\/page\\/(\\d+)\\.html/);\n        \n        if (!pageMatch) {\n            \"\";\n        } else {\n            var nextPage = parseInt(pageMatch[1], 10);\n            // 下一页≤10返回链接，否则返回空\n            nextPage <= 10 ? nextUrl : \"\";\n        }\n    }\n} // 补全最外层else的闭合}，解决“缺少}”错误"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️风月㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ms.guochanship.icu/index.php/art/type/id/4.html#贪心",
+    "customOrder": 10,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://ms.guochanship.icu/index.php/art/type/id/4.html",
+    "lastUpdateTime": 1757470290939,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.menu-item menu-item-type-post_type menu-item-object-page {if-A:[menu:id]={maccms:curarttypeid}}current-menu-item page_item page-item-[menu:id] current_page_item{endif-A} menu-item-[menu:id]",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.title",
+      "chapterName": "h2@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（符合Legado中Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配.mac_pages1容器内、含“下一页”文本的.page_link1\n        var nextLinkElem = doc.select(\"div.mac_pages1 a.page_link1:contains(下一页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免Legado因null值报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式“/index.php/art/type/id/4/page/数字.html”，提取页码\n            var pageMatch = nextUrl.match(/index\\.php\\/art\\/type\\/id\\/\\d+\\/page\\/(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字，转换为数值类型\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10时返回空（Legado空值停止加载下一页）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配时，视为无效链接\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（单个URL字符串/空值，符合Legado nextTocUrl要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：返回空字符串，避免脚本报错中断书源加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️红尘黄书㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.hhss40.xyz/arttype/46.html#贪心",
+    "customOrder": 11,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://www.hhss40.xyz/arttype/46.html",
+    "lastUpdateTime": 1757560166777,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.article-content@html##【点击.*|护眼.*"
+    },
+    "ruleExplore": {
+      "bookList": "class.site-nav site-navbar@li",
+      "bookUrl": "a@href",
+      "name": "li@text##首页"
+    },
+    "ruleSearch": {
+      "checkKeyWord": "处女"
+    },
+    "ruleToc": {
+      "chapterList": "h2",
+      "chapterName": "h2@text##【完】|[ |　\"()（）《》〈〉【】〖〗［］/\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（符合Legado Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配ul容器内、class为next-page的li下的a标签\n        var nextLinkElem = doc.select(\"ul li.next-page a\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免Legado因null报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式“/arttype/46-数字.html”，提取“-”后的页码\n            var pageMatch = nextUrl.match(/arttype\\/\\d+-(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字并转换为数值类型\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10时返回空（Legado空值触发停止加载下一页）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配（非目标分页链接），设为空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（单个URL/空值，符合Legado nextTocUrl格式要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：避免脚本报错中断书源加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️淫色㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://c8ksx--e3w.yinse1xiaoshuo.com/arttype/1005/#贪心",
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://c8ksx--e3w.yinse1xiaoshuo.com/arttype/1005/",
+    "lastUpdateTime": 1757473308160,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.article@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.swiper-slide.swiper-slide-prev",
+      "bookUrl": "a@href",
+      "name": "a@text##主頁"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h3",
+      "chapterName": "a@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（符合Legado Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配ul.wntheme-page内、含“下一页”文本的a标签\n        var nextLinkElem = doc.select(\"ul.wntheme-page a:contains(下一页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免Legado因null报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式“/arttype/1005-数字/”，提取“-”后的页码（兼容末尾无.html的格式）\n            var pageMatch = nextUrl.match(/arttype\\/\\d+-(\\d+)\\/$/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字并转换为数值类型\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10时返回空（Legado空值触发停止加载下一页）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配（非目标分页链接），设为空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（单个URL/空值，符合Legado nextTocUrl格式要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：避免脚本报错中断书源加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️91文学网㊗️贪心㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://g6ur1xavlj.www.91wwxx.cyou/#贪心",
+    "customOrder": 13,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::http://g6ur1xavlj.www.91wwxx.cyou/",
+    "lastUpdateTime": 1757475477907,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.article@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav-item@a",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.art-item-title",
+      "chapterName": "a@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（符合Legado Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配ul.ewave-page内、含“下一页”文本的a标签\n        var nextLinkElem = doc.select(\"ul.ewave-page a:contains(下一页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免Legado因null报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式“/index.php/art/type/id/28/page/数字.html”，提取“page/”后的页码\n            var pageMatch = nextUrl.match(/index\\.php\\/art\\/type\\/id\\/\\d+\\/page\\/(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字并转换为数值类型\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10时返回空（Legado空值触发停止加载下一页）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配（非目标分页链接），设为空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（单个URL/空值，符合Legado nextTocUrl格式要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：避免脚本报错中断书源加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️夜色小说㊗️贪心㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://8wjcyazxw7.www.yeseshuge.xyz/#贪心",
+    "customOrder": 14,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::http://8wjcyazxw7.www.yeseshuge.xyz/#贪心",
+    "lastUpdateTime": 1757475507244,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.artcontent@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.container@class.nav-container@class.nav-list@class.nav-item",
+      "bookUrl": "a@href",
+      "name": "class.nav-item@text##小说专区"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.novel-item",
+      "chapterName": "class.novel-title@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（符合Legado中Jsoup调用规范）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配.pagination-container内、含“下页”文本的.pagination-link\n        var nextLinkElem = doc.select(\"div.pagination-container a.pagination-link:contains(下页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免Legado因null报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式，提取“page/”后的页码（兼容任意id值，如当前id/26）\n            var pageMatch = nextUrl.match(/index\\.php\\/art\\/type\\/id\\/\\d+\\/page\\/(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字并转换为数值类型\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10时返回空（触发Legado停止加载下一页）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配（非目标分页链接），设为空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（单个URL/空值，符合Legado nextTocUrl格式要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：避免脚本报错中断书源加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️春风㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ms.chunfenglou.buzz#贪心",
+    "customOrder": 15,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://ms.chunfenglou.buzz",
+    "lastUpdateTime": 1757470454909,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry@html##除非注明.*"
+    },
+    "ruleExplore": {
+      "bookList": "class.cat-item cat-item-[menu:id]",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.title",
+      "chapterName": "h2@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|.*[\\u3040-\\u309F\\u30A0-\\u30FF].*|.*翻译.*|阅读全文",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面（符合Legado Jsoup调用规则）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位“下一页”按钮：匹配.mac_pages1内含“下一页”文本的.page_link1\n        var nextLinkElem = doc.select(\"div.mac_pages1 a.page_link1:contains(下一页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取链接，处理空值（避免Legado因null报错）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配URL格式，提取“page/”后的页码（兼容任意id值，如id/3）\n            var pageMatch = nextUrl.match(/index\\.php\\/art\\/type\\/id\\/\\d+\\/page\\/(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字并转换\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 核心控制：页码>10返回空（Legado空值停止加载）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不匹配则设为空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果（符合Legado nextTocUrl格式要求）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：避免脚本报错中断加载\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️久插㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m5n6o7p8.9cha38.cc/arttype/24.html#贪心",
+    "customOrder": 16,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://m5n6o7p8.9cha38.cc/arttype/24.html",
+    "lastUpdateTime": 1757469805939,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.menu-item menu-item-type-post_type menu-item-object-page {if-A:[menu:id]={maccms:curarttypeid}}current-menu-item page_item page-item-[menu:id] current_page_item{endif-A} menu-item-[menu:id]",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.title",
+      "chapterName": "h2@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|.*[\\u3040-\\u309F\\u30A0-\\u30FF].*|.*翻译.*|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        var doc = org.jsoup.Jsoup.parse(result);\n        var nextLinkElem = doc.select(\"div.page_info1 a.page_link1:contains(下一页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 关键修改：用\\d{1,2}匹配1-2位数字（覆盖24、30等），不再写死固定数字\n            var pageMatch = nextUrl.match(/arttype\\/(\\d{1,2})-(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[2]) {\n                // 此处取第2个分组（页码，如30-3.html中的“3”），前一个分组是24/30这类前缀\n                var nextPage = /^\\d+$/.test(pageMatch[2]) ? parseInt(pageMatch[2], 10) : 0;\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                nextUrl = \"\";\n            }\n        }\n        return nextUrl;\n    } catch (e) {\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️露露㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://a3b4c5d6.luluw012.cc/arttype/30-1.html#贪心",
+    "customOrder": 17,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://a3b4c5d6.luluw012.cc/arttype/30-1.html",
+    "lastUpdateTime": 1757400914152,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.entry@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.menu-item menu-item-type-post_type menu-item-object-page {if-A:[menu:id]={maccms:curarttypeid}}current-menu-item page_item page-item-[menu:id] current_page_item{endif-A} menu-item-[menu:id]",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.title",
+      "chapterName": "h2@text##[ |　\"()（）《》〈〉【】〖〗［］\\[\\]]|.*[\\u3040-\\u309F\\u30A0-\\u30FF].*|.*翻译.*|阅读全文|作者.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（Legado环境中默认可调用org.jsoup，符合规则2.自定义js章节）\n        var doc = org.jsoup.Jsoup.parse(result);\n        // 2. 定位下一页按钮：匹配.page_info1容器内、含“下一页”文本的.page_link1（精准对应目标HTML）\n        var nextLinkElem = doc.select(\"div.page_info1 a.page_link1:contains(下一页)\").first();\n        var nextUrl = \"\";\n\n        if (nextLinkElem) {\n            // 3. 提取下一页链接，处理空值（避免获取到null/undefined，符合Legado变量类型要求）\n            nextUrl = nextLinkElem.attr(\"href\") || \"\";\n            // 4. 匹配目标URL格式“/arttype/24-数字.html”，提取页码（如24-2.html中的2）\n            var pageMatch = nextUrl.match(/arttype\\/24-(\\d+)\\.html/);\n            \n            if (pageMatch && pageMatch[1]) {\n                // 5. 校验页码为纯数字（避免NaN，符合Legado对数值类型的要求）\n                var nextPage = /^\\d+$/.test(pageMatch[1]) ? parseInt(pageMatch[1], 10) : 0;\n                // 6. 页码控制：≤10保留链接，否则设为空（Legado空值停止加载下一页，符合规则7.目录章节）\n                if (nextPage > 10) {\n                    nextUrl = \"\";\n                }\n            } else {\n                // URL格式不符，视为无效链接，返回空\n                nextUrl = \"\";\n            }\n        }\n\n        // 7. 返回结果：单个字符串（Legado nextTocUrl支持单个URL，空值停止，符合规则7.目录章节）\n        return nextUrl;\n    } catch (e) {\n        // 8. 异常兜底：返回空字符串（避免脚本报错中断加载，符合规则9.补充说明的容错建议）\n        return \"\";\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️色猫㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m5n6o7p8.semao103.lol/label/index.html#贪心",
+    "customOrder": 18,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://m5n6o7p8.semao103.lol/label/index.html",
+    "lastUpdateTime": 1757401994625,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.articlebody@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav@a",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "h3",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:(function(result) {\n    try {\n        // 1. 解析页面源码（Legado环境默认支持）\n        var doc = org.jsoup.Jsoup.parse(result);\n        \n        // 2. 提取当前页码（从“2 / 1253”中拆分出当前页为2）\n        var curPageElem = doc.select(\"div.nlist_page.c span.cur_page\").first();\n        if (!curPageElem) return \"\"; // 没找到当前页码，停止\n        \n        var curPageText = curPageElem.text().trim();\n        var currentPage = parseInt(curPageText.split(\"/\")[0].trim(), 10);\n        if (isNaN(currentPage)) currentPage = 1; // 防止解析失败，默认当前页为1\n        \n        // 3. 控制加载10页：当前页≥10则停止，否则生成下一页URL\n        if (currentPage >= 10) return \"\";\n        \n        // 4. 生成下一页URL（完全匹配你的格式：/arttype/20-数字.html）\n        var nextPage = currentPage + 1;\n        var nextUrl = \"/arttype/20-\" + nextPage + \".html\";\n        \n        return nextUrl; // 返回有效链接（如第2页返回/arttype/20-3.html）\n    } catch (e) {\n        return \"\"; // 异常时停止，避免崩溃\n    }\n})(result)"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️极速㊗️贪婪㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://w9x0y1z2.jisub4.buzz#贪心",
+    "customOrder": 19,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://w9x0y1z2.jisub4.buzz/arttype/205.html",
+    "lastUpdateTime": 1757510727265,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.content.0@tag.p.0@html##<br\\s*\\/?>|<a[^>]*>.*?<\\/a>|<span[^>]*>(严选|免费|.*小说)<\\/span>"
+    },
+    "ruleExplore": {
+      "bookList": "-class.item.[144:]",
+      "bookUrl": "a@href",
+      "name": "a@text##/| |　"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.vod",
+      "chapterName": "a@text##/| |　",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 定位下一页按钮：.page_wrap 内的 .page_ul 下，class为pageitem且文本含“下一页”的a标签\nvar nextLinkElem = doc.select(\"div.page_wrap div.page_wrap_inner ul.page_ul a.pageitem:contains(下一页)\").first();\n\nif (!nextLinkElem) {\n    // 没找到下一页按钮，返回空\n    \"\";\n} else {\n    var nextUrl = nextLinkElem.attr(\"href\");\n    // 按“-数字.html”提取页码（如205-2.html里的2）\n    var pageMatch = nextUrl.match(/-(\\d+)\\.html/);\n    \n    if (!pageMatch) {\n        // 页码格式不对，返回空\n        \"\";\n    } else {\n        var nextPage = parseInt(pageMatch[1], 10);\n        // 下一页页码≤50则返回链接，否则停止\n        nextPage <= 10 ? nextUrl : \"\";\n    }\n}"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️18静㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://a3b4c5d6.18jin44.cc/label/index.html#贪心",
+    "customOrder": 20,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "♥全部♥::https://a3b4c5d6.18jin44.cc/label/index.html",
+    "lastUpdateTime": 1757563581926,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.Readarea ReadAjax_content@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.nav@ul@li!-0",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.item",
+      "chapterName": "a@text##/| |　|阅读全文|作者.*|【|（|）|】",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 定位下一页按钮：.page_info1 内，文本含“下一页”的 .page_link1 标签（匹配实际HTML结构）\nvar nextLinkElem = doc.select(\"div.page_info1 a.page_link1:contains(下一页)\").first();\n\nif (!nextLinkElem) {\n    // 没找到下一页按钮，返回空\n    \"\";\n} else {\n    var nextUrl = nextLinkElem.attr(\"href\");\n    // 按“-数字.html”提取页码（如/arttype/20-2.html里的2，匹配实际URL格式）\n    var pageMatch = nextUrl.match(/-(\\d+)\\.html/);\n    \n    if (!pageMatch) {\n        // 页码格式不对，返回空\n        \"\";\n    } else {\n        var nextPage = parseInt(pageMatch[1], 10);\n        // 下一页页码≤10则返回链接，否则停止（保留原逻辑）\n        nextPage <= 10 ? nextUrl : \"\";\n    }\n}"
+    },
+    "searchUrl": "https://a3b4c5d6.18jin44.cc/artsearch/{{key}}------{{page}}-.html",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️嘤嘤小说㊗️贪心㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://cf10.xbooks.vip#贪心",
+    "customOrder": 21,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://cf10.xbooks.vip#贪心",
+    "lastUpdateTime": 1757388332416,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.hl-article-box@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.hl-nav-item hl-slide-swiper",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {
+      "bookList": "class.hl-list-item hl-col-xs-12",
+      "bookUrl": "a@href",
+      "checkKeyWord": "破处",
+      "name": "class.hl-item-title@text##/| |　|阅读全文|作者.*|【|（|）|】|《|》|.*中国.*|.*P.*"
+    },
+    "ruleToc": {
+      "chapterList": "class.hl-list-item hl-col-xs-12",
+      "chapterName": "class.hl-item-title@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 定位下一页按钮：.hl-page-wrap 内，文本含“下一页”的a标签（匹配实际HTML结构）\nvar nextLinkElem = doc.select(\"ul.hl-page-wrap a:contains(下一页)\").first();\n\nif (!nextLinkElem) {\n    // 没找到下一页按钮，返回空\n    \"\";\n} else {\n    var nextUrl = nextLinkElem.attr(\"href\");\n    // 按“-数字/”提取页码（如/arttype/5-2/里的2，匹配实际URL格式）\n    var pageMatch = nextUrl.match(/-(\\d+)\\/$/);\n    \n    if (!pageMatch) {\n        // 页码格式不对，返回空\n        \"\";\n    } else {\n        var nextPage = parseInt(pageMatch[1], 10);\n        // 下一页页码≤10则返回链接，否则停止（保留原逻辑）\n        nextPage <= 10 ? nextUrl : \"\";\n    }\n}"
+    },
+    "searchUrl": "https://cf10.xbooks.vip/artsearch/{{key}}------{{page}}-/",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️女子AV㊗️贪心㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://k7l8m9n0.nzzn5.sbs#贪心",
+    "customOrder": 22,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://i9j0k1l2.nzz2.buzz/arttype/205.html",
+    "lastUpdateTime": 1757388419232,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.content@html"
+    },
+    "ruleExplore": {
+      "bookList": "-class.item.[64:]",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.vod-txt",
+      "chapterName": "a@text##/| |　",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 定位下一页按钮：class为page_ul的ul下，class是pageitem且文本含“下一页”的a标签\nvar nextLinkElem = doc.select(\"ul.page_ul a.pageitem:contains(下一页)\").first();\n\nif (!nextLinkElem) {\n    // 没找到下一页按钮，返回空\n    \"\";\n} else {\n    var nextUrl = nextLinkElem.attr(\"href\");\n    // 仍按“-数字.html”提取页码（如205-3.html里的3）\n    var pageMatch = nextUrl.match(/-(\\d+)\\.html/);\n    \n    if (!pageMatch) {\n        // 页码格式不对，返回空\n        \"\";\n    } else {\n        var nextPage = parseInt(pageMatch[1], 10);\n        // 下一页页码≤50则返回链接，否则停止\n        nextPage <= 10 ? nextUrl : \"\";\n    }\n}"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️榨汁机㊗️贪心㊗️10👁️有图片",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://w9x0y1z2.zhazhijie61.buzz/topic/#贪心",
+    "customOrder": 23,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::https://w9x0y1z2.zhazhijie61.buzz/topic/",
+    "lastUpdateTime": 1757388482527,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.details-content text-justify@html"
+    },
+    "ruleExplore": {
+      "bookList": "-class.item.[64:]",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.col-md-14 col-sm-16 col-xs-12 clearfix news-box",
+      "chapterName": "a@text##\\s+\\d{4}-\\d{2}-\\d{2}",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 按实际页面结构定位下一页按钮：id为long-page的容器下，class是pagelink_a且文本是“下一页”的a标签\nvar nextLinkElem = doc.select(\"#long-page a.pagelink_a:contains(下一页)\").first();\n\nif (!nextLinkElem) {\n    // 没找到下一页按钮，返回空\n    \"\";\n} else {\n    var nextUrl = nextLinkElem.attr(\"href\");\n    // 从链接提取页码（匹配“-数字.html”格式，比如160-2.html里的2）\n    var pageMatch = nextUrl.match(/-(\\d+)\\.html/);\n    \n    if (!pageMatch) {\n        // 页码格式不对，返回空\n        \"\";\n    } else {\n        var nextPage = parseInt(pageMatch[1], 10);\n        // 下一页页码≤50则返回链接，否则停止\n        nextPage <= 10 ? nextUrl : \"\";\n    }\n}"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "贪心",
+    "bookSourceName": "㊗️淫牛㊗️贪心㊗️10",
+    "bookSourceType": 0,
+    "bookSourceUrl": "yiniuys5.com#贪心",
+    "customOrder": 24,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "是::https://cdnaaapi.yiniuyingshi6.com:2053/",
+    "lastUpdateTime": 1757563491213,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.ttnr@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.area@dl.10@dd",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "class.col-xs-10 homeTxtL",
+      "chapterName": "a@text##.*套图.*|.*在熟睡的闺房被他男朋友上了.*",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "@js:var doc = org.jsoup.Jsoup.parse(result);\n// 定位“下一页”按钮：匹配文本为“下一页”（Unicode编码&#19979;&#19968;&#39029;）的a标签，优先取PC端（hidden-xs）容器内的元素\nvar nextLinkElem = doc.select(\"ul.pagination.pagination-lg.hidden-xs a.page_link:contains(下一页)\").first();\n\n// 若PC端未找到，再尝试从移动端（visible-xs）容器内查找\nif (!nextLinkElem) {\n    nextLinkElem = doc.select(\"ul.pagination.pager.visible-xs a#ff-next:contains(下一页)\").first();\n}\n\nif (!nextLinkElem) {\n    // 没找到下一页按钮，返回空\n    \"\";\n} else {\n    var nextUrl = nextLinkElem.attr(\"href\");\n    // 从链接提取页码（匹配“-数字.html”格式，如43-2.html里的2）\n    var pageMatch = nextUrl.match(/-(\\d+)\\.html/);\n    \n    if (!pageMatch) {\n        // 页码格式不对，返回空\n        \"\";\n    } else {\n        var nextPage = parseInt(pageMatch[1], 10);\n        // 下一页页码≤10则返回链接，否则停止\n        nextPage <= 10 ? nextUrl : \"\";\n    }\n}"
+    },
+    "weight": 0
+  }
+]
