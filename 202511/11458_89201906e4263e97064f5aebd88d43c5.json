@@ -1,0 +1,116 @@
+[
+  {
+    "bookSourceName": "83中文S",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.83zws.com",
+    "bookUrlPattern": "https?://www.83zws.com/book/\\d+/\\d+/",
+    "customOrder": 5,
+    "enable": false,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36"
+    },
+    "lastUpdateTime": "1762256244201",
+    "respondTime": 1862,
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.0@tag.a.0@text",
+      "coverUrl": "id.fmimg@tag.img@data-original",
+      "baseCoverUrl": "",
+      "intro": "id.intro@textNodes",
+      "kind": "class.con_top@tag.a.1@text",
+      "lastChapter": "id.info@tag.p.2@tag.a.0@text",
+      "name": "id.info@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@tag.p@textNodes##本章未完，点击下一页继续阅读。|83中文网最新网址www.*com",
+      "nextContentUrl": "text.下一页@href",
+      "baseNextContentUrl": "https://www.83zws.com"
+    },
+    "ruleExplore": {
+      "bookList": "class.r.0@tag.li",
+      "name": "class.s2.0@text",
+      "author": "class.s5.0@text",
+      "kind": "class.s1.0@text",
+      "bookUrl": "class.s2.0@tag.a.0@href"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.btm@tag.a.0@text",
+      "bookList": "class.item",
+      "bookUrl": "tag.dl@tag.dt.0@tag.a.0@href",
+      "baseBookUrl": "https://www.83zws.com",
+      "coverUrl": "class.image@tag.a.0@tag.img@data-original",
+      "baseCoverUrl": "",
+      "intro": "tag.dl@tag.dd.0@textNodes",
+      "name": "tag.dl@tag.dt.0@tag.a.0@text",
+      "wordCount": "class.btm@tag.em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dl@tag.a!0:1:2:3:4:5:6:7",
+      "chapterName": "tag.dd@text",
+      "chapterUrl": "href",
+      "baseChapterUrl": "https://www.83zws.com"
+    },
+    "searchUrl": "https://www.83zws.com/soso/",
+    "method": "POST",
+    "body": {
+      "searchkey": "{{keyword}}"
+    },
+    "weight": 0,
+    "exploreUrl": "玄幻::/sort/1_{{page}}/\n武侠::/sort/2_{{page}}/\n都市::/sort/3_{{page}}/\n历史::/sort/4_{{page}}/\n科幻::/sort/5_{{page}}/\n游戏::/sort/6_{{page}}/\n女生::/sort/9_{{page}}/\n其他::/sort/10_{{page}}/"
+  },
+  {
+    "bookSourceGroup": "抓包",
+    "bookSourceName": "猫眼看书",
+    "bookSourceType": "0",
+    "bookSourceUrl": "http://api.lemiyigou.com",
+    "enable": true,
+    "flyersoft": true,
+    "from": 1,
+    "header": {
+      "User-Agent": "okhttp/4.9.2",
+      "client-device": "2d37f6b5b6b2605373092c3dc65a3b39",
+      "client-brand": "Redmi",
+      "client-version": "2.3.0",
+      "client-name": "app.maoyankanshu.novel",
+      "client-source": "android",
+      "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuanhndHp4Yy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjgzODkxNjUyLCJleHAiOjE3NzcyMDM2NTIsIm5iZiI6MTY4Mzg5MTY1MiwianRpIjoiR2JxWmI4bGZkbTVLYzBIViIsInN1YiI6Njg3ODYyLCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.mMxaC2SVyZKyjC6rdUqFVv5d9w_X36o0AdKD7szvE_Q"
+    },
+    "ruleBookAuthor": "$.authorName",
+    "ruleBookContent": "$.content",
+    "ruleBookContentReplaceRegex": "##一秒记住.*精彩阅读。|7017k",
+    "ruleBookInfoInit": "$.data",
+    "ruleBookCoverUrl": "$.cover",
+    "ruleBookIntroduce": "$.summary",
+    "ruleBookNovelId": "$.novelId",
+    "ruleBookKind": "{{$.lastChapter.decTime}},{{$.averageScore}}分,{{$.className}},{{$..tagName}}",
+    "ruleBookLastChapter": "$.lastChapter.chapterName##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+    "ruleBookName": "$.novelName",
+    "ruleBookWordCount": "$.wordNum",
+    "ruleChapterList": "$.list[*]",
+    "ruleChapterIndex": "$.chapterNumber",
+    "ruleChapterName": "$.chapterName##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+    "ruleChapterUpdateTime": "{{$.updatedAt}} 字数：{{$.wordNum}}",
+    "ruleChapterUrl": "/novel/{{novelId}}/chapters?readNum=1",
+    "ruleChapterContentUrl": "$.path@js:java.aesBase64DecodeToString(result,\"f041c49714d39908\",\"AES/CBC/PKCS5Padding\",\"0123456789abcdef\")",
+    "ruleChapterContent": "$.content",
+    "ruleCoverUrl": "$..cover",
+    "ruleIntroduce": "$..summary##(^|[。！？]+[”」）】]?)##$1<br>",
+    "ruleSearchAuthor": "$.authorName",
+    "ruleSearchCoverUrl": "$.cover",
+    "ruleSearchIntroduce": "$.summary",
+    "ruleSearchKind": "{{$..className}},{{$.averageScore}}分",
+    "ruleSearchLastChapter": "",
+    "ruleSearchList": "$.data[*]",
+    "ruleSearchName": "$.novelName",
+    "ruleSearchNovelId": "$.novelId",
+    "ruleSearchNoteUrl": "/novel/{{novelId}}?isSearch=1",
+    "ruleSearchUrl": "/search?page={{page}}&keyword={{keyword}}",
+    "ruleSearchWordCount": "$.wordNum",
+    "serialNumber": -100,
+    "testState": 0,
+    "testTime": 0,
+    "weight": 5
+  }
+]
