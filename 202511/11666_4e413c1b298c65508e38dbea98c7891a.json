@@ -1,0 +1,647 @@
+[
+  {
+    "bookSourceGroup": "2025年11月23日,📸🪜🔍柳树分组,图",
+    "bookSourceName": "📸🪜🔍|COS仓库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://cosck.cc",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "　首页::/page/{{page}}\n　福利::/b/tag/%e7%a6%8f%e5%88%a9/page/{{page}}\n　妹子::/b/tag/%e5%a6%b9%e5%ad%90/page/{{page}}\n　女仆::/b/tag/%e5%a5%b3%e4%bb%86/page/{{page}}\n　动漫::/b/tag/%e5%8a%a8%e6%bc%ab/page/{{page}}\n　护士::/b/tag/%e6%8a%a4%e5%a3%ab/page/{{page}}\n　合集::/b/tag/%e5%90%88%e9%9b%86/page/{{page}}\n　写真::/b/tag/%e5%86%99%e7%9c%9f/page/{{page}}\n　COS::/b/tag/cos/page/{{page}}\n　Cosdoki::/b/tag/cosdoki/page/{{page}}\n　---* . *💥. * * . 🌙* . . * .. ✨* . * . * . *⭐---\n　福利::/b/tag/%e7%a6%8f%e5%88%a9/page/{{page}}\n　写真::/b/tag/%e5%86%99%e7%9c%9f/page/{{page}}\n　COS::/b/tag/cos/page/{{page}}\n　Coser::/b/tag/coser/page/{{page}}\n　护士::/b/tag/%e6%8a%a4%e5%a3%ab/page/{{page}}\n　凉凉::/b/tag/%e5%87%89%e5%87%89/page/{{page}}\n　合集::/b/tag/%e5%90%88%e9%9b%86/page/{{page}}\n　蜜桃::/b/tag/%e8%9c%9c%e6%a1%83/page/{{page}}\n　图集::/b/tag/%e5%9b%be%e9%9b%86/page/{{page}}\n　美少女::/b/tag/%e7%be%8e%e5%b0%91%e5%a5%b3/page/{{page}}\n　泳衣::/b/tag/%e6%b3%b3%e8%a1%a3/page/{{page}}\n　私房::/b/tag/%e7%a7%81%e6%88%bf/page/{{page}}",
+    "lastUpdateTime": 1763881159645,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "wordCount": ".entry-date published updated@text"
+    },
+    "ruleContent": {
+      "content": ".entry-content@p@html"
+    },
+    "ruleExplore": {
+      "bookList": ".pb-grid-post-col",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src",
+      "kind": ".cat-links@text",
+      "name": "h2@a@text"
+    },
+    "ruleSearch": {
+      "bookList": ".pb-grid-post-col",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src",
+      "kind": ".cat-links@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "https://xuejie1024.com/\nhttps://xuejievip.com\nhttps://xuejie.me",
+    "bookSourceGroup": "2025年11月23日,图,📸🇨🇳🔍柳树分组",
+    "bookSourceName": "📸🇨🇳🔍|学姐吧",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xuejie1024.com/#啊",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "观球::/page/{{page}}?s=观球&type=post\n背景::/page/{{page}}?s=背景&type=post\nai画::/page/{{page}}?s=ai画&type=post\n绘制::/page/{{page}}?s=ai绘&type=post\n白嫩::/page/{{page}}?s=嫩&type=post\n巨乳::/page/{{page}}?s=巨乳&type=post\n肉体::/page/{{page}}?s=肉体&type=post\n裸体::/page/{{page}}?s=裸体&type=post\n可爱::/page/{{page}}?s=可爱&type=post\n性感::/page/{{page}}?s=性感&type=post\n萝莉::/page/{{page}}?s=萝莉&type=post\n制服::/page/{{page}}?s=制服&type=post\n泳装::/page/{{page}}?s=泳装&type=post\n比基尼::/page/{{page}}?s=比基尼&type=post\n情趣::/page/{{page}}?s=情趣&type=post\n内衣::/page/{{page}}?s=内衣&type=post\n内裤::/page/{{page}}?s=内裤&type=post\n丁字裤::/page/{{page}}?s=丁字裤&type=post\n角色扮演::/page/{{page}}?s=角色扮演&type=post\n写真::/page/{{page}}?s=写真&type=post\n黑丝::/page/{{page}}?s=黑丝&type=post\n白丝::/page/{{page}}?s=白丝&type=post\n丝袜::/page/{{page}}?s=丝袜&type=post\n私密::/page/{{page}}?s=私密&type=post\ncos::/page/{{page}}?s=cos&type=post\n妹子图::/tag/meizitu/page/{{page}}\n图包::/tag/tubao/page/{{page}}\n电影::/tag/dianying/page/{{page}}\n女老师::/tag/nvlaoshi/page/{{page}}\n网站推荐::/tag/wangzhantuijian/page/{{page}}\nB站::/tag/bilibili/page/{{page}}\n剧集::/tag/juji/page/{{page}}\n写真偶像::/tag/xiezhenouxiang/page/{{page}}\n福利姬::/tag/fuliji/page/{{page}}\n大事件::/tag/dashijian/page/{{page}}\n写真杂志::/tag/xiezhenzazhi/page/{{page}}\n工具::/tag/gongju/page/{{page}}\n科幻::/tag/kehuan/page/{{page}}\n动画::/tag/donghua/page/{{page}}\n油管::/tag/youtube/page/{{page}}\n游戏::/tag/youxi/page/{{page}}\n情趣::/tag/qingqu/page/{{page}}\n推特::/tag/twitter/page/{{page}}\nCosplay::/tag/cosplay/page/{{page}}\nFriday::/tag/friday/page/{{page}}\n摸鱼::/tag/moyu/page/{{page}}\n漫画::/tag/manhua/page/{{page}}\nNTR::/tag/ntr/page/{{page}}\nWeekly Playboy::/tag/weekly-playboy/page/{{page}}\n美剧::/tag/meiju/page/{{page}}\n女主播::/tag/nvzhubo/page/{{page}}\n故事::/tag/gushi/page/{{page}}\n知乎::/tag/zhihu/page/{{page}}\n微博::/tag/weibo/page/{{page}}\n抖音::/tag/douyin/page/{{page}}\n榜单::/tag/bangdan/page/{{page}}\n街拍::/tag/jiepai/page/{{page}}\n港片::/tag/gangpian/page/{{page}}\n漫威::/tag/marvel/page/{{page}}\n音乐::/tag/yinyue/page/{{page}}\nNetflix::/tag/netflix/page/{{page}}\n大数据::/tag/dashuju/page/{{page}}\nLookbook::/tag/lookbook/page/{{page}}\n小说::/tag/xiaoshuo/page/{{page}}\n2021::/tag/2021/page/{{page}}\n三上悠亚::/tag/mikami-yua/page/{{page}}\n阿里云盘::/tag/aliyundrive/page/{{page}}\n秀人::/tag/xiuren/page/{{page}}\n探花::/tag/tanhua/page/{{page}}\nGithub::/tag/github/page/{{page}}\n综艺::/tag/zongyi/page/{{page}}\nAI绘画::/tag/aihuihua/page/{{page}}\n插画::/tag/chahua/page/{{page}}\nInstagram::/tag/instagram/page/{{page}}\n黑神话：悟空::/tag/heishenhua-wukong/page/{{page}}\n电影解说::/tag/dianyingjieshuo/page/{{page}}\n鱿鱼游戏::/tag/squid-game/page/{{page}}\n写真集::/tag/xiezhenji/page/{{page}}\n短剧::/tag/duanju/page/{{page}}\n麻豆传媒::/tag/madouchuanmei/page/{{page}}\n淘宝::/tag/taobao/page/{{page}}\n吉他妹妹::/tag/jitameimei/page/{{page}}\n爽文::/tag/shuangwen/page/{{page}}\n豆瓣::/tag/douban/page/{{page}}\n壁纸::/tag/bizhi/page/{{page}}\nP站::/tag/p-zhan/page/{{page}}\n玩偶姐姐::/tag/wanoujiejie/page/{{page}}\n深田咏美::/tag/eimi-fukada/page/{{page}}\n筿崎爱::/tag/ai-shinozaki/page/{{page}}\n纪录片::/tag/jilupian/page/{{page}}\n健身::/tag/jianshen/page/{{page}}\n上海::/tag/shanghai/page/{{page}}\n图书馆::/tag/javlibrary/page/{{page}}\nChrome插件::/tag/chrome-chajian/page/{{page}}\n体位::/tag/tiwei/page/{{page}}\nDC::/tag/dc/page/{{page}}\n预告::/tag/yugao/page/{{page}}\n贴吧::/tag/tieba/page/{{page}}\n历史::/tag/lishi/page/{{page}}\n干货::/tag/ganhuo/page/{{page}}\nhitomio拾六::/tag/hitomio16/page/{{page}}\n漫改::/tag/mangai/page/{{page}}\n英雄联盟::/tag/lol/page/{{page}}\nARTGRAVIA::/tag/artgravia/page/{{page}}\nWindows::/tag/windows/page/{{page}}\n网易::/tag/netease/page/{{page}}\n瑜伽::/tag/yoga/page/{{page}}\n小师妹::/tag/xiaoshimei/page/{{page}}\n原创::/tag/yuanchuang/page/{{page}}\n奥斯卡::/tag/oscars/page/{{page}}\nFC2::/tag/fc2/page/{{page}}\nChatGPT::/tag/chatgpt/page/{{page}}\n微密圈::/tag/weimiquan/page/{{page}}\n基努·里维斯::/tag/keanu-reeves/page/{{page}}\n阿里巴巴::/tag/alibaba/page/{{page}}\nASMR::/tag/asmr/page/{{page}}\n糯美子::/tag/nuomeizi/page/{{page}}\n百度网盘::/tag/baiduwangpan/page/{{page}}\n动漫::/tag/dongman/page/{{page}}\n鬼吹灯::/tag/guichuideng/page/{{page}}\n套路::/tag/taolu/page/{{page}}\n丝袜::/tag/siwa/page/{{page}}\nTikTok::/tag/tiktok/page/{{page}}\n韩剧::/tag/hanju/page/{{page}}\n阿朱::/tag/azhu/page/{{page}}\n龙之家族::/tag/house-of-the-dragon/page/{{page}}\n权力的游戏::/tag/game-of-thrones/page/{{page}}\n红包::/tag/hongbao/page/{{page}}\n虎牙::/tag/huya/page/{{page}}\n女子格斗::/tag/nvzigedou/page/{{page}}\n微信::/tag/wechat/page/{{page}}\n毛骗::/tag/maopian/page/{{page}}\nNGA::/tag/nga/page/{{page}}\nPixiv::/tag/pixiv/page/{{page}}\n破解版::/tag/pojieban/page/{{page}}\n医美::/tag/yimei/page/{{page}}\n蒂法::/tag/tifa/page/{{page}}\n电子书::/tag/dianzishu/page/{{page}}\n黑男丘比特::/tag/heinanqiubite/page/{{page}}\n汤姆·赫兰德::/tag/tom-holland/page/{{page}}\n河北彩花::/tag/saika-kawakita/page/{{page}}\n装机::/tag/zhuangji/page/{{page}}\n日剧::/tag/riju/page/{{page}}\n三体::/tag/three-body/page/{{page}}\n人工智能::/tag/ai/page/{{page}}\n家教::/tag/jiajiao/page/{{page}}\nLeehee Express::/tag/leehee-express/page/{{page}}\n姜文::/tag/jiangwen/page/{{page}}\nCG::/tag/cg/page/{{page}}\n篮球::/tag/lanqiu/page/{{page}}\n孙红雷::/tag/sunhonglei/page/{{page}}\n五百::/tag/wubai/page/{{page}}\n扫黑风暴::/tag/saoheifengbao/page/{{page}}\n助眠音乐::/tag/zhumianyinyue/page/{{page}}\n黄明志::/tag/huangmingzhi/page/{{page}}\n鬼灭之刃::/tag/demon-slayer/page/{{page}}\n灌篮高手::/tag/slam-dunk/page/{{page}}\n天木纯::/tag/jun-amaki/page/{{page}}\nFLASH::/tag/flash/page/{{page}}\n韩国女团::/tag/hanguonvtuan/page/{{page}}\n小蓝蓝::/tag/xiaolanlan/page/{{page}}\n酒店::/tag/jiudian/page/{{page}}\nOnlyFans::/tag/onlyfans/page/{{page}}\n系统::/tag/xitong/page/{{page}}\n黑客帝国::/tag/the-matrix/page/{{page}}\n美谷朱里::/tag/mitani-akari/page/{{page}}\nJKF::/tag/jkf/page/{{page}}\n潘甜甜::/tag/pantiantian/page/{{page}}\n狂赌之渊::/tag/kakegurui-the-movie/page/{{page}}\n007::/tag/007/page/{{page}}\n甄子丹::/tag/zhenzidan/page/{{page}}\n王动::/tag/wangdong/page/{{page}}\nWANIMAL::/tag/wanimal/page/{{page}}\n鲍鱼游戏::/tag/baoyuyouxi/page/{{page}}\n长津湖::/tag/changjinhu/page/{{page}}\n青山知可子::/tag/chikako-aoyama/page/{{page}}\n世界冠军::/tag/shijieguanjun/page/{{page}}\n奥运会::/tag/olympic-games/page/{{page}}\n成人版::/tag/chengrenban/page/{{page}}\n沙丘::/tag/dune/page/{{page}}\n猫眼三姐妹::/tag/cats-eye/page/{{page}}\n双城之战::/tag/arcane/page/{{page}}\n接码平台::/tag/jiemapingtai/page/{{page}}\n姜仁卿::/tag/kang-in-kyung/page/{{page}}\nOffice::/tag/office/page/{{page}}\nPhotoshop::/tag/photoshop/page/{{page}}\n马伯庸::/tag/maboyong/page/{{page}}\n内衣::/tag/neiyi/page/{{page}}\nSwitch::/tag/switch/page/{{page}}\n最终幻想7::/tag/ff7/page/{{page}}\n机车::/tag/jiche/page/{{page}}\n比基尼::/tag/bikini/page/{{page}}\nFanza::/tag/fanza/page/{{page}}\n蜘蛛侠::/tag/spider-man/page/{{page}}\n孙乐乐::/tag/son-ye-eun/page/{{page}}\n求出处::/tag/qiuchuchu/page/{{page}}\n女友::/tag/girlfriend/page/{{page}}\nAfreecaTV::/tag/afreecatv/page/{{page}}\n公告::/tag/gonggao/page/{{page}}\nQQ飞车::/tag/qqfeiche/page/{{page}}\n论文::/tag/lunwen/page/{{page}}\n桜井宁宁::/tag/yingjingningning/page/{{page}}\n阿凡达::/tag/avatar/page/{{page}}\n买家秀::/tag/maijiaxiu/page/{{page}}\n洛丽塔大哥::/tag/luolitadage/page/{{page}}\n虎扑::/tag/hupu/page/{{page}}\n犯罪都市::/tag/crime-city/page/{{page}}\n马东锡::/tag/tong-seok-ma/page/{{page}}\n指环王：力量之戒::/tag/the-lord-of-the-rings/page/{{page}}\n毒液::/tag/venom/page/{{page}}\n范冰冰::/tag/fanbingbing/page/{{page}}\n神木丽::/tag/kamiki-rei/page/{{page}}\n脸红Dearie::/tag/dearie/page/{{page}}\nOpenAI::/tag/openai/page/{{page}}\n抖娘利世::/tag/dounianglishi/page/{{page}}\n科普::/tag/kepu/page/{{page}}\n疾速追杀::/tag/john-wick/page/{{page}}\n谢苗::/tag/xiemiao/page/{{page}}\n陈妮妮::/tag/chennini/page/{{page}}\n枫花恋::/tag/kaede-karen/page/{{page}}\n国漫::/tag/guoman/page/{{page}}\n豆包::/tag/doubao/page/{{page}}\n周处除三害::/tag/zhouchuchusanhai/page/{{page}}",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\",\n  \"Referer\": \"https://xuejie1024.com\" \n}",
+    "lastUpdateTime": 1763881180810,
+    "loginUrl": "https://xuejie1024.com/users/24245",
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": ".entry-content img@html||.single-featured@html"
+    },
+    "ruleExplore": {
+      "bookList": "class.post-list-item item-post-style-1",
+      "bookUrl": "a@href",
+      "coverUrl": ".post-module-thumb .post-thumb@data-src||.post-module-thumb .post-thumb@src",
+      "intro": ".post-excerpt@text",
+      "name": "h2@a@text"
+    },
+    "ruleSearch": {
+      "bookList": "class.post-list-item item-post-style-1",
+      "bookUrl": "a@href",
+      "coverUrl": ".post-module-thumb .post-thumb@data-src||.post-module-thumb .post-thumb@src",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}?s={{key}}&type=post",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,图,📸🇨🇳🔍柳树分组",
+    "bookSourceName": "📸🇨🇳🔍|卓特视觉",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.droitstock.com/",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部🌹一个就行::https://www.droitstock.com/",
+    "lastUpdateTime": 1763881233036,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "img@src",
+      "name": ".keywordText@text"
+    },
+    "ruleContent": {
+      "content": ".MediaFlexBase@html",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "bookList": "div@a",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src||image@srcset",
+      "name": ".TopicBaseTitleText@text"
+    },
+    "ruleSearch": {
+      "bookList": ".keywordText",
+      "checkKeyWord": "星空",
+      "name": ".keywordText@text"
+    },
+    "ruleToc": {
+      "chapterList": "h2",
+      "chapterName": "h2@a@text"
+    },
+    "searchUrl": "https://www.droitstock.com/images/{{key}}?t=1763853521734",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,📸🪜🔍柳树分组,图",
+    "bookSourceName": "📸🪜🔍|虹图",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.hongimg.com",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/page/{{page}}\n白虎::/page/{{page}}?s=白虎\n私拍::/category/%e6%b8%85%e6%b6%bc%e5%af%ab%e7%9c%9f/sipai\n国模::/category/%e6%b8%85%e6%b6%bc%e5%af%ab%e7%9c%9f/guomo\n韩国::/category/%e6%b8%85%e6%b6%bc%e5%af%ab%e7%9c%9f/hanmo\n日本::/category/%e6%b8%85%e6%b6%bc%e5%af%ab%e7%9c%9f/rimo\n推特::/category/wanghong/%e6%8e%a8%e7%89%b9\n不知道::https://www.hongimg.com/category/wanghong/onlyfans\n微博::https://www.hongimg.com/category/wanghong/%e5%be%ae%e5%8d%9a\n福利姬::https://www.hongimg.com/category/wanghong/%e7%a6%8f%e5%88%a9%e5%a7%ac\n摄影师::https://www.hongimg.com/category/wanghong/%e6%94%9d%e5%bd%b1%e5%b8%ab\nCOS::https://www.hongimg.com/category/cosplay\n丝袜美腿::https://www.hongimg.com/category/%e7%b5%b2%e8%a5%aa%e7%be%8e%e8%85%bf\n欧美::https://www.hongimg.com/category/%e6%ad%90%e7%be%8e%e5%af%ab%e7%9c%9f\n动图::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/dongtu\n少女::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/shaonv\n人妻::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/renqi\n树人::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/suren\n风俗::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/fengsu\n职场::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/zhichang\n巨乳::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/juru\n无毛::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/wumao\n极品::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/jipin\nsod::https://www.hongimg.com/category/%e6%80%a7%e6%84%9f%e6%bf%80%e6%83%85/sod",
+    "lastUpdateTime": 1763881237770,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleContent": {
+      "content": ".entry-content@html"
+    },
+    "ruleExplore": {
+      "bookList": ".inside-article",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src||image@srcset",
+      "kind": ".cat-links@text",
+      "name": "h2@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleSearch": {
+      "bookList": ".inside-article",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src||image@srcset",
+      "kind": ".posted-on@text",
+      "name": "h2@text",
+      "wordCount": ".cat-links@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,图,📸🇨🇳🔍柳树分组",
+    "bookSourceName": "📸🇨🇳🔍|啵蕾",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://cn.cosblay.com/",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "cos::/category/cosplay/page/{{page}}\n\n纯情::https://cn.cosblay.com/category/chunqing/page/{{page}}\n欧美::https://cn.cosblay.com/category/oumei/page/{{page}}\n最新::https://cn.cosblay.com/%e6%9c%ac%e6%9c%88%e7%86%b1%e9%96%80\n白虎::/page/{{page}}?s=白虎",
+    "lastUpdateTime": 1763885116065,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleContent": {
+      "content": ".entry-content@p@html"
+    },
+    "ruleExplore": {
+      "bookList": ".inside-article",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src",
+      "kind": ".cat-links@a@text",
+      "name": "h2@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleSearch": {
+      "bookList": ".inside-article",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src",
+      "kind": ".cat-links@a@text",
+      "name": "h2@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,图,📸🇨🇳🔍柳树分组",
+    "bookSourceName": "📸🇨🇳🔍|啵蕾|最新",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://cn.cosblay.com/#最新",
+    "customOrder": 4,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "今天::https://cn.cosblay.com/%e4%bb%8a%e6%97%a5%e7%86%b1%e9%96%80\n一个星期::https://cn.cosblay.com/%e6%9c%ac%e5%91%a8%e7%83%ad%e9%97%a8\n一个月::https://cn.cosblay.com/%e5%ad%a3%e5%ba%a6%e7%83%ad%e9%97%a8",
+    "lastUpdateTime": 1763881341477,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleContent": {
+      "content": ".entry-content@p@html"
+    },
+    "ruleExplore": {
+      "bookList": "ul@li",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "kind": ".cat-links@a@text",
+      "name": "a@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleSearch": {
+      "bookList": ".inside-article",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src",
+      "kind": ".cat-links@a@text",
+      "name": "h2@text",
+      "wordCount": ".posted-on@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "📚🇨🇳🔍柳树分组,2025年11月23日,书",
+    "bookSourceName": "📚🇨🇳🔍|很男人|长篇",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.41nr.com/",
+    "customOrder": 5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "总点击榜 ::/top/allvisit_{{page}}/\n　月点击榜 ::/top/monthvisit_{{page}}/\n　周点击榜 ::/top/weekvisit_{{page}}/\n　字数排行 ::/top/size_{{page}}/\n　最新入库 ::/top/postdate_{{page}}/\n　最近更新::/top/lastupdate_{{page}}/\n\t🖤🤍🖤🤍🖤🤍🖤🤍🖤🤍🖤🤍\n玄幻魔法<a ::/lists/1-{{page}}.html\n　武侠修真<a ::/lists/2-{{page}}.html\n　都市言情<a ::/lists/3-{{page}}.html\n　历史军事<a ::/lists/4-{{page}}.html\n　侦探推理<a ::/lists/5-{{page}}.html\n　网游动漫<a ::/lists/6-{{page}}.html\n　科幻小说<a ::/lists/7-{{page}}.html\n　恐怖灵异<a ::/lists/8-{{page}}.html\n　女生小说<a ::/lists/9-{{page}}.html\n　其他书籍<a ::/lists/10-{{page}}.html\n　男人小说<a ::/lists/11-{{page}}.html\n　经济管理<a ::/lists/12-{{page}}.html\n　励志成功<a ::/lists/13-{{page}}.html\n　人物传记<a ::/lists/14-{{page}}.html\n　传统国学<a ::/lists/15-{{page}}.html\n　家庭生活<a ::/lists/16-{{page}}.html\n　婚姻恋爱<a ::/lists/17-{{page}}.html\n　养生保健<a ::/lists/18-{{page}}.html\n　文学艺术::/lists/19-{{page}}.html",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\",\n  \"Referer\": \"https://m.41nr.com/\"\n}",
+    "lastUpdateTime": 1763881345492,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "p:contains(作者)@text##作者：",
+      "coverUrl": ".book-img img@src",
+      "intro": ".intro_info@text",
+      "kind": "p:contains(分类)@text##分类：",
+      "lastChapter": "p:contains(最新)a@text",
+      "name": "h2@text",
+      "tocUrl": "text.在线阅读@href",
+      "wordCount": "p:contains(更新)@text##更新："
+    },
+    "ruleContent": {
+      "content": ".nr_nr@html##【(.*)章(.*)】|看~精(.*)|百/度(.*)|作者：(.*)|第(.*)章(.*)|..-..-..|本章未(.*)|(.*)--(.*)|strong",
+      "nextContentUrl": "text.下 页@href"
+    },
+    "ruleExplore": {
+      "author": "p@textNodes##\\[.*\\]",
+      "bookList": ".line",
+      "bookUrl": "a@href",
+      "kind": "span:contains(分类)@text##分类：",
+      "lastChapter": "span:contains(最新)@text##最新：",
+      "name": "a@text"
+    },
+    "ruleSearch": {
+      "author": "p@textNodes##\\[.*\\]",
+      "bookList": ".line",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": ".book-img img@src",
+      "kind": "span:contains(分类)@text##分类：",
+      "lastChapter": "span:contains(最新)@text##最新：",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter@li@a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/s.php,{method:\"post\",body:\"type=articlename&s={{key}}&submit=\"}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,📚🪜🔍柳树分组,书",
+    "bookSourceName": "📚🪜|一品阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.epgxs.com",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "辣文::/sort/10/{{page}}/\n完本::/quanben/sort/{{page}}/\n1::/sort/1/{{page}}/\n2::/sort/2/{{page}}/\n3::/sort/3/{{page}}/\n4::/sort/4/{{page}}/\n5::/sort/5/{{page}}/\n6::/sort/6/{{page}}/\n7::/sort/7/{{page}}/\n8::/sort/8/{{page}}/\n9::/sort/9/{{page}}/\n11::/sort/11/{{page}}/",
+    "lastUpdateTime": 1763881350066,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".fix@p.0@a@text",
+      "intro": ".m-desc xs-show@text",
+      "name": ".layout-tit.2@textNodes##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}|正文",
+      "wordCount": ".fix@p.5@text"
+    },
+    "ruleContent": {
+      "content": "<js>fetch('/chapter/ajax', {method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams({aid: window.__CHAPTER_AJAX__.aid, cid: window.__CHAPTER_AJAX__.cid, sign: window.__CHAPTER_AJAX__.sign})}).then(res=>res.text()).then(html=>html)</js>##<img.*?data-word=\\\"(.*?)\\\">##$1",
+      "nextContentUrl": "@css:#next_url@href"
+    },
+    "ruleExplore": {
+      "bookList": ".item",
+      "bookUrl": "dl@dt@a@href",
+      "intro": "dl@dd@text",
+      "name": "dl@dt@a@text"
+    },
+    "ruleSearch": {
+      "bookList": ".item",
+      "bookUrl": "dl@dt@a@href",
+      "name": "dl@dt@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "div@ul@li@a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,📚🪜🔍柳树分组,书",
+    "bookSourceName": "📜🪜🔍|book18",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.book18.org",
+    "customOrder": 7,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "处女::/k/%E5%A4%84%E5%A5%B3?page={{page}}#nw\n　都市激情 ::/category/15?page={{page}}&per-page=100\n　家庭乱伦 ::/category/6?page={{page}}&per-page=100\n　人妻交换 ::/category/18?page={{page}}&per-page=100\n　另类小说 ::/category/17?page={{page}}&per-page=100\n　校园春色 ::/category/16?page={{page}}&per-page=100\n　学生校园 ::/category/4?page={{page}}&per-page=100\n　乱伦文学 ::/category/23?page={{page}}&per-page=100\n　人妻熟女 ::/category/11?page={{page}}&per-page=100\n　都市生活 ::/category/5?page={{page}}&per-page=100\n　人妻文学 ::/category/25?page={{page}}&per-page=100\n　另类文学 ::/category/21?page={{page}}&per-page=100\n　强暴虐待 ::/category/7?page={{page}}&per-page=100\n　动漫改编 ::/category/13?page={{page}}&per-page=100\n　武侠科幻 ::/category/9?page={{page}}&per-page=100\n　名人明星 ::/category/12?page={{page}}&per-page=100\n　变身系列 ::/category/8?page={{page}}&per-page=100\n　经验故事 ::/category/10?page={{page}}&per-page=100\n　另类其它 ::/category/14?page={{page}}&per-page=100\n　学园文学 ::/category/22?page={{page}}&per-page=100\n　短篇文学 ::/category/24?page={{page}}&per-page=100\n　性知识 ::/category/31?page={{page}}&per-page=100\n　制服文学 ::/category/27?page={{page}}&per-page=100\n　正妹文学 ::/category/28?page={{page}}&per-page=100\n　武侠文学 ::/category/26?page={{page}}&per-page=100\n　异国文学 ::/category/30?page={{page}}&per-page=100\n　未分类文章 ::/category/20?page={{page}}&per-page=100\n　3P文学 ::/category/29?page={{page}}&per-page=100\n　乱伦文章 ::/category/19?page={{page}}&per-page=100",
+    "lastUpdateTime": 1763881353749,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": ".content@p@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": ".list-group-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "处女",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/k/{{key}}?page={{page}}#nw",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,📸🪜🔍柳树分组,图",
+    "bookSourceName": "📸🪜🔍|930图",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.930tu.com",
+    "customOrder": 8,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "COS::/tag/1484_{{page}}.html\n　风骚::/tag/1339_{{page}}.html\n　大尺-度::/tag/1326_{{page}}.html\n　福利::/tag/1330_{{page}}.html\n　情趣内衣::/tag/1414_{{page}}.html\n　诱惑::/tag/1267_{{page}}.html\n　黑丝::/tag/1489_{{page}}.html\n　姐妹花::/tag/1264_{{page}}.html\n　大胆::/tag/1340_{{page}}.html\n　私房::/tag/1328_{{page}}.html\n　透视::/tag/1336_{{page}}.html\n　RT::/tag/1327_{{page}}.html\n　巨乳::/tag/1268_{{page}}.html\n　爆乳::/tag/1266_{{page}}.html\n　尤物::/tag/1299_{{page}}.html\n　女优::/tag/4078_{{page}}.html\n　性感::/tag/1259_{{page}}.html\n　S妇::/tag/1589_{{page}}.html\n　翘臀::/tag/1331_{{page}}.html\n　丝袜诱惑::/tag/1601_{{page}}.html\n　美臀::/tag/1304_{{page}}.html\n　极品::/tag/1252_{{page}}.html\n　大xiong::/tag/1342_{{page}}.html\n　性感美女::/xingganmeinv/list_{{page}}_{{page}}.html\n　海外美女::/haiwaimeinv/list_{{page}}_{{page}}.html\n　日韩美女::/rihanmeinv/list_{{page}}_{{page}}.html\n　网红美女::/wanghongmeinv/list_{{page}}_{{page}}.html\n　丝袜美女::/siwameinv/list_{{page}}_{{page}}.html\n　推荐::/tuijian/list_{{page}}_{{page}}.html",
+    "lastUpdateTime": 1763881357850,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".c_l@p.1@a@text",
+      "coverUrl": "center@html",
+      "kind": ".fenxiang_l@a@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "center@html",
+      "nextContentUrl": "text.下页@href"
+    },
+    "ruleExplore": {
+      "bookList": ".img@li",
+      "bookUrl": ".p_title@a@href",
+      "coverUrl": "img@src",
+      "kind": "p!1@a@text",
+      "name": ".p_title@text"
+    },
+    "ruleSearch": {
+      "bookList": ".img@li",
+      "bookUrl": ".p_title@a@href",
+      "coverUrl": "img@src",
+      "kind": "p!1@a@text",
+      "name": ".p_title@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/search/{{key}}_{{page}}.html",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "最新地址发布页 xiaohuangshu.me\n永久地址(墙) xchina.co",
+    "bookSourceGroup": "2025年11月23日,📚🪜🔍柳树分组,书",
+    "bookSourceName": "📚🪜🔍|小黄书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xchina001.site",
+    "customOrder": 10,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "\n////////////////////更新////////////////////\n全部小说::/fictions/1/{{page}}.html\n　人妻女友::/fictions/tag-1/{{page}}.html\n　编辑推荐::/fictions/tag-101/{{page}}.html\n　长篇连载::/fictions/tag-102/{{page}}.html\n　都市生活::/fictions/tag-4/{{page}}.html\n　家庭乱伦::/fictions/tag-9/{{page}}.html\n　多人群交::/fictions/tag-10/{{page}}.html\n　强暴性虐::/fictions/tag-13/{{page}}.html\n　古典玄幻::/fictions/tag-8/{{page}}.html\n　学生校园::/fictions/tag-2/{{page}}.html\n　绿帽主题::/fictions/tag-16/{{page}}.html\n　公司职场::/fictions/tag-11/{{page}}.html\n　经验故事::/fictions/tag-7/{{page}}.html\n　露出暴露::/fictions/tag-12/{{page}}.html\n　有声小说::/fictions/tag-999/{{page}}.html\n　西方主题::/fictions/tag-14/{{page}}.html\n　动漫游戏::/fictions/tag-5/{{page}}.html\n　伴侣交换::/fictions/tag-3/{{page}}.html\n　同性主题::/fictions/tag-15/{{page}}.html\n　名人明星::/fictions/tag-6/{{page}}.html\n　经典回忆::/fictions/tag-103/{{page}}.html\n　耽美小说::/fictions/tag-99/{{page}}.html\n　漫画小说::/fictions/tag-998/{{page}}.html\n　色友发表::/fictions/tag-1000/{{page}}.html\n//////////////////浏览最多////////////////////\n全部小说::/fictions/1/sort-read/{{page}}.html\n　人妻女友::/fictions/tag-1/sort-read/{{page}}.html\n　编辑推荐::/fictions/tag-101/sort-read/{{page}}.html\n　长篇连载::/fictions/tag-102/sort-read/{{page}}.html\n　都市生活::/fictions/tag-4/sort-read/{{page}}.html\n　家庭乱伦::/fictions/tag-9/sort-read/{{page}}.html\n　多人群交::/fictions/tag-10/sort-read/{{page}}.html\n　强暴性虐::/fictions/tag-13/sort-read/{{page}}.html\n　古典玄幻::/fictions/tag-8/sort-read/{{page}}.html\n　学生校园::/fictions/tag-2/sort-read/{{page}}.html\n　绿帽主题::/fictions/tag-16/sort-read/{{page}}.html\n　公司职场::/fictions/tag-11/sort-read/{{page}}.html\n　经验故事::/fictions/tag-7/sort-read/{{page}}.html\n　露出暴露::/fictions/tag-12/sort-read/{{page}}.html\n　有声小说::/fictions/tag-999/sort-read/{{page}}.html\n　西方主题::/fictions/tag-14/sort-read/{{page}}.html\n　动漫游戏::/fictions/tag-5/sort-read/{{page}}.html\n　伴侣交换::/fictions/tag-3/sort-read/{{page}}.html\n　同性主题::/fictions/tag-15/sort-read/{{page}}.html\n　名人明星::/fictions/tag-6/sort-read/{{page}}.html\n　经典回忆::/fictions/tag-103/sort-read/{{page}}.html\n　耽美小说::/fictions/tag-99/sort-read/{{page}}.html\n　漫画小说::/fictions/tag-998/sort-read/{{page}}.html\n　色友发表::/fictions/tag-1000/sort-read/{{page}}.html\n//////////////////评论最多////////////////////\n　全部成人小说::/fictions/1/sort-comment/{{page}}.html\n　人妻女友::/fictions/tag-1/sort-comment/{{page}}.html\n　编辑推荐::/fictions/tag-101/sort-comment/{{page}}.html\n　长篇连载::/fictions/tag-102/sort-comment/{{page}}.html\n　都市生活::/fictions/tag-4/sort-comment/{{page}}.html\n　家庭乱伦::/fictions/tag-9/sort-comment/{{page}}.html\n　多人群交::/fictions/tag-10/sort-comment/{{page}}.html\n　强暴性虐::/fictions/tag-13/sort-comment/{{page}}.html\n　古典玄幻::/fictions/tag-8/sort-comment/{{page}}.html\n　学生校园::/fictions/tag-2/sort-comment/{{page}}.html\n　绿帽主题::/fictions/tag-16/sort-comment/{{page}}.html\n　公司职场::/fictions/tag-11/sort-comment/{{page}}.html\n　经验故事::/fictions/tag-7/sort-comment/{{page}}.html\n　露出暴露::/fictions/tag-12/sort-comment/{{page}}.html\n　有声小说::/fictions/tag-999/sort-comment/{{page}}.html\n　西方主题::/fictions/tag-14/sort-comment/{{page}}.html\n　动漫游戏::/fictions/tag-5/sort-comment/{{page}}.html\n　伴侣交换::/fictions/tag-3/sort-comment/{{page}}.html\n　同性主题::/fictions/tag-15/sort-comment/{{page}}.html\n　名人明星::/fictions/tag-6/sort-comment/{{page}}.html\n　经典回忆::/fictions/tag-103/sort-comment/{{page}}.html\n　耽美小说::/fictions/tag-99/sort-comment/{{page}}.html\n　漫画小说::/fictions/tag-998/sort-comment/{{page}}.html\n　色友发表::/fictions/tag-1000/sort-comment/{{page}}.html\n一一一一一一一长篇一一一一一一\n　全部小说::/fictions/1/sort-read/length-3/{{page}}.html\n　人妻女友::/fictions/tag-1/sort-read/length-3/{{page}}.html\n　编辑推荐::/fictions/tag-101/sort-read/length-3/{{page}}.html\n　长篇连载::/fictions/tag-102/sort-read/length-3/{{page}}.html\n　都市生活::/fictions/tag-4/sort-read/length-3/{{page}}.html\n　家庭乱伦::/fictions/tag-9/sort-read/length-3/{{page}}.html\n　多人群交::/fictions/tag-10/sort-read/length-3/{{page}}.html\n　强暴性虐::/fictions/tag-13/sort-read/length-3/{{page}}.html\n　古典玄幻::/fictions/tag-8/sort-read/length-3/{{page}}.html\n　学生校园::/fictions/tag-2/sort-read/length-3/{{page}}.html\n　绿帽主题::/fictions/tag-16/sort-read/length-3/{{page}}.html\n　公司职场::/fictions/tag-11/sort-read/length-3/{{page}}.html\n　经验故事::/fictions/tag-7/sort-read/length-3/{{page}}.html\n　露出暴露::/fictions/tag-12/sort-read/length-3/{{page}}.html\n　有声小说::/fictions/tag-999/sort-read/length-3/{{page}}.html\n　西方主题::/fictions/tag-14/sort-read/length-3/{{page}}.html\n　动漫游戏::/fictions/tag-5/sort-read/length-3/{{page}}.html\n　伴侣交换::/fictions/tag-3/sort-read/length-3/{{page}}.html\n　同性主题::/fictions/tag-15/sort-read/length-3/{{page}}.html\n　名人明星::/fictions/tag-6/sort-read/length-3/{{page}}.html\n　经典回忆::/fictions/tag-103/sort-read/length-3/{{page}}.html\n　耽美小说::/fictions/tag-99/sort-read/length-3/{{page}}.html\n　漫画小说::/fictions/tag-998/sort-read/length-3/{{page}}.html\n　色友发表::/fictions/tag-1000/sort-read/length-3/{{page}}.html\n一一一一一一一中篇一一一一一一\n全部小说::/fictions/1/sort-read/length-2/{{page}}.html\n　人妻女友::/fictions/tag-1/sort-read/length-2/{{page}}.html\n　编辑推荐::/fictions/tag-101/sort-read/length-2/{{page}}.html\n　长篇连载::/fictions/tag-102/sort-read/length-2/{{page}}.html\n　都市生活::/fictions/tag-4/sort-read/length-2/{{page}}.html\n　家庭乱伦::/fictions/tag-9/sort-read/length-2/{{page}}.html\n　多人群交::/fictions/tag-10/sort-read/length-2/{{page}}.html\n　强暴性虐::/fictions/tag-13/sort-read/length-2/{{page}}.html\n　古典玄幻::/fictions/tag-8/sort-read/length-2/{{page}}.html\n　学生校园::/fictions/tag-2/sort-read/length-2/{{page}}.html\n　绿帽主题::/fictions/tag-16/sort-read/length-2/{{page}}.html\n　公司职场::/fictions/tag-11/sort-read/length-2/{{page}}.html\n　经验故事::/fictions/tag-7/sort-read/length-2/{{page}}.html\n　露出暴露::/fictions/tag-12/sort-read/length-2/{{page}}.html\n　有声小说::/fictions/tag-999/sort-read/length-2/{{page}}.html\n　西方主题::/fictions/tag-14/sort-read/length-2/{{page}}.html\n　动漫游戏::/fictions/tag-5/sort-read/length-2/{{page}}.html\n　伴侣交换::/fictions/tag-3/sort-read/length-2/{{page}}.html\n　同性主题::/fictions/tag-15/sort-read/length-2/{{page}}.html\n　名人明星::/fictions/tag-6/sort-read/length-2/{{page}}.html\n　经典回忆::/fictions/tag-103/sort-read/length-2/{{page}}.html\n　耽美小说::/fictions/tag-99/sort-read/length-2/{{page}}.html\n　漫画小说::/fictions/tag-998/sort-read/length-2/{{page}}.html\n　色友发表::/fictions/tag-1000/sort-read/length-2/{{page}}.html\n一一一一一一一短篇一一一一一一\n全部小说::/fictions/1/sort-read/length-1/{{page}}.html\n　人妻女友::/fictions/tag-1/sort-read/length-1/{{page}}.html\n　编辑推荐::/fictions/tag-101/sort-read/length-1/{{page}}.html\n　长篇连载::/fictions/tag-102/sort-read/length-1/{{page}}.html\n　都市生活::/fictions/tag-4/sort-read/length-1/{{page}}.html\n　家庭乱伦::/fictions/tag-9/sort-read/length-1/{{page}}.html\n　多人群交::/fictions/tag-10/sort-read/length-1/{{page}}.html\n　强暴性虐::/fictions/tag-13/sort-read/length-1/{{page}}.html\n　古典玄幻::/fictions/tag-8/sort-read/length-1/{{page}}.html\n　学生校园::/fictions/tag-2/sort-read/length-1/{{page}}.html\n　绿帽主题::/fictions/tag-16/sort-read/length-1/{{page}}.html\n　公司职场::/fictions/tag-11/sort-read/length-1/{{page}}.html\n　经验故事::/fictions/tag-7/sort-read/length-1/{{page}}.html\n　露出暴露::/fictions/tag-12/sort-read/length-1/{{page}}.html\n　有声小说::/fictions/tag-999/sort-read/length-1/{{page}}.html\n　西方主题::/fictions/tag-14/sort-read/length-1/{{page}}.html\n　动漫游戏::/fictions/tag-5/sort-read/length-1/{{page}}.html\n　伴侣交换::/fictions/tag-3/sort-read/length-1/{{page}}.html\n　同性主题::/fictions/tag-15/sort-read/length-1/{{page}}.html\n　名人明星::/fictions/tag-6/sort-read/length-1/{{page}}.html\n　经典回忆::/fictions/tag-103/sort-read/length-1/{{page}}.html\n　耽美小说::/fictions/tag-99/sort-read/length-1/{{page}}.html\n　漫画小说::/fictions/tag-998/sort-read/length-1/{{page}}.html\n　色友发表::/fictions/tag-1000/sort-read/length-1/{{page}}.html\n\n",
+    "lastUpdateTime": 1763881441942,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@css:.fiction-overview-info-item.author a@text",
+      "intro": "@css:.fiction-overview-brief@text",
+      "kind": "@css:.fiction-overview-info-item.tags .tag@text",
+      "lastChapter": "@css:.fiction-overview-info-item.chapter-count@text",
+      "name": "@css:.fiction-overview-info-item.title@text",
+      "wordCount": "@css:.fiction-overview-info-item.word-count@text"
+    },
+    "ruleContent": {
+      "content": ".fiction-body@html##（看精彩成人小说上《小黄书》.*[a-z]*）|导览|下一章"
+    },
+    "ruleExplore": {
+      "bookList": "@css:.list.fiction-list .item.fiction",
+      "bookUrl": "@css:.text > .title > a@href",
+      "intro": "@css:.text > .brief@text",
+      "name": "@css:.text > .title > a@text##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}"
+    },
+    "ruleSearch": {
+      "bookList": "@css:.list.fiction-list .item.fiction",
+      "bookUrl": "@css:.text > .title > a@href",
+      "checkKeyWord": "催眠",
+      "intro": "@css:.text > .brief@text",
+      "name": "@css:.text > .title > a@text##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}"
+    },
+    "ruleToc": {
+      "chapterList": "@css:.chapter-container a",
+      "chapterName": "@text",
+      "chapterUrl": "@href"
+    },
+    "searchUrl": "/fictions/keyword-{{key}}/{{page}}.html",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,📸🪜🔍柳树分组,图",
+    "bookSourceName": "📸🪜🔍|爱死俺的|搜索要用英文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.asianude4u.net",
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "ai::/page/{{page}}/?s=ai\nAsian Exclusive⏬          ::/category/asian-exclusive/page/{{page}}/\n　Asianude4u          ::/category/asian-exclusive/asianude4u/page/{{page}}/\n　TheBlackAlle          ::/category/asian-exclusive/theblackalle/page/{{page}}/\n　88Square          ::/category/asian-exclusive/88square/page/{{page}}/\n　ASIAN4YOU          ::/category/asian4you/page/{{page}}/\n　X-City          ::/category/x-city/page/{{page}}/\n　EROTIC          ::/category/erotic/page/{{page}}/\n　Graphis Collection          ::/category/graphis-collection-2002-2022/page/{{page}}/\n　Photobook⏬          ::/category/photobook/page/{{page}}/\n　Met-Art          ::/category/met-art/page/{{page}}/\n　Litu100          ::/category/litu100/page/{{page}}/\n　METCN          ::/category/metcn/page/{{page}}/\n　Naked Beach Party⏬          ::/category/nude-naked-beach-party/page/{{page}}/\n　Nude In Public          ::/category/nude-in-public/page/{{page}}/\n　Coccozella          ::/category/coccozella/page/{{page}}/\n　Cosplay⏬          ::/category/cosplay/page/{{page}}/\n　Actiongirls          ::/category/actiongirls/page/{{page}}/\n　Steamgirl          ::/category/steamgirl/page/{{page}}/\n　Jordan Carver          ::/category/jordan-carver/page/{{page}}/\n　OnlyFans          ::/category/onlyfans/page/{{page}}/\n　Just Nude⏬          ::/category/just-nude/page/{{page}}/\n　8teenies          ::/category/8teenies/page/{{page}}/\n　Amour Angels          ::/category/amour-angels/page/{{page}}/\n　Femjoy Nude Art          ::/category/femjoy-nude-art/page/{{page}}/\n　HippieGoddess          ::/category/hippiegoddess/page/{{page}}/\n　Older Women          ::/category/older-women/page/{{page}}/\n　Photodromm          ::/category/photodromm/page/{{page}}/\n　Rylsky Art          ::/category/rylsky-art/page/{{page}}/\n　ZEMANI          ::/category/zemani-gallery-a/page/{{page}}/\n　Zishy          ::/category/zishy-beautiful-girl/page/{{page}}/\n　Hentai Anime          ::/category/hentai-anime/page/{{page}}/\n　Justice Hentai          ::/category/hentai-anime/justice-hentai/page/{{page}}/\n　Hentai Manga          ::/category/hentai-anime/hentai-doujin-manga/page/{{page}}/\n　Affect3D Comics          ::/category/affect3d-comics/page/{{page}}/\n　Comics Hentai 3D Art          ::/category/hentai-anime/comics-hentai-3d-art/page/{{page}}/\n　Videos⏬③::/category/videos/page/{{page}}/\n　Madonna-AV          ::/category/madonna-av/page/{{page}}/",
+    "lastUpdateTime": 1763884786704,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "@css:div.media-single-content img@src",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": ".entry@html"
+    },
+    "ruleExplore": {
+      "bookList": "ul@li",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "@css:a img@src",
+      "name": "h2@text"
+    },
+    "ruleSearch": {
+      "bookList": "ul@li",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "@css:a img@src",
+      "name": "h2@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}/?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "2025年11月23日,图,📸🇨🇳🔍柳树分组",
+    "bookSourceName": "📸🇨🇳🔍|girl的热爱",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://girldreamy.com",
+    "customOrder": 13,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "\n全部::https://girldreamy.com/page/{{page}}/\n\tKorean::/category/korean/page/{{page}}/\n　Cosplay::/category/cosplay/page/{{page}}/\n　Beautyleg::/category/china/beautyleg/page/{{page}}/\n　FeiLin嗲囡囡::/category/china/feilin/page/{{page}}/\n　FetishMedia物恋传媒::/category/china/fetishmedia/page/{{page}}/\n　HuaYang花漾Show::/category/china/huayang/page/{{page}}/\n　IMiss爱蜜社::/category/china/imiss/page/{{page}}/\n　IShow::/category/china/ishow/page/{{page}}/\n　Ligui丽柜::/category/china/ligui/page/{{page}}/\n　MFStar模范学院::/category/china/mfstar/page/{{page}}/\n　MiiTao蜜桃社::/category/china/miitao/page/{{page}}/\n　MyGirl美媛馆::/category/china/mygirl/page/{{page}}/\n　SSA丝社::/category/china/ssa/page/{{page}}/\n　Ugirls尤果圈::/category/china/ugirls/page/{{page}}/\n　XiaoYu语画界::/category/china/xiaoyu/page/{{page}}/\n　XingYan星颜社::/category/china/xingyan/page/{{page}}/\n　XiuRen秀人网::/category/china/xiuren/page/{{page}}/\n　YALAYI雅拉伊::/category/china/yalayi/page/{{page}}/\n　YouMi尤蜜荟::/category/china/youmi/page/{{page}}/\n　Europe::/category/eu-girls/page/{{page}}/\n　Japan::/category/japan/page/{{page}}/\n　AIModel::/category/aimodel/page/{{page}}/",
+    "lastUpdateTime": 1763885065552,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": ".elementor-post-info__terms-list@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "img@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": ".elementor-post__card",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "@css:div img@src",
+      "name": "h2@text"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "h1@text"
+    },
+    "searchUrl": "/page/{{page}}/?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "https://www.alicesw.com#📱",
+    "bookSourceGroup": "📚🇨🇳🔍柳树分组,2025年11月23日,书",
+    "bookSourceName": "📚🇨🇳🔍|🔞柳树爱丽丝",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--vcsx64d.alicesw2.buzz/",
+    "customOrder": 15,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": ".*.*.*.*.*.*.*.*.*.*人气.*.*.*.*.*.*.*.*.*.*.*\n　科幻::/all/id/71/order/hits+desc.html?page={{page}}\n　校园::/all/id/61/order/hits+desc.html?page={{page}}\n　玄幻::/all/id/62/order/hits+desc.html?page={{page}}\n　乡村::/all/id/63/order/hits+desc.html?page={{page}}\n　都市::/all/id/64/order/hits+desc.html?page={{page}}\n　乱伦::/all/id/65/order/hits+desc.html?page={{page}}\n　历史::/all/id/67/order/hits+desc.html?page={{page}}\n　武侠::/all/id/68/order/hits+desc.html?page={{page}}\n　系统::/all/id/69/order/hits+desc.html?page={{page}}\n　明星::/all/id/72/order/hits+desc.html?page={{page}}\n　同人::/all/id/73/order/hits+desc.html?page={{page}}\n　强奸::/all/id/74/order/hits+desc.html?page={{page}}\n　奇幻::/all/id/75/order/hits+desc.html?page={{page}}\n　经典::/all/id/79/order/hits+desc.html?page={{page}}\n　穿越::/all/id/70/order/hits+desc.html?page={{page}}\n　凌辱::/all/id/46/order/hits+desc.html?page={{page}}\n　反差::/all/id/22/order/hits+desc.html?page={{page}}\n　堕落::/all/id/18/order/hits+desc.html?page={{page}}\n　纯爱::/all/id/19/order/hits+desc.html?page={{page}}\n　伪娘::/all/id/52/order/hits+desc.html?page={{page}}\n　萝莉::/all/id/48/order/hits+desc.html?page={{page}}\n　熟女::/all/id/56/order/hits+desc.html?page={{page}}\n　禁忌::/all/id/51/order/hits+desc.html?page={{page}}\n　NTR::/all/id/54/order/hits+desc.html?page={{page}}\n　媚黑::/all/id/53/order/hits+desc.html?page={{page}}\n　绿帽::/all/id/55/order/hits+desc.html?page={{page}}\n　调教::/all/id/58/order/hits+desc.html?page={{page}}\n　女主::/all/id/59/order/hits+desc.html?page={{page}}\n　正太::/all/id/50/order/hits+desc.html?page={{page}}\n　下克上::/all/id/43/order/hits+desc.html?page={{page}}\n　百合::/all/id/47/order/hits+desc.html?page={{page}}\n　重口::/all/id/21/order/hits+desc.html?page={{page}}\n　其他::/all/id/57/order/hits+desc.html?page={{page}}\n.*.*.*.*.*.*.*.*字数.*.*.*.*.*.*.*.*.*.*.*.*\n　科幻::/all/id/71/order/word+desc.html?page={{page}}\n　校园::/all/id/61/order/word+desc.html?page={{page}}\n　玄幻::/all/id/62/order/word+desc.html?page={{page}}\n　乡村::/all/id/63/order/word+desc.html?page={{page}}\n　都市::/all/id/64/order/word+desc.html?page={{page}}\n　乱伦::/all/id/65/order/word+desc.html?page={{page}}\n　历史::/all/id/67/order/word+desc.html?page={{page}}\n　武侠::/all/id/68/order/word+desc.html?page={{page}}\n　系统::/all/id/69/order/word+desc.html?page={{page}}\n　明星::/all/id/72/order/word+desc.html?page={{page}}\n　同人::/all/id/73/order/word+desc.html?page={{page}}\n　强奸::/all/id/74/order/word+desc.html?page={{page}}\n　奇幻::/all/id/75/order/word+desc.html?page={{page}}\n　经典::/all/id/79/order/word+desc.html?page={{page}}\n　穿越::/all/id/70/order/word+desc.html?page={{page}}\n　凌辱::/all/id/46/order/word+desc.html?page={{page}}\n　反差::/all/id/22/order/word+desc.html?page={{page}}\n　堕落::/all/id/18/order/word+desc.html?page={{page}}\n　纯爱::/all/id/19/order/word+desc.html?page={{page}}\n　伪娘::/all/id/52/order/word+desc.html?page={{page}}\n　萝莉::/all/id/48/order/word+desc.html?page={{page}}\n　熟女::/all/id/56/order/word+desc.html?page={{page}}\n　禁忌::/all/id/51/order/word+desc.html?page={{page}}\n　NTR::/all/id/54/order/word+desc.html?page={{page}}\n　媚黑::/all/id/53/order/word+desc.html?page={{page}}\n　绿帽::/all/id/55/order/word+desc.html?page={{page}}\n　调教::/all/id/58/order/word+desc.html?page={{page}}\n　女主::/all/id/59/order/word+desc.html?page={{page}}\n　正太::/all/id/50/order/word+desc.html?page={{page}}\n　下克上::/all/id/43/order/word+desc.html?page={{page}}\n　百合::/all/id/47/order/word+desc.html?page={{page}}\n　重口::/all/id/21/order/word+desc.html?page={{page}}\n　其他::/all/id/57/order/word+desc.html?page={{page}}\n.*.*.*.*.*.*.*.*.*.*.*更新.*.*.*.*.*.*.*.*.*.*\n科幻::/all/id/71/order/update_time+desc.html?page={{page}}\n　校园::/all/id/61/order/update_time+desc.html?page={{page}}\n　玄幻::/all/id/62/order/update_time+desc.html?page={{page}}\n　乡村::/all/id/63/order/update_time+desc.html?page={{page}}\n　都市::/all/id/64/order/update_time+desc.html?page={{page}}\n　乱伦::/all/id/65/order/update_time+desc.html?page={{page}}\n　历史::/all/id/67/order/update_time+desc.html?page={{page}}\n　武侠::/all/id/68/order/update_time+desc.html?page={{page}}\n　系统::/all/id/69/order/update_time+desc.html?page={{page}}\n　明星::/all/id/72/order/update_time+desc.html?page={{page}}\n　同人::/all/id/73/order/update_time+desc.html?page={{page}}\n　强奸::/all/id/74/order/update_time+desc.html?page={{page}}\n　奇幻::/all/id/75/order/update_time+desc.html?page={{page}}\n　经典::/all/id/79/order/update_time+desc.html?page={{page}}\n　穿越::/all/id/70/order/update_time+desc.html?page={{page}}\n　凌辱::/all/id/46/order/update_time+desc.html?page={{page}}\n　反差::/all/id/22/order/update_time+desc.html?page={{page}}\n　堕落::/all/id/18/order/update_time+desc.html?page={{page}}\n　纯爱::/all/id/19/order/update_time+desc.html?page={{page}}\n　伪娘::/all/id/52/order/update_time+desc.html?page={{page}}\n　萝莉::/all/id/48/order/update_time+desc.html?page={{page}}\n　熟女::/all/id/56/order/update_time+desc.html?page={{page}}\n　禁忌::/all/id/51/order/update_time+desc.html?page={{page}}\n　NTR::/all/id/54/order/update_time+desc.html?page={{page}}\n　媚黑::/all/id/53/order/update_time+desc.html?page={{page}}\n　绿帽::/all/id/55/order/update_time+desc.html?page={{page}}\n　调教::/all/id/58/order/update_time+desc.html?page={{page}}\n　女主::/all/id/59/order/update_time+desc.html?page={{page}}\n　正太::/all/id/50/order/update_time+desc.html?page={{page}}\n　下克上::/all/id/43/order/update_time+desc.html?page={{page}}\n　百合::/all/id/47/order/update_time+desc.html?page={{page}}\n　重口::/all/id/21/order/update_time+desc.html?page={{page}}\n　其他::/all/id/57/order/update_time+desc.html?page={{page}",
+    "lastUpdateTime": 1763881450831,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "class.intro@text",
+      "name": "h1@text",
+      "tocUrl": "text.查看所有章节@href",
+      "wordCount": "class.tLJ@text"
+    },
+    "ruleContent": {
+      "content": "class.read-content j_readContent user_ad_content@html"
+    },
+    "ruleExplore": {
+      "author": "class.four@text",
+      "bookList": "ul",
+      "bookUrl": "class.two@a@href",
+      "intro": "ul@text",
+      "kind": ".six@text%%.diyhot@text",
+      "lastChapter": "class.three@text",
+      "name": "class.two@text##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}",
+      "wordCount": "class.five@text"
+    },
+    "ruleSearch": {
+      "bookList": "class.list-group-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "催眠",
+      "intro": "class.content-txt@text",
+      "kind": "class.text-muted@text",
+      "name": "h5@text##【完】|[ |　\\\"()/（）《》〈〉【】〖〗［］\\\\[\\\\]]|阅读全文|作者.*|\\d{2}-\\d{2}"
+    },
+    "ruleToc": {
+      "chapterList": "class.mulu_list@li@a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/search.html?q={{key}}=_all&sort=update_time_DESC&p={{page}}&serialize=",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "📚🇨🇳🔍柳树分组,2025年11月23日,书",
+    "bookSourceName": "📚🇨🇳🔍|第一站🈲",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.diyizhan.cc/",
+    "customOrder": 16,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "\n♥点我♥::https://www.diyizhan.cc/xuanhuan-{{page}}.html\n　　家庭乱伦\n　　♥点我♥::/xianxia-{{page}}.html\n　　人妻女友\n　　♥点我♥::/dushi-{{page}}.html\n　　古典玄幻\n　　♥点我♥::/junshi-{{page}}.html\n　　都市生活\n　　♥点我♥::/wangyou-{{page}}.html\n　　学生校园\n　　♥点我♥::/kehuan-{{page}}.html\n　　强暴性虐\n　　♥点我♥::/lingyi-{{page}}.html\n　　多人群交\n　　♥点我♥::/yanqing-{{page}}.html\n　　绿帽主题\n　　♥点我♥::/qita-{{page}}.html\n　　其他小说\n　　------{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}\n　　♥点我♥::/allvisit-{{page}}.html\n　　总点击榜\n　　♥点我♥::/monthvisit-{{page}}.html\n　　月点击榜\n　　♥点我♥::/weekvisit-{{page}}.html\n　　周点击榜\n　　♥点我♥::/allvote-{{page}}.html\n　　总推荐榜\n　　♥点我♥::/monthvote-{{page}}.html\n        月推荐榜\n　　♥点我♥::/goodnum-{{page}}.html\n　　收藏排行\n　　♥点我♥::/lastupdate-{{page}}.html\n　　最近更新\n　　♥点我♥::/postdate-{{page}}.html\n　　新书上架\n　　♥点我♥::/size-{{page+2}}.html\n　　字数排行\n♐::https://www.diyizhan.cc/size-{{178-page}}.html\n　　\n　　",
+    "lastUpdateTime": 1763881455105,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.readcontent@html##本章未.*",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "bookList": "class.bookname",
+      "bookUrl": "a@href",
+      "name": "a@text##/| |　|阅读全文|作者.*|【|（|）|】|《|》|.*章.*|.*[\\u3040-\\u309F\\u30A0-\\u30FF].*"
+    },
+    "ruleSearch": {
+      "bookList": "class.bookname",
+      "bookUrl": "a@href",
+      "name": "a@text##/| |　|阅读全文|作者.*|【|（|）|】|《|》|.*章.*|.*[\\u3040-\\u309F\\u30A0-\\u30FF].*"
+    },
+    "ruleToc": {
+      "chapterList": "dd",
+      "chapterName": "a@text##查看全部章节 ↓",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{\n  \"searchUrl\": \"https://www.diyizhan.xyz/modules/article/search.php\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&action=login&submit=搜 索\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "📚🇨🇳🔍柳树分组,2025年11月23日,书",
+    "bookSourceName": "📖🇨🇳🔍|狼友",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://c1d2e3f4.langyou894.cc/label/index.html",
+    "customOrder": 17,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": ">首页 ::/label/index.html\n>人妻::/arttype/30-{{page}}.html\n>都市::/arttype/20-{{page}}.html\n>校园::/arttype/21-{{page}}.html\n>武侠::/arttype/23-{{page}}.html\n>乱伦::/arttype/24-{{page}}.html\n>职场::/arttype/25-{{page}}.html\n>经验::/arttype/26-{{page}}.html\n>暴力::/arttype/27-{{page}}.html\n>幻想::/arttype/28-{{page}}.html\n>明星::/arttype/29-{{page}}.html\n—————————————————幼::/artsearch/幼------{{page}}-.html\n　　幼女::/artsearch/幼女------{{page}}-.html\n　　成年::/artsearch/成年------{{page}}-.html\n　　小女::/artsearch/小女------{{page}}-.html\n　　少女::/artsearch/少女------{{page}}-.html\n　　女学::/artsearch/女学------{{page}}-.html\n　　女童::/artsearch/女童------{{page}}-.html\n　　女孩::/artsearch/女孩------{{page}}-.html\n　　岁的::/artsearch/岁------{{page}}-.html\n—————————————————处::/artsearch/处------{{page}}-.html\n    初次::/artsearch/初次------{{page}}-.html\n　　初夜::/artsearch/初夜------{{page}}-.html\n　　破处::/artsearch/破处------{{page}}-.html\n　　开苞::/artsearch/开苞------{{page}}-.html\n　　第一::/artsearch/第一次------{{page}}-.html\n　　处女::/artsearch/处女------{{page}}-.html\n—————————————————亲::/artsearch/亲------{{page}}-.html\n　　女儿::/artsearch/女儿------{{page}}-.html\n　　母女::/artsearch/母女------{{page}}-.html\n　　闺女::/artsearch/闺女------{{page}}-.html\n　　父女::/artsearch/父女------{{page}}-.html\n　　亲生::/artsearch/亲生------{{page}}-.html\n　　催眠::/artsearch/催眠------{{page}}-.html\n　　常识::/artsearch/常识------{{page}}-.html\n　　修改::/artsearch/修改------{{page}}-.html\n　　软件::/artsearch/软件------{{page}}-.html\n　　暂停::/artsearch/暂停------{{page}}-.html\n　　编辑::/artsearch/编辑------{{page}}-.html\n　　玩具::/artsearch/玩具------{{page}}-.html\n　　隐形::/artsearch/隐形------{{page}}-.html\n　　娃娃::/artsearch/娃娃------{{page}}-.html\n—————————————————姐::/artsearch/姐------{{page}}-.html\n　　姐姐::/artsearch/姐姐------{{page}}-.html\n　　姐弟::/artsearch/姐弟------{{page}}-.html\n　　姐的::/artsearch/姐的------{{page}}-.html\n　　的姐::/artsearch/的姐------{{page}}-.html\n　　表姐::/artsearch/表姐------{{page}}-.html\n　　和姐::/artsearch/和姐------{{page}}-.html\n　　姐和::/artsearch/姐和------{{page}}-.html\n　　亲姐::/artsearch/亲姐------{{page}}-.html\n　　姐妹::/artsearch/姐妹------{{page}}-.html\n—————————————————妹::/artsearch/妹------{{page}}-.html\n　　妹妹::/artsearch/妹妹------{{page}}-.html\n　　兄妹::/artsearch/兄妹------{{page}}-.html\n　　妹的::/artsearch/妹的------{{page}}-.html\n　　的妹::/artsearch/的妹------{{page}}-.html\n　　表妹::/artsearch/表妹------{{page}}-.html\n　　和妹::/artsearch/和妹------{{page}}-.html\n　　妹和::/artsearch/妹和------{{page}}-.html\n　　亲妹::/artsearch/亲妹------{{page}}-.html\n—————————————————妈::/artsearch/妈------{{page}}-.html\n　　妈妈::/artsearch/妈妈------{{page}}-.html\n　　妈的::/artsearch/妈的------{{page}}-.html\n　　的妈::/artsearch/的妈------{{page}}-.html\n　　舅妈::/artsearch/舅妈------{{page}}-.html\n　　姨妈::/artsearch/姨妈------{{page}}-.html\n　　和妈::/artsearch/和妈------{{page}}-.html\n　　妈和::/artsearch/妈和------{{page}}-.html\n　　亲妈::/artsearch/亲妈------{{page}}-.html\n—————————————————母::/artsearch/母------{{page}}-.html\n　　母亲::/artsearch/母亲------{{page}}-.html\n　　母子::/artsearch/母子------{{page}}-.html\n　　的母::/artsearch/的母------{{page}}-.html\n　　舅母::/artsearch/舅母------{{page}}-.html\n　　和母::/artsearch/和母------{{page}}-.html\n　　  姨::/artsearch/姨------{{page}}-.html\n—————————————————肏::/artsearch/肏------{{page}}-.html\n      操::/artsearch/操------{{page}}-.html\n　　  屄::/artsearch/屄------{{page}}-.html\n　　  逼::/artsearch/逼------{{page}}-.html\n　　  穴::/artsearch/穴------{{page}}-.html\n    龟头::/artsearch/龟头------{{page}}-.html\n　　屁眼::/artsearch/屁眼------{{page}}-.html\n　　阴道::/artsearch/阴道------{{page}}-.html\n　　阴唇::/artsearch/阴唇------{{page}}-.html\n　　子宫::/artsearch/子宫------{{page}}-.html\n　　射精::/artsearch/射精------{{page}}-.html\n　　射进::/artsearch/射进------{{page}}-.html\n　　内射::/artsearch/内射------{{page}}-.html\n　　精液::/artsearch/精液------{{page}}-.html\n　　巨乳::/artsearch/巨乳------{{page}}-.html\n—————————————————怀孕::/artsearch/怀孕------{{page}}-.html\n　　生了::/artsearch/生了------{{page}}-.html\n　　生下::/artsearch/生下------{{page}}-.html\n　　生孩::/artsearch/生孩------{{page}}-.html\n　　国中::/artsearch/国中------{{page}}-.html\n　　初中::/artsearch/初中------{{page}}-.html\n　　初一::/artsearch/初一------{{page}}-.html\n　　初二::/artsearch/初二------{{page}}-.html\n　　初三::/artsearch/初三------{{page}}-.html\n　　高中::/artsearch/高中------{{page}}-.html\n　　高一::/artsearch/高一------{{page}}-.html\n　　高二::/artsearch/高二------{{page}}-.html\n　　高三::/artsearch/高三------{{page}}-.html\n—————————————————短篇::/artsearch/短篇------{{page}}-.html\n　　胞胎::/artsearch/胞胎------{{page}}-.html\n　　杀了::/artsearch/杀了------{{page}}-.html\n　　杀死::/artsearch/杀死------{{page}}-.html\n　　死了::/artsearch/死了------{{page}}-.html\n　　肩杀::/artsearch/奸杀------{{page}}-.html\n　　肩尸::/artsearch/奸尸------{{page}}-.html\n　飞机杯::/artsearch/飞机杯------{{page}}-.html\n　　  屎::/artsearch/屎------{{page}}-.html\n　　  尿::/artsearch/尿------{{page}}-.html\n　　妊娠::/artsearch/妊娠------{{page}}-.html\n　　便器::/artsearch/便器------{{page}}-.html\n　　丝袜::/artsearch/丝袜------{{page}}-.html\n　　榨汁::/artsearch/榨汁------{{page}}-.html\n　　榨精::/artsearch/榨精------{{page}}-.html\n　　乱伦::/artsearch/乱伦------{{page}}-.html\n　　合集::/artsearch/合集------{{page}}-.html",
+    "lastUpdateTime": 1763881459433,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "class.artcontent@html"
+    },
+    "ruleExplore": {
+      "bookList": "a[href^=\"/artdetail-\"]",
+      "bookUrl": "a@href",
+      "kind": ".r@text",
+      "name": "a@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*|.*章.*|.*P.*|.*[\\u3040-\\u309F\\u30A0-\\u30FF].*|.*修改版.*|.*轮奸.*|.*黑人.*|.*肥胖.*|.*胖子.*|.*绿帽.*|.*绿母.*|.*换妻.*|.*套图.*|.*写真.*|..-.."
+    },
+    "ruleSearch": {
+      "bookList": "a[href^=\"/artdetail-\"]",
+      "bookUrl": "a@href",
+      "kind": ".r@text",
+      "name": "a@text##【完】|[ |　\"()/（）《》〈〉【】〖〗［］\\[\\]]|阅读全文|作者.*"
+    },
+    "ruleToc": {
+      "chapterList": "ul > font[size=\"4\"]:first-of-type > div[style=\"text-align: center;\"]",
+      "chapterName": "ul > font[size=\"4\"]:first-of-type > div[style=\"text-align: center;\"]@text"
+    },
+    "searchUrl": "/artsearch/{{key}}------{{page}}-.html",
+    "weight": 0
+  }
+]
