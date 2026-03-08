@@ -1,0 +1,96 @@
+[
+  {
+    "bookSourceGroup": "-自制",
+    "bookSourceName": "22笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.22biqu.com",
+    "customButton": false,
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "eventListener": false,
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": 1772874723897,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.author.0@text##作者：",
+      "coverUrl": "class.bookimg@tag.img@src",
+      "intro": "class.review@tag.p@html",
+      "kind": "class.author.1@text##类型：",
+      "lastChapter": "class.update@tag.a@text",
+      "name": "class.bookname@tag.a@text",
+      "tocUrl": "class.bookname@tag.a@href"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.author.0@text##作者：",
+      "bookList": "class.bookbox",
+      "bookUrl": "class.bookname@tag.a@href",
+      "coverUrl": "class.bookimg@tag.img@src",
+      "intro": "class.intro@text",
+      "lastChapter": "class.update@tag.a@text",
+      "name": "class.bookname@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.recommend.1@tag.p",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "<js>\nvar url = 'https://m.22biqu.com';\nvar html = java.ajax(url + \",{'webView': true}\");\nvar doc = org.jsoup.Jsoup.parse(html);\nvar form = doc.select('form[action]:not([name~=login]):not([class~=login]):not([id~=login])')[0];\nvar method = form.attr('method');\nvar action = form.attr('action');\nvar charset = doc.select('head>meta[charset]').attr('charset');\nif (charset == '') {\n    charset = String(doc.select('head>meta[content~=charset=]').attr('content')).replace(/^.*charset=([a-z0-9\\-]+).*$/i, '$1');\n}\nvar uaw = \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36\";\nvar headers = {\n    \"User-Agent\": uaw,\n    \"Referer\": String('https://m.22biqu.com')\n};\nurl = 'https://m.22biqu.com/' + String(action).replace(/^\\//, '');\nvar body = '';\nvar option = {};\nvar sk = form.select('input[name][type=\"text\"],input[name][class=\"text\"]').attr('name');\nvar es = form.select('input[name]:not([type=\"submit\"])');\nfor (var it in es) {\n    var e = es[it];\n    var k = e.attr('name');\n    var v = e.attr('value');\n    if (k == sk) {\n        body += sk + '={{key}}&';\n    } else {\n        body += k + '=' + v + '&';\n    }\n}\nes = form.select('select[name]');\nfor (it in es) {\n    var e = es[it];\n    var k = e.attr('name');\n    var v = e.select('option')[0].attr('value');\n    body += k + '=' + v + '&';\n}\nbody = String(body).replace(/&$/, '');\nif (method.match(/post/i)) {\n    option = {\n        \"charset\": String(charset),\n        \"method\": String(method),\n        \"body\": String(body),\n        \"headers\": headers,\n        \"webView\": true\n    };\n    url += ',' + JSON.stringify(option);\n} else {\n    option = {\n        \"charset\": String(charset),\n        \"headers\": headers,\n        \"webView\": true\n    };\n    url += '?' + body + ',' + JSON.stringify(option);\n}\nurl;\n</js>",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "✨极速",
+    "bookSourceName": "速读谷",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sudugu.org",
+    "customButton": false,
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "eventListener": false,
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1772930575972,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.itemtxt@tag.p.1@tag.a@text",
+      "coverUrl": "class.item@tag.img@src",
+      "downloadUrls": "class.op@tag.a.1@href\n<js>\nvar url=book.origin+result[0];\nresult=java.ajax(url);\nresult;\n</js>\nid.list@tag.ul@tag.li@a@href",
+      "intro": "class.des@html",
+      "kind": "class.itemtxt@tag.p.0@tag.span.1@text&&class.itemtxt@tag.p.0@tag.span.0@text",
+      "lastChapter": "class.itemtxt@tag.ul@tag.li.0@tag.a@text",
+      "name": "class.itemtxt@tag.h1@tag.a@text",
+      "tocUrl": "class.itemtxt@tag.h3@tag.a@href",
+      "wordCount": "class.itemtxt@tag.h1@tag.i@text"
+    },
+    "ruleContent": {
+      "content": "class.con@html##(本章完)",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.itemtxt@tag.p.1@tag.a@text",
+      "bookList": "class.item",
+      "bookUrl": "class.itemtxt@tag.h3@tag.a@href",
+      "coverUrl": "class.item@tag.img@src",
+      "intro": "class.itemtxt@tag.p.0@text",
+      "lastChapter": "class.itemtxt@tag.ul@tag.li.0@tag.a@text",
+      "name": "class.itemtxt@tag.h3@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.ul@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/i/sor.aspx?key={{key}}",
+    "weight": 0
+  }
+]
