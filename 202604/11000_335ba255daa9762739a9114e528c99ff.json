@@ -1,0 +1,159 @@
+[
+  {
+    "bookSourceGroup": "番茄",
+    "bookSourceName": "sososhu系列(仅可搜作者名)",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.erciyan.com/",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "书库::/fenlei/<,{{page}}/>\n完本::/quanben/fenlei/<,{{page}}/>",
+    "lastUpdateTime": 1775806317239,
+    "respondTime": 1955,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#content@html||.content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".txt-list@ul@li",
+      "bookUrl": "a@href",
+      "kind": ".s5@text&&.s1@text##\\[|\\]",
+      "lastChapter": ".s3@a@text",
+      "name": ".s2@a@text"
+    },
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "class.item",
+      "bookUrl": "dt > a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "dt > a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.erciyan.com/author/{{key}}/",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "番茄",
+    "bookSourceName": "微风小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.wfxs.tw",
+    "bookUrlPattern": "https://m.wfxs.tw/s/",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "豪门总裁::/haomenzongcai/{{page}}/\n悬疑灵异::/xuanyilingyi/{{page}}/\n浪漫青春::/langmanqingchun/{{page}}/\n仙侠玄幻::/xianxiaxuanhuan/{{page}}/\n穿越架空::/chuanyuejiakong/{{page}}/\n都市异能::/dushiyineng/{{page}}/\n都市言情::/dushiyanqing/{{page}}/\n其他::/qita/{{page}}/\n现言::/xianyan/{{page}}/\n古言::/guyan/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1775806309285,
+    "loginUrl": "/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}@js:java.t2s(result)",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\".bh_book_title_hide@text\",\nc:\"[property$=image]@content\",\nlist:\"div.more a@href\"}",
+      "intro": "@get:{i}@js:java.t2s(result)",
+      "kind": "@get:{k}@js:java.t2s(result)",
+      "lastChapter": "@get:{l}@js:java.t2s(result)",
+      "name": "@get:{n}@js:java.t2s(result)",
+      "tocUrl": "@get:{list}"
+    },
+    "ruleContent": {
+      "content": "#read_conent_box>p@textNodes@js:java.t2s(result)",
+      "nextContentUrl": "text.下一頁@href||text.下一页@href",
+      "replaceRegex": "##()本章(.*?)(>+|\\))"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".mb-1@text@js:java.t2s(result.split(/\\s\\|/)[0])",
+      "bookList": ".result-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "东宫夺娇",
+      "coverUrl": "img@src",
+      "intro": "p.1@text@js:java.t2s(result)",
+      "lastChapter": ".underline@text@js:java.t2s(result)",
+      "name": "h3@text@js:java.t2s(result)"
+    },
+    "ruleToc": {
+      "chapterList": "#html_box li",
+      "chapterName": "a@text@js:java.t2s(result)",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "#chapter_min_list_box ul li a@href"
+    },
+    "searchUrl": "https://m.wfxs.tw/s/?search={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "番茄",
+    "bookSourceName": "rrssk系列",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.kelexs.com",
+    "customOrder": 143,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\": \"男生\",\n    \"url\": \"/list-1-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"玄幻小说\",\n    \"url\": \"/list-4-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"奇幻小说\",\n    \"url\": \"/list-5-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"武侠小说\",\n    \"url\": \"/list-6-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"仙侠小说\",\n    \"url\": \"/list-7-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"都市小说\",\n    \"url\": \"/list-8-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"军事小说\",\n    \"url\": \"/list-9-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"历史小说\",\n    \"url\": \"/list-10-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"游戏小说\",\n    \"url\": \"/list-11-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"体育小说\",\n    \"url\": \"/list-12-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"科幻小说\",\n    \"url\": \"/list-13-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"诸天无限\",\n    \"url\": \"/list-14-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"悬疑小说\",\n    \"url\": \"/list-15-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"女生\",\n    \"url\": \"/list-2-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"古代言情\",\n    \"url\": \"/list-16-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"仙侠奇缘\",\n    \"url\": \"/list-17-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"现代言情\",\n    \"url\": \"/list-18-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"浪漫青春\",\n    \"url\": \"/list-19-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"玄幻言情\",\n    \"url\": \"/list-20-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"悬疑推理\",\n    \"url\": \"/list-21-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"科幻空间\",\n    \"url\": \"/list-22-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"游戏竞技\",\n    \"url\": \"/list-23-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"短篇言情\",\n    \"url\": \"/list-24-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"轻小说\",\n    \"url\": \"/list-42-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"耽美\",\n    \"url\": \"/list-40-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"百合\",\n    \"url\": \"/list-41-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"二次元\",\n    \"url\": \"/list-3-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"原生幻想\",\n    \"url\": \"/list-25-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"恋爱日常\",\n    \"url\": \"/list-26-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"衍生同人\",\n    \"url\": \"/list-27-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  },\n  {\n    \"title\": \"搞笑吐槽\",\n    \"url\": \"/list-28-{{page}}/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  }\n]",
+    "header": "{\n  \"upgrade-insecure-requests\": \"1\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\n  \"accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\",\n  \"x-requested-with\": \"cn.mujiankeji.mbrowser\",\n  \"accept-encoding\": \"deflate, br, zstd\",\n  \"accept-language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\"\n}",
+    "jsLib": "function encrypt(bytes) {\n    var a = \"zc89s30ipHG2Dw\",\n\n    key = a.padEnd(32, \"\\0\"),\n    iv = a.padEnd(16, \"\\0\"),\n\n    b = this.java.createSymmetricCrypto(\n            \"aes/cbc/pkcs7padding\",\n            key,\n            iv\n        )\n        .encryptBase64(bytes)\n\n    return encodeURIComponent(b)\n}",
+    "lastUpdateTime": 1775806294018,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "@js: \nvar id = baseUrl.match(/book\\/(.*?)\\.html/)[1];\njava.put(\"id\",id);\naid = `[data-aid=\"${id}\"]@option||[data-aid=\"${id}\"]@li`\nvar pages = java.getElements(aid);\n\njava.log(pages.length)\nif (pages.length==0) {\n\tso = java.ajax(baseUrl.replace(/book/,\"chapter\"));\njava.setContent(so);\npages = java.getElements(aid);\n\t}\n\njava.put(\"page\",pages.length);\nresult = source.key + \"/index.php?action=loadChapterPage\" + \",\" + JSON.stringify({\n  \"body\": `id=${id}&page=1`,\n  \"method\": \"POST\"\n});",
+      "wordCount": ".t_c.2@text##字数："
+    },
+    "ruleContent": {
+      "content": "<js>\nfunction replace (content) {\n  const source = \"内暴强情缝贪插逼操潮喷阴艳裸乳荡穴鸡淫苞奸胸射嫩肉骚性蒂茎陰騷奶屄成人药春迷尿粉肛龟头A精屌口狂蜜处女唇道阳虐虫妇液色颜熟交爽臀爆舔做爱欲吹自慰点gG玉幼援抽Bb水母狗户部要了奴小脚痒酥死我兽揉搓捏扣抠棍棒洞密美少摩腿春乱伦露漏浪开巨根菊巴黑豪好肥送艳被干拔乱理白刺体下面诱感快货比日妈你娘婊子配仙火叫在里子宫给聊照流群屁眼马无码友拳洞片黄偷禁套弄位脱光舒服溜舞丢还糜妻换妓招嫖娼aA毛Hh一夜本热推图书娃男抓浑圆饱满润湿滑丰腴韵尤物横陈存娇喘息麻桃透风腹长粗肿胀人紧夹吸撅起来雪发翘硕大胴双草坐挲跨柔软臂瘫媚秘破\"\n  const replacementChars = source.split(\"\")\n  replacementChars[43]=\"AV\"\n  content = content.replace(/<i class=\"icon icon-uni(.{4})\"><\\/i>/g, (_, p1) => String.fromCharCode(parseInt(p1, 16)));\n\n  return Array.from(content, char => {\n    const code = char.charCodeAt(0)\n    if (code >= 0xE001 && code <= 0xE101) {\n      return replacementChars[code - 0xE001]\n    } else {\n      return char\n    }\n  }).join('')\n}\nreplace(result)\n</js>\n.content@html",
+      "nextContentUrl": "text.下一@href",
+      "replaceRegex": "##.*{{source.key}}.*|\\n+.*章节错误,点此举报.*\\n+|\\(https?.*\\/book\\/.*\\)|.*首发域名.*"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".dList@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "dd.0@text",
+      "lastChapter": "a.3@text",
+      "name": "a.1@text"
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".list@ul@li",
+      "bookUrl": "@js:\na=java.getString('.pic@html')\nb=String(a).match(/upclick\\(\\'(.*?)\\'/)[1]\nurl =source.key+\"/book/\"+`${b}`+\".html\"\nurl",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "a.3@text",
+      "lastChapter": "a.4@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "$.data[*]\n<js>\nresult=result\naa=/\\{.*?\"chapterorder\":\"(\\d+)\".*?\\}/g\nli=[]\nlet match\nwhile ((match = aa.exec(result)) !== null) {\n  li.push({\n    id: parseInt(match[1], 10),\n    content: match[0]\n  });\n}\nli.sort((a, b) => a.id - b.id)\n//java.log(JSON.stringify(li))\nso=li.map(item => item.content).join(',')\ns=so.replace(/^/,'{\"list\":[').replace(/$/,']}')\ns\n</js>$.list[*]",
+      "chapterName": "$.chaptername",
+      "chapterUrl": "$.chapterurl",
+      "nextTocUrl": "@js: result = []\nid = java.get(\"id\");\npages = java.get(\"page\");\njava.log(pages)\nfor (let i = 2 ; i <= pages ; i++) {\noption = source.key + \"/index.php?action=loadChapterPage\" + \",\" + JSON.stringify({\n  \"body\": `id=${id}&page=${i}`,\n  \"method\": \"POST\"\n});\nresult.push(option);\n}\nresult;"
+    },
+    "searchUrl": "@js: \nvar url = java.ajax(source.key).match(/window\\.location\\.href=\\'([^']+)/)[1];\ncookie.removeCookie(source.key);\njava.log(url);\ncookie.removeCookie(url)\nvar kku = url.replace(/m\\/.*html$/,\"m\");\njava.log(kku);\n\ncs = java.get(url,{})\ncc = cs.headers().get(\"set-cookie\")\ncookie.setCookie(source.key, cc)\n\nvar ckk = String(cs.body());\n//java.log(ckk)\nif (ckk.match(/Checking your browser before accessing/)) {\n   java.webView(null, url, \"document.cookie\")\n   cok = cookie.getCookie(url)\n   head = JSON.stringify({ headers: { 'Cookie': cok } })\n   u = url + \",\" + head\n   java.ajax(u)\n}\nvar result = kku + \"/k-{{encrypt(key)}}-{{page}}.html\"\nresult;",
+    "weight": 0
+  }
+]
