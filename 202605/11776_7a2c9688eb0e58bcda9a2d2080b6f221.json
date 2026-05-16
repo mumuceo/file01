@@ -1,0 +1,129 @@
+[
+  {
+    "bookSourceComment": "地址失效了的话自己去Yandx搜索\n然后把源URL自己替换掉\n\nhttps://yandex.com/search/touch/?text=爱丽丝书屋",
+    "bookSourceGroup": "洛制",
+    "bookSourceName": "爱丽丝书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--1jqx9a.als1004.space/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\njava.toast(\"\\n 正在进行发现页更新...\");\nlet list = [];\nconst push = (title, url, size) => list.push({\n    \"title\": title,\n    \"url\": url,\n    \"style\": {\n        \"layout_flexGrow\": 1,\n        \"layout_flexBasisPercent\": size\n    }\n});\n\nconst html = org.jsoup.Jsoup.parse(java.ajax(source.getKey()));\nlet items = html.select(\"ul.fenlei-item > a\");\nconst reg = /^\\/lists\\/[0-9]+\\.html$/;\n// java.log(html);\nfor (let i = 0; i < items.size(); i++) {\n    let a = items.get(i);\n    \n    let href = a.attr(\"href\");\n    if (reg.test(href)) {\n        let title = a.text();\n        push(title, href + `?page={{page}}`, 0.3);\n    }   \n}\n\njava.toast(\"\\n 发现页更新完成\");\nJSON.stringify(list);",
+    "lastUpdateTime": 1778897353562,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.novel_info@tag.p[0]@tag.a@text",
+      "coverUrl": "tag.img[1]@data-src\n@js:\nconst reg = /^https:\\/\\/img\\.321cdn\\.com\\/img\\/\\d+\\.webp$/;\nreg.test(result) ? 'https://img.321cdn.com/img/01.png' : result;",
+      "intro": "class.jianjie@text##(内容简介：\\t*?|爱丽丝书屋所有小说中出现的人物均为18岁以上的成人，若有不妥之处，仅是文学创作效果)",
+      "kind": "{{@class.novel_info@tag.p[4]@text##状 态：}}\n{{@class.tags_list@tag.a@text###}}",
+      "lastChapter": "class.novel_info@tag.p[5]@tag.a@text",
+      "name": "class.novel_title@text",
+      "tocUrl": "class.tabtitle@tag.a@href",
+      "wordCount": "class.novel_info@tag.p[3]@text##字 数：(.+) · 章 节：[0-9]+##$1"
+    },
+    "ruleContent": {
+      "content": "{{@class.read-content j_readContent user_ad_content@text## 　　##\n}}"
+    },
+    "ruleExplore": {
+      "author": ".four@text",
+      "bookList": "class.rec_rullist@ul",
+      "bookUrl": "class.two@tag.a@href",
+      "name": "class.two@tag.a@text"
+    },
+    "ruleSearch": {
+      "author": "tag.a[1]@text",
+      "bookList": "class.list-group-item",
+      "bookUrl": "tag.a[0]@href",
+      "checkKeyWord": "姐姐妊娠 让姐姐跟妈妈怀孕的课程",
+      "intro": "class.content-txt@text",
+      "kind": "class.text-muted[2]@tag.a@text###",
+      "name": "tag.a[0]@text##[0-9]+\\."
+    },
+    "ruleToc": {
+      "chapterList": "class.mulu_list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "search.html?q={{key}}&f=_all&sort=relevance&p={{page}}&serialize=",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "洛制",
+    "bookSourceName": "91Porna [要梯子]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://91porna.com/",
+    "coverDecodeJs": "const key = \"f5d965df75336270\";\nconst iv = \"97b60394abc2fbe1\";\njava.createSymmetricCrypto(\"AES/CBC/PKCS5Padding\", key, iv).decrypt(result)",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\njava.toast(\"\\n 正在进行发现页更新...\");\nlet list = [];\nconst push = (title, url, size) => list.push({\n    \"title\": title,\n    \"url\": url,\n    \"style\": {\n        \"layout_flexGrow\": 1,\n        \"layout_flexBasisPercent\": size\n    }\n});\n\nlet itemList = [];\nfor (let i = 1; true; i++){\n    let html = org.jsoup.Jsoup.parse(java.ajax(source.getKey() + \"moviesets/\" + i));\n    let items = html.select(\"ul.grid.grid-cols-2 > li\");\n    if (items.size() === 0) break;\n    for(let k=0;k<items.size();k++){\n        itemList.push(items.get(k));\n    }\n}\n\nfor (let i = 0; i < itemList.length; i++) {\n    let el = itemList[i];\n    let a = el.select(\"a\");\n    let href = a.attr(\"href\");\n    let title = a.text();\n    push(title, href + `/{{page}}`, 0.3);\n}\n\njava.toast(\"\\n 发现页更新完成\");\nJSON.stringify(list);",
+    "lastUpdateTime": 1778897259072,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "@js:\nlet js = result.match(/<script>\\s*(let videoId = '[^']+';[\\s\\S]*?)<\\/script>/)[1];\nlet jsUrl  = \"\";\nconst document = {\n  querySelector(selector) {\n    return null;\n  },\n  getElementById() {\n    return null;\n  },\n  write(str) {\n    jsUrl = str;\n  }\n};\neval(String(js));\njsUrl = decodeURIComponent(jsUrl.match(/src=\"([^\"]+)\"/)[1].replace(/&amp;/g, '&'));\njsUrl = source.getKey().slice(0, -1) + jsUrl + jsUrl;\n// java.log(jsUrl);\njs = java.ajax(jsUrl);\nconst nxvav = \"https://api.nxvav.cn/api/m3u8/?url=\";\nlet m3u8 = \"\";\n\nthis.navigator = {\n    userAgent: \"\"\n};\nconst ad_config = {};\nlet videoId = \"\";\nlet auth_key = \"\";\nlet last_play_time = 0;\nlet volume = 0;\nlet autoplay = false;\nlet autoplayMuted = false;\nlet showIcon = false;\nlet preferDocument = false;\nlet pip = {};\nlet videoAttributes = {};\nlet advertise = {};\nlet manual_duration = 0;\nlet play_duration = 0;\nlet muted = false;\nlet video = {};\nlet external = false;\nlet disabled = false;\nlet key = \"\";\nlet time = {};\nlet duration = 0;\nlet d = \"\";\nfunction create_player(a) {\n    m3u8 = a.url;\n}\ntry {\n    eval(String(js));\n    if (m3u8 === \"\") {\n        m3u8;\n    } else {\n        java.startBrowserAwait(`${nxvav}${java.encodeURI(m3u8)}`, book.name);\n    }\n} catch (err) {\n    m3u8;\n}"
+    },
+    "ruleExplore": {
+      "bookList": "//ul[@class=\"grid grid-cols-2 md:grid-cols-4  gap-2.5 md:gap-4\"]/li",
+      "bookUrl": "tag.a[0]@href",
+      "coverUrl": "tag.img@data-src",
+      "name": "@class.video-item@class.line-clamp-2@text"
+    },
+    "ruleSearch": {
+      "bookList": "//ul[contains(@class, \"video-items\")]/li",
+      "bookUrl": "//a[@class=\"flex aspect-w-16 aspect-h-9 overflow-hidden\"]/@href",
+      "coverUrl": "//img/@data-src",
+      "name": "//img/@alt"
+    },
+    "ruleToc": {
+      "chapterList": "@js: [{\"title\": \"立即播放\",\"url\": baseUrl}]",
+      "chapterName": "title",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "comic/index/search?keyword={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "作者: wwwcloger\n其他网址: \n    https://thuozvf.cc/\n    https://dbc3c.amsckvqh.cc\n官方邮箱: ceshi1957@gmail.com",
+    "bookSourceGroup": "洛制",
+    "bookSourceName": "H动漫",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://18hdm.com/",
+    "coverDecodeJs": "const key = \"f5d965df75336270\";\nconst iv = \"97b60394abc2fbe1\";\njava.createSymmetricCrypto(\"AES/CBC/PKCS5Padding\", key, iv).decrypt(result)",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\njava.toast(\"\\n 正在进行发现页更新...\");\nlet list = [];\nconst push = (title, url, size) => list.push({\n    \"title\": title,\n    \"url\": url,\n    \"style\": {\n        \"layout_flexGrow\": 1,\n        \"layout_flexBasisPercent\": size\n    }\n});\n\nconst html = org.jsoup.Jsoup.parse(java.ajax(source.getKey()));\nconst reg = /^\\/category\\/[0-9a-z]+\\/[0-9]\\/$/;\nlet items = html.select(\"ul.dx-container > li\");\nfor (let i = 0; i < items.size(); i++) {\n    let el = items.get(i);\n    let a = el.select(\"a\");\n    if (a.isEmpty()) continue;\n     \n    let href = a.attr(\"href\");\n    if (reg.test(href)) {\n        let title = a.text();\n        push(title, href.replace(\"/1/\", `/{{page}}/`), 0.3);\n    }   \n}\n\njava.toast(\"\\n 发现页更新完成\");\nJSON.stringify(list);",
+    "lastUpdateTime": 1778897436545,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "//meta[@name=\"description\"]/@content\n@js:\nif (result.startsWith(\"H动漫\") && result.endsWith(\"尽在H动漫网。\")) {\n    \"&emsp;暂无简介\";\n} else {\n    \"简介:\\n\" + result.replace(/。/g, \"。\\n\");\n}",
+      "kind": "{{//meta[@name=\"keywords\"]/@content##,##\n}}"
+    },
+    "ruleContent": {
+      "content": "@js:\nconst hashMatch = result.match(/parseInt\\|([a-f0-9]+)\\|player/);\nconst hash = hashMatch[1];\nconst ts = Math.floor(Date.now() / 1000 / 2000);\n\nconst jsUrl = source.getKey() + 'player/' + hash + '/' + ts + '.js?v=1';\nconst js = java.ajax(jsUrl);\nconst nxvav = \"https://api.nxvav.cn/api/m3u8/?url=\";\nlet m3u8 = \"\";\n\nthis.navigator = {\n    userAgent: \"\"\n};\nconst ad_config = \"\";\nlet videoId = \"\";\nlet auth_key = \"\";\nlet last_play_time = 0;\nlet volume = 0;\nlet autoplay = false;\nlet autoplayMuted = false;\nlet showIcon = false;\nlet preferDocument = false;\nlet pip = {};\nlet videoAttributes = {};\nlet advertise = {};\nlet manual_duration = 0;\nlet play_duration = 0;\nlet muted = false;\nlet video = {};\nlet external = false;\nlet disabled = false;\nlet key = \"\";\nlet time = {};\nlet duration = 0;\n\nfunction create_player(a) {\n    m3u8 = a[\"url\"];\n    // java.log(m3u8);\n}\n\ntry {\n    eval(String(js));\n    if (m3u8 === \"\") {\n        \"未获取到视频地址\"\n    } else {\n        java.startBrowserAwait(`${nxvav}${java.encodeURI(m3u8)}`, book.name);\n    }\n} catch (err) {\n    if (m3u8) {\n        \"刷新观看\\n地址: \" + m3u8;\n    } else {\n        \"获取视频地址失败\";\n    }\n}"
+    },
+    "ruleExplore": {
+      "bookList": "//img[contains(@class, \"rounded-sm\")]/../..",
+      "bookUrl": "href",
+      "coverUrl": "//img[contains(@class, \"rounded-sm\")]/@data-src",
+      "name": "//img[contains(@class, \"rounded-sm\")]/@alt"
+    },
+    "ruleSearch": {
+      "bookList": "class.video-items@tag.li",
+      "bookUrl": "tag.a[0]@href",
+      "coverUrl": "class.rounded-sm@data-src",
+      "name": "class.rounded-sm@alt"
+    },
+    "ruleToc": {
+      "chapterList": "//ul[@class=\"video-items grid gap-2 mb-3 grid-cols-1\"]/li\n@js:\nlet list = [];\nif (result.size() > 0) {\n    for (let i = 0; i < result.size(); i++) {\n        let a = org.jsoup.Jsoup.parse(result.get(i)).select(\"a.line-clamp-2.mb-1\")\n        let href = a.attr(\"href\") || \"\";\n        let title = a.text() || \"\";\n        list.push({\n            \"title\": title,\n            \"url\": href\n        });\n    }\n} else {\n    list.push({\n        \"title\": \"立即播放\",\n        \"url\": baseUrl\n    });\n}\nlist;",
+      "chapterName": "title",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "search/{{key}}/{{page}}/",
+    "weight": 0
+  }
+]
