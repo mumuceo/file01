@@ -1,0 +1,371 @@
+[
+  {
+    "bookSourceComment": "// Error: 发现失效, 搜索失效\n\n备用https://www.sosad.fun有墙",
+    "bookSourceGroup": "正版",
+    "bookSourceName": "🌳 废文Ⅱ",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--pxtr7m.com/",
+    "customButton": false,
+    "customOrder": 13129,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "                           原创小说                           ::/channels/1?page={{page}}\n   古  代   ::/channels/1?withTag=562&page={{page}}\n   现  代   ::/channels/1?withTag=563&page={{page}}\n   民  国   ::/channels/1?withTag=639&page={{page}}\n   西  方   ::/channels/1?withTag=640&page={{page}}\n   奇  幻   ::/channels/1?withTag=641&page={{page}}\n   科  幻   ::/channels/1?withTag=642&page={{page}}\n   灵  异   ::/channels/1?withTag=643&page={{page}}\n   玄  幻   ::/channels/1?withTag=644&page={{page}}\n   其  他   ::/channels/1?withTag=840&page={{page}}     \n     B L      ::/channels/1?withTag=874&page={{page}}\n     G L      ::/channels/1?withTag=875&page={{page}}\n     B G     ::/channels/1?withTag=876&page={{page}}\n     G B      ::/channels/1?withTag=877&page={{page}}\n混合性向::/channels/1?withTag=878&page={{page}}\n  无 C P   ::/channels/1?withTag=879&page={{page}}\n其他性向::/channels/1?withTag=880&page={{page}}\n性向未知::/channels/1?withTag=976&page={{page}}\n                ::\n                           同人衍生                         ::/channels/2?page={{page}}\n影视同人::/channels/2?withTag=841&page={{page}}\n动漫同人::/channels/2?withTag=842&page={{page}}\n游戏同人::/channels/2?withTag=843&page={{page}}\n小说同人::/channels/2?withTag=844&page={{page}}\n真人同人::/channels/2?withTag=845&page={{page}}\n其他同人::/channels/2?withTag=846&page={{page}}\n历史同人::/channels/2?withTag=852&page={{page}}\n戏剧同人::/channels/2?withTag=853&page={{page}}\n     B L     ::/channels/2?withTag=874&page={{page}}\n     G L     ::/channels/2?withTag=875&page={{page}}\n     B G     ::/channels/2?withTag=876&page={{page}}\n     G B     ::/channels/2?withTag=877&page={{page}}\n混合性向::/channels/2?withTag=878&page={{page}}\n   无 C P  ::/channels/2?withTag=879&page={{page}}\n其他性向::/channels/2?withTag=880&page={{page}}\n性向未知::/channels/2?withTag=976&page={{page}}\n                                          ::",
+    "lastUpdateTime": 1779898027329,
+    "loginUrl": "https://xn--pxtr7m.com/login",
+    "respondTime": 181331,
+    "ruleBookInfo": {
+      "intro": "class.main-text text-center@text",
+      "lastChapter": "class.pull-left@tag.a.0@text##进入阅读模式",
+      "tocUrl": "text.章节目录@href||"
+    },
+    "ruleContent": {
+      "content": "class.main-text indentation no-selection@p@html||class.panel@html##废文网|文库|论坛|注册|登录|首页|/随笔|只看回帖|内容|显示点评|折叠情况|显示折叠内容|排序|最早回复|最新发布|最多回复|最高赞|随机乱序|最新被回复|类型|赞助我们|管理记录"
+    },
+    "ruleExplore": {
+      "author": "class.pull-right smaller-5@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.1@href",
+      "intro": "class.smaller-5@text",
+      "kind": "class.pull-right smaller-20@text",
+      "name": "tag.span.0@tag.a.1@text"
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.0@href",
+      "kind": "class.badge bianyuan-tag badge-tag@text||class.recommend-text@text",
+      "name": "tag.span.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.table@tbody@tr@tag.a.0||tag.html",
+      "chapterName": "class.font-2@tag.a.0@text||text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search?search={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "// Error: Connection reset\n\n💡需要ID登录\n💡账号未满3级 边限文 边限章正文为空\n💡边限章标志：⛱\n💡移除签到通知+文末增加评论\n⚠️站内公共通知：\n废文网的创立是为了给文学爱好者搭建相对自由的小天地，鼓励高质量的读写交流。作为文学性的私人站点，这是一片脆弱的空间，在风浪里非常不容易地走到今天，在未来，我们希望这个地方能继续存在。\n因此，如遇文章或用户引起大范围争议、登上热搜等引发过多外界关注的高风险事件时，废文网将采取应急措施，包括但不限于隐藏文章、删除文章、删除用户、限制阅读、限制登录、关闭注册、关闭网站等。\n为了网站能够继续存在，请勿不适宜地、片面地传播废文网。再次强调，本站禁止未成年人注册，使用本站需遵守废文网版规及免责申明，请仔细阅读！\n⚠️废文版规4.2.1：\n禁共享站内资源如txt文包截图等，涉及违规站内资源共享的情况，账户和ip将永久封禁。\n⚠️乃星特此声明：\n本人修改、分享书源仅为个人以及其他自觉遵守版规的咸鱼方便看文，明知故犯违反版规的有心人自行承担违规后果，一切违规行为与本人及书源制作者无关。\nBy要有上进心+关耳/乃星改\n🈲二传",
+    "bookSourceGroup": "AAA笔趣阁,﹅ ♚常用榜单,网站失效",
+    "bookSourceName": "🌾 废文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://废文.com/",
+    "bookUrlPattern": "",
+    "customButton": false,
+    "customOrder": 15009,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "[{'title':'全站榜单','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'日积分榜','url':'/book_ranking?ranking=jifen_daily&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'周积分榜','url':'/book_ranking?ranking=jifen_weekly&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'总字数榜','url':'/books?ordered=total_char&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'本周新书','url':'/book_ranking?ranking=weekly_new_book&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'本月新书','url':'/book_ranking?ranking=monthly_new_book&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'最新完结','url':'/book_ranking?ranking=just_finished&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'均衡积分','url':'/books?ordered=jifen&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'均字积分','url':'/books?ordered=weighted_jifen&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'随机乱序','url':'/books?ordered=random&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'最新更新','url':'/books?ordered=last_ranked_at&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'最新创建','url':'/books?ordered=latest_created&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'最多收藏','url':'/books?ordered=collection_count&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'专题编推','url':'/books?withTag=883&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'当前编推','url':'/books?withTag=884&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'往期编推','url':'/books?withTag=885&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'原创全部','url':'/books?inChannel=1&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'BG','url':'/books?withTag=876&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'GB','url':'/books?withTag=877&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'BL','url':'/books?withTag=874&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'GL','url':'/books?withTag=875&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'无CP','url':'/books?withTag=879&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'混合','url':'/books?withTag=878&withBianyuan=include_bianyuan&inChannel=1&&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'其他','url':'/books?withTag=880&withBianyuan=include_bianyuan&inChannel=1&&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'未知','url':'/books?withTag=976&withBianyuan=include_bianyuan&inChannel=1&&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'短篇','url':'/books?withTag=867&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'中篇','url':'/books?withTag=868&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'长篇','url':'/books?withTag=869&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'超长','url':'/books?withTag=1665&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'大纲','url':'/books?withTag=870&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'连载','url':'/books?withTag=871&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'完结','url':'/books?withTag=872&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'暂停','url':'/books?withTag=873&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'正剧','url':'/books?withTag=27&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'悲剧','url':'/books?withTag=908&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'喜剧','url':'/books?withTag=909&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'西方','url':'/books?withTag=640&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'古代','url':'/books?withTag=562&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'民国','url':'/books?withTag=639&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'现代','url':'/books?withTag=563&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'未来','url':'/books?withTag=71&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'奇幻','url':'/books?withTag=641&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'HE','url':'/books?withTag=29&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'OE','url':'/books?withTag=560&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'BE','url':'/books?withTag=315&withBianyuan=include_bianyuan&inChannel=1&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'同人全部','url':'/books?inChannel=2&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'影视','url':'/books?withTag=841&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'动漫','url':'/books?withTag=842&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'游戏','url':'/books?withTag=843&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'小说','url':'/books?withTag=844&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'真人','url':'/books?withTag=845&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'其他','url':'/books?withTag=846&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'历史','url':'/books?withTag=852&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'戏剧','url':'/books?withTag=853&withBianyuan=include_bianyuan&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'短篇','url':'/books?withTag=867&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'中篇','url':'/books?withTag=868&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'长篇','url':'/books?withTag=869&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'超长','url':'/books?withTag=1665&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'大纲','url':'/books?withTag=870&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'连载','url':'/books?withTag=871&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'完结','url':'/books?withTag=872&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'暂停','url':'/books?withTag=873&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'BG','url':'/books?withTag=876&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'GB','url':'/books?withTag=877&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'BL','url':'/books?withTag=874&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'GL','url':'/books?withTag=875&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'无CP','url':'/books?withTag=879&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'混合','url':'/books?withTag=878&withBianyuan=include_bianyuan&inChannel=2&&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'其他','url':'/books?withTag=880&withBianyuan=include_bianyuan&inChannel=2&&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'未知','url':'/books?withTag=976&withBianyuan=include_bianyuan&inChannel=2&&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'正剧','url':'/books?withTag=27&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'悲剧','url':'/books?withTag=908&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'喜剧','url':'/books?withTag=909&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'西方','url':'/books?withTag=640&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'古代','url':'/books?withTag=562&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'民国','url':'/books?withTag=639&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'现代','url':'/books?withTag=563&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'未来','url':'/books?withTag=71&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'奇幻','url':'/books?withTag=641&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'HE','url':'/books?withTag=29&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'OE','url':'/books?withTag=560&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'BE','url':'/books?withTag=315&withBianyuan=include_bianyuan&inChannel=2&page={{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}}]",
+    "lastUpdateTime": 1630488981551,
+    "loginUrl": "https://废文网.com/login",
+    "respondTime": 188098,
+    "ruleBookInfo": {
+      "intro": "class.h5.0@text&&class.col-xs-12@tag.p@html@js:result=\"    \"+result##<img\\s.*jpg.*>",
+      "kind": "class.h5.1@tag.a!0@text&&class.badge bianyuan-tag badge-tag@title&&class.recommend-label@title##编辑推荐##编推<js></js>##专题推荐|当前编推|往期编推|单章限制阅读|同人|小说|衍生|视角|禁止回复|原创|\\[.*",
+      "lastChapter": "class.pull-left@tag.a.0@text##最新章节|《|》",
+      "tocUrl": "",
+      "wordCount": "class.smaller-20.2@text##(.*?)\\/(.*)##$1字"
+    },
+    "ruleContent": {
+      "content": "class.main-text.0@span@p@html\n<js>\na=java.getString('@css:[class=\"text-center grayout warning-tag\"]@html',false);\nb=java.getString('@css:[class=\"text-left grayout\"]@html',false);\ntitle=java.getString('@@class.text-center@tag.strong.1@class.h5@html',false);\nr=java.getString('@@class.main-text!0@span@p@html',false);\nif(a!=''){\na='◎作者有话说：'+a+'-END-'\n}\nif(b!=''){\nb='◎作者有话说：\\n'+b\n}\nif((!title.match(/<h5/))&&(title.match(/[\\u4e00-\\u9fa5]/))){\ntitle='['+title+']'+'\\n'\n}else{title=''}\nif(r!=''){\nr='◎评论：\\n'+r+'\\n-完-'\n}\nresult=title+a+result+b+r\n</js>",
+      "imageStyle": "0",
+      "replaceRegex": "##\\.*（本帖非边限.*?引入“边限”讨论。）|\\[第[零一二三四五六七八九十百千]+章\\]|\\[原创不易.*支持.*\\]|\\[[零一二三四五六七八九十百千、]+\\]|\\[.*（.*）\\]|(还没想好题目|不想了)\\d+|\\[(b|/b|u|/u|/hide)\\]|\\[hide=1\\]",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "class.row.0@class.pull-right smaller-5@text||class.row.0@tag.span.2@text",
+      "bookList": "tag.article",
+      "bookUrl": "class.row@tag.span.0@tag.a.-1@href",
+      "coverUrl": "@js:'https://gitee.com/amaris-me/read-the-cover/raw/master/img-16187330465857fbd75a89f87117361da6a09a9862d09.jpeg'",
+      "intro": "class.smaller-5.1@ownText",
+      "kind": "class.recommend-label@title||class.bianyuan-tag@title||class.pull-right@tag.i@text##编辑推荐##编推",
+      "lastChapter": "class.grayout smaller-20@text",
+      "name": "class.row.0@tag.span.0@tag.a.-1@text",
+      "wordCount": "class.pull-right smaller-30@text##(.*?)\\/(.*)##$1字"
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.0@href",
+      "coverUrl": "@js:'https://gitee.com/amaris-me/read-the-cover/raw/master/img-16187330465857fbd75a89f87117361da6a09a9862d09.jpeg'",
+      "intro": "class.smaller-5@text",
+      "kind": "class.recommend-label@title&&class.badge bianyuan-tag badge-tag@title##编辑推荐##编推",
+      "name": "tag.span.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.table@tr!0",
+      "chapterName": "{{@@tag.a.0@text}}{{@@class.glyphicon@html}}##<.*>## · ⛱",
+      "chapterUrl": "tag.a.0@href",
+      "isVip": "",
+      "updateTime": "{{@@tag.th.2@text}}字·{{@@tag.a.1@text}}·{{@@tag.th.6@text}}"
+    },
+    "searchUrl": "https://废文网.com/search?search={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "💵正版,🆔登录,﹅ ♚常用榜单,🚀VPN",
+    "bookSourceName": "💵 废文Ⅲ✈",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sosad.fun",
+    "customButton": false,
+    "customOrder": 15011,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "❀    日积分    ❀::https://www.sosad.fun/book_ranking?ranking=jifen_daily&page={{page}}\n❀    周积分    ❀::https://www.sosad.fun/book_ranking?ranking=jifen_weekly&page={{page}}\n❀    总收藏    ❀::https://www.sosad.fun/books?ordered=collection_count&page={{page}}\n❀    均积分    ❀::https://www.sosad.fun/books?withBianyuan=&ordered=jifen&page={{page}}\n❀    编推榜    ❀::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=884&page={{page}}\n❀  我的收藏   ❀::https://www.sosad.fun/collection?group=27700\n❀                                    原创小说                                      ❀::https://www.sosad.fun/channels/1?withBianyuan=include_bianyuan&page={{page}\n❀    古  代    ❀::https://www.sosad.fun/channels/1?withTag=562&withBianyuan=include_bianyuan&page={{page}}\n❀    现  代    ❀::https://www.sosad.fun/channels/1?withTag=563&withBianyuan=include_bianyuan&page={{page}}\n❀    民  国    ❀::https://www.sosad.fun/channels/1?withTag=639&withBianyuan=include_bianyuan&page={{page}}\n❀    西  方    ❀::https://www.sosad.fun/channels/1?withTag=640&withBianyuan=include_bianyuan&page={{page}}\n❀    奇  幻    ❀::https://www.sosad.fun/channels/1?withTag=641&withBianyuan=include_bianyuan&page={{page}}\n❀    科  幻    ❀::https://www.sosad.fun/channels/1?withTag=642&withBianyuan=include_bianyuan&page={{page}}\n❀    灵  异    ❀::https://www.sosad.fun/channels/1?withTag=643&withBianyuan=include_bianyuan&page={{page}}\n❀    玄  幻    ❀::https://www.sosad.fun/channels/1?withTag=644&withBianyuan=include_bianyuan&page={{page}}\n❀                                     同人衍生                                      ❀::https://www.sosad.fun/channels/2?withBianyuan=include_bianyuan&page={{page}}\n❀   影视同人   ❀::https://www.sosad.fun/channels/2?withTag=841&withBianyuan=include_bianyuan&page={{page}}\n❀   动漫同人   ❀::https://www.sosad.fun/channels/2?withTag=842&withBianyuan=include_bianyuan&page={{page}}\n❀   游戏同人   ❀::https://www.sosad.fun/channels/2?withTag=843&withBianyuan=include_bianyuan&page={{page}}\n❀   小说同人   ❀::https://www.sosad.fun/channels/2?withTag=844&withBianyuan=include_bianyuan&page={{page}}\n❀   历史同人   ❀::https://www.sosad.fun/channels/2?withTag=852&withBianyuan=include_bianyuan&page={{page}}\n❀   戏剧同人   ❀::https://www.sosad.fun/channels/2?withTag=853&withBianyuan=include_bianyuan&page={{page}}",
+    "lastUpdateTime": 1779898035736,
+    "loginUrl": "https://www.sosad.fun/login",
+    "respondTime": 181552,
+    "ruleBookInfo": {
+      "intro": "class.h5.0@text&&class.col-xs-12@tag.p@html@js:result=\"    \"+result",
+      "lastChapter": "class.pull-left@tag.a.0@text##最新章节|《|》"
+    },
+    "ruleContent": {
+      "content": "class.main-text.0@tag.p@html",
+      "imageStyle": "0"
+    },
+    "ruleExplore": {
+      "author": "class.row.0@class.pull-right smaller-5@text||class.row.0@tag.span.2@text",
+      "bookList": "tag.article",
+      "bookUrl": "class.row@tag.span.0@tag.a.-1@href",
+      "coverUrl": "@js:result=\"https://hbimg.huabanimg.com/9214ed701075304078ab6bd1b710f9b35eca73511ba27-Fux0fp_fw658\"",
+      "intro": "class.smaller-5.1@ownText",
+      "kind": "class.row@tag.span.0@tag.a.-3@text&&class.row@tag.span.0@tag.a.-2@text&&class.badge bianyuan-tag badge-tag@text",
+      "name": "class.row.0@tag.span.0@tag.a.-1@text"
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.0@href",
+      "coverUrl": "@js:result=\"https://hbimg.huabanimg.com/9214ed701075304078ab6bd1b710f9b35eca73511ba27-Fux0fp_fw658\"",
+      "intro": "class.smaller-5@text",
+      "kind": "tag.span@ownText",
+      "name": "tag.span.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.table@tr!0",
+      "chapterName": "{{@@tag.a.0@text}} ",
+      "chapterUrl": "tag.a.0@href",
+      "isVip": "class.glyphicon glyphicon-info-sign@title",
+      "updateTime": "{{@@tag.th.2@text}}字•{{@@tag.a.1@text}}•{{@@tag.th.6@text}}"
+    },
+    "searchUrl": "https://www.sosad.fun/search?search={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "\n\nfr.路遥星亦辞+乃星改\n🈲二传\n⚠️废文版规4.2.1：\n禁共享站内资源如txt文包截图等，涉及违规站内资源共享的情况，账户和ip将永久封禁。\n⚠️乃星特此声明：\n本人修改书源仅为个人以及其他遵守版规的咸鱼方便看文，明知故犯违反版规的有心人自行承担违规后果，一切违规行为皆与本人无关。",
+    "bookSourceGroup": "💵正版🆔登录,﹅ ♚常用榜单,🚀VPN",
+    "bookSourceName": "💵 废文Ⅳ✈",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sosad.fun#",
+    "bookUrlPattern": "",
+    "customButton": false,
+    "customOrder": 15015,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "◎                        我的收藏                         ◎::\n默认::https://www.sosad.fun/collection?&page={{page}}\n锤基::https://sosad.fun/books?withTag=414&page={{page}}\n19::https://sosad.fun/books?withTag=205&page={{page}}\n♂♂ 连载::https://www.sosad.fun/collection?group=40350&page={{page}}\n♂♂完结::https://www.sosad.fun/collection?group=40351&page={{page}}\n♂♀连载::https://www.sosad.fun/collection?group=40351&page={{page}}\n♂♀完结::https://www.sosad.fun/collection?group=40351&page={{page}}\n\n❀                       原创  •  B L                       ❀::https://sosad.fun/books?withTag=874&inChannel=1&page={{page}}\n\n主受虐文::https://sosad.fun/books?withTag=874-469-576&ordered=collection_count&inChannel=1&page={{page}}\n主受甜文::https://sosad.fun/books?withTag=874-469-24&ordered=collection_count&inChannel=1&page={{page}}\n主受轻松::https://sosad.fun/books?withTag=874-469-28&ordered=collection_count&inChannel=1&page={{page}}\n主受狗血::https://sosad.fun/books?withTag=874-469-4&ordered=collection_count&inChannel=1&page={{page}}\n主受致郁::https://sosad.fun/books?withTag=874-469-564&ordered=collection_count&inChannel=1&page={{page}}\n主受治愈::https://sosad.fun/books?withTag=874-469-565&ordered=collection_count&inChannel=1&page={{page}}\n\n幻想空间::https://sosad.fun/books?withTag=874-26&inChannel=1&ordered=collection_count&page={{page}}\n架空世界::https://sosad.fun/books?withTag=874-33&inChannel=1&ordered=collection_count&page={{page}}\n神怪志异::https://sosad.fun/books?withTag=874-42&inChannel=1&ordered=collection_count&page={{page}}\n宫廷侯爵::https://sosad.fun/books?withTag=874-60&inChannel=1&ordered=collection_count&page={{page}}\n娱  乐  圈::https://sosad.fun/books?withTag=874-6&inChannel=1&ordered=collection_count&page={{page}}\n无  限  流::https://sosad.fun/books?withTag=874-1310&inChannel=1&ordered=collection_count&page={{page}}\n\n武 侠::https://sosad.fun/books?withTag=874-58&inChannel=1&ordered=collection_count&page={{page}}\n仙 侠::https://sosad.fun/books?withTag=874-77&inChannel=1&ordered=collection_count&page={{page}}\n玄 幻::https://sosad.fun/books?withTag=874-644&inChannel=1&ordered=collection_count&page={{page}}\n灵  异::https://sosad.fun/books?withTag=874-643&inChannel=1&ordered=collection_count&page={{page}}\n\n重 生::https://sosad.fun/books?withTag=874-41&inChannel=1&ordered=collection_count&page={{page}}\n快 穿::https://sosad.fun/books?withTag=874-1309&inChannel=1&ordered=collection_count&page={{page}}\n系 统::https://sosad.fun/books?withTag=874-38&inChannel=1&ordered=collection_count&page={{page}}\n穿  越::https://sosad.fun/books?withTag=874-40&inChannel=1&ordered=collection_count&page={{page}}\n\n校 园::https://sosad.fun/books?withTag=874-54&inChannel=1&ordered=collection_count&page={{page}}\n年 下::https://sosad.fun/books?withTag=874-571&inChannel=1&ordered=collection_count&page={{page}}\n师 生::https://sosad.fun/books?withTag=874-572&inChannel=1&ordered=collection_count&page={{page}}\n病  娇::https://sosad.fun/books?withTag=874-906&inChannel=1&ordered=collection_count&page={{page}}\n\n\n❀                       原创  •  B G                       ❀::https://sosad.fun/books?inChannel=1&withTag=876&page={{page}}\n\n专题编推::https://sosad.fun/books?withTag=876-883&ordered=collection_count&inChannel=1&page={{page}}\n当前编推::https://sosad.fun/books?withTag=876-884&ordered=collection_count&inChannel=1&page={{page}}\n往期编推::https://sosad.fun/books?withTag=876-885&ordered=collection_count&inChannel=1&page={{page}}\n\n古 代::https://sosad.fun/books?ordered=collection_count&withTag=876-562&inChannel=1&page={{page}}\n现 代::https://sosad.fun/books?withTag=876-563&ordered=collection_count&inChannel=1&page={{page}}\n甜 文::https://sosad.fun/books?withTag=876-24&ordered=collection_count&inChannel=1&page={{page}}\n虐  文::https://sosad.fun/books?withTag=876-576&ordered=collection_count&inChannel=1&page={{page}}\n爽 文::https://sosad.fun/books?withTag=876-47&ordered=collection_count&inChannel=1&page={{page}}\n轻 松::https://sosad.fun/books?withTag=876-28&ordered=collection_count&inChannel=1&page={{page}}\n H  E ::https://sosad.fun/books?withTag=876-29&ordered=collection_count&inChannel=1\n B   E ::https://sosad.fun/books?withTag=876-315&ordered=collection_count&inChannel=1&page={{page}}",
+    "lastUpdateTime": 1734744324642,
+    "loginUrl": "https://www.sosad.fun/login",
+    "respondTime": 180554,
+    "ruleBookInfo": {
+      "intro": "class.h5.0@text&&class.col-xs-12@tag.p@html@js:result=\"    \"+result",
+      "lastChapter": "class.pull-left@tag.a.0@text##最新章节|《|》",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "class.warning-tag.0@text&&class.main-text.0@tag.p@html",
+      "imageStyle": "0",
+      "replaceRegex": "##\\.*（本帖非边限.*?引入“边限”讨论。）"
+    },
+    "ruleExplore": {
+      "author": "class.row.0@class.pull-right smaller-5@text||class.row.0@tag.span.2@text",
+      "bookList": "tag.article",
+      "bookUrl": "class.row@tag.span.0@tag.a.-1@href",
+      "coverUrl": "",
+      "intro": "class.smaller-5.1@ownText",
+      "kind": "class.recommend-label@title||class.pull-right@tag.i@text",
+      "name": "class.row.0@tag.span.0@tag.a.-1@text"
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.0@href",
+      "coverUrl": "",
+      "intro": "class.smaller-5@text",
+      "kind": "tag.span@ownText",
+      "name": "tag.span.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.table@tr!0",
+      "chapterName": "{{@@tag.a.0@text}} ",
+      "chapterUrl": "tag.a.0@href",
+      "isVip": "class.glyphicon glyphicon-info-sign@title",
+      "updateTime": "{{@@tag.th.2@text}}字•{{@@tag.a.1@text}}•{{@@tag.th.6@text}}"
+    },
+    "searchUrl": "https://www.sosad.fun/search?search={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "\n\nby关耳",
+    "bookSourceGroup": "💵正版,🆔登录,﹅ ♚常用榜单,🚀VPN,",
+    "bookSourceName": "💵 废文Ⅴ✈",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sosad.fun/",
+    "bookUrlPattern": "",
+    "customButton": false,
+    "customOrder": 15016,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "                           原创小说                           ::https://www.sosad.fun/channels/1?page={{page}}\n   古  代   ::https://www.sosad.fun/channels/1?withTag=562&page={{page}}\n   现  代   ::https://www.sosad.fun/channels/1?withTag=563&page={{page}}\n   民  国   ::https://www.sosad.fun/channels/1?withTag=639&page={{page}}\n   西  方   ::https://www.sosad.fun/channels/1?withTag=640&page={{page}}\n   奇  幻   ::https://www.sosad.fun/channels/1?withTag=641&page={{page}}\n   科  幻   ::https://www.sosad.fun/channels/1?withTag=642&page={{page}}\n   灵  异   ::https://www.sosad.fun/channels/1?withTag=643&page={{page}}\n   玄  幻   ::https://www.sosad.fun/channels/1?withTag=644&page={{page}}\n   其  他   ::https://www.sosad.fun/channels/1?withTag=840&page={{page}}     \n     B L      ::https://www.sosad.fun/channels/1?withTag=874&page={{page}}\n     G L      ::https://www.sosad.fun/channels/1?withTag=875&page={{page}}\n     B G     ::https://www.sosad.fun/channels/1?withTag=876&page={{page}}\n     G B      ::https://www.sosad.fun/channels/1?withTag=877&page={{page}}\n混合性向::https://www.sosad.fun/channels/1?withTag=878&page={{page}}\n  无 C P   ::https://www.sosad.fun/channels/1?withTag=879&page={{page}}\n其他性向::https://www.sosad.fun/channels/1?withTag=880&page={{page}}\n性向未知::https://www.sosad.fun/channels/1?withTag=976&page={{page}}\n                ::\n                           同人衍生                         ::https://www.sosad.fun/channels/2?page={{page}}\n影视同人::https://www.sosad.fun/channels/2?withTag=841&page={{page}}\n动漫同人::https://www.sosad.fun/channels/2?withTag=842&page={{page}}\n游戏同人::https://www.sosad.fun/channels/2?withTag=843&page={{page}}\n小说同人::https://www.sosad.fun/channels/2?withTag=844&page={{page}}\n真人同人::https://www.sosad.fun/channels/2?withTag=845&page={{page}}\n其他同人::https://www.sosad.fun/channels/2?withTag=846&page={{page}}\n历史同人::https://www.sosad.fun/channels/2?withTag=852&page={{page}}\n戏剧同人::https://www.sosad.fun/channels/2?withTag=853&page={{page}}\n     B L     ::https://www.sosad.fun/channels/2?withTag=874&page={{page}}\n     G L     ::https://www.sosad.fun/channels/2?withTag=875&page={{page}}\n     B G     ::https://www.sosad.fun/channels/2?withTag=876&page={{page}}\n     G B     ::https://www.sosad.fun/channels/2?withTag=877&page={{page}}\n混合性向::https://www.sosad.fun/channels/2?withTag=878&page={{page}}\n   无 C P  ::https://www.sosad.fun/channels/2?withTag=879&page={{page}}\n其他性向::https://www.sosad.fun/channels/2?withTag=880&page={{page}}\n性向未知::https://www.sosad.fun/channels/2?withTag=976&page={{page}}\n                                          ::",
+    "lastUpdateTime": 1734744337896,
+    "loginUrl": "https://www.sosad.fun/login",
+    "respondTime": 180839,
+    "ruleBookInfo": {
+      "intro": "class.main-text text-center@text",
+      "lastChapter": "class.pull-left@tag.a.0@text##进入阅读模式",
+      "tocUrl": "text.章节目录@href||"
+    },
+    "ruleContent": {
+      "content": "class.main-text indentation no-selection@p@html||class.panel@html##废文网|文库|论坛|注册|登录|首页|/随笔|只看回帖|内容|显示点评|折叠情况|显示折叠内容|排序|最早回复|最新发布|最多回复|最高赞|随机乱序|最新被回复|类型|赞助我们|管理记录"
+    },
+    "ruleExplore": {
+      "author": "class.pull-right smaller-5@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.1@href",
+      "intro": "class.smaller-5@text",
+      "kind": "class.pull-right smaller-20@text",
+      "name": "tag.span.0@tag.a.1@text"
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.row",
+      "bookUrl": "tag.span.0@tag.a.0@href",
+      "kind": "class.badge bianyuan-tag badge-tag@text||class.recommend-text@text",
+      "name": "tag.span.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.table@tbody@tr@tag.a.0||tag.html",
+      "chapterName": "class.font-2@tag.a.0@text||text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.sosad.fun/search?search={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "💵正版,🆔登录,﹅ ♚常用榜单,🚀VPN",
+    "bookSourceName": "💵 废文Ⅵ✈",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sosad.fun/🍑",
+    "customButton": false,
+    "customOrder": 20115,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "bl积分榜::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874&ordered=jifen&page={{page}}\nbl收藏榜::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874&ordered=collection_count&page={{page}}\n完结积分榜::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874-872&ordered=jifen&page={{page}}\n完结收藏榜::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874-872&ordered=collection_count&page={{page}}\n悬疑::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874-85&page={{page}}\n均字积分::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874&ordered=weighted_jifen&page={{page}}\n乱序::https://www.sosad.fun/books?withBianyuan=include_bianyuan&withTag=874&ordered=random&page={{page}}",
+    "lastUpdateTime": 1779898088191,
+    "loginUrl": "https://www.sosad.fun/login",
+    "respondTime": 181415,
+    "ruleBookInfo": {
+      "author": "class.majia@text",
+      "coverUrl": "class.main-text  text-center no-selection@scr",
+      "intro": "class.main-text text-center@text",
+      "name": "class.font-2@tag.a@text"
+    },
+    "ruleContent": {
+      "content": "class.main-text indentation no-selection@p@html||class.panel@html##废文网|文库|论坛|注册|登录|首页|/随笔|只看回帖|内容|显示点评|折叠情况|显示折叠内容|排序|最早回复|最新发布|最多回复|最高赞|随机乱序|最新被回复|类型|赞助我们|管理记录"
+    },
+    "ruleExplore": {
+      "author": "class.pull-right smaller-5@text",
+      "bookList": "class.panel-body@article",
+      "bookUrl": "tag.a.0@href",
+      "intro": "class.smaller-5.1@text&&class.pull-right smaller-20@text",
+      "kind": "class.badge bianyuan-tag badge-tag@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.panel-body@article",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "tbody@tr",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href"
+    },
+    "searchUrl": "https://www.sosad.fun/search?search={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "筛选 =\"GL，完结\";\n\n//❗️本源需要登录\n//❗️在网站新增【收藏夹】请点击【刷新收藏列表】后【刷新】发现\n//❗️注意除了更改值以外不要做其他更改\n//❗️请在 \" \" 里写你要筛选的内容，为空时就是不做筛选，每个用中文逗号分隔\n//❗️每次更改完都要【刷新】发现\n//例如：完结，GL，最后回复，悬疑\n\n/**\n * 可选的筛选：\n 1.篇幅：\n 短篇、中篇、长篇、大长篇、大纲\n \n 2. 进度：\n 连载、完结、暂停\n \n 3. 性向：\n BG、GB、BL、GL、混合性向、无CP、其他性向、性向未知\n \n 4. 推荐：\n 风格故事、人气剧情、长篇故事、创意故事、编推金麦穗\n \n 5. 排序：\n 最后回复、最新更新、总字数、均衡积分、均字数积分、最新创建、最多收藏、随机乱序\n \n 6、标签\n */",
+    "bookSourceGroup": "③📖  论坛",
+    "bookSourceName": "📖废文网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--pxtr7m.com",
+    "customButton": false,
+    "customOrder": 24480,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\neval(String(source.bookSourceComment))\nvar fenlei = 筛选; // 可能为空或顺序不同\n\nvar length = { \"短篇\": \"867\", \"中篇\": \"868\", \"长篇\": \"869\", \"大长篇\": \"1665\", \"大纲\": \"870\" };\nvar progress = { \"连载\": \"871\", \"完结\": \"872\", \"暂停\": \"873\" };\nvar orientation = { \"BG\": \"876\", \"GB\": \"877\", \"BL\": \"874\", \"GL\": \"875\", \"混合性向\": \"878\", \"无CP\": \"879\", \"其他性向\": \"880\", \"性向未知\": \"976\" };\nvar recommendation = { \"风格故事\": \"1831\", \"人气剧情\": \"1832\", \"长篇故事\": \"1833\", \"创意故事\": \"1834\", \"编推金麦穗\": \"1835\" };\nvar sorting = { \"最后回复\": \"default\", \"最新更新\": \"last_ranked_at\", \"总字数\": \"total_char\", \"均衡积分\": \"jifen\", \"均字数积分\": \"weighted_jifen\", \"最新创建\": \"latest_created\", \"最多收藏\": \"collection_count\", \"随机乱序\": \"random\" };\nvar originality = { \"原创小说\": \"1\", \"同人小说\": \"2\" };\n\nvar other_tags={\"正剧\":\"27\",\"悲剧\":\"908\",\"喜剧\":\"909\",\"古代\":\"562\",\"民国\":\"639\",\"现代\":\"563\",\"未来\":\"71\",\"HE\":\"29\",\"BE\":\"315\",\"OE\":\"560\",\"小甜饼\":\"24\",\"轻松\":\"28\",\"治愈\":\"565\",\"H/C\":\"536\",\"爽文\":\"47\",\"狗血\":\"4\",\"致郁\":\"564\",\"虐文\":\"576\",\"惊悚\":\"566\",\"悬疑\":\"85\",\"雷文\":\"76\",\"谐趣\":\"1151\",\"文艺\":\"936\",\"意识流\":\"981\",\"浪漫主义\":\"983\",\"现实主义\":\"982\",\"魔幻现实\":\"1630\",\"黑色幽默\":\"925\",\"暗黑\":\"37\",\"第一人称\":\"932\",\"第二人称\":\"933\",\"第三人称\":\"934\",\"多重视角\":\"931\",\"女主视角\":\"928\",\"男主视角\":\"927\",\"主受视角\":\"469\",\"主攻视角\":\"468\",\"仙侠\":\"77\",\"反乌托邦\":\"1076\",\"女尊\":\"1075\",\"末世\":\"1074\",\"原始社会\":\"1062\",\"玄幻\":\"644\",\"灵异\":\"643\",\"科幻\":\"642\",\"奇幻\":\"641\",\"神话\":\"569\",\"赛博朋克\":\"21\",\"魔法世界\":\"63\",\"武侠\":\"58\",\"神怪志异\":\"42\",\"童话\":\"36\",\"星际\":\"35\",\"架空世界\":\"33\",\"幻想空间\":\"26\",\"蒸汽朋克\":\"22\",\"哨兵向导\":\"5\",\"动物世界\":\"66\",\"人鱼\":\"79\",\"兽人\":\"80\",\"拟人\":\"478\",\"血族\":\"984\",\"日系\":\"56\",\"欧美\":\"230\",\"韩流\":\"231\",\"东南亚\":\"232\",\"西亚\":\"233\",\"澳洲\":\"234\",\"非洲\":\"235\",\"拉美\":\"236\",\"西方\":\"640\",\"极地\":\"722\",\"网游\":\"62\",\"直播\":\"1184\",\"室友\":\"1063\",\"战争\":\"1060\",\"宫斗\":\"721\",\"刑侦\":\"597\",\"竞技体育\":\"161\",\"电竞\":\"160\",\"宅斗\":\"84\",\"娱乐圈\":\"6\",\"宫廷侯爵\":\"60\",\"田园乡村\":\"59\",\"商战\":\"55\",\"校园\":\"54\",\"职业文\":\"49\",\"网配\":\"34\",\"灵魂伴侣\":\"2250\",\"传奇\":\"67\",\"励志\":\"31\",\"日常\":\"53\",\"暧昧\":\"926\",\"暗恋\":\"935\",\"养成\":\"1186\",\"青梅竹马\":\"44\",\"宠物奇缘\":\"46\",\"乔装改扮\":\"977\",\"扮猪吃虎\":\"577\",\"前世今生\":\"48\",\"天作之合\":\"30\",\"相爱相杀\":\"978\",\"因缘邂逅\":\"43\",\"阴差阳错\":\"32\",\"破镜重圆\":\"2\",\"PTSD\":\"1059\",\"先婚后爱\":\"769\",\"宗教\":\"1150\",\"异能\":\"2255\",\"克系\":\"2249\",\"升级流\":\"2248\",\"机甲\":\"2247\",\"规则怪谈\":\"2236\",\"推理\":\"1760\",\"民俗\":\"1585\",\"无限流\":\"1310\",\"快穿\":\"1309\",\"论坛体\":\"1185\",\"性转\":\"20\",\"公路文\":\"1064\",\"灵魂转换\":\"1061\",\"权谋\":\"980\",\"单元剧\":\"770\",\"基建\":\"61\",\"美食\":\"45\",\"重生\":\"41\",\"穿越\":\"40\",\"人工智能\":\"39\",\"系统\":\"38\",\"忠犬\":\"81\",\"女王\":\"82\",\"病娇\":\"906\",\"自恋\":\"979\",\"强强\":\"1\",\"美强\":\"23\",\"强弱\":\"25\",\"弱强\":\"73\",\"弱弱\":\"567\",\"年上\":\"570\",\"年下\":\"571\",\"师生\":\"572\",\"上下级\":\"573\",\"下克上\":\"772\",\"水仙\":\"1666\",\"1v1\":\"3\",\"互攻\":\"70\",\"受受\":\"72\",\"直掰弯\":\"78\",\"受转攻\":\"574\",\"攻转受\":\"575\",\"无差\":\"719\",\"受宠攻\":\"1072\",\"攻宠受\":\"1073\",\"全年龄\":\"720\",\"清水\":\"86\",\"布袋戏\":\"88\",\"歌剧\":\"90\",\"综漫\":\"479\",\"Fate系列\":\"549\",\"原作向\":\"715\",\"paro\":\"716\",\"AU\":\"717\",\"全员向\":\"718\",\"高达\":\"1325\",\"授权翻译\":\"467\",\"授权转载\":\"561\",\"法语\":\"1077\",\"德语\":\"1078\",\"日语\":\"1079\",\"西语\":\"1080\",\"英语\":\"1081\",\"粤语\":\"1631\",\"第五期征集\":\"1668\",\"第六期征集\":\"1836\",\"第七期征集\":\"1988\",\"第八期征集\":\"2109\",\"第九期征集\":\"2286\"}\n\n// 解析 fenlei 变量\nvar fenleiItems = fenlei ? fenlei.split(\"，\").map(function (item) { return item.trim(); }) : [];\n\n// 获取 progress, length, orientation, recommendation, sorting, other_tags 的值\nvar values = {};\nvar otherTagValues = [];\nfor (var i = 0; i < fenleiItems.length; i++) {\n    var item = fenleiItems[i];\n    if (progress[item]) values.progress = progress[item];\n    else if (length[item]) values.length = length[item];\n    else if (orientation[item]) values.orientation = orientation[item];\n    else if (recommendation[item]) values.recommendation = recommendation[item];\n    else if (sorting[item]) values.sorting = sorting[item];\n    else if (other_tags[item]) otherTagValues.push(other_tags[item]); // 支持 other_tags\n}\n\n// 生成 withTag 部分\nvar withTag = [values.progress, values.length, values.orientation, values.recommendation].concat(otherTagValues).filter(Boolean).join(\"-\");\n\n// 一行的个数\nvar defaultNumPerRow = 0;\nvar flexBasisMap = { 1: 1, 2: 0.4, 3: 0.25, 4: 0.2, 5: 0.15, 7: 0.1, 10: 0.05 };\nvar flexBasis = defaultNumPerRow === 0 ? undefined : flexBasisMap[defaultNumPerRow] || 1;\n\n// 生成 style 对象\nvar style = { layout_flexGrow: 1 };\nif (flexBasis !== undefined) {\n    style.layout_flexBasisPercent = flexBasis;\n}\n\n// 生成结果数组\nvar result = [{\"title\":\"我要签到\",\"url\":\"/qiandao\",\"style\":{\"layout_flexGrow\":1}}];\nif (fenlei) {\n    result.push({\n        title: \"当前筛选为【\" + fenlei + \"】\",\n        url: \"\",\n        style: { layout_flexGrow: 1, layout_flexBasisPercent: 1 }\n    });\n}\n\nfor (var key in originality) {\n    if (originality.hasOwnProperty(key)) {\n        var inChannel = originality[key];\n        var url = \"/books?ordered=\" + (values.sorting || \"default\") + \"&withBianyuan=include_bianyuan&inChannel=\" + inChannel + \"&page={{page}}&withBianyuan=include_bianyuan\";\n        if (withTag) {\n            url += \"&withTag=\" + withTag; // 添加 withTag 部分\n        }\n        result.push({\n            title: key,\n            url: url,\n            style: { layout_flexGrow: 1, layout_flexBasisPercent: 1 }\n        });\n        for (var tagKey in other_tags) {\n            if (other_tags.hasOwnProperty(tagKey)) {\n                var tagValue = other_tags[tagKey];\n                var finalWithTag = tagValue + (withTag ? \"-\" + withTag : \"\");\n                result.push({\n                    title: tagKey,\n                    url: \"/books?withTag=\" + finalWithTag + \"&page={{page}}&ordered=\" + (values.sorting || \"default\") + \"&withBianyuan=include_bianyuan&inChannel=\" + inChannel,\n                    style: style // 使用动态生成的 style 对象\n                });\n            }\n        }\n    }\n}\n\n// 收藏功能\n收藏 = String(java.ajax(\"https://xn--pxtr7m.com\")).match(/<a href=\"([^\"]+)\">收藏/);\nif(收藏){\n\t收藏url = 收藏[1];\nlet sss=source.getVariable()||\"\";\n收藏页 = sss==\"\"? String(java.ajax(收藏url)):sss;\nJ = org.jsoup.Jsoup.parse(收藏页).select(\".nav.nav-tabs\");\nsource.setVariable(J)\nJ.select(\"li a\").forEach(x=>{\n\tif(x.text()!=\"\"&&x.text()!=\"全部标记已读\"){\n\t      result.unshift({\"title\":x.text(),\"url\":x.attr(\"href\")+\"&page={{page}}\",\"style\":{\"layout_flexGrow\":1}})\n\t }\n\t});\n\tresult.unshift({\"title\":\"刷新收藏列表\",\"url\":`{{if(page==1) {source.setVariable('');java.longToast(\"请❗️【刷新】❗️发现\")};'http://127.0.0.1/'+page}}`,\"style\":{\"layout_flexGrow\":1,layout_flexBasisPercent: 1}})\n}\n\nJSON.stringify(result);\n",
+    "lastUpdateTime": 1744033707680,
+    "loginCheckJs": "if(!cache.getFile(\"feiwentime\")){\n\tJ = String(java.getStrResponse().body());\n\tJ = org.jsoup.Jsoup.parse(J);\n\tif(String(J.select(\":contains(text)\").text())==\"我要签到\"){\n\t    cache.putFile(\"feiwentime\", true , 23200);\n\t    url = \"https://xn--pxtr7m.com/qiandao\";\n\t    /连续签到/.test(java.ajax(url))?java.toast(\"废文签到成功\"):java.toast(\"废文未登录，签到失败\");\n\t}else{\n\t\t/login/i.test(result)?java.toast(\"废文未登录，签到失败\"):\"\"\n\t\t}\n\t}\nresult;",
+    "loginUi": "",
+    "loginUrl": "https://xn--pxtr7m.com",
+    "respondTime": 182188,
+    "ruleBookInfo": {
+      "coverUrl": "",
+      "init": "",
+      "intro": "class.alert-warning@html&&class.h5.0@html&&class.grayout smaller-20.0@html&&class.main-text.0@html&&class.main-text text-left no-selection@html##发表于##⌚️发表于",
+      "kind": "class.article-body@class.h5@tag.a@text&&class.bianyuan-tag@text##^限##🍖限",
+      "lastChapter": "class.article-body@tag.a.-1@text##最新章节|《|》",
+      "name": "",
+      "wordCount": "class.smaller-20.2@text##(.*?)\\/(.*)##$1"
+    },
+    "ruleContent": {
+      "content": "<js>\nif(/posts/.test(baseUrl)){\nresult = java.getString(\"@class.main-text.0@span@p@html\");\na=java.getString('@@class.warning-tag.0@html');\nb=java.getString('@css:[class=\"text-left grayout\"]@html');\nc=java.getString('//strong[@class=\"h5\"]/text()');\nif((!a.match(/<h6/))&&(a!='')&&(!a.match(/>我要签到<\\/a/))){\na='作者有话说：\\n'+a+'\\n————————————\\n'\n}else{a=''}\nif(b!=''){\nb='作者有话说：\\n'+b\n}\nresult='【'+c+'】\\n'+a+result+b\n}else{\n\tresult = java.getString(\"@css:.col-xs-12 p,.article-title>.h5,.vertical-middle,.majia,.grayout.smaller-30,.grayout.smaller-20,.main-text span[id^=full],.post-reply,*[id^=postcomment]@html\");\n\tresult=String(result)\n\t         .replace(/<div class=\"h5\">\\n*([^\\n]+)\\n*<\\/div>/,'📖 $1 📖')\n\t         .replace(/<span class=\"(?:majia|vertical-middle)\">([^<]+)<\\/span>/g,'👤$1')\n\t         .replace(/<(?:div|span) class=\"grayout smaller-[32]0\">\\n*([^\\n]+)\\n*<\\/(?:div|span)>/g,'🕘$1')\n\t         .replace(/<div class=\"(?:post-reply grayout|smaller-20)\"(?: id=\"postcomment\\d+\")*>\\n*([^\\n*]+)\\n*<\\/div>/g,'【$1】')\n\t         \n\t}\n</js>\n##👤##<br>&lrm;<br>👤",
+      "imageStyle": "",
+      "nextContentUrl": "",
+      "replaceRegex": "##\\.*（本帖非边限.*?引入“边限”讨论。）|🕘只看该用户|>>本层全部回帖|>>所有相关讨论|\\n(?=🕘)|注：点击是延时统计.*",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "class.col-xs-12.0@tag.a.-1@text||class.pull-right.0@text",
+      "bookList": "class.flash-message||class.panel-body@article",
+      "bookUrl": "tag.a.0@href",
+      "intro": "class.smaller-5.1@text",
+      "kind": "class.badge@text&&class.pull-right!0@a@text##^限##🍖限",
+      "lastChapter": "class.smaller-20.0@text",
+      "name": "tag.a.0@text||text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "class.pull-right@text",
+      "bookList": "class.panel-body@article",
+      "bookUrl": "tag.a.0@href",
+      "checkKeyWord": "",
+      "kind": "class.badge@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nlist=[];\nif(/profile/.test(baseUrl)){\n\tresult = java.getElements(\"@class.table@tbody@tr\").toArray();\n\tfor(i in result){\n\t\tjava.setContent(result[i]);\n\t\tindex=Number(i)+1;\txian=java.getString(\"@@tag.span@text||tag.span@class##.*限.*|.*sign.*##•🍗\")\n\t\ttext=java.getString(\"@@tag.a.0@text\");\n\t\thref=java.getString(\"@@tag.a.0@href\");\n\t\tword=java.getString(\"@@tag.th.2@text\");\n\t\ttime=java.getString(\"@@tag.th.6@text\");\n\t\tother=java.getString(\"@@tag.a.1@text\")\n\t\t\n\tlist.push({\n\t\t  text:index+\"  | \"+text+xian,\n\t\t  href:href,\n\t\t  intro:word+\"字 \"+time+\"  \"+other\n\t\t})\n\t}\n}else{\nallpage =\tString(java.getString(\"@class.pagination@li.-2@a@href\")).match(/page=(\\d+)/)[1];\n\tfor(i=1;i<=allpage;i++){\n\t\tlist.push({\n\t\t\ttext: \"第\"+i+\"页\",\n\t\t\thref: baseUrl+\"?page=\"+i\n\t\t\t})\t\n\t\t}\n\t}\nlist\n</js>",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "",
+      "updateTime": "intro"
+    },
+    "searchUrl": "https://xn--pxtr7m.com/search_thread?search={{key}}",
+    "weight": 0
+  }
+]
