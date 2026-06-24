@@ -1,0 +1,144 @@
+[
+  {
+    "bookSourceName": "Wikipedia（知识+书籍背景）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wikipedia.org/",
+    "searchUrl": "https://en.wikipedia.org/w/api.php?action=opensearch&search={{key}}&limit=10&format=json",
+    "ruleSearch": {
+      "bookList": "$.1[*]",
+      "name": "",
+      "bookUrl": "$.3[*]"
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Internet Archive（电子书库PDF/EPUB）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://archive.org/",
+    "searchUrl": "https://archive.org/advancedsearch.php?q={{key}}&output=json&rows=20",
+    "ruleSearch": {
+      "bookList": "$.response.docs[*]",
+      "name": "title",
+      "bookUrl": "identifier"
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Project Gutenberg（经典英文小说）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.gutenberg.org/",
+    "searchUrl": "https://www.gutenberg.org/ebooks/search/?query={{key}}",
+    "ruleSearch": {
+      "bookList": "//li[@class='booklink']",
+      "name": ".//span[@class='title']/text()",
+      "bookUrl": ".//a/@href"
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Standard Ebooks（高质量英文小说）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://standardebooks.org/",
+    "searchUrl": "https://standardebooks.org/ebooks?query={{key}}",
+    "ruleSearch": {
+      "bookList": "//article",
+      "name": ".//h2/text()",
+      "bookUrl": ".//a/@href"
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Anna Archive（主入口）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://annas-archive.li/",
+    "searchUrl": "https://annas-archive.li/search?q={{key}}",
+    "ruleSearch": {
+      "bookList": "html",
+      "name": "",
+      "bookUrl": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Anna Archive 镜像1",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://annas-archive.org/",
+    "searchUrl": "https://annas-archive.org/search?q={{key}}",
+    "ruleSearch": {
+      "bookList": "html",
+      "name": "",
+      "bookUrl": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Anna Archive 镜像2",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://annas-archive.se/",
+    "searchUrl": "https://annas-archive.se/search?q={{key}}",
+    "ruleSearch": {
+      "bookList": "html",
+      "name": "",
+      "bookUrl": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Open Library（全球图书馆索引）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://openlibrary.org/",
+    "searchUrl": "https://openlibrary.org/search.json?q={{key}}",
+    "ruleSearch": {
+      "bookList": "$.docs[*]",
+      "name": "title",
+      "bookUrl": "key"
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Comic Book Plus（经典漫画）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://comicbookplus.com/",
+    "searchUrl": "https://comicbookplus.com/?dlid=&search={{key}}",
+    "ruleSearch": {
+      "bookList": "html",
+      "name": "",
+      "bookUrl": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "MangaDex（漫画源）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://mangadex.org/",
+    "searchUrl": "https://api.mangadex.org/manga?title={{key}}",
+    "ruleSearch": {
+      "bookList": "$.data[*]",
+      "name": "attributes.title.en",
+      "bookUrl": "id"
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "翻译入口（Google Translate Web）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://translate.google.com/",
+    "searchUrl": "https://translate.google.com/?sl=en&tl=zh-CN&text={{key}}",
+    "ruleSearch": {
+      "bookList": "html",
+      "name": "",
+      "bookUrl": ""
+    },
+    "enabled": false
+  }
+]
