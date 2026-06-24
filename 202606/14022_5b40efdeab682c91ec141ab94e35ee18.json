@@ -1,0 +1,66 @@
+[
+  {
+    "bookSourceName": "Wikipedia（知识/书籍信息源）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wikipedia.org/",
+    "searchUrl": "https://en.wikipedia.org/w/api.php?action=opensearch&search={{key}}&limit=10&format=json",
+    "ruleSearch": {
+      "bookList": "$.1[*]",
+      "name": "",
+      "bookUrl": "$.3[*]"
+    },
+    "ruleBookInfo": {
+      "title": "",
+      "intro": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Internet Archive（可下载电子书源）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://archive.org/",
+    "searchUrl": "https://archive.org/advancedsearch.php?q={{key}}&output=json&rows=20",
+    "ruleSearch": {
+      "bookList": "$.response.docs[*]",
+      "name": "title",
+      "bookUrl": "identifier"
+    },
+    "ruleBookInfo": {
+      "title": "title",
+      "intro": "description"
+    },
+    "ruleToc": {
+      "chapterList": "NA",
+      "chapterName": "",
+      "chapterUrl": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "Anna’s Archive（索引搜索源）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://annas-archive.li/",
+    "searchUrl": "https://annas-archive.li/search?q={{key}}",
+    "ruleSearch": {
+      "bookList": "html",
+      "name": "",
+      "bookUrl": ""
+    },
+    "enabled": true
+  },
+
+  {
+    "bookSourceName": "DuckDuckGo（补充搜索源）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://duckduckgo.com/",
+    "searchUrl": "https://duckduckgo.com/html/?q={{key}}",
+    "ruleSearch": {
+      "bookList": "//a",
+      "name": "text()",
+      "bookUrl": "@href"
+    },
+    "enabled": true
+  }
+]
