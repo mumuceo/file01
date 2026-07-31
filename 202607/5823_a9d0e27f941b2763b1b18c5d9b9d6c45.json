@@ -1,0 +1,866 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "全本同人小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qbtr.org",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nvar url = source.key\nvar result = [];\nvar push = (title, url, type) => result.push({\n    title: title, url: url,\n    style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type } });\n\npush(\"🏷️全部分类🏷️\",null, 1)\ntry {\nvar a = org.jsoup.Jsoup.parse(java.ajax(url))\nvar lis = a.select(\".newNav a\");\nfor (var i = 0; i < lis.length; i++) {\n    var text = lis[i].select('a').text();\n    var href = url +String(lis[i].select('a').attr('href')).replace(/\\d+\\.html$/,\"\")+\"<,index_{{page}}.html>\";\n    push(text, href, 0.33);\n}\n  java.toast(\"🎉 列表刷新完成，数据已更新❗\");\n  JSON.stringify(result); \n\n} catch (error) {\n  java.toast(\"❌ 列表刷新失败，未获取到数据❗\");\n}",
+    "lastUpdateTime": 1785404094583,
+    "respondTime": 9727,
+    "ruleBookInfo": {
+      "author": "span@text",
+      "intro": "p@text",
+      "kind": "{{@@##日期：([^<]+)<##$1###}}",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": ".read_chapterDetail@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".booknews@textNodes",
+      "bookList": ".bk",
+      "bookUrl": "a.0@href",
+      "intro": "p@text",
+      "kind": "label@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": ".clearfix.1@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.qbtr.org/e/search/index.php,{\n  \"body\": \"show=title&keyboard={{key}}&classid=0\",\n  \"charset\": \"GB2312\",\n  \"headers\": {\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 14; V2403A Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36\",\n  \"Accept-Language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,en-GB;q=0.6\"},\n  \"method\": \"POST\"\n}\n@js:\nso = String(result).replace(\"{{key}}\", key);\nvar url = java.connect(so)\n.raw().request().url();\nString(url).replace(/result.*searchid/,\n\"result/index.php?page={{page-1}}&searchid\");",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "改自@m8458246@一程",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "南极小说（优）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "🐧",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 13; zh-cn; V2183A Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 MQQBrowser/13.4 Mobile Safari/537.36 COVC/046223\",\n\"Referer\":\"https://novel.html5.qq.com/\",\n\"Q-GUID\":\"0ee63838b72eb075f63e93ae0bc288cb\",\n\"QIMEI36\":\"8ff310843a87a71101958f5610001e316a11\"}",
+    "lastUpdateTime": 1778076569166,
+    "respondTime": 1432,
+    "ruleBookInfo": {
+      "author": ".author",
+      "coverUrl": ".picurl",
+      "init": "data",
+      "intro": "&nbsp;{{$..summary}}\n&lrm;\n标签：{{$..tag##\\|##&nbsp;}}##\\n&lrm;\\n标签：$",
+      "kind": "{{java.getString('$.isfinish')=='true'?'完结':'连载'}},{{$..subject}},{{String(java.timeFormat(java.getString(\"$..lastSerialUpdateTime\")*1000)).replace(/\\//g,\"\\-\")}},{{$..userscore}}分",
+      "lastChapter": ".lastSerialname",
+      "name": ".resourceName",
+      "tocUrl": "/qbread/api/book/all-chapter?bookId={{$..resourceID}}",
+      "wordCount": ".contentsize##$##字"
+    },
+    "ruleContent": {
+      "content": "data.Content[0].Content"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".author",
+      "bookList": "data.state[*]",
+      "bookUrl": "https://novel.html5.qq.com/qbread/api/novel/bookInfo?resourceId={{$..docId##.*_}}",
+      "coverUrl": ".cover_url",
+      "intro": ".abstract",
+      "kind": "连载{{$..is_finished}}完结,{{$..tag_views##\\s##,}}##连载1|0完结",
+      "name": ".title##.*\\s.*",
+      "wordCount": ".label_text"
+    },
+    "ruleToc": {
+      "chapterList": ".rows[*]",
+      "chapterName": "serialName",
+      "chapterUrl": "serialID\n@js:\nlet data=JSON.stringify({ContentAnchorBatch:[{BookID:baseUrl.match(/bookId=(\\d+)/)[1],ChapterSeqNo:[result]}],Scene:\"chapter\"})\nlet option={\"method\":\"POST\",\"body\":data}\n\"/be-api/content/ads-read,\"+JSON.stringify(option)"
+    },
+    "searchUrl": "https://so.html5.qq.com/ajax/real/search_result?tabId=360&q={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "🎃淘小说吧🎃",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://tybook.taoyuewenhua.net#🎃",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"男生分类\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"推荐榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=100&ctype=1&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"完本榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=110&ctype=1&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"人气榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=10&ctype=1&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"热搜榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=80&ctype=1&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"收藏榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=20&ctype=1&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"阅读榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=30&ctype=1&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"题材\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"都市\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=105000&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"玄幻\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=101000&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"历史\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=106000&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"系统\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=系统&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"娱乐圈\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=娱乐圈&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"穿越\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=穿越&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"无敌\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=无敌&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"迪化流\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=迪化流&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"签到\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=签到&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"军事\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=107000&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"奇闻怪谈\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=108000&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"N次元\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=N次元&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"角色\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"战神\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=战神&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"赘婿\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=赘婿&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"女总裁\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=女总裁&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"神医\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=神医&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"奶爸\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=奶爸&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"多女主\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=多女主&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"姐姐\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=姐姐&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"女帝\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=女帝&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"皇子\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=皇子&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"神豪\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=神豪&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"兵王\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=兵王&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"搞怪\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=搞怪&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"情节\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"重生\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=重生&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"大唐\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=大唐&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"荒岛\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=荒岛&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"游戏\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=游戏&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"英雄联盟\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=英雄联盟&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"透视\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=透视&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"末世\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=末世&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"三国\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=三国&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"复苏流\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=复苏流&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"盗墓\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=盗墓&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"日常文\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=日常文&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"开局流\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=开局流&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"其他\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"诸天万界\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=诸天万界&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"脑洞\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=脑洞&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"修真\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=修真&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"洪荒\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=洪荒&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"仙帝\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=仙帝&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"火影\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=火影&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"种田\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=种田&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"仙侠\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=仙侠&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"西游\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=西游&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"鉴宝\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=鉴宝&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"武侠\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=武侠&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"传承\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=传承&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"惊悚\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=惊悚&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"复仇\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=复仇&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"战争\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=战争&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"天才\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=天才&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"现实人生\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=现实人生&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"神奇宝贝\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=神奇宝贝&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"爱情\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=爱情&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"高手\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=高手&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"风水\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=风水&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"武道\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=武道&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"网游\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=网游&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"科幻\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=科幻&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"电竞\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=电竞&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"明朝\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=明朝&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"剑道\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=剑道&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"星际\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=星际&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"魔法\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=魔法&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"王者荣耀\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=王者荣耀&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"年代\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=年代&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"无限流\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=无限流&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"悬疑\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=悬疑&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"江湖恩怨\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=江湖恩怨&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"同人\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=同人&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"全球\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=全球&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"美食\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=美食&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"推理\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=推理&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"召唤\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=召唤&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"爽文\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=1&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=爽文&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":0.29}},\n{\"title\":\"女生分类\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"推荐榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=100&ctype=2&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"完本榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=110&ctype=2&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"人气榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=10&ctype=2&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"热搜榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=80&ctype=2&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"收藏榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=20&ctype=2&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"阅读榜\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/book_mall/book_rank?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&brtype=30&ctype=2&optype=1&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649403462595&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"题材\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"现代言情\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=204000&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"古代言情\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&categoryId=203000&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649399854751&uid=52557650&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"总裁\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=总裁&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"种田\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=种田&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"重生\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=重生&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"团宠\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=团宠&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"虐文\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=虐文&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"快穿\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=快穿&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"掉马甲\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=掉马甲&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"甜宠\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=甜宠&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"追妻\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=追妻火葬场&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"年代\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=年代&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"角色\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"医妃\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=医妃&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"大叔\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=大叔&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"超A女主\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=超A女主&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"萌宝\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=萌宝&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"皇叔\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=皇叔&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"锦鲤\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=锦鲤&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"女配\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=女配&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"女战神\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=女战神&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"反派\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=反派&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"萌系\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=萌系&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"病娇\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=病娇&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"双男主\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=双男主&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"情节\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"穿越\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=穿越&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"穿书\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=穿书&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"先婚后爱\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=先婚后爱&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"空间\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=空间&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"奇闻怪谈\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=奇闻怪谈&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"女扮男装\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=女扮男装&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"仙侠\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=仙侠&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"虐渣\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=虐渣&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"养娃\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=养娃&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"宫斗文\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=宫斗文&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"兽世\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=兽世&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"末世\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=末世&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"其他\",\"url\":\"\",\n\"style\":{\"layout_flexGrow\":0,\n\"layout_flexBasisPercent\":1}},\n{\"title\":\"师徒\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=师徒&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"娱乐圈\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=娱乐圈&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"婚恋\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=婚恋&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"玄学\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=玄学&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"王妃\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=王妃&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"搞笑欢脱\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=搞笑欢脱&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"系统\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=系统&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"神医\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=神医&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"校园\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=校园&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"浪漫青春\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=浪漫青春&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"嫡女\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=嫡女&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"美食\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=美食&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"农家女\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=农家女&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"女强\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=女强&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"权谋\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=权谋&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"复仇\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=复仇&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"契约结婚\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=契约结婚&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"职场\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=职场&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"暴富\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=暴富&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"皇后\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=皇后&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"庶女\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=庶女&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"前妻\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=前妻&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"悬疑\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=悬疑&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"落魄千金\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=落魄千金&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"电竞\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=电竞&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"逆袭\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=逆袭&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"民国\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=民国&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"影后\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=影后&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"将军\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=将军&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"王爷\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=王爷&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"推理\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=推理&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"惊悚\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=惊悚&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"轻松\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=轻松&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"校草\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=校草&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"宅斗\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=宅斗&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"清穿\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=清穿&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"爱情\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=爱情&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"游戏\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=游戏&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"反套路\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=反套路&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"病娇\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=病娇&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"前世今生\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=前世今生&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"玄幻\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=玄幻&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"脑洞\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=脑洞&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"真假千金\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=真假千金&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"法医\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=法医&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"网游\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=网游&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"爽文\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=爽文&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"打脸\",\"url\":\"@js:q=\\\"https://tybook.taoyuewenhua.net/ty/search_by_category?\\\";n=page-1;w=\\\"&key=mibook_123456\\\";t=\\\"appid=mibook&freeType=2&from=2&optype=1&order=0&ostype=0&osversion=7.1.2&page=\\\"+n+\\\"&pageSize=10&status=0&t=1649400758613&tags=打脸&version_code=269&version_name=8.2.3\\\";i=t+w;y=\\\"&sign=\\\";u=java.md5Encode(i).toUpperCase();q+t+y+String(u)\",\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}}\n]",
+    "header": "{\"User-Agent\":\"okhttp/3.12.1\"}",
+    "lastUpdateTime": 1777265303744,
+    "respondTime": 4733,
+    "ruleBookInfo": {
+      "author": "$.authorName",
+      "coverUrl": "$.coverUrl",
+      "init": "$.data",
+      "intro": "<br>\n🎗 标签：{{$.site}}🔸{{$.tagList##\\s##，}}\n👤 主角：{{$.roleList##\\s##，}}\n🕰 更新：{{String(java.timeFormat(java.getString('$.latestChapterUpdateTime'))).replace(/\\//g,\"-\").replace(/\\s/g,\"🔸\")}}\n📂 简介：\n{{$.intro}}",
+      "kind": "{{$.categoryName}}\n{{java.getString('$.status')=='50'?'完结':'连载'}}\n{{r=String(Math.round(java.getString('$.score'))/10);r=='0'?'':r+ '分'}}",
+      "lastChapter": "$.latestChapter",
+      "name": "$.title",
+      "tocUrl": "@js:\ntry{\ntime=Date.now();\nsign=java.md5Encode(\"appid=mibook&bid={{$.bid}}&brand=HUAWEI&channel=Tencent&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&key=mibook_123456\").toUpperCase();\n\n\"http://tybook.taoyuewenhua.net/tf/chapter_list?appid=mibook&bid={{$.bid}}&brand=HUAWEI&channel=Tencent&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&sign=\"+sign;\n}\ncatch(e){\n\t\"https://tfbook-1251592799.file.myqcloud.com/chapters/bid={{$.bid}}.json\"\n\t\n}",
+      "wordCount": "$.allWords"
+    },
+    "ruleContent": {
+      "content": "$.data.content"
+    },
+    "ruleExplore": {
+      "bookUrl": "sourceId@js:\ntime=Date.now();\nsign=java.md5Encode(\"appid=mibook&bid=\"+result+\"&brand=HUAWEI&channel=Tencent&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&key=mibook_123456\").toUpperCase();\n\n\"/tf/book?appid=mibook&bid=\"+result+\"&brand=HUAWEI&channel=Tencent&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&sign=\"+sign;"
+    },
+    "ruleSearch": {
+      "author": "$.authorName",
+      "bookList": "$.data.bookList",
+      "bookUrl": "sourceId@js:\ntime=Date.now();\nsign=java.md5Encode(\"appid=mibook&bid=\"+result+\"&brand=HUAWEI&channel=Tencent&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&key=mibook_123456\").toUpperCase();\n\n\"/tf/book?appid=mibook&bid=\"+result+\"&brand=HUAWEI&channel=Tencent&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&sign=\"+sign;",
+      "coverUrl": "$.coverUrl",
+      "intro": "$.intro",
+      "kind": "{{$.categoryName}}\n{{java.getString('$.status')=='50'?'完结':'连载'}}\n{{r=String(Math.round(java.getString('$.score'))/10);r=='0'?'':r+ '分'}}",
+      "lastChapter": "",
+      "name": "$.title",
+      "wordCount": "$.allWords"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.chapterList",
+      "chapterName": "$.title",
+      "chapterUrl": "@js:\ntime=Date.now();\nsign=java.md5Encode(\"appid=mibook&bid={{$.bid}}&brand=HUAWEI&channel=Tencent&cid={{$.cid}}&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&key=mibook_123456\").toUpperCase();\n\n\"https://tybook.taoyuewenhua.net/tf/chapter_content?appid=mibook&bid={{$.bid}}&brand=HUAWEI&channel=Tencent&cid={{$.cid}}&device_id=22f71e7a68a04e8a8e6618ace8804404&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&sign=\"+sign;",
+      "isVip": "",
+      "updateTime": "{{$.words}} 字 发布于  {{java.timeFormat(java.getString('$.modifiedOn'))}}"
+    },
+    "searchUrl": "@js:\ntime=Date.now();\nsign=java.md5Encode(\"appid=mibook&brand=HUAWEI&channel=Tencent&ctype=1&device_id=22f71e7a68a04e8a8e6618ace8804404&keywords=\"+key+\"&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&page=0&pageSize=10&searchType=1&sourceName=yw&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&key=mibook_123456\").toUpperCase();\n\n\"/authopt/ty/search_books?appid=mibook&brand=HUAWEI&channel=Tencent&ctype=1&device_id=22f71e7a68a04e8a8e6618ace8804404&keywords=\"+key+\"&model=vmos&optype=1&ostype=0&osversion=7.1.2&package_name=com.martian.ttbook&page=0&pageSize=10&searchType=1&sourceName=yw&t=\"+time+\"&token=54338ca6-a8eb-4662-9ae4-ae1f871b0825&uid=45090208&version_code=266&version_name=8.1.9&sign=\"+sign;",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "小原文学网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.min-yuan.com/",
+    "bookUrlPattern": "https://www.min-yuan.com/txt/.*/",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/xuanhuan/{{page}}.html\n武侠小说::/wuxia/{{page}}.html\n都市小说::/dushi/{{page}}.html\n历史小说::/lishi/{{page}}.html\n科幻小说::/kehuan/{{page}}.html\n游戏小说::/youxi/{{page}}.html\n女生小说::/nvsheng/{{page}}.html\n其他小说::/qita/{{page}}.html",
+    "lastUpdateTime": 1779666615020,
+    "respondTime": 3632,
+    "ruleBookInfo": {
+      "author": "#info p:contains(作者)@text##作者：",
+      "coverUrl": "#fmimg img@data-original",
+      "intro": "#intro@text",
+      "kind": ".sort@text##类别：",
+      "lastChapter": ".hidden-xs a@text",
+      "name": "#info h1@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.booktxt@html",
+      "nextContentUrl": "text.下一章@href"
+    },
+    "ruleExplore": {
+      "author": "tag.dl@tag.div@html",
+      "bookList": "class.hotcontent@class.item",
+      "bookUrl": "tag.dt@tag.a@href",
+      "coverUrl": "tag.img@src",
+      "intro": "tag.dl@tag.dt@html",
+      "name": "tag.dt@tag.a@text"
+    },
+    "ruleSearch": {
+      "author": "",
+      "bookList": ".item",
+      "bookUrl": "dt a@href",
+      "coverUrl": "img@data-original || img@src",
+      "kind": ".orange@text",
+      "name": "dt a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#newlist dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://min-yuan.com/search/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\",\n  \"headers\": {\n    \"Referer\": \"https://min-yuan.com/\",\n    \"User-Agent\": \"Chrome/138.0.0.0 Mobile\",\n    \"Accept\": \"*/*\"\n  }\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "错层小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.cuoceng.com/",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/book/category/6b09b233-4d99-4f8f-aeb0-f9772e107d49/{{page}}.html\n仙侠::/book/category/c91e0ef9-ad94-480e-a629-4cbddcdd1e3f/{{page}}.html\n都市::/book/category/951b15a8-ba9f-4fbd-9790-6df513be5343/{{page}}.html\n历史::/book/category/fa7b085f-64ff-4763-a9b9-d0f4f8b98585/{{page}}.html\n科幻::/book/category/f7ba5880-1f1e-4938-adb6-ebf4b2217e24/{{page}}.html\n军事::/book/category/322eb578-6830-4080-9c54-66a06869aa90/{{page}}.html\n言情::/book/category/ed26a15a-9704-459c-9098-532d5edb6b28/{{page}}.html\n轻小说::/book/category/b7854bea-86da-4e4e-a530-39075be915df/{{page}}.html\n悬疑::/book/category/5456c937-4501-4328-b3b9-c101249539ec/{{page}}.html\n奇幻::/book/category/c19ac87c-fad1-4924-8d9f-5d0d6445a62e/{{page}}.html\n游戏::/book/category/5ebd2d1f-6efb-478a-b5f9-628aba9146f9/{{page}}.html\n无限::/book/category/8dcf411a-99c9-4348-a924-990474f67296/{{page}}.html\n武侠::/book/category/258cfd48-26ec-4f2d-9faa-4ffe2310dcb/{{page}}.html\n重生::/book/category/c4f8bd09-5cfa-4098-b31f-a55528cda380/{{page}}.html\n体育::/book/category/ccf0bf05-03ae-45f3-8126-ee4670819a5c/{{page}}.html\n现实::/book/category/a1c1c751-8804-4c40-964e-85cdb6c2f8d5/{{page}}.html\n穿越::/book/category/b96517a8-4171-455f-9cff-89aea91f52d6/{{page}}.html\n无删减::/book/category/897f3934-b5b5-4bde-9b89-f5038595bc07/{{page}}.html",
+    "lastUpdateTime": 1780916577670,
+    "respondTime": 20749,
+    "ruleBookInfo": {
+      "author": "[href*=\"/book/so/\"]@text",
+      "coverUrl": ".thumbnail@src",
+      "intro": ".bookintro@text",
+      "kind": ".breadcrumb tag.li:eq(1) a@text",
+      "lastChapter": ".bookchapter@text",
+      "name": ".booktitle@text",
+      "tocUrl": "text.查看全部章节@href"
+    },
+    "ruleContent": {
+      "content": "#content@html",
+      "nextContentUrl": "#linkNext@href"
+    },
+    "ruleExplore": {
+      "author": ".author:contains(作者)@text##作者：",
+      "bookList": ".bookbox",
+      "bookUrl": ".bookname a@href",
+      "intro": ".update@text##简介：",
+      "lastChapter": ".cat a@text",
+      "name": ".bookname a@text"
+    },
+    "ruleSearch": {
+      "author": ".author:contains(作者)@text",
+      "bookList": ".bookbox",
+      "bookUrl": ".bookname a@href",
+      "intro": ".update@text",
+      "lastChapter": ".cat a@text",
+      "name": ".bookname a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#allchapter dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一@href"
+    },
+    "searchUrl": "https://m.cuoceng.com/book/so/{{key}}.html",
+    "weight": 6
+  },
+  {
+    "bookSourceComment": "sto66.com 普通网页书源。只抓在线阅读；遇到风控时可用登录/网页登录打开首页刷新 Cookie。",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "思兔阅读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sto66.com",
+    "bookUrlPattern": "https://www.sto66.com/book/.*?\\.html",
+    "customOrder": 14,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36\", \"Referer\": \"https://www.sto66.com/\"}",
+    "lastUpdateTime": 1781280274241,
+    "loginUrl": "https://www.sto66.com/",
+    "respondTime": 6840,
+    "ruleBookInfo": {
+      "author": "//*[contains(@class, 'booktag')]/a[contains(@class, 'red')][1]/text()",
+      "canReName": "1",
+      "coverUrl": "//*[contains(@class, 'bookcover')]//img/@src",
+      "intro": "//*[contains(@class, 'bookintro')]//text()",
+      "kind": "//*[contains(@class, 'booktag')]/a[contains(@class, 'blue')]/text()",
+      "lastChapter": "//*[contains(@class, 'bookchapter')]/text()",
+      "name": "//*[contains(@class, 'booktitle')]/text()",
+      "tocUrl": "//*[@id='allchapter']//a[contains(text(), '查看全部章节')]/@href",
+      "wordCount": "//*[contains(@class, 'booktag')]/span[contains(@class, 'blue')][1]/text()"
+    },
+    "ruleContent": {
+      "content": "//*[@id='content']/p/text()",
+      "title": "//*[contains(@class, 'read')]/h1/text()"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "@XPath:.//*[contains(@class, 'author')][1]/text()##作者：",
+      "bookList": "//*[contains(@class, 'bookbox')]",
+      "bookUrl": "@XPath:.//*[contains(@class, 'bookname')]/a/@href",
+      "checkKeyWord": "夜无疆",
+      "intro": "@XPath:.//*[contains(@class, 'update')]//text()##简介：",
+      "lastChapter": "@XPath:.//*[contains(@class, 'cat')]//a/text()",
+      "name": "@XPath:.//*[contains(@class, 'bookname')]/a/text()",
+      "wordCount": "@XPath:.//*[contains(@class, 'author')][contains(text(), '字数')]/text()##字数："
+    },
+    "ruleToc": {
+      "chapterList": "//*[@id='allchapter']//dd[a]",
+      "chapterName": "@XPath:.//a/text()",
+      "chapterUrl": "@XPath:.//a/@href",
+      "nextTocUrl": "//*[@id='linkNext' and contains(text(), '下一页')]/@href"
+    },
+    "searchUrl": "https://www.sto66.com/search/{{encodeURIComponent(key)}}{{page > 1 ? '/' + page : ''}}.html",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "①\nhttp://api.jmlldsc.com/search?keyword={{key}}&page={{page}}\n②\nhttp://api.lfdapengu.com/search?keyword={{key}}&page={{page}}\n③：http://api.jxgtzxc.com/search?keyword={{key}}&page={{page}}\n④：http://api.lemiyigou.com/search?keyword={{key}}&page={{page}}\n⑤：http://api.myweipin.com/search?keyword={{key}}&page={{page}}",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "猫眼看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://api.jmlldsc.com##@曦灵",
+    "customOrder": 160,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\": \"男频榜单\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"必读榜\",\"url\": \"/module/rank?type=1&channel=1&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"潜力榜\",\"url\": \"/module/rank?type=5&channel=1&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"完本榜\",\"url\": \"/module/rank?type=2&channel=1&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"更新榜\",\"url\": \"/module/rank?type=3&channel=1&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"搜索榜\",\"url\": \"/module/rank?type=4&channel=1&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"评论榜\",\"url\": \"/module/rank?type=6&channel=1&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"男频全部\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"玄幻\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=lejRej\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"武侠\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=nel5aK\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"都市\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=mbk5ez\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"仙侠\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=vbmOeY\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"军事\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=penRe7\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"历史\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=xbojag\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"游戏\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=mep2bM\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"科幻\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=zbq2dp\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"轻小说\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=YerEdO\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"男频完结\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"玄幻\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=lejRej&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"武侠\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=nel5aK&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"都市\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=mbk5ez&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"仙侠\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=vbmOeY&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"军事\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=penRe7&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"历史\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=xbojag&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"游戏\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=mep2bM&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"科幻\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=zbq2dp&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"轻小说\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=YerEdO&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"男频连载\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"玄幻\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=lejRej&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"武侠\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=nel5aK&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"都市\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=mbk5ez&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"仙侠\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=vbmOeY&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"军事\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=penRe7&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"历史\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=xbojag&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"游戏\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=mep2bM&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"科幻\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=zbq2dp&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"轻小说\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=YerEdO&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"女频榜单\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"必读榜\",\"url\": \"/module/rank?type=1&channel=2&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"潜力榜\",\"url\": \"/module/rank?type=5&channel=2&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"完本榜\",\"url\": \"/module/rank?type=2&channel=2&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"更新榜\",\"url\": \"/module/rank?type=3&channel=2&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"搜索榜\",\"url\": \"/module/rank?type=4&channel=2&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"评论榜\",\"url\": \"/module/rank?type=6&channel=2&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"女频全部\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"现代言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=9avmeG\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"古代言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=DdwRb1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"幻想言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=7ax9by\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"青春校园\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=Pdy7aQ\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"唯美纯爱\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=kazYeJ\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"同人衍生\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=9aAOdv\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"女频完结\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"现代言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=9avmeG&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"古代言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=DdwRb1&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"幻想言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=7ax9by&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"青春校园\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=Pdy7aQ&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"唯美纯爱\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=kazYeJ&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"同人衍生\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=9aAOdv&isComplete=1\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"女频连载\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"现代言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=9avmeG&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"古代言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=DdwRb1&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"幻想言情\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=7ax9by&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"青春校园\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=Pdy7aQ&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"唯美纯爱\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=kazYeJ&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"同人衍生\",\"url\": \"/novel?sort=1&page={{page}}&categoryId=9aAOdv&isComplete=0\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}}\n]",
+    "header": "{\n'User-Agent': 'okhttp/4.9.2','client-device': '0cdeb38dd0f2a381b06c0a02926ee317','client-brand': 'vivo','client-version': '2.3.0','client-name': 'app.maoyankanshu.novel','client-source': 'android','Authorization': 'bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNzIzNzI2NTkyLCJleHAiOjE4MTcwMzg1OTIsIm5iZiI6MTcyMzcyNjU5MiwianRpIjoiMHJaS05IdlRVelR4Vm15SCIsInN1YiI6ODAyMzcyLCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.w9vCdsWWqnD5pTz5aluSDb8WxeLZqrZsqX06CYC_J1A'\n}",
+    "lastUpdateTime": 1780885310940,
+    "loginUrl": "http://api.jmlldsc.com/auth/me",
+    "respondTime": 9358,
+    "ruleBookInfo": {
+      "author": "$.authorName",
+      "coverUrl": "$.cover",
+      "init": "$.data",
+      "intro": "&nbsp;&nbsp;\n📕书名：{{$.novelName}}\n👩‍💻作者：{{$.authorName}}\n🔥热度：{{$.hotInfo}}，{{$.readInfo}}人在读\n💮更新：共{{$.chapterNum}}章\n最新章节：{{$.lastChapter.chapterName}}\n更新时间：{{$.lastUpdatedAt}}\n📖简介：{{$.summary}}",
+      "kind": "$.categoryNames.className",
+      "lastChapter": "{{$.lastChapter.chapterName}}  {{$.lastChapter.decTime}}",
+      "name": "$.novelName",
+      "tocUrl": "/novel/{{$.novelId}}/chapters",
+      "wordCount": "$.wordNum"
+    },
+    "ruleContent": {
+      "content": "$.content"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.authorName",
+      "bookList": "$.data[*]",
+      "bookUrl": "/novel/{{$.novelId}}?isSearch=1",
+      "checkKeyWord": "我不是戏神",
+      "coverUrl": "$.cover",
+      "intro": "$.summary",
+      "kind": "$.categoryNames.className",
+      "name": "$.novelName",
+      "wordCount": "$.wordNum"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.list[*]",
+      "chapterName": "$.chapterName",
+      "chapterUrl": "$.path@js:java.aesBase64DecodeToString(result,\"f041c49714d39908\",\"AES/CBC/PKCS5Padding\",\"0123456789abcdef\")",
+      "updateTime": "{{$.updatedAt}}  字数：{{$.wordNum}}"
+    },
+    "searchUrl": "http://api.jmlldsc.com/search?keyword={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "常规",
+    "bookSourceName": "未来天王",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.weilaitianwang.info#🎃",
+    "customOrder": 259,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "===========最近更新===========\n玄幻奇幻::/xuanhuanxiaoshuo/1_{{page}}.html\n修真仙侠::/xiuzhenxiaoshuo/1_{{page}}.html\n都市青春::/dushixiaoshuo/1_{{page}}.html\n历史穿越::/chuanyuexiaoshuo/1_{{page}}.html\n网游竞技::/wangyouxiaoshuo/1_{{page}}.html\n科幻灵异::/kehuanxiaoshuo/1_{{page}}.html\n其它小说::/qitaxiaoshuo/1_{{page}}.html\n阅读轨迹::nofollow\" href=\"/gj.html1_{{page}}.html\n完本小说::/wanben/1_11_{{page}}.html",
+    "lastUpdateTime": 1782368074584,
+    "respondTime": 1920,
+    "ruleBookInfo": {
+      "author": "##:author\"[^\"]+\"([^\"]*)##$1###",
+      "coverUrl": "##og:image\"[^\"]+\"([^\"]*)##$1###",
+      "intro": "#intro@text",
+      "kind": "##:category\"[^\"]+\"([^\"]*)##$1###",
+      "lastChapter": "##_chapter_name\"[^\"]+\"([^\"]*)##$1###",
+      "name": "##:book_name\"[^\"]+\"([^\"]*)##$1###"
+    },
+    "ruleContent": {
+      "content": "#content@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\s*.*(((http|https|ftp):\\/\\/)?([\\w\\d][\\/_\\-\\.]*)+(\\.)[\\w\\d\\/]{2,4}([\\w\\d?\\/%][+=&_\\.~\\-]*)*).*\\s*|\\s*.*网站.*\\s*|\\s*.*([谢感多]谢.*的([千打]赏|支持)[!！,，。!]*)+.*\\s*|\\s*.*[谢感多]谢.*?书友.*?支持.*\\s*|\\s*.*第\\d+章.*\\s*|\\s*.*作者.*\\s*"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".l li[0:-1]",
+      "bookUrl": "##<a\\s*href=\"([^\"]+)\"##$1###",
+      "coverUrl": "##<img\\s*src=\"([^\"]+)\"##$1###",
+      "kind": ".s1@text##\\[(.*)\\]##$1",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text",
+      "wordCount": ".s5@text"
+    },
+    "ruleSearch": {
+      "author": ".s4@a@text",
+      "bookList": ".novelslist2 li[1:-1]",
+      "bookUrl": "##<a\\s*href=\"([^\"]+)\"##$1###",
+      "checkKeyWord": "斗破苍穹",
+      "coverUrl": "##<img\\s*src=\"([^\"]+)\"##$1###",
+      "kind": "[class=s6 wid6]@text",
+      "lastChapter": ".s3@a@text",
+      "name": ".s2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list dd[12:-1]",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/search.html?name={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "梦想家文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.mxjtedu.com/",
+    "customOrder": 265,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1780480766676,
+    "respondTime": 5961,
+    "ruleBookInfo": {
+      "author": "class.fix@p.0@text##作者：",
+      "coverUrl": "img@src",
+      "intro": "class.m-desc xs-show@text##简介: ",
+      "kind": "class.fix@p.1@text##类别：",
+      "lastChapter": "class.fix@p.5@text##最新章节：",
+      "name": "class.layout-tit.1@text##最新章节"
+    },
+    "ruleContent": {
+      "content": ".content@textNodes",
+      "nextContentUrl": "class.m-bottom-opt@a.3@href",
+      "replaceRegex": "##（本章未完，请点击下一页继续阅读）\\s"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.s4@text",
+      "bookList": "class.txt-list-row5@li:not(:first-child)",
+      "bookUrl": "class.s2@a@href",
+      "kind": "class.s1@text",
+      "lastChapter": "class.s3@text",
+      "name": "class.s2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.section-box.1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "class.listpage@a.-1@href"
+    },
+    "searchUrl": "search.php?keyWord={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "24.12.28 by 明月",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "📚 梦书中文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.mcmssc.la",
+    "concurrentRate": "1500",
+    "customOrder": 580,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/xuanhuanxiaoshuo/<,1-{{page}}.html>\n修真仙侠::/xiuzhenxiaoshuo/<,1-{{page}}.html>\n都市青春::/dushixiaoshuo/<,1-{{page}}.html>\n历史穿越::/chuanyuexiaoshuo/<,1-{{page}}.html>\n网游竞技::/wangyouxiaoshuo/<,1-{{page}}.html>\n科幻灵异::/kehuanxiaoshuo/<,1-{{page}}.html>\n其它小说::/qitaxiaoshuo/<,1-{{page}}.html>\n完本小说::/wanben/1_{{page}}\n最近更新::http://www.mcmssc.la",
+    "lastUpdateTime": 1782297025386,
+    "respondTime": 7864,
+    "ruleBookInfo": {
+      "author": "p:nth-child(2) > a@text",
+      "coverUrl": "img@src",
+      "intro": "#intro@html",
+      "lastChapter": "p:nth-child(5) > a@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "#content@textNodes",
+      "replaceRegex": "##[\\u0041-\\u005A\\u0061-\\u007A\\uFF21-\\uFF3A\\uFF41-\\uFF5A]+\\.[\\u0041-\\u005A\\u0061-\\u007A\\uFF21-\\uFF3A\\uFF41-\\uFF5A0-9\\uFF10-\\uFF19-]+\\.[\\u0041-\\u005A\\u0061-\\u007A\\uFF21-\\uFF3A\\uFF41-\\uFF5A]{2,}.*|{{chapter.title}}|第[0-9一二两三四五六七八九十百千万]{1,9}章.*|[(（]?本章未?完[）)]?.*|\\(第.+页\\)|.?加入书签.*|.*下一页(翻页)?继续阅读.*|.*退出阅读模式.*|.*点击下载{{book.name}}.*|.*最新永久域名.*|.*一秒记住本站地址.*"
+    },
+    "ruleExplore": {
+      "author": ".s4 > a@text",
+      "bookList": ".l li",
+      "bookUrl": ".s2 > a@href",
+      "coverUrl": ".s2 > a@href\n<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "kind": ".s1@text##\\[|\\]",
+      "lastChapter": ".s3 > a@text",
+      "name": ".s2 > a@text"
+    },
+    "ruleSearch": {
+      "author": ".s4 > a@text",
+      "bookList": "#main > div.novelslist2 > ul > li",
+      "bookUrl": ".s2 > a@href",
+      "coverUrl": ".s2 > a@href\n<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "lastChapter": "{{@@.s6@text}} {{@@.s3 > a@text}}",
+      "name": ".s2 > a@text"
+    },
+    "ruleToc": {
+      "chapterList": "dd >a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://www.mcmssc.la/search.html?name={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "需登录，且偶尔登录后滑块验证",
+    "bookSourceGroup": "r",
+    "bookSourceName": "🔞搬山人小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.banshanren.com/",
+    "concurrentRate": "1000",
+    "customOrder": 837,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\n    \"title\": \"年排行\",\n    \"url\": \"https://www.banshanren.com/api/rank?range=3\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.3\n    }\n  },\n{\n    \"title\": \"月排行\",\n    \"url\": \"https://www.banshanren.com/api/rank?range=2\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.3\n    }\n  },\n{\n    \"title\": \"周排行\",\n    \"url\": \"https://www.banshanren.com/api/rank?range=1\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.3\n    }\n  },\n  {\n    \"title\": \"浏览量\",\n    \"url\": \"https://www.banshanren.com/all/0-0-0-0-0-0-3-1/\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.3\n    }\n  },\n{\n    \"title\": \"收藏榜\",\n    \"url\": \"https://www.banshanren.com/api/rank?range=5\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.3\n    }\n  },\n{\n    \"title\": \"新作榜\",\n    \"url\": \"https://www.banshanren.com/api/rank?range=4\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.3\n    }\n  }\n]",
+    "header": "{\n \"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\",\n\"Referer\":\"https://www.banshanren.com/\"\n}",
+    "lastUpdateTime": 1785072394551,
+    "loginUrl": "https://www.banshanren.com",
+    "respondTime": 10236,
+    "ruleBookInfo": {
+      "author": "//div[@class='novel_brief_box']/div[@class='novel_title_box']/div[@class='info_box'][2]/span/text()",
+      "coverUrl": "//div[@class='novel_brief_box']/div[@class='cover_box']/img/@data-src",
+      "intro": "//div[@class='novel_brief_box']/div[@class='novel_title_box']/div[@class='novel_intro_box pc']/p[1]/text()",
+      "kind": "//div[@class='novel_brief_box']/div[@class='novel_title_box']/ul[@class='novel_tag_list pc']/li/a/@title",
+      "lastChapter": "//div[@class='catalog_box']/div[@class='catalog_top_box']/div[1]/p[1]/span[@class='hl']/text()",
+      "name": "//div[@class='novel_brief_box']/div[@class='novel_title_box']/h1/text()",
+      "wordCount": "//div[@class='novel_brief_box']/div[@class='novel_title_box']/div[@class='novel_summary_box pc']/div[4]/p/b/text()"
+    },
+    "ruleContent": {
+      "content": "//div[@class='chapter_content_box']/p/text()"
+    },
+    "ruleExplore": {
+      "author": "$.authors",
+      "bookList": "$.model",
+      "bookUrl": "@js:\n\"https://www.banshanren.com/novel/{{$.slug}}\"",
+      "coverUrl": "$.coverUrl",
+      "intro": "$.description",
+      "kind": "$.tagNames",
+      "lastChapter": "$.latestUpdate",
+      "name": "$.title",
+      "wordCount": "$.wordCountFormat"
+    },
+    "ruleSearch": {
+      "author": "//div[@class='title_box']/div[@class='info_box'][2]/text()@js:\nresult.split('·')[0].trim()",
+      "bookList": "//ul[@class='novel_list']/li[@class='novel_li']",
+      "bookUrl": "//div[@class='title_box']/a[@class='title']/@href",
+      "checkKeyWord": "琼明神女录",
+      "coverUrl": "//img/@data-src",
+      "intro": "//div[@class='title_box']/div[@class='novel_intro_box']/p",
+      "kind": "//div[@class='title_box']/ul[@class='category_list']/li/a/@title",
+      "name": "//div[@class='title_box']/a[@class='title']/text()"
+    },
+    "ruleToc": {
+      "chapterList": "//div[@class='catalog_box']/div[@class='volume_box']/ul/li[.//a]",
+      "chapterName": "//a/@title",
+      "chapterUrl": "//a/@href",
+      "updateTime": "//p/text()"
+    },
+    "searchUrl": "https://www.banshanren.com/search/index?keyword={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "@author: syiism",
+    "bookSourceGroup": "r",
+    "bookSourceName": "书包书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.shubaoku.org",
+    "bookUrlPattern": "(https?://)?(www\\.)?shubaoku\\.org",
+    "customOrder": 838,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻修真::https://www.shubaoku.org/list/1/{{page}}/\n重生穿越::https://www.shubaoku.org/list/2/{{page}}/\n都市小说::https://www.shubaoku.org/list/3/{{page}}/\n军史小说::https://www.shubaoku.org/list/4/{{page}}/\n网游小说::https://www.shubaoku.org/list/5/{{page}}/\n科幻小说::https://www.shubaoku.org/list/6/{{page}}/\n灵异小说::https://www.shubaoku.org/list/7/{{page}}/\n言情小说::https://www.shubaoku.org/list/8/{{page}}/\n其他小说::https://www.shubaoku.org/list/9/{{page}}/",
+    "header": "{\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\",\n    \"Accept-Language\": \"zh-CN,zh;q=0.9,en;q=0.8\",\n    \"Cache-Control\": \"no-cache\",\n    \"Connection\": \"keep-alive\",\n    \"Content-Type\": \"application/x-www-form-urlencoded\",\n    \"Origin\": \"https://www.shubaoku.org\",\n    \"Pragma\": \"no-cache\",\n    \"Referer\": \"https://www.shubaoku.org/login.html\",\n    \"Sec-Fetch-Dest\": \"document\",\n    \"Sec-Fetch-Mode\": \"navigate\",\n    \"Sec-Fetch-Site\": \"same-origin\",\n    \"Sec-Fetch-User\": \"?1\",\n    \"Upgrade-Insecure-Requests\": \"1\",\n    \"User-Agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\n    \"sec-ch-ua\": \"\\\"Google Chrome\\\";v=\\\"149\\\", \\\"Chromium\\\";v=\\\"149\\\", \\\"Not)A;Brand\\\";v=\\\"24\\\"\",\n    \"sec-ch-ua-mobile\": \"?0\",\n    \"sec-ch-ua-platform\": \"\\\"Linux\\\"\",\n    \"Cookie\": \"user_id=98101; user_name=syiism; f4606260fbda49db503ecad3eb67cc8e=8c8bf418229bd2b43d75f3d9ee799363\"\n}",
+    "lastUpdateTime": 1784708120093,
+    "loginUrl": "https://www.shubaoku.org/login.html",
+    "respondTime": 40906,
+    "ruleBookInfo": {
+      "intro": "div.first_txt > p@text",
+      "tocUrl": "@js: baseUrl+'1/'"
+    },
+    "ruleContent": {
+      "content": ".txt@html||.word_read@p@html",
+      "nextContentUrl": "text.下一章@href"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": "ul.txt-list.txt-list-row5@li ||ul.sort_list@li",
+      "bookUrl": "span.s2 > a@href",
+      "coverUrl": "<js>\nvar uri = java.getString('a.0@href');\nvar id = uri.match(/\\/\\d+\\/(\\d+)\\//)[1];\n`/img/${id}.jpg`;\n</js>",
+      "kind": ".s1@text",
+      "lastChapter": "span.s3 > a@text",
+      "name": "span.s2 > a@text"
+    },
+    "ruleSearch": {
+      "author": "span.s3 > a@text",
+      "bookList": "ul.txt-list.txt-list-row5 > li",
+      "bookUrl": "span.s2 > a@href",
+      "checkKeyWord": "系统",
+      "coverUrl": "<js>\nvar uri = java.getString('a.0@href');\nvar id = uri.match(/\\/\\d+\\/(\\d+)\\//)[1];\n`/img/${id}.jpg`;\n</js>",
+      "kind": ".s1@text&&.s5@text",
+      "lastChapter": "span.s4 > a@text",
+      "name": "span.s2 > a@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nvar pages = java.getElements('tag.select@option');\npages = Math.floor(pages.length / 2);\njava.log(\"pages: \" + pages);\nvar res = [];\nvar set = {}; // 去重\n\nfor (let i = 1; i <= pages; i ++) {\n  var url = baseUrl.replace('/1/', '/' + i + '/');\n  var resp = java.ajax(url);\n  java.setContent(resp);\n  resp = java.getStringList('//ul[@class=\"section-list fix ycxsid\"]/li/a');\n\n  for (let j = 0; j < resp.length; j ++) {\n    var rr = resp[j].match(/<a href=\"(.*?)\">(.*?)<\\/a>/);\n    var title = rr[2], href = rr[1];\n    if (set[title]) continue;\n    var order = href.match(/\\/(\\d+)\\.html/)[1];\n    res.push(JSON.stringify({ title, href, order }));\n    set[title] = true;\n  }\n}\nres.sort((a, b) => {\n  a = JSON.parse(a);\n  b = JSON.parse(b);\n  return a.order - b.order;\n});\nres;\n</js>",
+      "chapterName": "$.title",
+      "chapterUrl": "$.href"
+    },
+    "searchUrl": "@js:\ncookie.removeCookie(source.key)\n'https://www.shubaoku.org/search.html,'+`{\"method\":\"POST\",\"body\":\"s={{key}}\"}`",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "r",
+    "bookSourceName": "看书网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.kanzh.com/",
+    "customOrder": 839,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\n\n",
+    "lastUpdateTime": 1782296092368,
+    "respondTime": 14612,
+    "ruleBookInfo": {
+      "author": "class.fix@tag.p.0@text",
+      "kind": "class.fix@tag.p.1@text",
+      "lastChapter": "class.s4@text",
+      "name": "class.top@text",
+      "tocUrl": "class.first_txt@a@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nvar bes = result.match(/PHA\\+[A-Za-z0-9+\\/]+={0,2}/g);\nif (!bes) {\n    var ml = java.webView(null,baseUrl,null);\n    java.setContent(ml)\n    var txt = java.getString(\"#txt>p@text\");\n    java.longToast(\"正文解密失败，转为webView动态加载。\");\n} else {\nvar result = [];\nfor (var i = 0; i < bes.length; i++) {\n    // 遍历数组，使用阅读内置Base64解码方法\n    var bsej = java.base64Decode(bes[i]);\n    var txtt = String(bsej);\n    result.push(txtt);\n      }\n\tvar txt = result.join('\\n');\n}\ntxt;\n</js>",
+      "nextContentUrl": "class.read_btn@tag.a.3@href"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.s3@text",
+      "bookList": "class.txt-list txt-list-row5@li",
+      "bookUrl": "class.s2@tag.a@href",
+      "checkKeyWord": "我的",
+      "kind": "class.s1@text",
+      "lastChapter": "class.s4@text",
+      "name": "class.s2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.br-b-1",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "a@onclick##(\\d+)##$1###\n@js:\nbook.bookUrl.replace(\"index\",result)",
+      "nextTocUrl": "class.page_num@tag.a.1@href"
+    },
+    "searchUrl": "{{cookie.setCookie(source.key,source.getVariable())}}\n/search.html,{\n  \"body\": \"s={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "全本小说全文阅读，最新热门网络小说免费阅读",
+    "bookSourceGroup": "r",
+    "bookSourceName": "百草露小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.baicaolu.com##",
+    "customOrder": 840,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"武侠小说\",\"url\":\"/class/lastupdate_2_0_0_1.html\"},{\"title\":\"都市小说\",\"url\":\"/class/lastupdate_3_0_0_1.html\"},{\"title\":\"军史小说\",\"url\":\"/class/lastupdate_4_0_0_1.html\"},{\"title\":\"网游小说\",\"url\":\"/class/lastupdate_5_0_0_1.html\"},{\"title\":\"科幻小说\",\"url\":\"/class/lastupdate_6_0_0_1.html\"},{\"title\":\"灵异小说\",\"url\":\"/class/lastupdate_7_0_0_1.html\"},{\"title\":\"其他小说\",\"url\":\"/class/lastupdate_8_0_0_1.html\"}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1766847654715,
+    "respondTime": 7312,
+    "ruleBookInfo": {
+      "author": "class.author@text",
+      "coverUrl": "tag.img.0@src",
+      "kind": "class.blue@text",
+      "lastChapter": "class.update@tag.a@text",
+      "name": "class.bookname@h1@text",
+      "tocUrl": "text.查看更多章节@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nvar bes = result.match(/PHA\\+[A-Za-z0-9+\\/]+={0,2}/g);\n//java.log(String(bes))\nif (!bes) {\n    var ml = java.webView(null,baseUrl,null);\n    var txt = java.getString(\".word_read@p@text\",ml);\n    java.toast(\"正文解密失败，转为webView动态加载。\");\n} else {\nvar result = [];\nfor (var i = 0; i < bes.length; i++) {\n    var bsej = java.base64Decode(bes[i]);\n    var txtt = String(bsej);\n    result.push(txtt);\n      }\n\tvar txt = result.join('\\n');\n}\ntxt;\n</js>",
+      "nextContentUrl": "@js:\neval((src.match(/hhekgsv='[^']+?'/)||[]).toString());"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".s5@span@text",
+      "bookList": "class.sort_list@tag.li",
+      "bookUrl": ".s2@a@href",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapter-list@tag.li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}\n/search.html, {\"method\": \"POST\", \"body\": \"s={{key}}\"}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "国内发布页：https://www.asw2.cc/",
+    "bookSourceGroup": "r",
+    "bookSourceName": "🌸爱丽丝书屋(免翻)",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--vcsx64d.alicesw12.xyz/",
+    "customOrder": 841,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\": \"🔖TOP50🔖\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"总排行\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/other/rank_hits/order/hits.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"月排行\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/other/rank_hits/order/hits_month.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"周排行\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/other/rank_hits/order/hits_week.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"日排行\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/other/rank_hits/order/hits_day.html\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"🔖分类（人气）🔖\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n  },\n  {\n    \"title\": \"科幻\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/71/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"校园\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/61/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"玄幻\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/62/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"乡村\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/63/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"都市\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/64/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"乱伦\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/65/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"历史\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/67/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"武侠\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/68/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"系统\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/69/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"明星\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/72/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"同人\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/73/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"强奸\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/74/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"奇幻\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/75/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"经典\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/79/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"穿越\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/70/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"凌辱\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/46/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"反差\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/22/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"堕落\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/18/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"纯爱\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/19/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"伪娘\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/52/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"萝莉\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/48/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"熟女\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/56/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"禁忌\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/51/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"NTR\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/54/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"媚黑\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/53/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"绿帽\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/55/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"调教\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/58/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"女主\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/59/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"正太\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/50/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"下克上\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/43/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"百合\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/47/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  },\n  {\n    \"title\": \"重口\",\n    \"url\": \"https://xn--vcsx64d.alicesw12.xyz/all/id/21/order/hits+desc.html?page={{page}}\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.2\n    }\n  }\n]",
+    "header": "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+    "lastUpdateTime": 1782174836534,
+    "loginUrl": "https://xn--vcsx64d.alicesw12.xyz/user/user/login.html",
+    "respondTime": 10211,
+    "ruleBookInfo": {
+      "author": "//div[@class='box_info']/table/tbody/tr[1]/td/div/p[1]/a[1]/text()",
+      "coverUrl": "//div[@class='pic']/img/@src",
+      "intro": "@js:\nvar info = java.getString(\"//div[@class='pic']/div[@class='tLJ']/text()\")\nvar intro = java.getString(\"//div[@class='box_info']/table/tbody/tr[3]/td/div[@class='intro']/text()\")\nintro+\"\\n◤-----------------◥\\n\"+info+\"\\n◣-----------------◢\\n\"",
+      "kind": "//div[@class='box_info']/table/tbody/tr[3]/td/p[2]/a/text()",
+      "lastChapter": "//div[@class='box_info']/table/tbody/tr[1]/td/div/p[1]/a[2]/text()",
+      "name": "//div[@class='box_info']/table/tbody/tr[1]//h1/text()",
+      "tocUrl": "//div[@class='book_newchap']//a[contains(text(),'查看所有章节')]/@href"
+    },
+    "ruleContent": {
+      "content": "@js:\n(function() {\n    // 1. 先尝试静态抓取，保留 HTML 标签，避免正文排版被压扁\n    var doc = org.jsoup.Jsoup.parse(result);\n    var box = doc.select(\"div.read-content\");\n\n    // 去除干扰元素\n    box.select(\"script, style, .ad-block\").remove();\n\n    // 关键点：使用 html()，不要使用 text()\n    // text() 会把 <br>、<p>、<div> 等排版标签全部压成空格，导致正文挤成一团\n    var content = box.html();\n\n    var isInvalid = !content || content.length < 50 ||\n                    content.match(/加载中|正在获取|请稍候|爱丽丝书屋/);\n\n    if (!isInvalid) {\n        return content;\n    }\n\n    // 2. 静态抓取失败时，再使用 WebView 渲染正文区域\n    var html = java.webView(result, \"div.read-content\", \"3000\");\n    var doc2 = org.jsoup.Jsoup.parse(html);\n    var box2 = doc2.select(\"div.read-content\");\n\n    // 去除干扰元素\n    box2.select(\"script, style, .ad-block\").remove();\n\n    // 同样返回 html()，保留段落和换行排版\n    return box2.html();\n})();\n"
+    },
+    "ruleExplore": {
+      "author": "//li[@class='four']/text()",
+      "bookList": "//div[@class='clearfix rec_rullist']/ul",
+      "bookUrl": "//li[@class='two']/a/@href",
+      "kind": "@js:\nvar tag  = java.getString(\"//li[@class='sev']/span/a/text()\")\nvar views=  java.getString(\"//li[@class='diyhot']/text()\")\ntag+\",👀\"+views",
+      "lastChapter": "//li[@class='three']/a/text()",
+      "name": "//li[@class='two']/a/text()",
+      "wordCount": "//li[@class='five']/text()@js:result+\"字\""
+    },
+    "ruleSearch": {
+      "author": "//p[@class='mb-1 text-muted']/a/text()",
+      "bookList": "//div[@class='list-group']/div[@class='list-group-item']",
+      "bookUrl": "//h5/a/@href",
+      "checkKeyWord": "美母为妻",
+      "intro": "//p[@class='content-txt']",
+      "kind": "<js>\nvar status = java.getString(\"//h5/small/text()\");\nvar tags = java.getString(\"//p[@class='text-muted']/a/text()\");\nvar views = java.getString(\"//p[@class='mb-1 text-muted']//text()\").match(/\\d+?.\\d+/g)[1]\nstatus+\",👀\"+views+\",\"+tags\n</js>\n##\\[|]##",
+      "name": "//h5/a//text()##\\d+.|\\n##",
+      "wordCount": "//p[@class='mb-1 text-muted']//text()@js:\nresult.match(/\\d+?.\\d+万/g)[0]+\"字\""
+    },
+    "ruleToc": {
+      "chapterList": "//ul[@class='mulu_list']/li",
+      "chapterName": "//a/text()",
+      "chapterUrl": "//a/@href"
+    },
+    "searchUrl": "https://xn--vcsx64d.alicesw12.xyz/search.html?q={{key}}&f=_al",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "YX源仓库：http://yx.ccute.xyz/",
+    "bookSourceGroup": "r",
+    "bookSourceName": "要撸小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.yaoluku.com/",
+    "customOrder": 842,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"首页\",\"url\":\"/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻\",\"url\":\"/sort/1/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"武侠\",\"url\":\"/sort/2/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市\",\"url\":\"/sort/3/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻\",\"url\":\"/sort/4/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"穿越\",\"url\":\"/sort/5/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"耽美\",\"url\":\"/sort/6/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"游戏\",\"url\":\"/sort/7/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"精品\",\"url\":\"/sort/8/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"午夜\",\"url\":\"/sort/9/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "{\n  \"upgrade-insecure-requests\": \"1\",\n  \"user-agent\": \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36\",\n  \"content-type\": \"application/x-www-form-urlencoded\",\n  \"accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\",\n  \"referer\": \"https://www.yaoluku.com/search/\",\n  \"accept-language\": \"zh-CN,zh;q=0.9\"\n}",
+    "lastUpdateTime": 1764395085005,
+    "loginCheckJs": "if (String(result.body()).length < 1000) {\n\ta = result.raw().headers(\"Set-Cookie\")\n\tcookie.setCookie(source.key, String(a).slice(1, -1))\n\tjava.getStrResponse()\n} else result",
+    "respondTime": 11086,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": ".novel_info_main img@src",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "wordCount": ".novel_info_title p.0@span.1@text"
+    },
+    "ruleContent": {
+      "content": "#article@html",
+      "replaceRegex": "##要撸小说网 www.YaoLuxs.com.*"
+    },
+    "ruleExplore": {
+      "author": ".fa-user-circle-o@text",
+      "bookList": "ul.flex li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@data-original",
+      "intro": ".indent@text",
+      "kind": ".full@text&&em@text##\\/##,",
+      "name": "img@title"
+    },
+    "ruleSearch": {
+      "author": "##fa-user-circle-o[^<]+<\\/i>([^\\s<]+)##$1###",
+      "bookList": ".searchresult",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-src",
+      "intro": ".searchresult_p@text",
+      "kind": ".img_span span@text&&.s_gray@text##\\s*\\/\\s*|.*字\\s*##,",
+      "lastChapter": "p.-1@text",
+      "name": "p.-1@text\n<js>\nif(\"最新章节\"==result){\n\tresult=\"\"\n\t}else{\n\t\tresult=java.getString(\"img@title\")\n\t\t}\t\n</js>",
+      "wordCount": ".s_gray@text##(.*字)##$1###"
+    },
+    "ruleToc": {
+      "chapterList": "#catalog li a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/,{\n  \"body\": \"searchkey={{key}}&searchtype=all&Submit=\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "//发布页  https://258768590.xyz/link/\nm=[];n=[];\nfunction x(a,b){m.push(a);n.push(b)}\nx(/🌄/g,\"少\");\nx(/🌅/g,\"炮\");\nx(/🌆/g,\"臀\");\nx(/🌇/g,\"根\");\nx(/🌈/g,\"屁\");\nx(/🌉/g,\"胸\");\nx(/🌊/g,\"紧\");\nx(/🌋/g,\"爽\");\nx(/🌌/g,\"鸡\");\nx(/🌍/g,\"吧\");\nx(/🌎/g,\"恩\");\nx(/🌏/g,\"嫩\");\nx(/🌐/g,\"软\");\nx(/🌑/g,\"热\");\nx(/🌒/g,\"裙\");\nx(/🌓/g,\"裤\");\nx(/🌔/g,\"脱\");\nx(/🌕/g,\"丝\");\nx(/🌖/g,\"差\");\nx(/🌗/g,\"丫\");\nx(/🌘/g,\"久\");\nx(/🌙/g,\"乱\");\nx(/🌚/g,\"乳\");\nx(/🌛/g,\"交\");\nx(/🌜/g,\"亲\");\nx(/🌝/g,\"侵\");\nx(/🌞/g,\"入\");\nx(/🌟/g,\"具\");\nx(/🌠/g,\"内\");\nx(/🌡/g,\"勃\");\nx(/🌢/g,\"硬\");\nx(/🌣/g,\"口\");\nx(/🌤/g,\"叫\");\nx(/🌥/g,\"吟\");\nx(/🌦/g,\"含\");\nx(/🌧/g,\"吸\");\nx(/🌨/g,\"呻\");\nx(/🌩/g,\"咪\");\nx(/🌪/g,\"哦\");\nx(/🌫/g,\"啊\");\nx(/🌬/g,\"喘\");\nx(/🌭/g,\"奶\");\nx(/🌮/g,\"奸\");\nx(/🌯/g,\"妓\");\nx(/🌰/g,\"幼\");\nx(/🌱/g,\"捣\");\nx(/🌲/g,\"摸\");\nx(/🌳/g,\"操\");\nx(/🌴/g,\"日\");\nx(/🌵/g,\"欲\");\nx(/🌶/g,\"浆\");\nx(/🌷/g,\"淫\");\nx(/🌸/g,\"深\");\nx(/🌹/g,\"处\");\nx(/🌺/g,\"痒\");\nx(/🌻/g,\"穴\");\nx(/🌼/g,\"肛\");\nx(/🌽/g,\"舔\");\nx(/🌾/g,\"色\");\nx(/🌿/g,\"芯\");\nx(/🍀/g,\"苞\");\nx(/🍁/g,\"荡\");\nx(/🍂/g,\"菊\");\nx(/🍃/g,\"裸\");\nx(/🍄/g,\"逼\");\nx(/🍅/g,\"阴\");\nx(/🍆/g,\"干\");\nx(/🍇/g,\"插\");\nx(/🍈/g,\"射\");\nx(/🍉/g,\"精\");\nx(/🍊/g,\"龟\");\nx(/🍋/g,\"水\");\nx(/🍌/g,\"腿\");\nx(/🍍/g,\"流\");\nx(/🍎/g,\"扒\");\nx(/🍏/g,\"泄\");\nx(/🍐/g,\"潮\");\nx(/🍑/g,\"顶\");\nx(/🍒/g,\"力\");\nx(/🍓/g,\"进\");\nx(/🍔/g,\"浪\");\nx(/🍕/g,\"骚\");\nx(/🍖/g,\"身\");\nx(/🍗/g,\"滑\");\nx(/🍘/g,\"下\");\nx(/🍙/g,\"翘\");\nx(/🍚/g,\"茎\");\nx(/🌀/g,\"伦\");\nx(/🌁/g,\"性\");\nx(/🌂/g,\"萝\");\nx(/🌃/g,\"莉\");\nfor(i in n){result=result.replace(m[i],n[i])}",
+    "bookSourceGroup": "r",
+    "bookSourceName": "月亮小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ylxs.de/",
+    "customOrder": 843,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "# 热门榜 #::/41149.html\n# 阅读中 #::/41639.html\n首页::/page/{{page}}\n激情::/category/jiqing/page/{{page}}\n乱伦::/category/luanlun/page/{{page}}\n学生::/category/xuesheng/page/{{page}}\n同人::/category/tongren/page/{{page}}\n萝莉::/category/luoli/page/{{page}}\n重口::/category/zhongkou/page/{{page}}",
+    "lastUpdateTime": 1784021688734,
+    "loginUrl": "/",
+    "respondTime": 5094,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "article p@text\n<js>eval(String(source.bookSourceComment))</js>"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": "article[class^=\"excerpt\"]||article[class^=\"article-content\"]@li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "妹妹",
+      "coverUrl": "@js:'https://ylxs.de/wp-content/themes/dux/assets/img/thumbnail.png'",
+      "kind": "time@text",
+      "name": "a[href$=\"html\"]@text### .+ #\n<js>eval(String(source.bookSourceComment))</js>"
+    },
+    "ruleToc": {
+      "chapterList": "article a||head",
+      "chapterName": "text##^{{book.name}} (?!\\-)| \\- 月亮小说$\n<js>eval(String(source.bookSourceComment))</js>",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "图",
+    "bookSourceName": "Hentai Cosplay",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://hentai-cosplay-xxx.com/",
+    "bookUrlPattern": "https://hentai-img-cosplay.com/(video|image)/.+",
+    "customOrder": 844,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n    {\n    \"title\": \"🔖排行榜🔖\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n    },\n    {\n        \"title\": \"文章排行\",\n        \"url\": \"/ranking/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.4\n        }\n    },\n    {\n        \"title\": \"下载排行\",\n        \"url\": \"/ranking-download/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.4\n        }\n    },\n    {\n        \"title\": \"收藏排行\",\n        \"url\": \"/ranking-bookmark/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.4\n        }\n    },\n    {\n        \"title\": \"点赞排行\",\n        \"url\": \"/ranking-like/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.4\n        }\n    },\n    {\n    \"title\": \"🔖图集🔖\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n    },\n     {\n        \"title\": \"最新上传\",\n        \"url\": \"/search/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"最近观看\",\n        \"url\": \"/recently/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"最近下载\",\n        \"url\": \"/recently-download/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"最近收藏\",\n        \"url\": \"/recently-bookmark/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"最近点赞\",\n        \"url\": \"/recently-like/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"\",\n        \"url\":\"\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n    \"title\": \"🔖视频🔖\",\n    \"url\": \"\",\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 1\n    }\n    },\n    {\n        \"title\": \"全部视频\",\n        \"url\": \"/search-video/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.4\n        }\n    },\n    {\n        \"title\": \"视频排行\",\n        \"url\": \"/ranking-video/page/{{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.4\n        }\n    }\n]",
+    "lastUpdateTime": 1785404199731,
+    "respondTime": 4097,
+    "ruleBookInfo": {
+      "coverUrl": "coverUrl",
+      "init": "@js:if(baseUrl.slice(0,4)==\"http\"){\n\tbook.canUpdate=false\n\tlet aa =result.indexOf(\"title\",950)+6\n\t\tlet bb = result.indexOf(\"title\",aa)-2-17\n\t\tlet url = baseUrl.slice(30).split(\"/att\")\n\t\tif(url.length!=1)bb=result.indexOf(\" - \"+baseUrl.match(/(\\d+).$/)[1],aa)\n\t\tlet obj={name:\"\",coverUrl:\"\",tocUrl:\"\"}\n\tobj.name=result.slice(aa,bb)\n\taa =result.indexOf(\"preload\",950)+15\n\t\tbb = result.indexOf(\"\\\"\",aa)\n\t\tobj.coverUrl=result.slice(aa,bb)\n\t\tbook.bookUrl='data:;base64,'+java.base64Encode(url[0])+',{\"type\":\"\"}'\n\t\tobj.tocUrl=book.bookUrl\n\t\tobj\n\t}else \"\"",
+      "intro": "@js:if(baseUrl.slice(0,4)==\"http\"){\n\t\n\tbaseUrl\n\t}else of(book.intro==\"\"){\n\t\t\n\tsource.getKey()+\tjava.base64Decode(baseUrl.slice(13,-12)).slice(1)\n\t\t}",
+      "name": "name",
+      "tocUrl": "tocUrl"
+    },
+    "ruleContent": {
+      "content": "@js:if(book.type==64||book.type==1088){\n    let results = [];\n    let searchTerm = \"<amp-img\";\n    let index = 0;\n    \n    while (index < result.length) {\n        \n        let imgPathIndex = result.indexOf(searchTerm, index);\n        if (imgPathIndex === -1) break;\n        \n        \n        let pathStart = imgPathIndex + searchTerm.length+25;\n        \n            let path = result.slice(pathStart, result.indexOf(\"\\\"\",pathStart));\n            results.push(path);\n        \n        index = pathStart + 200;\n        \n    }\n    result=[]\n    results.map(i=>result.push(\"<img src=\\\"\"+i+\"\\\">\"))\n   result.join(\"\")\n\t\n\t\n\t}else{\n        \n   let pathStart = result.indexOf(\"source\") +12\n   let path = result.slice(pathStart, result.indexOf(\"\\\"\",pathStart));\n   java.startBrowser(path,book.name)\n   path\n\t\t}"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": "id.image-list.0@li",
+      "bookUrl": "a@href\n@js:'data:;base64,'+java.base64Encode(result)+',{\"type\":\"\"}'",
+      "coverUrl": "img@src",
+      "lastChapter": "tag.span@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\n\nlet url = \"story\"\n\tif(baseUrl[14]=='3'){\n\tbook.type=8\n\t\turl = url+\"-video\"\n\t}\n\t\n\t//url = source.getKey()+url+java.hexDecodeToString(result).slice(6)\n\n[{name:book.name,url:source.getKey()+url+java.hexDecodeToString(result).slice(6)}]",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "@js:\nif(key.slice(0,4)==\"http\"){key}else{\n\"/search/keyword/\"+key+\"/page/\"+page}",
+    "weight": 0
+  }
+]
