@@ -1,0 +1,141 @@
+[
+  {
+    "bookSourceComment": "https://celeter.github.io/SourceGo",
+    "bookSourceGroup": "",
+    "bookSourceName": "若初文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.ruochu.com",
+    "bookUrlPattern": "",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "短篇::http://search.ruochu.com/web/all?sort=110&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n婚恋::http://search.ruochu.com/web/all?sort=35&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n都市::http://search.ruochu.com/web/all?sort=4&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n职场::http://search.ruochu.com/web/all?sort=11&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n豪门::http://search.ruochu.com/web/all?sort=12&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n总裁::http://search.ruochu.com/web/all?sort=13&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n架空::http://search.ruochu.com/web/all?sort=15&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n穿越::http://search.ruochu.com/web/all?sort=17&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n宫斗::http://search.ruochu.com/web/all?sort=19&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n宅斗::http://search.ruochu.com/web/all?sort=20&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n青春::http://search.ruochu.com/web/all?sort=21&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n仙侠::http://search.ruochu.com/web/all?sort=7&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n修真::http://search.ruochu.com/web/all?sort=22&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n玄幻::http://search.ruochu.com/web/all?sort=6&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n武侠::http://search.ruochu.com/web/all?sort=8&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n历史::http://search.ruochu.com/web/all?sort=3&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0\n纯爱::http://search.ruochu.com/web/all?sort=23&words=-1&free=&finish=&order=0&page={{page}}&size=100&solicitingid=0",
+    "lastUpdateTime": 1728472270617,
+    "respondTime": 3957,
+    "ruleBookInfo": {
+      "tocUrl": "text.目录@href"
+    },
+    "ruleContent": {
+      "content": "class.page-content@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.authorname",
+      "bookList": "$.data.content",
+      "bookUrl": "$.id@js:\"https://www.ruochu.com/book/\"+result",
+      "coverUrl": "$.iconUrlSmall@js:\"https://b.heiyanimg.com\"+result",
+      "intro": "$.introduce",
+      "kind": "$.sortname",
+      "lastChapter": "$.lastchaptername",
+      "name": "$.name"
+    },
+    "ruleToc": {
+      "chapterList": "class.float-list fill-block@li",
+      "chapterName": "html@js:if(result.match(/isvip/)){\nresult=\"🔒\"+result.match(/>([^<]+)<\\/a>/)[1];\n}else{result=result.match(/>([^<]+)<\\/a>/)[1];}",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "http://search.ruochu.com/web/search?queryString={{key}}&highlight=false&page=1",
+    "weight": 0
+  },
+  {
+    "bookSourceName": "🍅番茄小说源",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://novel.cooks.tw",
+    "bookUrlPattern": "https?:\\/\\/novel\\.cooks\\.tw\\/api\\/novel\\/detail\\/\\d+.*",
+    "customOrder": 4,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Android 11; Mobile; rv:147.0) Gecko/147.0 Firefox/147.0\",\"Accept-Language\":\"zh-CN,zh-TW;q=0.9,zh;q=0.8,en;q=0.6\",\"Referer\":\"https://novel.cooks.tw/\"}",
+    "jsLib": "function Base(){return 'https://novel.cooks.tw';}function J(s){try{return JSON.parse(String(s||'{}'));}catch(e){return {};}}function T(v){if(v===null||v===undefined)return '';return String(v).replace(/<br\\s*\\/?>/gi,'\\n').replace(/<p[^>]*>/gi,'\\n').replace(/<\\/p>/gi,'\\n').replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&#39;/g,\"'\").replace(/&quot;/g,'\"').trim();}function Cover(id){id=String(id||'').replace(/\\D/g,'');if(!id)return '';return 'https://pic.cooks.tw/'+Math.floor(parseInt(id)/1000)+'/'+id+'/'+id+'s.jpg';}function Clean(c){return String(c||'').replace(/<br\\s*\\/?>/gi,'\\n').replace(/<p[^>]*>/gi,'\\n').replace(/<\\/p>/gi,'\\n').replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&#39;/g,\"'\").replace(/&quot;/g,'\"').replace(/\\r/g,'').replace(/[ \\t]+\\n/g,'\\n').replace(/\\n{3,}/g,'\\n\\n').trim();}",
+    "lastUpdateTime": 1782213837195,
+    "respondTime": 3155,
+    "ruleBookInfo": {
+      "author": "$.data.author",
+      "coverUrl": "$.data.articleid\n<js>Cover(result)</js>",
+      "init": "<js>var j=J(result);var d=j.data||j;var id=d.articleid||'';if(!id){var m=String(baseUrl||'').match(/detail\\/(\\d+)/);if(m)id=m[1];}try{cache.putMemory('articleid',String(id));}catch(e){}result;</js>",
+      "intro": "$.data.intro",
+      "lastChapter": "$.data.lastchapter",
+      "name": "$.data.articlename",
+      "tocUrl": "<js>var j=J(result);var d=j.data||j;var id=d.articleid||'';if(!id){var m=String(baseUrl||'').match(/detail\\/(\\d+)/);if(m)id=m[1];}try{cache.putMemory('articleid',String(id));}catch(e){}Base()+'/api/chapter/list/'+id+'?lang=zh-CN'</js>",
+      "wordCount": "$.data.chapters"
+    },
+    "ruleContent": {
+      "content": "$.data.content\n<js>Clean(result)</js>"
+    },
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data.items[*]",
+      "bookUrl": "https://novel.cooks.tw/api/novel/detail/{{$.articleid}}?lang=zh-CN",
+      "coverUrl": "$.articleid\n<js>Cover(result)</js>",
+      "intro": "$.intro",
+      "lastChapter": "$.chapters",
+      "name": "$.articlename"
+    },
+    "ruleToc": {
+      "chapterList": "$.data[*]||$.data.items[*]||$.data.list[*]||$.data.chapterlist[*]||$.data.chapterList[*]||$.data.chapters[*]",
+      "chapterName": "$.chaptername||$.chapter_name||$.chapterName||$.title||$.name",
+      "chapterUrl": "$.chapterid\n<js>var aid='';try{aid=cache.getFromMemory('articleid')||'';}catch(e){}if(!aid){var m=String(baseUrl||'').match(/list\\/(\\d+)/);if(m)aid=m[1];}Base()+'/api/chapter/content/'+aid+'/'+result+'?lang=zh-CN'</js>"
+    },
+    "searchUrl": "https://novel.cooks.tw/api/novel/search?q={{key}}&page={{page}}&limit=20&lang=zh-CN,{\"headers\":{\"User-Agent\":\"Mozilla/5.0 (Android 11; Mobile; rv:147.0) Gecko/147.0 Firefox/147.0\",\"Accept-Language\":\"zh-CN,zh-TW;q=0.9,zh;q=0.8,en;q=0.6\",\"Referer\":\"https://novel.cooks.tw/\"}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "/*访问过快偶尔宕机，出错了会加载重试。\n以下代码勿动！❗️⚠️\n可在js中通过eval(String(source.bookSourceComment))\n调用*/\nvar err=/503 Service Temporarily Unavailable/;\nwhile(err.test(result)){\n\tjava.log(\"网站出错，重新加载\")\n\tresult=java.ajax(baseUrl)\n\t}\nresult;",
+    "bookSourceGroup": "",
+    "bookSourceName": "👑 蚂蚁文学网·叁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.mayiwxw.com",
+    "bookUrlPattern": "https?://m.mayiwxw.com/\\w+/",
+    "customOrder": 7,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/sort/1_{{page}}/\n修真小说::/sort/2_{{page}}/\n都市小说::/sort/3_{{page}}/\n穿越小说::/sort/4_{{page}}/\n网游小说::/sort/5_{{page}}/\n科幻小说::/sort/6_{{page}}/\n其他小说::/sort/7_{{page}}/\n女生频道::/sort/8_{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1711475345285,
+    "loginUrl": "",
+    "respondTime": 6990,
+    "ruleBookInfo": {
+      "author": "text.作者@text##作者：",
+      "coverUrl": "img@src",
+      "init": "<js>\neval(String(source.bookSourceComment))\n</js>",
+      "intro": "#inf@text##简介：|【展开】|【收起】",
+      "kind": "{{@@text.类别@text}}\n{{@@text.状态@text}}\n{{@@text.更新@text}}\n##类别：|状态：|更新：",
+      "lastChapter": "text.最新@a@text",
+      "name": "text.书名@text##书名：",
+      "tocUrl": "{{baseUrl.replace('/m',\"/www\")}},{\n  \"headers\": {\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36\"}\n}"
+    },
+    "ruleContent": {
+      "content": "<js>\neval(String(source.bookSourceComment))\n</js>\n#content@textNodes",
+      "nextContentUrl": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": "<js>\neval(String(source.bookSourceComment))\n</js>\n.newbook_list",
+      "bookUrl": "a.1@href##index.html",
+      "coverUrl": "img@src",
+      "intro": ".newbook_intor@text##【展开】|【收起】",
+      "kind": "span.s1@text",
+      "name": "a.1@text"
+    },
+    "ruleSearch": {
+      "author": "a.1@text",
+      "bookList": "<js>\neval(String(source.bookSourceComment))\n</js>\np.sone",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "剑来",
+      "kind": "0",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\neval(String(source.bookSourceComment))\n</js>\n#list dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "{{java.connect(source.getKey()).raw().request().url()}}s.php,{\n  \"method\": \"POST\",\n  \"body\": \"search_key={{key}}\"\n}",
+    "weight": 0
+  }
+]
