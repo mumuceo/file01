@@ -1,0 +1,229 @@
+[
+  {
+    "bookSourceName": "笔趣阁（biquge34567）",
+    "bookSourceUrl": "https://www.biquge34567.com",
+    "bookSourceType": 0,
+    "bookSourceGroup": "自制书源",
+    "bookSourceComment": "基于 www.biquge34567.com 当前静态 HTML 页面；搜索使用站点原生 POST 表单。站点限制每分钟最多 10 次搜索，本规则设置了同源请求速率上限。",
+    "enabled": true,
+    "enabledExplore": false,
+    "enabledCookieJar": true,
+    "concurrentRate": "10/60000",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36\",\"Referer\":\"https://www.biquge34567.com/\"}",
+    "searchUrl": "https://www.biquge34567.com/s.php,{\"method\":\"POST\",\"body\":\"type=articlename&s={{key}}&submit=\"}",
+    "ruleSearch": {
+      "bookList": ".search li:not(.fen)",
+      "name": ".name a@text",
+      "author": ".zuo a@text",
+      "kind": ".lei@text",
+      "lastChapter": ".jie a@text",
+      "updateTime": ".time@text",
+      "bookUrl": ".name a@href",
+      "hasMoreRule": "false"
+    },
+    "ruleBookInfo": {
+      "name": "meta[property=\"og:title\"]@content",
+      "author": "meta[property=\"og:novel:author\"]@content",
+      "coverUrl": "meta[property=\"og:image\"]@content",
+      "intro": "meta[property=\"og:description\"]@content",
+      "kind": "meta[property=\"og:novel:category\"]@content",
+      "lastChapter": "meta[property=\"og:novel:latest_chapter_name\"]@content",
+      "updateTime": "class.x2.0@text##更新时间：##",
+      "tocUrl": "<js>String(baseUrl).replace('/book/','/newbook/');</js>"
+    },
+    "ruleToc": {
+      "chapterList": "class.info@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": ""
+    },
+    "ruleContent": {
+      "title": "id.neirong@tag.h1@text",
+      "content": "id.txt@html",
+      "nextContentUrl": "",
+      "replaceRegex": "##<p[^>]*>一秒记住[^<]*</p><br\\s*/?>|(?:&nbsp;){0,4}(?:（本章未完，请点击下一页继续阅读）)?[^<\\n]{0,30}\\(第\\d+/\\d+页\\)<br\\s*/?>##"
+    }
+  },
+   {
+    "bookSourceName": "笔趣阁小说（bqgsn）",
+    "bookSourceUrl": "https://m.bqgsn.cc",
+    "bookSourceType": 0,
+    "bookSourceGroup": "自制书源",
+    "bookSourceComment": "基于 m.bqgsn.cc 当前前端实际使用的 apibi.cc JSON 接口；目录和正文 token 使用站点同款 AES/CBC/PKCS7 算法动态生成。",
+    "enabled": true,
+    "enabledExplore": false,
+    "enabledCookieJar": true,
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1\",\"Referer\":\"https://m.bqgsn.cc/\"}",
+    "searchUrl": "https://apibi.cc/api/search?q={{key}}",
+    "jsLib": "function bqCipher(){var code=java.md5Encode('book@token.html');return java.createSymmetricCrypto('AES/CBC/PKCS7Padding',code.substring(16),code.substring(0,16));}\nfunction bqApi(type,payload){var token=bqCipher().encryptBase64(JSON.stringify(payload));return 'https://apibi.cc/api/'+type+'?token='+encodeURIComponent(token);}\nfunction bqCover(id){id=String(id);return 'https://www.bqgsn.cc/bookimg/'+Math.floor(Number(id)/1000)+'/'+id+'.jpg';}",
+    "ruleSearch": {
+      "bookList": "$.data",
+      "name": "$.title",
+      "author": "$.author",
+      "intro": "$.intro",
+      "coverUrl": "<js>bqCover(result.id);</js>",
+      "bookUrl": "<js>bqApi('book',{id:String(result.id)});</js>",
+      "hasMoreRule": "false"
+    },
+    "ruleBookInfo": {
+      "name": "$.title",
+      "author": "$.author",
+      "coverUrl": "<js>bqCover(result.id);</js>",
+      "intro": "$.intro",
+      "kind": "<js>[result.sortname,result.full].filter(function(v){return !!v;}).join(' / ');</js>",
+      "lastChapter": "$.lastchapter",
+      "updateTime": "$.lastupdate",
+      "tocUrl": "<js>var meta={bookId:Number(result.id),dirId:String(result.dirid||result.id)};'data:;base64,'+java.base64Encode(JSON.stringify(meta));</js>"
+    },
+    "ruleToc": {
+      "chapterList": "<js>var meta=result;var raw=java.ajax(bqApi('booklist',{id:String(meta.dirId)}));var list=JSON.parse(String(raw)).list||[];list.map(function(title,index){return {title:String(title),bookId:Number(meta.bookId),chapterId:index+1};});</js>",
+      "chapterName": "$.title",
+      "chapterUrl": "<js>bqApi('chapter',{id:Number(result.bookId),chapterid:Number(result.chapterId)});</js>",
+      "nextTocUrl": ""
+    },
+    "ruleContent": {
+      "title": "$.chaptername",
+      "content": "$.txt",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    }
+  },
+   {
+    "bookSourceName": "顶点小说（dingdian888）",
+    "bookSourceUrl": "https://www.dingdian888.com",
+    "bookSourceGroup": "",
+    "bookSourceComment": "2026-09-01 实测：POST 搜索、详情、完整目录与正文均为静态 HTML；无需 WebView。",
+    "bookSourceType": 0,
+    "bookUrlPattern": "https?://(?:www\\.)?dingdian888\\.com/xiaoshuo/\\d+/?",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": false,
+    "enabledCookieJar": false,
+    "enabledReview": false,
+    "searchUrl": "https://www.dingdian888.com/s.php,{\"method\":\"POST\",\"body\":\"s={{key}}&submit=\",\"charset\":\"UTF-8\",\"headers\":{\"Content-Type\":\"application/x-www-form-urlencoded; charset=UTF-8\"}}",
+    "exploreUrl": "",
+    "concurrentRate": "4",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\"Accept-Language\":\"zh-CN,zh;q=0.9\",\"Referer\":\"https://www.dingdian888.com/\"}",
+    "loginUrl": "",
+    "loginUi": "",
+    "loginCheckJs": "",
+    "respondTime": 180000,
+    "lastUpdateTime": 1788252512000,
+    "weight": 0,
+    "variableComment": "",
+    "exploreScreen": "",
+    "coverDecodeJs": "",
+    "jsLib": "",
+    "ruleSearch": {
+      "checkKeyWord": "斗破苍穹",
+      "bookList": "@CSS:.lastupdate ul li",
+      "name": "@CSS:.name a@text",
+      "author": "@CSS:.zuo a@text",
+      "coverUrl": "",
+      "intro": "",
+      "bookUrl": "@CSS:.name a@href",
+      "wordCount": "",
+      "lastChapter": "@CSS:.jie a@text",
+      "updateTime": "@CSS:.time@text",
+      "kind": "@CSS:.lei a@text",
+      "hasMoreRule": "false"
+    },
+    "ruleExplore": {
+      "bookList": "",
+      "name": "",
+      "author": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "updateTime": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "wordCount": "",
+      "hasMoreRule": "false"
+    },
+    "ruleBookInfo": {
+      "init": "",
+      "name": "@CSS:meta[property='og:novel:book_name']@content",
+      "author": "@CSS:meta[property='og:novel:author']@content",
+      "coverUrl": "@CSS:meta[property='og:image']@content",
+      "intro": "@CSS:meta[property='og:description']@content",
+      "kind": "@CSS:meta[property='og:novel:category']@content",
+      "wordCount": "",
+      "lastChapter": "@CSS:.border_left_list li:first-child a@text",
+      "updateTime": "@CSS:meta[property='og:novel:update_time']@content",
+      "tocUrl": "",
+      "canReName": "",
+      "downloadUrls": "",
+      "ttsDice": ""
+    },
+    "ruleToc": {
+      "preUpdateJs": "",
+      "chapterList": "@CSS:.border_chapter li",
+      "chapterName": "@CSS:a@text",
+      "chapterUrl": "@CSS:a@href",
+      "formatJs": "",
+      "isVolume": "",
+      "isVip": "",
+      "isPay": "",
+      "updateTime": "",
+      "nextTocUrl": ""
+    },
+    "ruleContent": {
+      "content": "@CSS:#txt@text",
+      "title": "@CSS:h1@text",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "<div\\s+id=[\"']txt[\"']",
+      "replaceRegex": "",
+      "imageStyle": "",
+      "imageDecode": "",
+      "payAction": ""
+    },
+    "ruleReview": {
+      "review": ""
+    }
+  },
+  {
+    "bookSourceName": "言情小说阁",
+    "bookSourceUrl": "http://www.xianqihaotianmi.org",
+    "bookSourceType": 0,
+    "bookSourceGroup": "自制书源",
+    "bookSourceComment": "修复表格行被独立解析后 tr/td 标签丢失导致搜索字段为空；该站 HTTPS 证书与域名不匹配，必须使用 HTTP。",
+    "enabled": true,
+    "enabledExplore": false,
+    "enabledCookieJar": false,
+    "concurrentRate": "2",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36\",\"Referer\":\"http://www.xianqihaotianmi.org/\"}",
+    "searchUrl": "http://www.xianqihaotianmi.org/modules/article/search.php?searchkey={{key}}",
+    "ruleSearch": {
+      "bookList": "@css:table#bookcon tr:not(:first-child)",
+      "name": "@css:p:nth-of-type(1) a@text",
+      "author": "@css:p:nth-of-type(2) a@text",
+      "coverUrl": "@css:p:nth-of-type(1) a@href##.*/book/((\\d+)\\d{3})\\.html.*##http://www.xianqihaotianmi.org/files/article/image/$2/$1/$1s.jpg",
+      "updateTime": "@css:p:nth-of-type(3)@text",
+      "kind": "@css:p:nth-of-type(4)@text",
+      "bookUrl": "@css:p:nth-of-type(1) a@href",
+      "hasMoreRule": "<js>false</js>"
+    },
+    "ruleBookInfo": {
+      "name": "@css:meta[property=\"og:novel:book_name\"]@content",
+      "author": "@css:meta[property=\"og:novel:author\"]@content",
+      "coverUrl": "@css:meta[property=\"og:image\"]@content",
+      "intro": "@css:meta[property=\"og:description\"]@content",
+      "kind": "@css:meta[property=\"og:novel:category\"]@content",
+      "lastChapter": "@css:meta[property=\"og:novel:latest_chapter_name\"]@content",
+      "updateTime": "@css:meta[property=\"og:novel:update_time\"]@content",
+      "tocUrl": "@css:meta[property=\"og:novel:read_url\"]@content"
+    },
+    "ruleToc": {
+      "chapterList": "@css:ul.list-charts li",
+      "chapterName": "@css:a@text",
+      "chapterUrl": "@css:a@href"
+    },
+    "ruleContent": {
+      "title": "@css:div.panel.panel-default > div.panel-heading@text",
+      "content": "@css:div.content-body@html",
+      "replaceRegex": "##(?:&nbsp;|\\u00A0){4}##"
+    }
+  }
+]
