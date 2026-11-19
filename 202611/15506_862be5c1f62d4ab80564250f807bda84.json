@@ -1,0 +1,833 @@
+[
+  {
+    "bookSourceComment": "🔞玉兔资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://apiyutu.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞玉兔资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://apiyutu.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://apiyutu.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://apiyutu.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://apiyutu.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://apiyutu.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://apiyutu.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://apiyutu.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://apiyutu.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞番号资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：http://fhapi9.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞番号资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "http://fhapi9.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 4,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"http://fhapi9.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"http://fhapi9.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"http://fhapi9.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"http://fhapi9.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "http://fhapi9.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "http://fhapi9.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "http://fhapi9.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞老色逼资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://apilsbzy1.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞老色逼资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://apilsbzy1.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://apilsbzy1.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://apilsbzy1.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://apilsbzy1.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://apilsbzy1.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://apilsbzy1.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://apilsbzy1.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://apilsbzy1.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞大奶子资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://apidanaizi.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞大奶子资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://apidanaizi.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 8,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://apidanaizi.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://apidanaizi.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://apidanaizi.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://apidanaizi.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://apidanaizi.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://apidanaizi.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://apidanaizi.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞乐播资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://lbapi9.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞乐播资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://lbapi9.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 10,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://lbapi9.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://lbapi9.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://lbapi9.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://lbapi9.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://lbapi9.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://lbapi9.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://lbapi9.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞豆豆资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://api.douapi.cc/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞豆豆资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://doudouzy.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 11,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://api.douapi.cc/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://api.douapi.cc/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://api.douapi.cc/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://api.douapi.cc/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://api.douapi.cc/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://api.douapi.cc/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://api.douapi.cc/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞滴滴资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://api.ddapi.cc/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞滴滴资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://didizy.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://api.ddapi.cc/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://api.ddapi.cc/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://api.ddapi.cc/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://api.ddapi.cc/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://api.ddapi.cc/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://api.ddapi.cc/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://api.ddapi.cc/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞黑料资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://www.heiliaozyapi.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞黑料资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://heiliaozy.cc",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 13,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://www.heiliaozyapi.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://www.heiliaozyapi.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://www.heiliaozyapi.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://www.heiliaozyapi.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://www.heiliaozyapi.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://www.heiliaozyapi.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://www.heiliaozyapi.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞CK资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://ckzy.me/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞CK资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://ckzy.me",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 15,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://ckzy.me/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://ckzy.me/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://ckzy.me/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://ckzy.me/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://ckzy.me/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://ckzy.me/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://ckzy.me/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞白嫖资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://www.kxgav.com/api/json.php\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞白嫖资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://www.kxgav.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 17,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://www.kxgav.com/api/json.php?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://www.kxgav.com/api/json.php?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://www.kxgav.com/api/json.php?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://www.kxgav.com/api/json.php?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://www.kxgav.com/api/json.php?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://www.kxgav.com/api/json.php?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://www.kxgav.com/api/json.php?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞杏吧资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://xingba222.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞杏吧资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://xingba111.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 18,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://xingba222.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://xingba222.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://xingba222.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://xingba222.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://xingba222.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://xingba222.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://xingba222.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞极品资源 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://jipinvip1.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞极品资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://jipinvip1.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 20,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://jipinvip1.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://jipinvip1.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://jipinvip1.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://jipinvip1.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://jipinvip1.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://jipinvip1.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://jipinvip1.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞黑料资源站 视频书源(bookSourceType:4)\n苹果CMS采集接口：https://heiliaozyapi.com/api.php/provide/vod\n搜索影片→进入详情→点章节即可播放",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞黑料资源站",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://heiliaozyapi.com",
+    "concurrentRate": "",
+    "customButton": false,
+    "customOrder": 21,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://heiliaozyapi.com/api.php/provide/vod/?ac=list&pg=1\");\nvar j=JSON.parse(r);\nvar cats=[{title:\"🎬 最新更新\",url:\"https://heiliaozyapi.com/api.php/provide/vod/?ac=detail&pg={{page}}\"}];\nvar cls=j.class||[];\nif(cls.length){\n  cls.forEach(function(c){cats.push({title:c.type_name,url:\"https://heiliaozyapi.com/api.php/provide/vod/?ac=detail&t=\"+c.type_id+\"&pg={{page}}\"});});\n}else{\n  var seen={};\n  (j.list||[]).forEach(function(v){var t=String(v.type_id),n=v.type_name;if(n&&!seen[t]){seen[t]=1;cats.push({title:n,url:\"https://heiliaozyapi.com/api.php/provide/vod/?ac=detail&t=\"+t+\"&pg={{page}}\"});}});\n}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "loginUrl": "",
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://heiliaozyapi.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://heiliaozyapi.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar lines=String(d.vod_play_url||'').split('$$$');\nvar line=lines[0];\nfor(var i=0;i<lines.length;i++){if(lines[i].indexOf('m3u8')>-1){line=lines[i];break;}}\nvar arr=line.split('#').filter(function(x){return x.trim().length>0;});\nvar list=arr.map(function(u,i){\n  var idx=u.indexOf('$');\n  if(idx>0){return {name:u.substring(0,idx)||('第'+(i+1)+'集'),url:u.substring(idx+1)};}\n  return {name:'第'+(i+1)+'集',url:u.trim()};\n});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://heiliaozyapi.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "🔞大地资源 视频书源(bookSourceType:4,XML接口)\n接口：https://dadiapi.com/feifei",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞大地资源",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://dadizy11.com",
+    "customButton": false,
+    "customOrder": 22,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nvar r=java.ajax(\"https://dadiapi.com/feifei?ac=list\");\nvar cats=[{title:\"🎬 最新更新\",url:\"https://dadiapi.com/feifei?ac=videolist&pg={{page}}\"}];\nvar re=/<ty id=\"(\\d+)\"[^>]*>([^<]+)<\\/ty>/g,m;\nwhile((m=re.exec(r))!==null){cats.push({title:m[2],url:\"https://dadiapi.com/feifei?ac=videolist&t=\"+m[1]+\"&pg={{page}}\"});}\nJSON.stringify(cats);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\", \"Accept-Encoding\": \"identity\"}",
+    "lastUpdateTime": 0,
+    "respondTime": 60000,
+    "ruleBookInfo": {
+      "coverUrl": "tag.video@tag.pic@text",
+      "intro": "tag.video@tag.des@text",
+      "kind": "tag.video@tag.type@text",
+      "name": "tag.video@tag.name@text"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "bookList": "tag.video",
+      "bookUrl": "@js:'https://dadiapi.com/feifei?ac=videolist&ids='+java.getString('tag.id@text')",
+      "coverUrl": "tag.pic@text",
+      "kind": "tag.type@text",
+      "lastChapter": "tag.last@text",
+      "name": "tag.name@text"
+    },
+    "ruleSearch": {
+      "bookList": "tag.video",
+      "bookUrl": "@js:'https://dadiapi.com/feifei?ac=videolist&ids='+java.getString('tag.id@text')",
+      "coverUrl": "tag.pic@text",
+      "kind": "tag.type@text",
+      "lastChapter": "tag.last@text",
+      "name": "tag.name@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar list=[];\nvar re=/<dd[^>]*flag=\\\"([^\\\"]*)\\\"[^>]*>([\\s\\S]*?)<\\/dd>/g,m;\nvar i=0;\nwhile((m=re.exec(resp))!==null){i++;var u=m[2].replace(/<!\\[CDATA\\[|\\]\\]>/g,'').trim();var nm=u.split('$');var real=nm.length>1?nm[1]:nm[0];list.push({name:m[1]+' 第'+i+'集',url:real});}\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://dadiapi.com/feifei?ac=videolist&wd={{key}}&pg={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "155资源站(155zy2.com)视频书源\n数据源为其官方采集接口 155api.com\n支持搜索、发现分类、在线播放视频(m3u8)\n使用方法：阅读APP → 我的 → 书源管理 → 右上角 → 网络导入/本地导入\n观看视频：搜索影片 → 进入详情 → 点击章节「在线播放」即可调用内置/外部播放器",
+    "bookSourceGroup": "成人影视🔞",
+    "bookSourceName": "🔞155资源站",
+    "bookSourceType": 4,
+    "bookSourceUrl": "https://155zy2.com",
+    "customButton": false,
+    "customOrder": 23,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "eventListener": false,
+    "exploreUrl": "@js:\nlet cats=[\n[\"🎬 最新更新\",\"https://155api.com/api.php/provide/vod/?ac=list&pg={{page}}\"],\n[\"无码专区\",1],[\"麻豆传媒\",2],[\"制服诱惑\",3],[\"三级伦理\",4],[\"AI换脸\",5],[\"中文字幕\",6],[\"卡通动漫\",7],[\"欧美系列\",8],[\"美女主播\",9],[\"国产自拍\",10],[\"熟女人妻\",11],[\"萝莉少女\",12],[\"女同性爱\",13],[\"多人群交\",14],[\"美乳巨乳\",15],[\"强奸乱伦\",16],[\"抖音视频\",33],[\"韩国主播\",34],[\"网红头条\",35],[\"网爆黑料\",36],[\"欧美无码\",37],[\"女优明星\",38],[\"SM调教\",39],[\"AV解说\",40]\n];\nJSON.stringify(cats.map(c=>({title:c[0],url:String(c[0]).startsWith(\"http\")?c[1]:(\"https://155api.com/api.php/provide/vod/?ac=detail&t=\"+c[1]+\"&pg={{page}}\")})));",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1795046377067,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.list[0].vod_actor",
+      "coverUrl": "$.list[0].vod_pic",
+      "intro": "$.list[0].vod_blurb",
+      "kind": "$.list[0].type_name,$.list[0].vod_area,$.list[0].vod_year",
+      "name": "$.list[0].vod_name"
+    },
+    "ruleContent": {
+      "content": "@js:baseUrl"
+    },
+    "ruleExplore": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://155api.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleSearch": {
+      "author": "$.vod_actor",
+      "bookList": "$.list[*]",
+      "bookUrl": "https://155api.com/api.php/provide/vod/?ac=detail&ids={{$.vod_id}}",
+      "coverUrl": "$.vod_pic",
+      "intro": "$.vod_blurb",
+      "kind": "$.type_name,$.vod_area,$.vod_year",
+      "lastChapter": "$.vod_time",
+      "name": "$.vod_name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar resp=java.ajax(baseUrl);\nvar d=JSON.parse(resp).list[0];\nvar arr=d.vod_play_url.split(\"#\").filter(x=>x.indexOf(\"$\")>-1);\nvar list=arr.map(function(u){var p=u.split(\"$\");return {name:p[0],url:p[1]};});\nlist;",
+      "chapterName": "name",
+      "chapterUrl": "url"
+    },
+    "searchUrl": "https://155api.com/api.php/provide/vod/?ac=detail&wd={{key}}&pg={{page}}",
+    "weight": 0
+  }
+]
