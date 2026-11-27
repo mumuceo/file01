@@ -1,0 +1,88 @@
+[
+  {
+    "bookSourceName": "墨阁阅读",
+    "bookSourceUrl": "https://reader.plent.top/reader-source/main/public",
+    "bookSourceGroup": "墨阁",
+    "bookSourceType": 0,
+    "bookSourceComment": "墨阁阅读公共书源。可搜索、看目录；连载新章延迟 7 天，新完结书最后 20 章保留 14 天会员优先期，老完结书全本可读。登录机器人后可绑定个人会员权益。",
+    "enabled": true,
+    "enabledExplore": false,
+    "header": "{\"Accept\":\"application/json\"}",
+    "searchUrl": "https://reader.plent.top/reader/search?key={{key}}&page={{page}}",
+    "ruleSearch": {
+      "bookList": "$.results",
+      "name": "$.title",
+      "author": "$.author",
+      "kind": "$.category",
+      "intro": "$.summary",
+      "coverUrl": "$.cover",
+      "bookUrl": "$.bookUrl",
+      "wordCount": "$.wordCountText",
+      "lastChapter": "$.latestTitle",
+      "status": "$.status"
+    },
+    "ruleBookInfo": {
+      "name": "$.title",
+      "author": "$.author",
+      "kind": "$.category",
+      "intro": "$.summary",
+      "coverUrl": "$.cover",
+      "tocUrl": "$.tocUrl",
+      "wordCount": "$.wordCountText",
+      "lastChapter": "$.latestTitle",
+      "status": "$.status"
+    },
+    "ruleToc": {
+      "chapterList": "$.chapters",
+      "chapterName": "$.title",
+      "chapterUrl": "$.url",
+      "isVip": "$.vip"
+    },
+    "ruleContent": {
+      "content": "$.text"
+    }
+  },
+  {
+    "bookSourceName": "墨阁备用线路",
+    "bookSourceUrl": "https://reader.plent.top/reader-source/backup/public",
+    "bookSourceGroup": "墨阁",
+    "bookSourceType": 0,
+    "bookSourceComment": "墨阁阅读公共书源。可搜索、看目录；连载新章延迟 7 天，新完结书最后 20 章保留 14 天会员优先期，老完结书全本可读。登录机器人后可绑定个人会员权益。",
+    "enabled": true,
+    "enabledExplore": false,
+    "header": "{\"Accept\":\"application/json\"}",
+    "searchUrl": "https://reader.plent.top/reader/search?key={{key}}&page={{page}}",
+    "ruleSearch": {
+      "bookList": "$.results",
+      "name": "$.title",
+      "author": "$.author",
+      "kind": "$.category",
+      "intro": "$.summary",
+      "coverUrl": "$.cover",
+      "bookUrl": "$.bookUrl",
+      "wordCount": "$.wordCountText",
+      "lastChapter": "$.latestTitle",
+      "status": "$.status"
+    },
+    "ruleBookInfo": {
+      "name": "$.title",
+      "author": "$.author",
+      "kind": "$.category",
+      "intro": "$.summary",
+      "coverUrl": "$.cover",
+      "tocUrl": "$.tocUrl",
+      "wordCount": "$.wordCountText",
+      "lastChapter": "$.latestTitle",
+      "status": "$.status"
+    },
+    "ruleToc": {
+      "chapterList": "$.chapters",
+      "chapterName": "$.title",
+      "chapterUrl": "$.url",
+      "isVip": "$.vip"
+    },
+    "ruleContent": {
+      "content": "$.text"
+    }
+  }
+]
