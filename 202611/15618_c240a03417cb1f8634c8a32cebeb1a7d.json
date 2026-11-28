@@ -1,0 +1,260 @@
+[
+  {
+    "bookSourceComment": "书海阁：按当前 bookclass 搜索页、书籍详情、分页目录和阅读页结构编写。",
+    "bookSourceGroup": "自用书源",
+    "bookSourceName": "书海阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://book.washai.net",
+    "bookUrlPattern": "https?:\\/\\/book\\.washai\\.net\\/book\\/\\d+\\.html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 12; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\",\"Accept-Language\":\"zh-CN,zh;q=0.9\"}",
+    "lastUpdateTime": 1795824000000,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "#bookAuthor@text",
+      "coverUrl": "#bookCoverImg@src",
+      "intro": "#bookDesc@text",
+      "kind": "#bookCatBadge@text",
+      "lastChapter": "#lastIndexLink@text",
+      "name": "#bookName@text",
+      "tocUrl": "#allIndexLink@href",
+      "wordCount": "#wordCount@text"
+    },
+    "ruleContent": {
+      "content": "#readcontent .readChapterPrimaryBlock .readChapterAppendBody@html",
+      "nextContentUrl": "",
+      "title": "#indexName@text"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".classBookAuthor a@text",
+      "bookList": ".classBookCard",
+      "bookUrl": "a.classBookCoverLink@href",
+      "coverUrl": ".classBookCover img@src",
+      "intro": ".classBookDesc@text",
+      "kind": ".classBookCover .book-cover-badge@text",
+      "lastChapter": ".classBookChapter a@text",
+      "name": ".classBookTitle a@text",
+      "wordCount": ".classBookMeta@text"
+    },
+    "ruleToc": {
+      "chapterList": "#bookIndexList li[data-index-id] a",
+      "chapterName": "@text##\\s*\\[免费\\]$##",
+      "chapterUrl": "href",
+      "isPay": "",
+      "nextTocUrl": "link[rel=next]@href"
+    },
+    "searchUrl": "/book/bookclass.html?k={{java.encodeURI(key)}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "笔趣书：目录按页面倒序反转为正序；章节分页仅拼接同一章节的 _2、_3 页面。搜索地址沿用站点首页表单 action=/search/。",
+    "bookSourceGroup": "自用书源",
+    "bookSourceName": "笔趣书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.biqushu.org",
+    "bookUrlPattern": "https?:\\/\\/www\\.biqushu\\.org\\/\\d+\\/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 12; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\",\"Accept-Language\":\"zh-CN,zh;q=0.9\"}",
+    "lastUpdateTime": 1795824000000,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "#info p.0@a@text",
+      "coverUrl": "#fmimg img@data-original",
+      "intro": "#intro@text",
+      "kind": "#info .sort@text",
+      "lastChapter": "#info a[rel=chapter]@text",
+      "name": "#info h1@text",
+      "tocUrl": "@js: result = baseUrl;",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#chaptercontent #booktxt@html",
+      "nextContentUrl": "#next_url@href\n@js:\nvar cur = String(baseUrl).match(/\\/(\\d+)(?:_(\\d+))?\\.html(?:[?#]|$)/);\nvar nxt = String(result || \"\").match(/\\/(\\d+)(?:_(\\d+))?\\.html(?:[?#]|$)/);\nresult = cur && nxt && cur[1] === nxt[1] && nxt[2] ? result : \"\";",
+      "title": ".bookname@text##\\s*（\\d+\\s*/\\s*\\d+）$##"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".btm a@text",
+      "bookList": ".hotcontent .item",
+      "bookUrl": "dl dt a@href",
+      "coverUrl": ".image img@data-original",
+      "intro": "dl dd@text",
+      "kind": "",
+      "name": "dl dt a@text",
+      "wordCount": ".btm em.orange@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list a[rel=chapter]\n@js:\nresult.reverse();\nresult;",
+      "chapterName": "dd@text",
+      "chapterUrl": "href",
+      "isPay": "",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/search/?searchkey={{java.encodeURI(key)}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "kkbiquge：目录按页面倒序反转为正序；章节分页仅拼接同一章节的 _2、_3 页面。",
+    "bookSourceGroup": "自用书源",
+    "bookSourceName": "kkbiquge",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.kkbiquge.net",
+    "bookUrlPattern": "https?:\\/\\/www\\.kkbiquge\\.net\\/\\d+_\\d+\\/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 12; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\",\"Accept-Language\":\"zh-CN,zh;q=0.9\"}",
+    "lastUpdateTime": 1795824000000,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "#info p.0@a@text",
+      "coverUrl": "#fmimg img@data-original",
+      "intro": "#intro@text",
+      "kind": "#info .sort@text",
+      "lastChapter": "#info a[rel=chapter]@text",
+      "name": "#info h1@text",
+      "tocUrl": "@js: result = baseUrl;",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#chaptercontent #booktxt@html",
+      "nextContentUrl": "#next_url@href\n@js:\nvar cur = String(baseUrl).match(/\\/(\\d+)(?:_(\\d+))?\\.html(?:[?#]|$)/);\nvar nxt = String(result || \"\").match(/\\/(\\d+)(?:_(\\d+))?\\.html(?:[?#]|$)/);\nresult = cur && nxt && cur[1] === nxt[1] && nxt[2] ? result : \"\";",
+      "title": ".bookname@text##\\s*（\\d+\\s*/\\s*\\d+）$##"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": ".btm a@text",
+      "bookList": ".hotcontent .item",
+      "bookUrl": "dl dt a@href",
+      "coverUrl": ".image img@data-original",
+      "intro": "dl dd@text",
+      "kind": "",
+      "name": "dl dt a@text",
+      "wordCount": ".btm em.orange@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list a[rel=chapter]\n@js:\nresult.reverse();\nresult;",
+      "chapterName": "dd@text",
+      "chapterUrl": "href",
+      "isPay": "",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/search6a.html?searchkey={{java.encodeURI(key)}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "爱丽丝书屋新版接口源：使用站点当前 /api/v1 搜索、详情、目录和章节接口。",
+    "bookSourceGroup": "自用书源",
+    "bookSourceName": "爱丽丝书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.alicesw.com",
+    "bookUrlPattern": "https?:\\/\\/www\\.alicesw\\.com\\/api\\/v1\\/books\\/\\d+",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 12; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\",\"Accept\":\"application/json\",\"Accept-Language\":\"zh-CN,zh;q=0.9\"}",
+    "lastUpdateTime": 1795824000000,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.data.original_author",
+      "coverUrl": "$.data.cover_url",
+      "intro": "$.data.synopsis",
+      "kind": "$.data.category.name",
+      "lastChapter": "",
+      "name": "$.data.title",
+      "tocUrl": "@js: result = String(baseUrl).replace(/\\/$/, \"\") + \"/chapters\";",
+      "wordCount": "$.data.word_count"
+    },
+    "ruleContent": {
+      "content": "$.data.content",
+      "nextContentUrl": "$.data.next_chapter_no\n@js:\nvar n = String(result || \"\");\nresult = /^\\d+$/.test(n) ? \"https://www.alicesw.com/api/v1/chapters/\" + n : \"\";",
+      "title": "$.data.chapter.title"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.author_name",
+      "bookList": "$.data.items",
+      "bookUrl": "$.id\n@js: result = \"https://www.alicesw.com/api/v1/books/\" + result;",
+      "coverUrl": "$.cover_url",
+      "intro": "$.synopsis",
+      "kind": "$.category_id",
+      "lastChapter": "",
+      "name": "$.title",
+      "wordCount": "$.word_count"
+    },
+    "ruleToc": {
+      "chapterList": "$.data",
+      "chapterName": "$.title",
+      "chapterUrl": "$.chapter_no\n@js: result = \"https://www.alicesw.com/api/v1/chapters/\" + result;",
+      "isPay": "",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/api/v1/search/books?q={{key}}&page={{page}}&per_page=20",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "酷18按当前论坛结构处理：每个搜索到的帖子是一部单章书，正文为主帖正文区。",
+    "bookSourceGroup": "自用书源,论坛",
+    "bookSourceName": "酷18禁忌书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.cool18.com/bbs4/",
+    "bookUrlPattern": "https?:\\/\\/www\\.cool18\\.com\\/bbs4\\/index\\.php\\?app=forum&act=threadview&tid=\\d+",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 12; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36\",\"Accept-Language\":\"zh-CN,zh;q=0.9\"}",
+    "lastUpdateTime": 1795824000000,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "meta[name=author]@content",
+      "coverUrl": "",
+      "intro": "meta[name=description]@content",
+      "kind": "禁忌书屋论坛帖",
+      "lastChapter": ".main-title@text",
+      "name": ".main-title@text",
+      "tocUrl": "@js: result = baseUrl;",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#content-section pre@html",
+      "nextContentUrl": "",
+      "title": ".main-title@text"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "font@text",
+      "bookList": ".thread-list li",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "a@text",
+      "kind": "禁忌书屋",
+      "lastChapter": "i@text",
+      "name": "a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".title-section",
+      "chapterName": ".main-title@text",
+      "chapterUrl": "@js: result = baseUrl;",
+      "isPay": "",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "https://www.cool18.com/bbs4/index.php?action=search&act=threadsearch&app=forum&keywords={{java.encodeURI(key)}}&submit=%E6%9F%A5%E8%AF%A2&p={{page}}",
+    "weight": 0
+  }
+]
